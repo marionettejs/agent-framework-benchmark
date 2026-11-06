@@ -1,0 +1,1358 @@
+README.md
+  h_0f06c286dda36f 234-237
+results/2026-11-codex/EXCLUSIONS.json
+  h_0f06c286dda36f 1-2180
+results/2026-11-codex/FILE_MANIFEST.json
+  h_0f06c286dda36f 1-2806
+results/2026-11-codex/METHODOLOGY.md
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/PUBLICATION_REVIEW.json
+  h_0f06c286dda36f 1-28
+results/2026-11-codex/README.md
+  h_0f06c286dda36f 1-28
+results/2026-11-codex/REDISTRIBUTION.md
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/angular/b1/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/angular/b1/agent/final-test.stderr
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b1/agent/final-test.stdout
+  h_0f06c286dda36f 1-96
+results/2026-11-codex/angular/b1/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/angular/b1/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b1/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b1/agent/run-info.json
+  h_0f06c286dda36f 1-53
+results/2026-11-codex/angular/b1/agent/tooling.json
+  h_0f06c286dda36f 1-109
+results/2026-11-codex/angular/b1/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10399
+results/2026-11-codex/angular/b1/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-11034
+results/2026-11-codex/angular/b1/measure/results.json
+  h_0f06c286dda36f 1-613
+results/2026-11-codex/angular/b1/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b1/repo/app/.gitignore
+  h_0f06c286dda36f 1-44
+results/2026-11-codex/angular/b1/repo/app/.vscode/extensions.json
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b1/repo/app/.vscode/launch.json
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/angular/b1/repo/app/.vscode/tasks.json
+  h_0f06c286dda36f 1-42
+results/2026-11-codex/angular/b1/repo/app/AGENTS.md
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/angular/b1/repo/app/README.md
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/angular/b1/repo/app/angular.json
+  h_0f06c286dda36f 1-73
+results/2026-11-codex/angular/b1/repo/app/package-lock.json
+  h_0f06c286dda36f 1-6862
+results/2026-11-codex/angular/b1/repo/app/package.json
+  h_0f06c286dda36f 1-32
+results/2026-11-codex/angular/b1/repo/app/server.mjs
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b1/repo/app/src/app/api.ts
+  h_0f06c286dda36f 1-28
+results/2026-11-codex/angular/b1/repo/app/src/app/app.config.ts
+  h_0f06c286dda36f 1-10
+results/2026-11-codex/angular/b1/repo/app/src/app/app.html
+  h_0f06c286dda36f 1-344
+results/2026-11-codex/angular/b1/repo/app/src/app/app.routes.ts
+  h_0f06c286dda36f 1-8
+results/2026-11-codex/angular/b1/repo/app/src/app/app.spec.ts
+  h_0f06c286dda36f 1-24
+results/2026-11-codex/angular/b1/repo/app/src/app/app.ts
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b1/repo/app/src/app/cards/cards.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b1/repo/app/src/app/cards/cards.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/cards/cards.ts
+  h_0f06c286dda36f 1-13
+results/2026-11-codex/angular/b1/repo/app/src/app/evolution/evolution.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b1/repo/app/src/app/evolution/evolution.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/evolution/evolution.ts
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/angular/b1/repo/app/src/app/home/home.html
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b1/repo/app/src/app/home/home.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/home/home.ts
+  h_0f06c286dda36f 1-31
+results/2026-11-codex/angular/b1/repo/app/src/app/models.ts
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/angular/b1/repo/app/src/app/move-tables/move-tables.html
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b1/repo/app/src/app/move-tables/move-tables.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/move-tables/move-tables.ts
+  h_0f06c286dda36f 1-34
+results/2026-11-codex/angular/b1/repo/app/src/app/not-found/not-found.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b1/repo/app/src/app/not-found/not-found.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/not-found/not-found.ts
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b1/repo/app/src/app/pokemon/pokemon.html
+  h_0f06c286dda36f 1-16
+results/2026-11-codex/angular/b1/repo/app/src/app/pokemon/pokemon.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/pokemon/pokemon.ts
+  h_0f06c286dda36f 1-22
+results/2026-11-codex/angular/b1/repo/app/src/app/resource-page/resource-page.html
+  h_0f06c286dda36f 1-11
+results/2026-11-codex/angular/b1/repo/app/src/app/resource-page/resource-page.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/resource-page/resource-page.ts
+  h_0f06c286dda36f 1-26
+results/2026-11-codex/angular/b1/repo/app/src/app/type-list/type-list.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b1/repo/app/src/app/type-list/type-list.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b1/repo/app/src/app/type-list/type-list.ts
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b1/repo/app/src/index.html
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b1/repo/app/src/main.ts
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b1/repo/app/src/styles.css
+  h_0f06c286dda36f 1-70
+results/2026-11-codex/angular/b1/repo/app/tsconfig.app.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b1/repo/app/tsconfig.json
+  h_0f06c286dda36f 1-31
+results/2026-11-codex/angular/b1/repo/app/tsconfig.spec.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b1/repo/source-files.json
+  h_0f06c286dda36f 1-257
+results/2026-11-codex/angular/b2/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/angular/b2/agent/final-test.stderr
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b2/agent/final-test.stdout
+  h_0f06c286dda36f 1-89
+results/2026-11-codex/angular/b2/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/angular/b2/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b2/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b2/agent/run-info.json
+  h_0f06c286dda36f 1-53
+results/2026-11-codex/angular/b2/agent/tooling.json
+  h_0f06c286dda36f 1-109
+results/2026-11-codex/angular/b2/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10645
+results/2026-11-codex/angular/b2/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-9474
+results/2026-11-codex/angular/b2/measure/results.json
+  h_0f06c286dda36f 1-613
+results/2026-11-codex/angular/b2/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b2/repo/app/.gitignore
+  h_0f06c286dda36f 1-44
+results/2026-11-codex/angular/b2/repo/app/.vscode/extensions.json
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b2/repo/app/.vscode/launch.json
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/angular/b2/repo/app/.vscode/tasks.json
+  h_0f06c286dda36f 1-42
+results/2026-11-codex/angular/b2/repo/app/AGENTS.md
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/angular/b2/repo/app/README.md
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/angular/b2/repo/app/angular.json
+  h_0f06c286dda36f 1-73
+results/2026-11-codex/angular/b2/repo/app/package-lock.json
+  h_0f06c286dda36f 1-6862
+results/2026-11-codex/angular/b2/repo/app/package.json
+  h_0f06c286dda36f 1-32
+results/2026-11-codex/angular/b2/repo/app/server.mjs
+  h_0f06c286dda36f 1-38
+results/2026-11-codex/angular/b2/repo/app/src/app/app.config.ts
+  h_0f06c286dda36f 1-10
+results/2026-11-codex/angular/b2/repo/app/src/app/app.html
+  h_0f06c286dda36f 1-255
+results/2026-11-codex/angular/b2/repo/app/src/app/app.routes.ts
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b2/repo/app/src/app/app.spec.ts
+  h_0f06c286dda36f 1-24
+results/2026-11-codex/angular/b2/repo/app/src/app/app.ts
+  h_0f06c286dda36f 1-216
+results/2026-11-codex/angular/b2/repo/app/src/app/cards/cards.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b2/repo/app/src/app/cards/cards.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b2/repo/app/src/app/cards/cards.ts
+  h_0f06c286dda36f 1-32
+results/2026-11-codex/angular/b2/repo/app/src/app/data.ts
+  h_0f06c286dda36f 1-102
+results/2026-11-codex/angular/b2/repo/app/src/app/evolution/evolution.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b2/repo/app/src/app/evolution/evolution.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b2/repo/app/src/app/evolution/evolution.ts
+  h_0f06c286dda36f 1-18
+results/2026-11-codex/angular/b2/repo/app/src/app/move-tables/move-tables.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b2/repo/app/src/app/move-tables/move-tables.spec.ts
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b2/repo/app/src/app/move-tables/move-tables.ts
+  h_0f06c286dda36f 1-193
+results/2026-11-codex/angular/b2/repo/app/src/app/shell.ts
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b2/repo/app/src/index.html
+  h_0f06c286dda36f 1-13
+results/2026-11-codex/angular/b2/repo/app/src/main.ts
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b2/repo/app/src/styles.css
+  h_0f06c286dda36f 1-365
+results/2026-11-codex/angular/b2/repo/app/tsconfig.app.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b2/repo/app/tsconfig.json
+  h_0f06c286dda36f 1-31
+results/2026-11-codex/angular/b2/repo/app/tsconfig.spec.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b2/repo/source-files.json
+  h_0f06c286dda36f 1-177
+results/2026-11-codex/angular/b3/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/angular/b3/agent/final-test.stderr
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b3/agent/final-test.stdout
+  h_0f06c286dda36f 1-85
+results/2026-11-codex/angular/b3/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/angular/b3/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b3/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b3/agent/run-info.json
+  h_0f06c286dda36f 1-53
+results/2026-11-codex/angular/b3/agent/tooling.json
+  h_0f06c286dda36f 1-109
+results/2026-11-codex/angular/b3/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10250
+results/2026-11-codex/angular/b3/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-9352
+results/2026-11-codex/angular/b3/measure/results.json
+  h_0f06c286dda36f 1-613
+results/2026-11-codex/angular/b3/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b3/repo/app/.gitignore
+  h_0f06c286dda36f 1-44
+results/2026-11-codex/angular/b3/repo/app/.vscode/extensions.json
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b3/repo/app/.vscode/launch.json
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/angular/b3/repo/app/.vscode/tasks.json
+  h_0f06c286dda36f 1-42
+results/2026-11-codex/angular/b3/repo/app/AGENTS.md
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/angular/b3/repo/app/README.md
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/angular/b3/repo/app/angular.json
+  h_0f06c286dda36f 1-73
+results/2026-11-codex/angular/b3/repo/app/package-lock.json
+  h_0f06c286dda36f 1-6862
+results/2026-11-codex/angular/b3/repo/app/package.json
+  h_0f06c286dda36f 1-32
+results/2026-11-codex/angular/b3/repo/app/server.mjs
+  h_0f06c286dda36f 1-36
+results/2026-11-codex/angular/b3/repo/app/src/app/api.ts
+  h_0f06c286dda36f 1-56
+results/2026-11-codex/angular/b3/repo/app/src/app/app.config.ts
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/angular/b3/repo/app/src/app/app.html
+  h_0f06c286dda36f 1-311
+results/2026-11-codex/angular/b3/repo/app/src/app/app.routes.ts
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/angular/b3/repo/app/src/app/app.spec.ts
+  h_0f06c286dda36f 1-48
+results/2026-11-codex/angular/b3/repo/app/src/app/app.ts
+  h_0f06c286dda36f 1-282
+results/2026-11-codex/angular/b3/repo/app/src/app/cards.ts
+  h_0f06c286dda36f 1-33
+results/2026-11-codex/angular/b3/repo/app/src/app/evolution.ts
+  h_0f06c286dda36f 1-19
+results/2026-11-codex/angular/b3/repo/app/src/app/models.ts
+  h_0f06c286dda36f 1-71
+results/2026-11-codex/angular/b3/repo/app/src/index.html
+  h_0f06c286dda36f 1-13
+results/2026-11-codex/angular/b3/repo/app/src/main.ts
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/angular/b3/repo/app/src/styles.css
+  h_0f06c286dda36f 1-482
+results/2026-11-codex/angular/b3/repo/app/tsconfig.app.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b3/repo/app/tsconfig.json
+  h_0f06c286dda36f 1-31
+results/2026-11-codex/angular/b3/repo/app/tsconfig.spec.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b3/repo/source-files.json
+  h_0f06c286dda36f 1-132
+results/2026-11-codex/angular/b4/agent/acceptance-infrastructure-failure.stderr
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/angular/b4/agent/acceptance-infrastructure-failure.stdout
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b4/agent/acceptance.json
+  h_0f06c286dda36f 1-25
+results/2026-11-codex/angular/b4/agent/final-test.stderr
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b4/agent/final-test.stdout
+  h_0f06c286dda36f 1-87
+results/2026-11-codex/angular/b4/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/angular/b4/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b4/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b4/agent/run-info.json
+  h_0f06c286dda36f 1-53
+results/2026-11-codex/angular/b4/agent/tooling.json
+  h_0f06c286dda36f 1-109
+results/2026-11-codex/angular/b4/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10773
+results/2026-11-codex/angular/b4/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-9483
+results/2026-11-codex/angular/b4/measure/results.json
+  h_0f06c286dda36f 1-613
+results/2026-11-codex/angular/b4/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/angular/b4/repo/app/.gitignore
+  h_0f06c286dda36f 1-44
+results/2026-11-codex/angular/b4/repo/app/.vscode/extensions.json
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b4/repo/app/.vscode/launch.json
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/angular/b4/repo/app/.vscode/tasks.json
+  h_0f06c286dda36f 1-42
+results/2026-11-codex/angular/b4/repo/app/AGENTS.md
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/angular/b4/repo/app/README.md
+  h_0f06c286dda36f 1-13
+results/2026-11-codex/angular/b4/repo/app/angular.json
+  h_0f06c286dda36f 1-73
+results/2026-11-codex/angular/b4/repo/app/package-lock.json
+  h_0f06c286dda36f 1-6862
+results/2026-11-codex/angular/b4/repo/app/package.json
+  h_0f06c286dda36f 1-32
+results/2026-11-codex/angular/b4/repo/app/server.mjs
+  h_0f06c286dda36f 1-13
+results/2026-11-codex/angular/b4/repo/app/src/app/api.ts
+  h_0f06c286dda36f 1-24
+results/2026-11-codex/angular/b4/repo/app/src/app/app.config.ts
+  h_0f06c286dda36f 1-10
+results/2026-11-codex/angular/b4/repo/app/src/app/app.html
+  h_0f06c286dda36f 1-344
+results/2026-11-codex/angular/b4/repo/app/src/app/app.routes.ts
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/angular/b4/repo/app/src/app/app.spec.ts
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b4/repo/app/src/app/app.ts
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b4/repo/app/src/app/cards/cards.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b4/repo/app/src/app/cards/cards.ts
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/angular/b4/repo/app/src/app/evolution/evolution.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/angular/b4/repo/app/src/app/evolution/evolution.ts
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/angular/b4/repo/app/src/app/models.ts
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/angular/b4/repo/app/src/app/pages/pages.html
+  h_0f06c286dda36f 1-26
+results/2026-11-codex/angular/b4/repo/app/src/app/pages/pages.ts
+  h_0f06c286dda36f 1-64
+results/2026-11-codex/angular/b4/repo/app/src/index.html
+  h_0f06c286dda36f 1-13
+results/2026-11-codex/angular/b4/repo/app/src/main.ts
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/angular/b4/repo/app/src/styles.css
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/angular/b4/repo/app/tsconfig.app.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b4/repo/app/tsconfig.json
+  h_0f06c286dda36f 1-31
+results/2026-11-codex/angular/b4/repo/app/tsconfig.spec.json
+  h_0f06c286dda36f 1-14
+results/2026-11-codex/angular/b4/repo/source-files.json
+  h_0f06c286dda36f 1-165
+results/2026-11-codex/config.json
+  h_0f06c286dda36f 1-93
+results/2026-11-codex/experiments/marionette-application-collectionview/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/experiments/marionette-application-collectionview/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/experiments/marionette-application-collectionview/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/experiments/marionette-application-collectionview/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/experiments/marionette-application-collectionview/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/experiments/marionette-application-collectionview/agent/run-info.json
+  h_0f06c286dda36f 1-43
+results/2026-11-codex/experiments/marionette-application-collectionview/agent/tooling.json
+  h_0f06c286dda36f 1-120
+results/2026-11-codex/experiments/marionette-application-collectionview/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10104
+results/2026-11-codex/experiments/marionette-application-collectionview/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-10864
+results/2026-11-codex/experiments/marionette-application-collectionview/measure/results.json
+  h_0f06c286dda36f 1-603
+results/2026-11-codex/experiments/marionette-application-collectionview/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/experiments/marionette-application-collectionview/repo/app/index.html
+  h_0f06c286dda36f 1-22
+results/2026-11-codex/experiments/marionette-application-collectionview/repo/app/main.js
+  h_0f06c286dda36f 1-456
+results/2026-11-codex/experiments/marionette-application-collectionview/repo/app/package-lock.json
+  h_0f06c286dda36f 1-902
+results/2026-11-codex/experiments/marionette-application-collectionview/repo/app/package.json
+  h_0f06c286dda36f 1-16
+results/2026-11-codex/experiments/marionette-application-collectionview/repo/app/server.mjs
+  h_0f06c286dda36f 1-33
+results/2026-11-codex/experiments/marionette-application-collectionview/repo/app/style.css
+  h_0f06c286dda36f 1-307
+results/2026-11-codex/experiments/marionette-application-collectionview/repo/source-files.json
+  h_0f06c286dda36f 1-37
+results/2026-11-codex/formatter-policy.json
+  h_0f06c286dda36f 1-66
+results/2026-11-codex/harness/README.md
+  h_0f06c286dda36f 1-25
+results/2026-11-codex/harness/formatter.mjs
+  h_0f06c286dda36f 1-62
+results/2026-11-codex/harness/historical-source/cleanup_slot.cjs
+  h_0f06c286dda36f 1-8
+results/2026-11-codex/harness/historical-source/codex_slot.cjs
+  h_0f06c286dda36f 1-42
+results/2026-11-codex/harness/historical-source/cold_export.py
+  h_0f06c286dda36f 1-52
+results/2026-11-codex/harness/historical-source/controller.py
+  h_0f06c286dda36f 1-230
+results/2026-11-codex/harness/historical-source/ensure_hosts.cjs
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/harness/historical-source/event_projection.py
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/harness/historical-source/mcp_service_snapshot.cjs
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/harness/historical-source/owned_runtime.py
+  h_0f06c286dda36f 1-198
+results/2026-11-codex/harness/historical-source/permission_evidence.py
+  h_0f06c286dda36f 1-77
+results/2026-11-codex/harness/historical-source/prepare_slot.cjs
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/harness/historical-source/quota.cjs
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/harness/historical-source/relaunch_rule.py
+  h_0f06c286dda36f 1-16
+results/2026-11-codex/harness/historical-source/runtime_bridge.py
+  h_0f06c286dda36f 1-56
+results/2026-11-codex/harness/historical-source/source_recount.py
+  h_0f06c286dda36f 1-56
+results/2026-11-codex/harness/historical-source/stages.py
+  h_0f06c286dda36f 1-49
+results/2026-11-codex/harness/measurement-image.patch
+  h_0f06c286dda36f 1-75
+results/2026-11-codex/harness/source-review-changes.json
+  h_0f06c286dda36f 1-115
+results/2026-11-codex/marionette/b1/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/marionette/b1/agent/final-test.stderr
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b1/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/marionette/b1/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/marionette/b1/agent/package-selection.json
+  h_0f06c286dda36f 1-11
+results/2026-11-codex/marionette/b1/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b1/agent/run-info.json
+  h_0f06c286dda36f 1-40
+results/2026-11-codex/marionette/b1/agent/tooling.json
+  h_0f06c286dda36f 1-120
+results/2026-11-codex/marionette/b1/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8780
+results/2026-11-codex/marionette/b1/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-11312
+results/2026-11-codex/marionette/b1/measure/results.json
+  h_0f06c286dda36f 1-600
+results/2026-11-codex/marionette/b1/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/marionette/b1/repo/app/index.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b1/repo/app/main.js
+  h_0f06c286dda36f 1-33
+results/2026-11-codex/marionette/b1/repo/app/package-lock.json
+  h_0f06c286dda36f 1-835
+results/2026-11-codex/marionette/b1/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b1/repo/app/server.mjs
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/marionette/b1/repo/app/style.css
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/marionette/b1/repo/source-files.json
+  h_0f06c286dda36f 1-37
+results/2026-11-codex/marionette/b2/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/marionette/b2/agent/final-test.stderr
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b2/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/marionette/b2/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/marionette/b2/agent/package-selection.json
+  h_0f06c286dda36f 1-11
+results/2026-11-codex/marionette/b2/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b2/agent/run-info.json
+  h_0f06c286dda36f 1-40
+results/2026-11-codex/marionette/b2/agent/tooling.json
+  h_0f06c286dda36f 1-120
+results/2026-11-codex/marionette/b2/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10093
+results/2026-11-codex/marionette/b2/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-11678
+results/2026-11-codex/marionette/b2/measure/results.json
+  h_0f06c286dda36f 1-600
+results/2026-11-codex/marionette/b2/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/marionette/b2/repo/app/README.md
+  h_0f06c286dda36f 1-11
+results/2026-11-codex/marionette/b2/repo/app/index.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b2/repo/app/main.js
+  h_0f06c286dda36f 1-37
+results/2026-11-codex/marionette/b2/repo/app/package-lock.json
+  h_0f06c286dda36f 1-834
+results/2026-11-codex/marionette/b2/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b2/repo/app/server.mjs
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/marionette/b2/repo/app/style.css
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/marionette/b2/repo/source-files.json
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/marionette/b3/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/marionette/b3/agent/final-test.stderr
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b3/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/marionette/b3/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/marionette/b3/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/marionette/b3/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b3/agent/run-info.json
+  h_0f06c286dda36f 1-46
+results/2026-11-codex/marionette/b3/agent/tooling.json
+  h_0f06c286dda36f 1-120
+results/2026-11-codex/marionette/b3/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8708
+results/2026-11-codex/marionette/b3/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-10902
+results/2026-11-codex/marionette/b3/measure/repeat/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8704
+results/2026-11-codex/marionette/b3/measure/repeat/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-10933
+results/2026-11-codex/marionette/b3/measure/repeat/results.json
+  h_0f06c286dda36f 1-604
+results/2026-11-codex/marionette/b3/measure/results.json
+  h_0f06c286dda36f 1-604
+results/2026-11-codex/marionette/b3/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/marionette/b3/repo/app/index.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b3/repo/app/main.js
+  h_0f06c286dda36f 1-58
+results/2026-11-codex/marionette/b3/repo/app/package-lock.json
+  h_0f06c286dda36f 1-893
+results/2026-11-codex/marionette/b3/repo/app/package.json
+  h_0f06c286dda36f 1-23
+results/2026-11-codex/marionette/b3/repo/app/server.mjs
+  h_0f06c286dda36f 1-11
+results/2026-11-codex/marionette/b3/repo/app/style.css
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b3/repo/source-files.json
+  h_0f06c286dda36f 1-37
+results/2026-11-codex/marionette/b4/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/marionette/b4/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/marionette/b4/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/marionette/b4/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/marionette/b4/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/marionette/b4/agent/run-info.json
+  h_0f06c286dda36f 1-44
+results/2026-11-codex/marionette/b4/agent/tooling.json
+  h_0f06c286dda36f 1-120
+results/2026-11-codex/marionette/b4/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10217
+results/2026-11-codex/marionette/b4/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-11197
+results/2026-11-codex/marionette/b4/measure/repeat/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10025
+results/2026-11-codex/marionette/b4/measure/repeat/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-11106
+results/2026-11-codex/marionette/b4/measure/repeat/results.json
+  h_0f06c286dda36f 1-602
+results/2026-11-codex/marionette/b4/measure/results.json
+  h_0f06c286dda36f 1-602
+results/2026-11-codex/marionette/b4/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/marionette/b4/repo/app/README.md
+  h_0f06c286dda36f 1-19
+results/2026-11-codex/marionette/b4/repo/app/index.html
+  h_0f06c286dda36f 1-12
+results/2026-11-codex/marionette/b4/repo/app/package-lock.json
+  h_0f06c286dda36f 1-889
+results/2026-11-codex/marionette/b4/repo/app/package.json
+  h_0f06c286dda36f 1-15
+results/2026-11-codex/marionette/b4/repo/app/server.mjs
+  h_0f06c286dda36f 1-32
+results/2026-11-codex/marionette/b4/repo/app/src/main.js
+  h_0f06c286dda36f 1-363
+results/2026-11-codex/marionette/b4/repo/app/src/style.css
+  h_0f06c286dda36f 1-350
+results/2026-11-codex/marionette/b4/repo/source-files.json
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/metrics.csv
+  h_0f06c286dda36f 1-151
+results/2026-11-codex/nuxt/b1/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/nuxt/b1/agent/final-test.stderr
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/nuxt/b1/agent/final-test.stdout
+  h_0f06c286dda36f 1-142
+results/2026-11-codex/nuxt/b1/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/nuxt/b1/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/nuxt/b1/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b1/agent/run-info.json
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/nuxt/b1/agent/tooling.json
+  h_0f06c286dda36f 1-89
+results/2026-11-codex/nuxt/b1/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8095
+results/2026-11-codex/nuxt/b1/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6887
+results/2026-11-codex/nuxt/b1/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/nuxt/b1/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/nuxt/b1/repo/app/app/app.vue
+  h_0f06c286dda36f 1-28
+results/2026-11-codex/nuxt/b1/repo/app/app/assets/main.css
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/nuxt/b1/repo/app/app/components/Cards.vue
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/nuxt/b1/repo/app/app/components/Evolution.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b1/repo/app/app/components/MoveTable.vue
+  h_0f06c286dda36f 1-10
+results/2026-11-codex/nuxt/b1/repo/app/app/pages/[...slug].vue
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b1/repo/app/nuxt.config.ts
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b1/repo/app/package-lock.json
+  h_0f06c286dda36f 1-8292
+results/2026-11-codex/nuxt/b1/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b1/repo/app/server/api/dex.get.ts
+  h_0f06c286dda36f 1-43
+results/2026-11-codex/nuxt/b1/repo/app/server/api/sprite.get.ts
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b1/repo/source-files.json
+  h_0f06c286dda36f 1-1122
+results/2026-11-codex/nuxt/b2/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/nuxt/b2/agent/final-test.stderr
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/nuxt/b2/agent/final-test.stdout
+  h_0f06c286dda36f 1-142
+results/2026-11-codex/nuxt/b2/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/nuxt/b2/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/nuxt/b2/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b2/agent/run-info.json
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/nuxt/b2/agent/tooling.json
+  h_0f06c286dda36f 1-89
+results/2026-11-codex/nuxt/b2/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8372
+results/2026-11-codex/nuxt/b2/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6818
+results/2026-11-codex/nuxt/b2/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/nuxt/b2/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/nuxt/b2/repo/app/app/app.vue
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b2/repo/app/app/assets/main.css
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b2/repo/app/app/components/EvolutionTree.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b2/repo/app/app/components/MoveTable.vue
+  h_0f06c286dda36f 1-12
+results/2026-11-codex/nuxt/b2/repo/app/app/components/PokemonCards.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b2/repo/app/app/components/TypeBadge.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b2/repo/app/app/pages/[...slug].vue
+  h_0f06c286dda36f 1-33
+results/2026-11-codex/nuxt/b2/repo/app/nuxt.config.ts
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b2/repo/app/package-lock.json
+  h_0f06c286dda36f 1-8292
+results/2026-11-codex/nuxt/b2/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b2/repo/app/server/api/page.get.ts
+  h_0f06c286dda36f 1-51
+results/2026-11-codex/nuxt/b2/repo/source-files.json
+  h_0f06c286dda36f 1-57
+results/2026-11-codex/nuxt/b3/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/nuxt/b3/agent/final-test.stderr
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/nuxt/b3/agent/final-test.stdout
+  h_0f06c286dda36f 1-142
+results/2026-11-codex/nuxt/b3/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/nuxt/b3/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/nuxt/b3/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b3/agent/run-info.json
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/nuxt/b3/agent/tooling.json
+  h_0f06c286dda36f 1-89
+results/2026-11-codex/nuxt/b3/measure/history.json
+  h_0f06c286dda36f 1-31
+results/2026-11-codex/nuxt/b3/measure/history/invalid-rendering-results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/nuxt/b3/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8411
+results/2026-11-codex/nuxt/b3/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6925
+results/2026-11-codex/nuxt/b3/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/nuxt/b3/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/nuxt/b3/repo/app/app/assets/style.css
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b3/repo/app/app/components/EvolutionTree.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b3/repo/app/app/components/MoveTable.vue
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/nuxt/b3/repo/app/app/components/PokeCards.vue
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/nuxt/b3/repo/app/app/pages/[...slug].vue
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/nuxt/b3/repo/app/nuxt.config.ts
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b3/repo/app/package-lock.json
+  h_0f06c286dda36f 1-8292
+results/2026-11-codex/nuxt/b3/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b3/repo/app/server/api/page.get.ts
+  h_0f06c286dda36f 1-18
+results/2026-11-codex/nuxt/b3/repo/source-files.json
+  h_0f06c286dda36f 1-49
+results/2026-11-codex/nuxt/b4/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/nuxt/b4/agent/final-test.stderr
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/nuxt/b4/agent/final-test.stdout
+  h_0f06c286dda36f 1-140
+results/2026-11-codex/nuxt/b4/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/nuxt/b4/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/nuxt/b4/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b4/agent/run-info.json
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/nuxt/b4/agent/tooling.json
+  h_0f06c286dda36f 1-89
+results/2026-11-codex/nuxt/b4/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8371
+results/2026-11-codex/nuxt/b4/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6865
+results/2026-11-codex/nuxt/b4/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/nuxt/b4/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/nuxt/b4/repo/app/.gitignore
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/nuxt/b4/repo/app/app/app.vue
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b4/repo/app/app/assets/main.css
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b4/repo/app/app/components/EvolutionTree.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b4/repo/app/app/components/MoveTable.vue
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/nuxt/b4/repo/app/app/components/PokemonCards.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b4/repo/app/app/components/TypeBadge.vue
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/nuxt/b4/repo/app/app/pages/[...slug].vue
+  h_0f06c286dda36f 1-26
+results/2026-11-codex/nuxt/b4/repo/app/nuxt.config.ts
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b4/repo/app/package-lock.json
+  h_0f06c286dda36f 1-8292
+results/2026-11-codex/nuxt/b4/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/nuxt/b4/repo/app/server/api/page.get.ts
+  h_0f06c286dda36f 1-16
+results/2026-11-codex/nuxt/b4/repo/source-files.json
+  h_0f06c286dda36f 1-61
+results/2026-11-codex/provided-stylesheets.json
+  h_0f06c286dda36f 1-123
+results/2026-11-codex/react-router/b1/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/react-router/b1/agent/final-test.stdout
+  h_0f06c286dda36f 1-102
+results/2026-11-codex/react-router/b1/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/react-router/b1/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/react-router/b1/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b1/agent/run-info.json
+  h_0f06c286dda36f 1-47
+results/2026-11-codex/react-router/b1/agent/tooling.json
+  h_0f06c286dda36f 1-65
+results/2026-11-codex/react-router/b1/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8442
+results/2026-11-codex/react-router/b1/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6917
+results/2026-11-codex/react-router/b1/measure/results.json
+  h_0f06c286dda36f 1-607
+results/2026-11-codex/react-router/b1/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/react-router/b1/repo/app/app/api.server.ts
+  h_0f06c286dda36f 1-16
+results/2026-11-codex/react-router/b1/repo/app/app/page.tsx
+  h_0f06c286dda36f 1-19
+results/2026-11-codex/react-router/b1/repo/app/app/root.tsx
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b1/repo/app/app/routes.ts
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/react-router/b1/repo/app/app/style.css
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/react-router/b1/repo/app/package-lock.json
+  h_0f06c286dda36f 1-3100
+results/2026-11-codex/react-router/b1/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b1/repo/app/vite.config.ts
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b1/repo/source-files.json
+  h_0f06c286dda36f 1-45
+results/2026-11-codex/react-router/b2/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/react-router/b2/agent/final-test.stdout
+  h_0f06c286dda36f 1-107
+results/2026-11-codex/react-router/b2/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/react-router/b2/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/react-router/b2/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b2/agent/run-info.json
+  h_0f06c286dda36f 1-47
+results/2026-11-codex/react-router/b2/agent/tooling.json
+  h_0f06c286dda36f 1-65
+results/2026-11-codex/react-router/b2/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8476
+results/2026-11-codex/react-router/b2/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6949
+results/2026-11-codex/react-router/b2/measure/results.json
+  h_0f06c286dda36f 1-607
+results/2026-11-codex/react-router/b2/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/react-router/b2/repo/app/app/api.server.ts
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/react-router/b2/repo/app/app/root.tsx
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/react-router/b2/repo/app/app/routes.ts
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/react-router/b2/repo/app/app/routes/detail.tsx
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/react-router/b2/repo/app/app/routes/home.tsx
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/react-router/b2/repo/app/app/routes/missing.tsx
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b2/repo/app/app/routes/pokemon.tsx
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/react-router/b2/repo/app/app/routes/types.tsx
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/react-router/b2/repo/app/app/style.css
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/react-router/b2/repo/app/app/ui.tsx
+  h_0f06c286dda36f 1-11
+results/2026-11-codex/react-router/b2/repo/app/package-lock.json
+  h_0f06c286dda36f 1-3101
+results/2026-11-codex/react-router/b2/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b2/repo/app/vite.config.ts
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b2/repo/source-files.json
+  h_0f06c286dda36f 1-65
+results/2026-11-codex/react-router/b3/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/react-router/b3/agent/final-test.stdout
+  h_0f06c286dda36f 1-102
+results/2026-11-codex/react-router/b3/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/react-router/b3/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/react-router/b3/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b3/agent/run-info.json
+  h_0f06c286dda36f 1-47
+results/2026-11-codex/react-router/b3/agent/tooling.json
+  h_0f06c286dda36f 1-65
+results/2026-11-codex/react-router/b3/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8328
+results/2026-11-codex/react-router/b3/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-7009
+results/2026-11-codex/react-router/b3/measure/results.json
+  h_0f06c286dda36f 1-607
+results/2026-11-codex/react-router/b3/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/react-router/b3/repo/app/app/api.server.ts
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/react-router/b3/repo/app/app/page.tsx
+  h_0f06c286dda36f 1-33
+results/2026-11-codex/react-router/b3/repo/app/app/root.tsx
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b3/repo/app/app/routes.ts
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/react-router/b3/repo/app/app/style.css
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/react-router/b3/repo/app/package-lock.json
+  h_0f06c286dda36f 1-3101
+results/2026-11-codex/react-router/b3/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b3/repo/app/vite.config.ts
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b3/repo/source-files.json
+  h_0f06c286dda36f 1-45
+results/2026-11-codex/react-router/b4/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/react-router/b4/agent/final-test.stdout
+  h_0f06c286dda36f 1-104
+results/2026-11-codex/react-router/b4/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/react-router/b4/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/react-router/b4/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b4/agent/run-info.json
+  h_0f06c286dda36f 1-47
+results/2026-11-codex/react-router/b4/agent/tooling.json
+  h_0f06c286dda36f 1-65
+results/2026-11-codex/react-router/b4/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8511
+results/2026-11-codex/react-router/b4/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6945
+results/2026-11-codex/react-router/b4/measure/results.json
+  h_0f06c286dda36f 1-607
+results/2026-11-codex/react-router/b4/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/react-router/b4/repo/app/app/api.server.ts
+  h_0f06c286dda36f 1-38
+results/2026-11-codex/react-router/b4/repo/app/app/home.tsx
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b4/repo/app/app/page.tsx
+  h_0f06c286dda36f 1-28
+results/2026-11-codex/react-router/b4/repo/app/app/root.tsx
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b4/repo/app/app/routes.ts
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/react-router/b4/repo/app/app/style.css
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b4/repo/app/package-lock.json
+  h_0f06c286dda36f 1-3100
+results/2026-11-codex/react-router/b4/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/react-router/b4/repo/app/vite.config.ts
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/react-router/b4/repo/source-files.json
+  h_0f06c286dda36f 1-49
+results/2026-11-codex/report.md
+  h_0f06c286dda36f 1-28
+results/2026-11-codex/restore_fixture_css.py
+  h_0f06c286dda36f 1-19
+results/2026-11-codex/summary.json
+  h_0f06c286dda36f 1-3176
+results/2026-11-codex/sveltekit/b1/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/sveltekit/b1/agent/final-test.stdout
+  h_0f06c286dda36f 1-136
+results/2026-11-codex/sveltekit/b1/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/sveltekit/b1/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/sveltekit/b1/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b1/agent/run-info.json
+  h_0f06c286dda36f 1-43
+results/2026-11-codex/sveltekit/b1/agent/tooling.json
+  h_0f06c286dda36f 1-88
+results/2026-11-codex/sveltekit/b1/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-7708
+results/2026-11-codex/sveltekit/b1/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-7019
+results/2026-11-codex/sveltekit/b1/measure/results.json
+  h_0f06c286dda36f 1-603
+results/2026-11-codex/sveltekit/b1/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/sveltekit/b1/repo/app/package-lock.json
+  h_0f06c286dda36f 1-1147
+results/2026-11-codex/sveltekit/b1/repo/app/package.json
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/sveltekit/b1/repo/app/src/app.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b1/repo/app/src/lib/Cards.svelte
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/sveltekit/b1/repo/app/src/lib/MoveTable.svelte
+  h_0f06c286dda36f 1-8
+results/2026-11-codex/sveltekit/b1/repo/app/src/lib/api.js
+  h_0f06c286dda36f 1-47
+results/2026-11-codex/sveltekit/b1/repo/app/src/lib/style.css
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b1/repo/app/src/routes/[...path]/+page.server.js
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/sveltekit/b1/repo/app/src/routes/[...path]/+page.svelte
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/sveltekit/b1/repo/app/vite.config.js
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/sveltekit/b1/repo/source-files.json
+  h_0f06c286dda36f 1-953
+results/2026-11-codex/sveltekit/b2/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/sveltekit/b2/agent/final-test.stdout
+  h_0f06c286dda36f 1-137
+results/2026-11-codex/sveltekit/b2/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/sveltekit/b2/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/sveltekit/b2/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b2/agent/run-info.json
+  h_0f06c286dda36f 1-44
+results/2026-11-codex/sveltekit/b2/agent/tooling.json
+  h_0f06c286dda36f 1-88
+results/2026-11-codex/sveltekit/b2/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8469
+results/2026-11-codex/sveltekit/b2/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6986
+results/2026-11-codex/sveltekit/b2/measure/results.json
+  h_0f06c286dda36f 1-604
+results/2026-11-codex/sveltekit/b2/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/sveltekit/b2/repo/app/.gitignore
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/sveltekit/b2/repo/app/package-lock.json
+  h_0f06c286dda36f 1-1183
+results/2026-11-codex/sveltekit/b2/repo/app/package.json
+  h_0f06c286dda36f 1-22
+results/2026-11-codex/sveltekit/b2/repo/app/src/app.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b2/repo/app/src/lib/Cards.svelte
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/sveltekit/b2/repo/app/src/lib/MoveTable.svelte
+  h_0f06c286dda36f 1-65
+results/2026-11-codex/sveltekit/b2/repo/app/src/lib/style.css
+  h_0f06c286dda36f 1-367
+results/2026-11-codex/sveltekit/b2/repo/app/src/lib/utils.js
+  h_0f06c286dda36f 1-13
+results/2026-11-codex/sveltekit/b2/repo/app/src/routes/[...path]/+page.server.js
+  h_0f06c286dda36f 1-216
+results/2026-11-codex/sveltekit/b2/repo/app/src/routes/[...path]/+page.svelte
+  h_0f06c286dda36f 1-253
+results/2026-11-codex/sveltekit/b2/repo/app/vite.config.js
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/sveltekit/b2/repo/source-files.json
+  h_0f06c286dda36f 1-57
+results/2026-11-codex/sveltekit/b3/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/sveltekit/b3/agent/final-test.stdout
+  h_0f06c286dda36f 1-137
+results/2026-11-codex/sveltekit/b3/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/sveltekit/b3/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/sveltekit/b3/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b3/agent/run-info.json
+  h_0f06c286dda36f 1-43
+results/2026-11-codex/sveltekit/b3/agent/tooling.json
+  h_0f06c286dda36f 1-88
+results/2026-11-codex/sveltekit/b3/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8496
+results/2026-11-codex/sveltekit/b3/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6955
+results/2026-11-codex/sveltekit/b3/measure/results.json
+  h_0f06c286dda36f 1-603
+results/2026-11-codex/sveltekit/b3/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/sveltekit/b3/repo/app/package-lock.json
+  h_0f06c286dda36f 1-1146
+results/2026-11-codex/sveltekit/b3/repo/app/package.json
+  h_0f06c286dda36f 1-19
+results/2026-11-codex/sveltekit/b3/repo/app/src/app.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b3/repo/app/src/lib/Cards.svelte
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/sveltekit/b3/repo/app/src/lib/MoveTable.svelte
+  h_0f06c286dda36f 1-10
+results/2026-11-codex/sveltekit/b3/repo/app/src/lib/api.js
+  h_0f06c286dda36f 1-43
+results/2026-11-codex/sveltekit/b3/repo/app/src/lib/style.css
+  h_0f06c286dda36f 1-3
+results/2026-11-codex/sveltekit/b3/repo/app/src/lib/utils.js
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/sveltekit/b3/repo/app/src/routes/[...path]/+page.server.js
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/sveltekit/b3/repo/app/src/routes/[...path]/+page.svelte
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/sveltekit/b3/repo/app/vite.config.js
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/sveltekit/b3/repo/source-files.json
+  h_0f06c286dda36f 1-57
+results/2026-11-codex/sveltekit/b4/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/sveltekit/b4/agent/final-test.stdout
+  h_0f06c286dda36f 1-137
+results/2026-11-codex/sveltekit/b4/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/sveltekit/b4/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/sveltekit/b4/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b4/agent/run-info.json
+  h_0f06c286dda36f 1-43
+results/2026-11-codex/sveltekit/b4/agent/tooling.json
+  h_0f06c286dda36f 1-88
+results/2026-11-codex/sveltekit/b4/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-8413
+results/2026-11-codex/sveltekit/b4/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-6972
+results/2026-11-codex/sveltekit/b4/measure/results.json
+  h_0f06c286dda36f 1-603
+results/2026-11-codex/sveltekit/b4/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/sveltekit/b4/repo/app/package-lock.json
+  h_0f06c286dda36f 1-1149
+results/2026-11-codex/sveltekit/b4/repo/app/package.json
+  h_0f06c286dda36f 1-21
+results/2026-11-codex/sveltekit/b4/repo/app/src/app.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b4/repo/app/src/lib/Cards.svelte
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/sveltekit/b4/repo/app/src/lib/MoveTable.svelte
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/sveltekit/b4/repo/app/src/lib/app.css
+  h_0f06c286dda36f 1
+results/2026-11-codex/sveltekit/b4/repo/app/src/lib/utils.js
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/sveltekit/b4/repo/app/src/routes/[...path]/+page.server.js
+  h_0f06c286dda36f 1-51
+results/2026-11-codex/sveltekit/b4/repo/app/src/routes/[...path]/+page.svelte
+  h_0f06c286dda36f 1-43
+results/2026-11-codex/sveltekit/b4/repo/app/vite.config.js
+  h_0f06c286dda36f 1-4
+results/2026-11-codex/sveltekit/b4/repo/source-files.json
+  h_0f06c286dda36f 1-53
+results/2026-11-codex/validate.py
+  h_0f06c286dda36f 1-50
+results/2026-11-codex/vanilla/b1/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/vanilla/b1/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/vanilla/b1/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/vanilla/b1/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/vanilla/b1/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b1/agent/run-info.json
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/vanilla/b1/agent/tooling.json
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/vanilla/b1/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-9566
+results/2026-11-codex/vanilla/b1/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-9163
+results/2026-11-codex/vanilla/b1/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/vanilla/b1/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/vanilla/b1/repo/app/index.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b1/repo/app/main.js
+  h_0f06c286dda36f 1-27
+results/2026-11-codex/vanilla/b1/repo/app/package-lock.json
+  h_0f06c286dda36f 1-786
+results/2026-11-codex/vanilla/b1/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b1/repo/app/server.mjs
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/vanilla/b1/repo/app/style.css
+  h_0f06c286dda36f 1-20
+results/2026-11-codex/vanilla/b1/repo/app/vite.config.js
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/vanilla/b1/repo/source-files.json
+  h_0f06c286dda36f 1-41
+results/2026-11-codex/vanilla/b2/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/vanilla/b2/agent/final-test.stderr
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b2/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/vanilla/b2/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/vanilla/b2/agent/package-selection.json
+  h_0f06c286dda36f 1-11
+results/2026-11-codex/vanilla/b2/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b2/agent/run-info.json
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/vanilla/b2/agent/tooling.json
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/vanilla/b2/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10120
+results/2026-11-codex/vanilla/b2/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-10729
+results/2026-11-codex/vanilla/b2/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/vanilla/b2/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/vanilla/b2/repo/app/.gitignore
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/vanilla/b2/repo/app/.npmrc
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b2/repo/app/index.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b2/repo/app/package-lock.json
+  h_0f06c286dda36f 1-826
+results/2026-11-codex/vanilla/b2/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b2/repo/app/server.mjs
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/vanilla/b2/repo/app/src.js
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/vanilla/b2/repo/app/style.css
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b2/repo/source-files.json
+  h_0f06c286dda36f 1-45
+results/2026-11-codex/vanilla/b3/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/vanilla/b3/agent/final-test.stderr
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b3/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/vanilla/b3/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/vanilla/b3/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/vanilla/b3/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b3/agent/run-info.json
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/vanilla/b3/agent/tooling.json
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/vanilla/b3/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10055
+results/2026-11-codex/vanilla/b3/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-9278
+results/2026-11-codex/vanilla/b3/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/vanilla/b3/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/vanilla/b3/repo/app/index.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b3/repo/app/main.js
+  h_0f06c286dda36f 1-24
+results/2026-11-codex/vanilla/b3/repo/app/package-lock.json
+  h_0f06c286dda36f 1-826
+results/2026-11-codex/vanilla/b3/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b3/repo/app/server.mjs
+  h_0f06c286dda36f 1-5
+results/2026-11-codex/vanilla/b3/repo/app/style.css
+  h_0f06c286dda36f 1-2
+results/2026-11-codex/vanilla/b3/repo/source-files.json
+  h_0f06c286dda36f 1-37
+results/2026-11-codex/vanilla/b4/agent/acceptance.json
+  h_0f06c286dda36f 1-9
+results/2026-11-codex/vanilla/b4/agent/final-test.stderr
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b4/agent/final-test.stdout
+  h_0f06c286dda36f 1-83
+results/2026-11-codex/vanilla/b4/agent/native-usage.json
+  h_0f06c286dda36f 1-17
+results/2026-11-codex/vanilla/b4/agent/package-selection.json
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/vanilla/b4/agent/prompt.txt
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b4/agent/run-info.json
+  h_0f06c286dda36f 1-39
+results/2026-11-codex/vanilla/b4/agent/tooling.json
+  h_0f06c286dda36f 1-59
+results/2026-11-codex/vanilla/b4/measure/lighthouse/home-mobile.json
+  h_0f06c286dda36f 1-10174
+results/2026-11-codex/vanilla/b4/measure/lighthouse/pokemon-mobile.json
+  h_0f06c286dda36f 1-9856
+results/2026-11-codex/vanilla/b4/measure/results.json
+  h_0f06c286dda36f 1-599
+results/2026-11-codex/vanilla/b4/measure/source-counts.json
+  h_0f06c286dda36f 1-7
+results/2026-11-codex/vanilla/b4/repo/app/index.html
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b4/repo/app/package-lock.json
+  h_0f06c286dda36f 1-826
+results/2026-11-codex/vanilla/b4/repo/app/package.json
+  h_0f06c286dda36f 1
+results/2026-11-codex/vanilla/b4/repo/app/server.mjs
+  h_0f06c286dda36f 1-10
+results/2026-11-codex/vanilla/b4/repo/app/src.js
+  h_0f06c286dda36f 1-46
+results/2026-11-codex/vanilla/b4/repo/app/style.css
+  h_0f06c286dda36f 1-6
+results/2026-11-codex/vanilla/b4/repo/source-files.json
+  h_0f06c286dda36f 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d36c210e92db1dff233db119652d491d0f2c2830",
+  "prompts": {},
+  "humans": {
+    "h_0f06c286dda36f": {
+      "author": "Paul Falgout <paul.falgout@roundingwell.com>"
+    }
+  }
+}
