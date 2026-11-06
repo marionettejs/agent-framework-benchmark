@@ -1,0 +1,20 @@
+results/2026-11-codex/FILE_MANIFEST.json
+  h_0f06c286dda36f 10-11,846-847,2098-2099
+results/2026-11-codex/METHODOLOGY.md
+  h_0f06c286dda36f 33
+results/2026-11-codex/config.json
+  h_0f06c286dda36f 27-28
+results/2026-11-codex/report.md
+  h_0f06c286dda36f 16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0285e637611848a781d7676fdb1387816912afa1",
+  "prompts": {},
+  "humans": {
+    "h_0f06c286dda36f": {
+      "author": "Paul Falgout <paul.falgout@roundingwell.com>"
+    }
+  }
+}
