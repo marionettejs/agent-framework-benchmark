@@ -1,0 +1,42 @@
+{
+  "framework": "nuxt",
+  "build": "b2",
+  "model": "gpt-6.1-sol",
+  "effortOverride": null,
+  "serviceTierOverride": null,
+  "generationSeconds": 270.883025293,
+  "generationTimingField": "native-session-result.json elapsed_seconds",
+  "generationTimeoutSeconds": 14400,
+  "cli": "0.166.0",
+  "node": "24.22.1",
+  "resources": {
+    "cpus": 4,
+    "memoryGiB": 8
+  },
+  "installed": {
+    "nuxt": "4.6.4"
+  },
+  "routeSamples": {
+    "home/mobile": 5,
+    "home-filtered/mobile": 5,
+    "pokemon/mobile": 5,
+    "move/mobile": 5,
+    "ability/mobile": 5,
+    "type/mobile": 5
+  },
+  "measurementExit": 0,
+  "promptSha256": "1d7490e8740f977aef0e88886fb37a386be62cc792392cf2203437d57baaa65d",
+  "httpsQualification": {
+    "origin": "https://app.localhost:8443",
+    "status": 200,
+    "security": {
+      "issuer": "Caddy Local Authority - ECC Intermediate",
+      "protocol": "TLS 1.3",
+      "subjectName": "",
+      "validFrom": 1793888138,
+      "validTo": 1793931338
+    },
+    "protocol": "h2",
+    "bypassFlags": []
+  }
+}

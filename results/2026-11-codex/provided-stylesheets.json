@@ -1,0 +1,117 @@
+[
+  {
+    "build": "marionette/b1",
+    "path": "marionette/b1/repo/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "marionette/b2",
+    "path": "marionette/b2/repo/app/src/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "marionette/b3",
+    "path": "marionette/b3/repo/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "marionette/b4",
+    "path": "marionette/b4/repo/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "angular/b1",
+    "path": "angular/b1/repo/app/src/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "angular/b2",
+    "path": "angular/b2/repo/app/src/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "angular/b4",
+    "path": "angular/b4/repo/app/src/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "nuxt/b1",
+    "path": "nuxt/b1/repo/app/app/assets/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "nuxt/b2",
+    "path": "nuxt/b2/repo/app/app/assets/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "nuxt/b3",
+    "path": "nuxt/b3/repo/app/app/assets/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "nuxt/b4",
+    "path": "nuxt/b4/repo/app/app/assets/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "react-router/b1",
+    "path": "react-router/b1/repo/app/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "react-router/b2",
+    "path": "react-router/b2/repo/app/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "react-router/b3",
+    "path": "react-router/b3/repo/app/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "react-router/b4",
+    "path": "react-router/b4/repo/app/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "sveltekit/b1",
+    "path": "sveltekit/b1/repo/app/src/lib/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "sveltekit/b2",
+    "path": "sveltekit/b2/repo/app/src/lib/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "sveltekit/b3",
+    "path": "sveltekit/b3/repo/app/src/lib/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "sveltekit/b4",
+    "path": "sveltekit/b4/repo/app/src/lib/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "vanilla/b1",
+    "path": "vanilla/b1/repo/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "vanilla/b2",
+    "path": "vanilla/b2/repo/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "vanilla/b3",
+    "path": "vanilla/b3/repo/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  },
+  {
+    "build": "vanilla/b4",
+    "path": "vanilla/b4/repo/app/tokens.css",
+    "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03"
+  }
+]

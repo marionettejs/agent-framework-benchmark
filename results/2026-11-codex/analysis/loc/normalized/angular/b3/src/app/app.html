@@ -1,0 +1,343 @@
+<header>
+  <div class="header-inner">
+    <a class="brand" href="/">Pokédex</a>
+    <nav aria-label="Main">
+      <a href="/">Pokémon</a><a href="/types">Types</a>
+    </nav>
+  </div>
+</header>
+<main>
+  @if (ready()) {
+    @if (kind() !== "pokemon") {
+      <h1>{{ heading() }}</h1>
+    }
+    @switch (kind()) {
+      @case ("home") {
+        <div class="filters">
+          <div>
+            <label for="search">Search</label
+            ><input
+              id="search"
+              type="search"
+              [value]="q()"
+              (input)="changeFilter('q', $event)"
+            />
+          </div>
+          <div>
+            <label for="type">Type</label
+            ><select
+              id="type"
+              [value]="type()"
+              (change)="changeFilter('type', $event)"
+            >
+              <option value="" [selected]="!type()">All types</option>
+              @for (t of types(); track t.id) {
+                <option [value]="t.name" [selected]="type() === t.name">
+                  {{ english(t) }}
+                </option>
+              }
+            </select>
+          </div>
+          <div>
+            <label for="generation">Generation</label
+            ><select
+              id="generation"
+              [value]="generation()"
+              (change)="changeFilter('generation', $event)"
+            >
+              <option value="" [selected]="!generation()">
+                All generations
+              </option>
+              @for (g of generations(); track g.id) {
+                <option [value]="g.name" [selected]="generation() === g.name">
+                  {{ english(g) }}
+                </option>
+              }
+            </select>
+          </div>
+        </div>
+        <p class="count">{{ total() }} Pokémon</p>
+        @if (total()) {
+          <dex-cards [cards]="cardList()" />
+        } @else {
+          <p>No Pokémon found</p>
+        }
+        <div class="pagination">
+          @if (page() > 1) {
+            <a [href]="pageUrl(page() - 1)">Previous page</a>
+          }
+          <span>Page {{ page() }} of {{ pages() }}</span>
+          @if (page() < pages()) {
+            <a [href]="pageUrl(page() + 1)">Next page</a>
+          }
+        </div>
+      }
+      @case ("types") {
+        <ul class="type-grid">
+          @for (t of types(); track t.id) {
+            <li>
+              <a
+                [href]="'/types/' + t.name"
+                [style.background]="'var(--type-' + t.name + ')'"
+                >{{ english(t) }}</a
+              >
+            </li>
+          }
+        </ul>
+      }
+      @case ("pokemon") {
+        @if (resource(); as r) {
+          @if (pokemon(); as p) {
+            <div class="summary">
+              <img
+                class="artwork"
+                [src]="p.sprites.other['official-artwork'].front_default"
+                [alt]="heading()"
+                width="288"
+                height="288"
+              />
+              <div>
+                <p class="number">{{ dex(r.id) }}</p>
+                <h1>{{ heading() }}</h1>
+                <p class="genus">{{ genus(r) }}</p>
+                <div class="badges">
+                  @for (t of p.types; track t.slot) {
+                    <a
+                      class="badge"
+                      [href]="'/types/' + t.type.name"
+                      [style.background]="'var(--type-' + t.type.name + ')'"
+                      >{{ human(t.type.name) }}</a
+                    >
+                  }
+                </div>
+                <dl class="measurements">
+                  <div>
+                    <dt>Height</dt>
+                    <dd>{{ (p.height / 10).toFixed(1) }} m</dd>
+                  </div>
+                  <div>
+                    <dt>Weight</dt>
+                    <dd>{{ (p.weight / 10).toFixed(1) }} kg</dd>
+                  </div>
+                </dl>
+                <p>{{ flavor(r) }}</p>
+              </div>
+            </div>
+            <section aria-labelledby="stats-heading">
+              <h2 id="stats-heading">Base stats</h2>
+              <table class="stats">
+                <tbody>
+                  @for (s of p.stats; track s.stat.name; let i = $index) {
+                    <tr>
+                      <th scope="row">{{ stats[i] }}</th>
+                      <td>{{ s.base_stat }}</td>
+                      <td>
+                        <div class="track">
+                          <div
+                            [style.width.%]="(s.base_stat / 255) * 100"
+                          ></div>
+                        </div>
+                      </td>
+                    </tr>
+                  }
+                  <tr>
+                    <th scope="row">Total</th>
+                    <td>{{ totalStats(p) }}</td>
+                    <td>
+                      <div class="track">
+                        <div
+                          [style.width.%]="(totalStats(p) / 1530) * 100"
+                        ></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section aria-labelledby="abilities-heading">
+              <h2 id="abilities-heading">Abilities</h2>
+              <ul>
+                @for (a of p.abilities; track a.slot) {
+                  <li>
+                    <a [href]="'/abilities/' + a.ability.name">{{
+                      human(a.ability.name)
+                    }}</a>
+                    @if (a.is_hidden) {
+                      (hidden)
+                    }
+                  </li>
+                }
+              </ul>
+            </section>
+            <section aria-labelledby="evolution-heading">
+              <h2 id="evolution-heading">Evolution</h2>
+              @if (chain(); as c) {
+                <dex-evolution [chain]="c" />
+              }
+            </section>
+            <section id="moves" aria-labelledby="moves-heading">
+              <h2 id="moves-heading">Moves</h2>
+              <div class="game">
+                <label for="game">Game</label
+                ><select
+                  id="game"
+                  [value]="game()"
+                  (change)="changeGame($event)"
+                >
+                  @for (g of games(); track g.name) {
+                    <option [value]="g.name" [selected]="game() === g.name">
+                      {{ human(g.name) }}
+                    </option>
+                  }
+                </select>
+              </div>
+              @for (t of tables(); track t.name) {
+                <div class="table-scroll">
+                  <table class="moves">
+                    <caption>
+                      {{
+                        human(t.name)
+                      }}
+                    </caption>
+                    <thead>
+                      <tr>
+                        @for (col of columns(t); track col) {
+                          <th
+                            scope="col"
+                            (click)="sort(t, col)"
+                            [attr.aria-sort]="
+                              t.column === col ? t.direction : null
+                            "
+                          >
+                            <button type="button">{{ col }}</button>
+                          </th>
+                        }
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @for (m of t.rows; track $index) {
+                        <tr>
+                          @if (t.name === "level-up") {
+                            <td>{{ m.level }}</td>
+                          }
+                          <td>
+                            <a [href]="'/moves/' + m.apiName">{{ m.name }}</a>
+                          </td>
+                          <td>
+                            <a
+                              class="badge"
+                              [href]="'/types/' + m.type"
+                              [style.background]="'var(--type-' + m.type + ')'"
+                              >{{ human(m.type) }}</a
+                            >
+                          </td>
+                          <td>{{ m.category }}</td>
+                          <td>{{ m.power ?? "—" }}</td>
+                          <td>{{ m.accuracy ?? "—" }}</td>
+                          <td>{{ m.pp ?? "—" }}</td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              }
+            </section>
+          }
+        }
+      }
+      @case ("moves") {
+        @if (resource(); as r) {
+          <dl class="details">
+            <dt>Type</dt>
+            <dd>
+              <a
+                class="badge"
+                [href]="'/types/' + r.type.name"
+                [style.background]="'var(--type-' + r.type.name + ')'"
+                >{{ human(r.type.name) }}</a
+              >
+            </dd>
+            <dt>Category</dt>
+            <dd>{{ human(r.damage_class.name) }}</dd>
+            <dt>Power</dt>
+            <dd>{{ r.power ?? "—" }}</dd>
+            <dt>Accuracy</dt>
+            <dd>{{ r.accuracy ?? "—" }}</dd>
+            <dt>PP</dt>
+            <dd>{{ r.pp ?? "—" }}</dd>
+          </dl>
+          <section aria-labelledby="effect-heading">
+            <h2 id="effect-heading">Effect</h2>
+            <p>{{ effect(r) }}</p>
+          </section>
+          <section class="card-section" aria-labelledby="learned-heading">
+            <h2 id="learned-heading">Learned by</h2>
+            <p class="count">{{ cardList().length }} Pokémon</p>
+            <dex-cards [cards]="cardList()" />
+          </section>
+        }
+      }
+      @case ("abilities") {
+        @if (resource(); as r) {
+          <section aria-labelledby="effect-heading">
+            <h2 id="effect-heading">Effect</h2>
+            <p>{{ effect(r) }}</p>
+          </section>
+          <section class="card-section" aria-labelledby="pokemon-heading">
+            <h2 id="pokemon-heading">Pokémon</h2>
+            <p class="count">{{ cardList().length }} Pokémon</p>
+            <dex-cards [cards]="cardList()" />
+          </section>
+        }
+      }
+      @case ("type") {}
+      @case ("not-found") {
+        <p><a href="/">Back to Pokémon</a></p>
+      }
+    }
+    @if (kind() === "type" ? resource() : null; as r) {
+      <section aria-labelledby="relations-heading">
+        <h2 id="relations-heading">Damage relations</h2>
+        <dl class="relations">
+          @for (rel of relations; track rel[1]) {
+            <dt>{{ rel[0] }}</dt>
+            <dd>
+              @for (t of r.damage_relations[rel[1]]; track t.name) {
+                <a
+                  class="badge"
+                  [href]="'/types/' + t.name"
+                  [style.background]="'var(--type-' + t.name + ')'"
+                  >{{ human(t.name) }}</a
+                >
+              } @empty {
+                None
+              }
+            </dd>
+          }
+        </dl>
+      </section>
+      <section class="card-section" aria-labelledby="pokemon-heading">
+        <h2 id="pokemon-heading">Pokémon</h2>
+        <p class="count">{{ cardList().length }} Pokémon</p>
+        <dex-cards [cards]="cardList()" />
+      </section>
+      <section aria-labelledby="type-moves-heading">
+        <h2 id="type-moves-heading">Moves</h2>
+        <p class="count">{{ r.moves.length }} moves</p>
+        <ul class="move-list">
+          @for (m of sortedMoves(r); track m.name) {
+            <li>
+              <a [href]="'/moves/' + m.name">{{ human(m.name) }}</a>
+            </li>
+          }
+        </ul>
+      </section>
+    }
+  } @else {
+    <p role="status">Loading…</p>
+  }
+</main>
+<footer>
+  Data from PokéAPI. Pokémon and Pokémon character names are trademarks of
+  Nintendo.
+</footer>

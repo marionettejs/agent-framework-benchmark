@@ -1,0 +1,110 @@
+import { Link, useLoaderData } from "react-router";
+import { api, cards } from "../api.server";
+import {
+  english,
+  human,
+  effect,
+  Badge,
+  Section,
+  Cards,
+  Missing,
+  titleMeta,
+} from "../ui";
+export const meta = titleMeta;
+export async function loader({ params }) {
+  const resources = { moves: "move", abilities: "ability", types: "type" };
+  if (!resources[params.kind]) return { missing: true };
+  try {
+    const item = await api(resources[params.kind] + "/" + params.name);
+    const refs =
+      params.kind === "moves" ? item.learned_by_pokemon : item.pokemon;
+    return {
+      title: english(item),
+      kind: params.kind,
+      item,
+      cards: await cards(refs, params.kind === "abilities"),
+    };
+  } catch (e) {
+    if (e.status === 404) return { missing: true };
+    throw e;
+  }
+}
+export default function Detail() {
+  const d = useLoaderData();
+  if (d.missing) return <Missing />;
+  const x = d.item;
+  return (
+    <>
+      <h1>{d.title}</h1>
+      {d.kind === "moves" && (
+        <>
+          <dl className="facts">
+            {[
+              ["Type", <Badge name={x.type.name} />],
+              ["Category", human(x.damage_class.name)],
+              ["Power", x.power ?? "—"],
+              ["Accuracy", x.accuracy ?? "—"],
+              ["PP", x.pp ?? "—"],
+            ].map(([k, v]) => (
+              <div key={k}>
+                <dt>{k}</dt>
+                <dd>{v}</dd>
+              </div>
+            ))}
+          </dl>
+          <Section title="Effect">
+            <p>{effect(x)}</p>
+          </Section>
+        </>
+      )}
+      {d.kind === "abilities" && (
+        <Section title="Effect">
+          <p>{effect(x)}</p>
+        </Section>
+      )}
+      {d.kind === "types" && (
+        <Section title="Damage relations">
+          <dl className="relations">
+            {[
+              ["Super effective against", "double_damage_to"],
+              ["Not very effective against", "half_damage_to"],
+              ["No effect against", "no_damage_to"],
+              ["Weak to", "double_damage_from"],
+              ["Resists", "half_damage_from"],
+              ["Immune to", "no_damage_from"],
+            ].map(([label, k]) => (
+              <div key={k}>
+                <dt>{label}</dt>
+                <dd>
+                  {x.damage_relations[k].length
+                    ? x.damage_relations[k].map((t) => (
+                        <Badge key={t.name} name={t.name} />
+                      ))
+                    : "None"}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Section>
+      )}
+      <Section title={d.kind === "moves" ? "Learned by" : "Pokémon"}>
+        <p className="muted">{d.cards.length} Pokémon</p>
+        <Cards items={d.cards} />
+      </Section>
+      {d.kind === "types" && (
+        <Section title="Moves">
+          <p>{x.moves.length} moves</p>
+          <ul className="move-list">
+            {[...x.moves]
+              .sort((a, b) => human(a.name).localeCompare(human(b.name)))
+              .map((m) => (
+                <li key={m.name}>
+                  <Link to={"/moves/" + m.name}>{human(m.name)}</Link>
+                </li>
+              ))}
+          </ul>
+        </Section>
+      )}
+    </>
+  );
+}

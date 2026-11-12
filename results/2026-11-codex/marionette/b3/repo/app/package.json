@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "start": "node server.mjs",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@mnjs/data": "5.1.0",
+    "@mnjs/html": "1.0.0",
+    "@mnjs/radio": "5.1.0",
+    "@mnjs/utils": "5.1.0",
+    "marionette": "5.1.0",
+    "vite": "^8.3.8"
+  }
+}

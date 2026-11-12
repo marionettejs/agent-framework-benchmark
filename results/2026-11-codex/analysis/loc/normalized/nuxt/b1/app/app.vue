@@ -1,0 +1,362 @@
+<script setup>
+const route = useRoute();
+const router = useRouter();
+const human = (s) =>
+  s
+    ?.split("-")
+    .map((w) => (w[0]?.toUpperCase() || "") + w.slice(1))
+    .join(" ") || "";
+const en = (r) =>
+  r?.names?.find((n) => n.language.name === "en")?.name || human(r?.name);
+const flavor = (r) =>
+  r?.flavor_text_entries
+    ?.filter((f) => f.language.name === "en")
+    .at(-1)
+    ?.flavor_text.replace(/\s+/g, " ") || "—";
+const effect = (r) =>
+  r?.effect_entries?.find((e) => e.language.name === "en")?.short_effect ||
+  flavor(r);
+const { data: d } = await useAsyncData(
+  "page",
+  () =>
+    $fetch("/api/dex", {
+      query: {
+        path: route.path,
+        ...Object.fromEntries(
+          Object.entries(route.query).filter(([k]) => k !== "game"),
+        ),
+      },
+    }),
+  {
+    watch: [
+      () => route.path,
+      () => route.query.q,
+      () => route.query.type,
+      () => route.query.generation,
+      () => route.query.page,
+    ],
+  },
+);
+const title = computed(() =>
+  !d.value
+    ? "Pokédex"
+    : {
+        home: "Pokémon",
+        types: d.value.t ? en(d.value.t) : "Types",
+        pokemon: en(d.value.s),
+        moves: en(d.value.m),
+        abilities: en(d.value.a),
+        missing: "Not found",
+      }[d.value.kind],
+);
+useHead(() => ({
+  title: d.value?.kind === "home" ? "Pokédex" : title.value + " – Pokédex",
+}));
+function filter(key, value) {
+  const query = { ...route.query };
+  delete query.page;
+  if (value) query[key] = value;
+  else delete query[key];
+  router.replace({ path: "/", query });
+}
+const pageUrl = (n) => ({
+  path: "/",
+  query: { ...route.query, ...(n === 1 ? { page: undefined } : { page: n }) },
+});
+const game = computed(() => route.query.game || d.value?.games?.at(-1)?.name);
+const methods = computed(() => {
+  const groups = {};
+  for (const m of d.value?.moves || [])
+    for (const v of m.details)
+      if (v.version_group.name === game.value) {
+        const method = v.move_learn_method.name;
+        (groups[method] ||= []).push({ ...m, level: v.level_learned_at });
+      }
+  const rank = ["level-up", "machine", "egg", "tutor"];
+  return Object.entries(groups).sort(
+    ([a], [b]) =>
+      (rank.includes(a) ? rank.indexOf(a) : 4) -
+        (rank.includes(b) ? rank.indexOf(b) : 4) || a.localeCompare(b),
+  );
+});
+const stats = ["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"];
+const relations = [
+  ["Super effective against", "double_damage_to"],
+  ["Not very effective against", "half_damage_to"],
+  ["No effect against", "no_damage_to"],
+  ["Weak to", "double_damage_from"],
+  ["Resists", "half_damage_from"],
+  ["Immune to", "no_damage_from"],
+];
+</script>
+<template>
+  <NuxtPage />
+  <header>
+    <div class="header-inner">
+      <a href="/">Pokédex</a>
+      <nav><a href="/">Pokémon</a><a href="/types">Types</a></nav>
+    </div>
+  </header>
+  <main v-if="d">
+    <template v-if="d.kind === 'home'"
+      ><h1>Pokémon</h1>
+      <div class="filters">
+        <label
+          >Search<input
+            type="search"
+            :value="route.query.q || ''"
+            @input="filter('q', $event.target.value)"
+        /></label>
+        <div class="field">
+          <label for="type-filter">Type</label
+          ><select
+            id="type-filter"
+            :value="route.query.type || ''"
+            @change="filter('type', $event.target.value)"
+          >
+            <option value="">All types</option>
+            <option v-for="t in d.types" :value="t.name">
+              {{ human(t.name) }}
+            </option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="generation-filter">Generation</label
+          ><select
+            id="generation-filter"
+            :value="route.query.generation || ''"
+            @change="filter('generation', $event.target.value)"
+          >
+            <option value="">All generations</option>
+            <option v-for="g in d.generations" :value="g.name">
+              {{ en(g) }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <p class="muted">{{ d.count }} Pokémon</p>
+      <Cards v-if="d.count" :list="d.list" />
+      <p v-else>No Pokémon found</p>
+      <div class="pagination">
+        <NuxtLink v-if="d.page > 1" :to="pageUrl(d.page - 1)"
+          >Previous page</NuxtLink
+        ><span>Page {{ d.page }} of {{ d.pages }}</span
+        ><NuxtLink v-if="d.page < d.pages" :to="pageUrl(d.page + 1)"
+          >Next page</NuxtLink
+        >
+      </div></template
+    >
+    <template v-else-if="d.kind === 'pokemon'"
+      ><div class="summary">
+        <img
+          class="artwork"
+          :src="d.p.sprites.other['official-artwork'].front_default"
+          :alt="title"
+        />
+        <div>
+          <p class="number">#{{ String(d.s.id).padStart(4, "0") }}</p>
+          <h1>{{ title }}</h1>
+          <p class="muted">
+            {{ d.s.genera.find((g) => g.language.name === "en")?.genus }}
+          </p>
+          <div class="badges">
+            <a
+              v-for="t in d.p.types"
+              class="badge"
+              :style="{ '--badge': 'var(--type-' + t.type.name + ')' }"
+              :href="'/types/' + t.type.name"
+              >{{ human(t.type.name) }}</a
+            >
+          </div>
+          <dl class="measurements">
+            <div>
+              <dt>Height</dt>
+              <dd>{{ (d.p.height / 10).toFixed(1) }} m</dd>
+            </div>
+            <div>
+              <dt>Weight</dt>
+              <dd>{{ (d.p.weight / 10).toFixed(1) }} kg</dd>
+            </div>
+          </dl>
+          <p>{{ flavor(d.s) }}</p>
+        </div>
+      </div>
+      <section aria-labelledby="stats-heading">
+        <h2 id="stats-heading">Base stats</h2>
+        <table class="stats">
+          <tbody>
+            <tr
+              v-for="(s, i) in [
+                ...d.p.stats,
+                { base_stat: d.p.stats.reduce((n, s) => n + s.base_stat, 0) },
+              ]"
+            >
+              <th scope="row">{{ stats[i] || "Total" }}</th>
+              <td>{{ s.base_stat }}</td>
+              <td>
+                <div class="track">
+                  <div
+                    :style="{
+                      width:
+                        Math.min(
+                          100,
+                          (s.base_stat / (i === 6 ? 1530 : 255)) * 100,
+                        ) + '%',
+                    }"
+                  ></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section aria-labelledby="abilities-heading">
+        <h2 id="abilities-heading">Abilities</h2>
+        <ul>
+          <li v-for="a in d.p.abilities">
+            <a :href="'/abilities/' + a.ability.name">{{
+              human(a.ability.name)
+            }}</a
+            ><template v-if="a.is_hidden"> (hidden)</template>
+          </li>
+        </ul>
+      </section>
+      <section aria-labelledby="evolution-heading">
+        <h2 id="evolution-heading">Evolution</h2>
+        <Evolution :node="d.evolution" />
+      </section>
+      <section id="moves" aria-labelledby="moves-heading">
+        <h2 id="moves-heading">Moves</h2>
+        <div class="game">
+          <label for="game-filter">Game</label
+          ><select
+            id="game-filter"
+            :value="game"
+            @change="
+              router.replace({
+                query: { ...route.query, game: $event.target.value },
+                hash: route.hash,
+              })
+            "
+          >
+            <option v-for="g in d.games" :value="g.name">
+              {{ human(g.name) }}
+            </option>
+          </select>
+        </div>
+        <MoveTable
+          v-for="[method, rows] in methods"
+          :key="game + method"
+          :method="method"
+          :rows="rows"
+        /></section
+    ></template>
+    <template v-else-if="d.kind === 'moves'"
+      ><h1>{{ title }}</h1>
+      <dl class="facts">
+        <div>
+          <dt>Type</dt>
+          <dd>
+            <a
+              class="badge"
+              :style="{ '--badge': 'var(--type-' + d.m.type.name + ')' }"
+              :href="'/types/' + d.m.type.name"
+              >{{ human(d.m.type.name) }}</a
+            >
+          </dd>
+        </div>
+        <div
+          v-for="[label, value] in [
+            ['Category', human(d.m.damage_class.name)],
+            ['Power', d.m.power],
+            ['Accuracy', d.m.accuracy],
+            ['PP', d.m.pp],
+          ]"
+        >
+          <dt>{{ label }}</dt>
+          <dd>{{ value ?? "—" }}</dd>
+        </div>
+      </dl>
+      <section aria-labelledby="effect-heading">
+        <h2 id="effect-heading">Effect</h2>
+        <p>{{ effect(d.m) }}</p>
+      </section>
+      <section aria-labelledby="learned-heading">
+        <h2 id="learned-heading">Learned by</h2>
+        <p class="muted">{{ d.list.length }} Pokémon</p>
+        <Cards :list="d.list" /></section
+    ></template>
+    <template v-else-if="d.kind === 'abilities'"
+      ><h1>{{ title }}</h1>
+      <section aria-labelledby="effect-heading">
+        <h2 id="effect-heading">Effect</h2>
+        <p>{{ effect(d.a) }}</p>
+      </section>
+      <section aria-labelledby="pokemon-heading">
+        <h2 id="pokemon-heading">Pokémon</h2>
+        <p class="muted">{{ d.list.length }} Pokémon</p>
+        <Cards :list="d.list" /></section
+    ></template>
+    <template v-else-if="d.kind === 'types'"
+      ><h1>{{ title }}</h1>
+      <template v-if="!d.t"
+        ><ul class="type-list">
+          <li v-for="t in d.types">
+            <a
+              class="badge"
+              :style="{ '--badge': 'var(--type-' + t.name + ')' }"
+              :href="'/types/' + t.name"
+              >{{ human(t.name) }}</a
+            >
+          </li>
+        </ul></template
+      ><template v-else
+        ><section aria-labelledby="damage-heading">
+          <h2 id="damage-heading">Damage relations</h2>
+          <dl class="relations">
+            <div v-for="[label, key] in relations">
+              <dt>{{ label }}</dt>
+              <dd>
+                <template v-if="d.t.damage_relations[key].length"
+                  ><a
+                    v-for="t in d.t.damage_relations[key]"
+                    class="badge"
+                    :style="{ '--badge': 'var(--type-' + t.name + ')' }"
+                    :href="'/types/' + t.name"
+                    >{{ human(t.name) }}</a
+                  ></template
+                ><template v-else>None</template>
+              </dd>
+            </div>
+          </dl>
+        </section>
+        <section aria-labelledby="pokemon-heading">
+          <h2 id="pokemon-heading">Pokémon</h2>
+          <p class="muted">{{ d.list.length }} Pokémon</p>
+          <Cards :list="d.list" />
+        </section>
+        <section aria-labelledby="moves-heading">
+          <h2 id="moves-heading">Moves</h2>
+          <p class="muted">{{ d.t.moves.length }} moves</p>
+          <ul class="move-list">
+            <li
+              v-for="m in [...d.t.moves].sort((a, b) =>
+                a.name.localeCompare(b.name),
+              )"
+            >
+              <a :href="'/moves/' + m.name">{{ human(m.name) }}</a>
+            </li>
+          </ul>
+        </section></template
+      ></template
+    >
+    <template v-else
+      ><h1>Not found</h1>
+      <p><a href="/">Back to Pokémon</a></p></template
+    >
+  </main>
+  <footer>
+    Data from PokéAPI. Pokémon and Pokémon character names are trademarks of
+    Nintendo.
+  </footer>
+</template>

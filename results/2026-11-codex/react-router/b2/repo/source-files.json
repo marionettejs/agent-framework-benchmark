@@ -1,0 +1,71 @@
+{
+  "files": {
+    "app/api.server.ts": {
+      "sha256": "486303fd3d54b963822e5db998925f1557ba799332c2d46dadcb3779ad624f01",
+      "bytes": 1068,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/root.tsx": {
+      "sha256": "85aa9417025ff709e2b176005bfc1672208d908a19b9c2716a36c0881380142c",
+      "bytes": 631,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/routes/detail.tsx": {
+      "sha256": "4686b0dba2042b811c9915c6483f8fc90ca7e1279e4bca47d1f6123f7bcaa003",
+      "bytes": 2073,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/routes/home.tsx": {
+      "sha256": "190dd648fefc1a56615dc5b93920cf251fdfedd4d5628621bf83c2c28139a8bd",
+      "bytes": 2594,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/routes/missing.tsx": {
+      "sha256": "f5e5cc7bb9a4b1eb39d9f76d05b60325959bfc3a92df42f3d3e85185b858a2d9",
+      "bytes": 113,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/routes/pokemon.tsx": {
+      "sha256": "0c1230a60d338271e51adf53c3d85d9961e663e4a1f7d72fd26a7d573cf52ba6",
+      "bytes": 4844,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/routes/types.tsx": {
+      "sha256": "97e727960d4801894bb6384574ab5ab8ab14d1e2de3ff790779760841f919d19",
+      "bytes": 499,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/routes.ts": {
+      "sha256": "1423c39735e0d054b5000a8f0250e613278e2124c829a6151f4a214c261cb1fe",
+      "bytes": 249,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/style.css": {
+      "sha256": "28a103c80ec4914b766fe45d4925195c1e62b0e5b501e67d6e3cbbd0fbf17419",
+      "bytes": 5379,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/ui.tsx": {
+      "sha256": "ea7ea974d2912933d960c0d756cc461c4a13717efc50b2c7aca777ef8801d07e",
+      "bytes": 1566,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "f6b098fa1c310ae53b40dfb09d8121d47d188e92a0eaf52d5997be7e4b2a64e5",
+      "bytes": 105381,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "b1b4c1441b09af4b4995fb36aab319935f108605755bd69d9ad379612b7d3df9",
+      "bytes": 383,
+      "byteIdenticalGeneratedSource": true
+    },
+    "vite.config.ts": {
+      "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+      "bytes": 147,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

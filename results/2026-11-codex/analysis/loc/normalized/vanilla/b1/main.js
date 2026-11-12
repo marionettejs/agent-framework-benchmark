@@ -1,0 +1,356 @@
+import "./tokens.css";
+import "./style.css";
+const main = document.querySelector("main"),
+  cache = new Map();
+const human = (s) =>
+  s
+    .split("-")
+    .map((w) => w[0]?.toUpperCase() + w.slice(1))
+    .join(" ");
+const esc = (s) =>
+  String(s ?? "").replace(
+    /[&<>"']/g,
+    (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
+  );
+const id = (r) => Number((r.url || r).match(/\/(\d+)\/?$/)?.[1]);
+const en = (r) =>
+  r.names?.find((x) => x.language.name === "en")?.name || human(r.name);
+const flavor = (r) =>
+  (
+    r.flavor_text_entries?.filter((x) => x.language.name === "en").at(-1)
+      ?.flavor_text || "—"
+  ).replace(/\s+/g, " ");
+const val = (x) => x ?? "—";
+function api(p) {
+  const url = p.startsWith("http") ? p : `${__API__}/api/v2/${p}`;
+  if (!cache.has(url))
+    cache.set(
+      url,
+      fetch(url).then((r) => {
+        if (!r.ok) throw Error("Not found");
+        return r.json();
+      }),
+    );
+  return cache.get(url);
+}
+const link = (url, label, cls = "") =>
+  `<a class="${cls}" href="${url}">${esc(label)}</a>`;
+const typeLink = (t) =>
+  link("/types/" + t.name, human(t.name), "badge " + t.name);
+function section(name, body) {
+  return `<section id="${name.toLowerCase().replaceAll(" ", "-")}" aria-labelledby="${name.replaceAll(" ", "-")}-heading"><h2 id="${name.replaceAll(" ", "-")}-heading">${name}</h2>${body}</section>`;
+}
+function heading(name, home = false) {
+  document.title = home ? "Pokédex" : `${name} – Pokédex`;
+  return `<h1>${esc(name)}</h1>`;
+}
+const dl = (rows) =>
+  `<dl>${rows.map(([k, v]) => `<div><dt>${k}</dt> <dd>${v}</dd></div>`).join("")}</dl>`;
+async function species() {
+  return (await api("pokemon-species/?limit=100000")).results;
+}
+async function cards(refs, withTypes = false) {
+  const all = await species();
+  const byId = new Map(all.map((s) => [id(s), s]));
+  const sorted = refs
+    .map((r) => ({ ref: r.pokemon || r, hidden: r.is_hidden }))
+    .filter((r) => byId.has(id(r.ref)))
+    .sort((a, b) => id(a.ref) - id(b.ref));
+  return `<ul class="cards">${(
+    await Promise.all(
+      sorted.map(async ({ ref, hidden }) => {
+        const n = id(ref),
+          s = byId.get(n),
+          p = withTypes ? await api(`pokemon/${n}/`) : null;
+        return `<li><a href="/pokemon/${s.name}"><img src="${__API__}/media/sprites/pokemon/${n}.png" alt="${esc(human(s.name))}"><span class="dex">#${String(n).padStart(4, "0")}</span><span>${esc(human(s.name))}</span>${
+          p
+            ? `<span>${p.types
+                .sort((a, b) => a.slot - b.slot)
+                .map(
+                  (x) =>
+                    `<span class="badge ${x.type.name}">${human(x.type.name)}</span>`,
+                )
+                .join(" ")}</span>`
+            : ""
+        }${hidden ? "<small>Hidden ability</small>" : ""}</a></li>`;
+      }),
+    )
+  ).join("")}</ul>`;
+}
+async function types() {
+  return (await api("type/?limit=100")).results.filter(
+    (t) => !["stellar", "unknown", "shadow"].includes(t.name),
+  );
+}
+async function home() {
+  const [all, ts, gens] = await Promise.all([
+    species(),
+    types(),
+    api("generation/?limit=100").then((r) =>
+      Promise.all(r.results.map((g) => api(g.url))),
+    ),
+  ]);
+  main.innerHTML =
+    heading("Pokémon", true) +
+    `<form class="filters"><label>Search<input type="search" name="q"></label><label>Type<select aria-label="Type" name="type"><option value="">All types</option>${ts.map((t) => `<option value="${t.name}">${human(t.name)}</option>`).join("")}</select></label><label>Generation<select aria-label="Generation" name="generation"><option value="">All generations</option>${gens.map((g) => `<option value="${g.name}">${en(g)}</option>`).join("")}</select></label></form><div id="results"></div>`;
+  const form = main.querySelector("form");
+  let run = 0;
+  async function update() {
+    const token = ++run,
+      q = new URLSearchParams(location.search);
+    for (const el of form.elements) el.value = q.get(el.name) || "";
+    let found = all.filter((s) =>
+      human(s.name)
+        .toLowerCase()
+        .includes((q.get("q") || "").toLowerCase()),
+    );
+    if (q.get("type")) {
+      const t = await api(`type/${q.get("type")}/`),
+        ids = new Set(t.pokemon.map((x) => id(x.pokemon)));
+      found = found.filter((s) => ids.has(id(s)));
+    }
+    if (q.get("generation")) {
+      const g = gens.find((g) => g.name === q.get("generation"));
+      const ids = new Set(g?.pokemon_species.map(id));
+      found = found.filter((s) => ids.has(id(s)));
+    }
+    found.sort((a, b) => id(a) - id(b));
+    const pages = Math.max(1, Math.ceil(found.length / 48)),
+      page = Math.min(pages, Math.max(1, Number(q.get("page")) || 1));
+    const list = found.length
+      ? await cards(found.slice((page - 1) * 48, page * 48), true)
+      : "<p>No Pokémon found</p>";
+    const pageLink = (n, label) => {
+      const p = new URLSearchParams(q);
+      n === 1 ? p.delete("page") : p.set("page", n);
+      return link("/?" + p, label);
+    };
+    if (token === run)
+      document.querySelector("#results").innerHTML =
+        `<p class="count">${found.length} Pokémon</p>${list}<div class="pagination">${page > 1 ? pageLink(page - 1, "Previous page") : ""}<span>Page ${page} of ${pages}</span>${page < pages ? pageLink(page + 1, "Next page") : ""}</div>`;
+  }
+  form.addEventListener("submit", (e) => e.preventDefault());
+  form.addEventListener("input", () => {
+    const p = new URLSearchParams();
+    for (const el of form.elements) if (el.value) p.set(el.name, el.value);
+    history.replaceState(null, "", "/" + (p.size ? "?" + p : ""));
+    update();
+  });
+  window.onpopstate = update;
+  await update();
+}
+function evolution(c) {
+  return `<ul><li>${link("/pokemon/" + c.species.name, human(c.species.name))}${c.evolves_to.length ? c.evolves_to.map(evolution).join("") : ""}</li></ul>`;
+}
+async function pokemon(name) {
+  const s = await api(`pokemon-species/${name}/`),
+    p = await api(`pokemon/${s.id}/`),
+    chain = await api(s.evolution_chain.url);
+  const title = en(s);
+  main.innerHTML =
+    `<div class="summary"><img class="art" src="${p.sprites.other["official-artwork"].front_default}" alt="${esc(title)}"><div><span class="dex">#${String(s.id).padStart(4, "0")}</span>${heading(title)}<p class="genus">${esc(s.genera.find((g) => g.language.name === "en")?.genus || "")}</p><p>${p.types.map((x) => typeLink(x.type)).join(" ")}</p>${dl(
+      [
+        ["Height", (p.height / 10).toFixed(1) + " m"],
+        ["Weight", (p.weight / 10).toFixed(1) + " kg"],
+      ],
+    )}<p>${esc(flavor(s))}</p></div></div>` +
+    section(
+      "Base stats",
+      `<table class="stats"><tbody>${[...p.stats.map((x, i) => [["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"][i], x.base_stat]), ["Total", p.stats.reduce((n, x) => n + x.base_stat, 0)]].map(([n, v]) => `<tr><th scope="row">${n}</th><td>${v}</td><td><div class="track"><div style="width:${(v / (n === "Total" ? 780 : 255)) * 100}%"></div></div></td></tr>`).join("")}</tbody></table>`,
+    ) +
+    section(
+      "Abilities",
+      `<ul>${p.abilities
+        .sort((a, b) => a.slot - b.slot)
+        .map(
+          (x) =>
+            `<li>${link("/abilities/" + x.ability.name, human(x.ability.name))}${x.is_hidden ? " (hidden)" : ""}</li>`,
+        )
+        .join("")}</ul>`,
+    ) +
+    section("Evolution", evolution(chain.chain)) +
+    section("Moves", '<div id="move-content">Loading moves…</div>');
+  const groups = new Map();
+  p.moves.forEach((m) =>
+    m.version_group_details.forEach((d) =>
+      groups.set(d.version_group.name, d.version_group),
+    ),
+  );
+  const games = (
+    await Promise.all([...groups.values()].map((g) => api(g.url)))
+  ).sort((a, b) => a.order - b.order);
+  let selected = new URLSearchParams(location.search).get("game");
+  if (!games.some((g) => g.name === selected)) selected = games.at(-1)?.name;
+  const box = document.querySelector("#move-content");
+  box.innerHTML = `<label class="game">Game <select aria-label="Game">${games.map((g) => `<option value="${g.name}" ${g.name === selected ? "selected" : ""}>${human(g.name)}</option>`).join("")}</select></label><div id="tables"></div>`;
+  async function renderMoves() {
+    const entries = [];
+    for (const m of p.moves)
+      for (const d of m.version_group_details)
+        if (d.version_group.name === selected) entries.push({ m, d });
+    const resources = await Promise.all(entries.map((x) => api(x.m.move.url)));
+    const methods = new Map();
+    entries.forEach((x, i) => {
+      const method = x.d.move_learn_method.name;
+      if (!methods.has(method)) methods.set(method, []);
+      const m = resources[i];
+      methods.get(method).push({
+        Level: x.d.level_learned_at,
+        Move: en(m),
+        Type: human(m.type.name),
+        Category: human(m.damage_class.name),
+        Power: m.power,
+        Accuracy: m.accuracy,
+        PP: m.pp,
+        resource: m,
+      });
+    });
+    const priority = ["level-up", "machine", "egg", "tutor"];
+    document.querySelector("#tables").innerHTML = "";
+    for (const method of [...methods.keys()].sort(
+      (a, b) =>
+        (priority.includes(a) ? priority.indexOf(a) : 4) -
+          (priority.includes(b) ? priority.indexOf(b) : 4) ||
+        a.localeCompare(b),
+    )) {
+      const rows = methods.get(method),
+        cols = [
+          ...(method === "level-up" ? ["Level"] : []),
+          "Move",
+          "Type",
+          "Category",
+          "Power",
+          "Accuracy",
+          "PP",
+        ];
+      let sort = method === "level-up" ? "Level" : "Move",
+        direction = 1;
+      const wrap = document.createElement("div");
+      wrap.className = "table-wrap";
+      function draw() {
+        rows.sort((a, b) => {
+          if (a[sort] == null) return b[sort] == null ? 0 : 1;
+          if (b[sort] == null) return -1;
+          return (
+            (typeof a[sort] === "number"
+              ? a[sort] - b[sort]
+              : a[sort].localeCompare(b[sort])) * direction ||
+            a.Move.localeCompare(b.Move)
+          );
+        });
+        wrap.innerHTML = `<table class="moves"><caption>${human(method)}</caption><thead><tr>${cols.map((c) => `<th scope="col" ${sort === c ? `aria-sort="${direction === 1 ? "ascending" : "descending"}"` : ""}><button>${c}</button></th>`).join("")}</tr></thead><tbody>${rows.map((r) => `<tr>${cols.map((c) => `<td>${c === "Move" ? link("/moves/" + r.resource.name, r.Move) : c === "Type" ? typeLink(r.resource.type) : val(r[c])}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+        wrap.querySelectorAll("th").forEach(
+          (b, i) =>
+            (b.onclick = () => {
+              direction = sort === cols[i] ? -direction : 1;
+              sort = cols[i];
+              draw();
+            }),
+        );
+      }
+      draw();
+      document.querySelector("#tables").append(wrap);
+    }
+  }
+  box.querySelector("select").onchange = async (e) => {
+    selected = e.target.value;
+    const url = new URL(location);
+    url.searchParams.set("game", selected);
+    history.replaceState(null, "", url);
+    await renderMoves();
+  };
+  await renderMoves();
+  if (location.hash === "#moves")
+    document.querySelector("#moves").scrollIntoView();
+}
+async function detail(kind, name) {
+  const r = await api(`${kind}/${name}/`);
+  let html = heading(en(r));
+  if (kind === "move") {
+    html += dl([
+      ["Type", typeLink(r.type)],
+      ["Category", human(r.damage_class.name)],
+      ["Power", val(r.power)],
+      ["Accuracy", val(r.accuracy)],
+      ["PP", val(r.pp)],
+    ]);
+    html += section(
+      "Effect",
+      `<p>${esc(r.effect_entries.find((x) => x.language.name === "en")?.short_effect || flavor(r))}</p>`,
+    );
+    const refs = r.learned_by_pokemon.filter((x) => id(x) < 10000);
+    html += section(
+      "Learned by",
+      `<p class="count">${refs.length} Pokémon</p>${await cards(refs)}`,
+    );
+  } else if (kind === "ability") {
+    html += section(
+      "Effect",
+      `<p>${esc(r.effect_entries.find((x) => x.language.name === "en")?.short_effect || "—")}</p>`,
+    );
+    const refs = r.pokemon.filter((x) => id(x.pokemon) < 10000);
+    html += section(
+      "Pokémon",
+      `<p class="count">${refs.length} Pokémon</p>${await cards(refs)}`,
+    );
+  } else {
+    html += section(
+      "Damage relations",
+      dl(
+        [
+          ["Super effective against", "double_damage_to"],
+          ["Not very effective against", "half_damage_to"],
+          ["No effect against", "no_damage_to"],
+          ["Weak to", "double_damage_from"],
+          ["Resists", "half_damage_from"],
+          ["Immune to", "no_damage_from"],
+        ].map(([label, key]) => [
+          label,
+          r.damage_relations[key].map(typeLink).join(" ") || "None",
+        ]),
+      ),
+    );
+    const refs = r.pokemon.filter((x) => id(x.pokemon) < 10000);
+    html += section(
+      "Pokémon",
+      `<p class="count">${refs.length} Pokémon</p>${await cards(refs)}`,
+    );
+    html += section(
+      "Moves",
+      `<p class="count">${r.moves.length} moves</p><ul class="move-list">${r.moves
+        .sort((a, b) => human(a.name).localeCompare(human(b.name)))
+        .map((m) => `<li>${link("/moves/" + m.name, human(m.name))}</li>`)
+        .join("")}</ul>`,
+    );
+  }
+  main.innerHTML = html;
+}
+async function boot() {
+  try {
+    const parts = location.pathname.split("/").filter(Boolean);
+    if (!parts.length) await home();
+    else if (parts.length === 1 && parts[0] === "types")
+      main.innerHTML =
+        heading("Types") +
+        `<ul class="type-list">${(await types()).map((t) => `<li>${typeLink(t)}</li>`).join("")}</ul>`;
+    else if (parts.length === 2 && parts[0] === "pokemon")
+      await pokemon(parts[1]);
+    else if (
+      parts.length === 2 &&
+      ["moves", "abilities", "types"].includes(parts[0])
+    )
+      await detail(
+        { moves: "move", abilities: "ability", types: "type" }[parts[0]],
+        parts[1],
+      );
+    else throw Error();
+  } catch (e) {
+    console.error(e);
+    main.innerHTML =
+      heading("Not found") + `<p>${link("/", "Back to Pokémon")}</p>`;
+  }
+}
+boot();

@@ -1,0 +1,61 @@
+{
+  "files": {
+    "app/app.vue": {
+      "sha256": "7b88ca587f52ca3835868c2d6a2005a1814a833824ab18316a6869abae19c7db",
+      "bytes": 7774,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/assets/main.css": {
+      "sha256": "f38f608c025d669627dd13dfcabba64efac1252c5646eca2c0d78e63394825e1",
+      "bytes": 5180,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/Cards.vue": {
+      "sha256": "fab51a901e76e6c63c8b52dac3da641829488f493e6096d751ca1ffc3056e4f8",
+      "bytes": 702,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/Evolution.vue": {
+      "sha256": "47013e40ffeb10122f46b8b19da016974ab5d2eda30dedfdc215e94cfbe35f62",
+      "bytes": 301,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/MoveTable.vue": {
+      "sha256": "9926c35fec52d2a0590349a029142ad76a483d775a989c080a216b1db8b25647",
+      "bytes": 1515,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/pages/[...slug].vue": {
+      "sha256": "9ad562f9d14f7b6fc38257d8cd05511af78a091b664b2074cf437c1f4209c335",
+      "bytes": 29,
+      "byteIdenticalGeneratedSource": true
+    },
+    "nuxt.config.ts": {
+      "sha256": "2f24555993c2f4e2e31bf1a12102445e28cf1d77d648e6af7244155ce3262968",
+      "bytes": 193,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+      "bytes": 290072,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+      "bytes": 155,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server/api/dex.get.ts": {
+      "sha256": "89bcd38914116bf8506cae657541fd7c11906ad22c1ec0d49fead804e4c6c76a",
+      "bytes": 3141,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server/api/sprite.get.ts": {
+      "sha256": "12e893da272f64f7aaa0fdd063cccb85e464a456cccb8155582b42a4b4afb16e",
+      "bytes": 191,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

@@ -1,0 +1,66 @@
+{
+  "files": {
+    ".gitignore": {
+      "sha256": "b337c2d3e6f980e187a36c8bf8dbe9cfd46da7c05dbda094328ad81c2d3c7973",
+      "bytes": 30,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/app.vue": {
+      "sha256": "6669e4ad83a04e77d0250ab1a096c5700781717af69ab9ef2cdb202895fbdf3c",
+      "bytes": 319,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/assets/main.css": {
+      "sha256": "05e1cafc7913cd22c1d1f77f96558cf3b0930ad7c6259c863f023d3df758603c",
+      "bytes": 4395,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/EvolutionTree.vue": {
+      "sha256": "a0946ca567cce4142e54ef0736c8e4354d5c7a6bb3b46b7b99388bf728efe69a",
+      "bytes": 351,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/MoveTable.vue": {
+      "sha256": "d4562e3a5ad3d78d499a5119caf53c9f3975fb22d36ca48dd5671dcd1ba7eab8",
+      "bytes": 1420,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/PokemonCards.vue": {
+      "sha256": "9d03818d467698e065c3f71dfcb94681dd5ba1da71e6f3340ebb903ad0d88e25",
+      "bytes": 569,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/TypeBadge.vue": {
+      "sha256": "e7b117c179a4d97c0e49dd1f352e67b58e255cb08b95c88ff234a8bed41fda86",
+      "bytes": 398,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/pages/[...slug].vue": {
+      "sha256": "cf85d049c44d2acc1a226f430dfb55b5b779a9364f16523486aebc207fdcb62b",
+      "bytes": 6291,
+      "byteIdenticalGeneratedSource": true
+    },
+    "nuxt.config.ts": {
+      "sha256": "4781f80e3ce8b423ba0b31b2ffef2288e3e246984ab131a337e86e65b68095ef",
+      "bytes": 154,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+      "bytes": 290072,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+      "bytes": 155,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server/api/page.get.ts": {
+      "sha256": "ad1b28dce02de15d5f1fd5b659f95493a9501ab1e4a9c625ce092d8603dfd338",
+      "bytes": 4460,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

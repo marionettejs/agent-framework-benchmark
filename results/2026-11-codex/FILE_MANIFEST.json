@@ -1,0 +1,3382 @@
+{
+  "algorithm": "sha256",
+  "scope": "Files beneath this results directory, excluding this manifest itself",
+  "files": {
+    "METHODOLOGY.md": {
+      "sha256": "583f5228e56300948b373874a4c9c1bbe645d926c823be82e5fb456eac923c6a",
+      "bytes": 9293
+    },
+    "PUBLICATION_REVIEW.json": {
+      "sha256": "ac6e921f4a5edca787dce8c8492cda75abd8088566f17897474725cffdfb0f5e",
+      "bytes": 975
+    },
+    "README.md": {
+      "sha256": "ef578eed9165b766f03e207268dcd941214e4218d19757f390270dfade452ccc",
+      "bytes": 2925
+    },
+    "REDISTRIBUTION.md": {
+      "sha256": "5208692777be903862a7f211f7f62257bc9c2f7f77be4dc6d630e229c9165252",
+      "bytes": 2238
+    },
+    "analysis/loc/README.md": {
+      "sha256": "eb1fa5e64f53b8db8cbf211ba4fc6a28592fc939b9ba8f5d24a0728bac148cd0",
+      "bytes": 1999
+    },
+    "analysis/loc/inputs.json": {
+      "sha256": "ab4d5df1851610f5eeb03b7dda47eb934fb1fe32d48d85a786abba562b7b108c",
+      "bytes": 62289
+    },
+    "analysis/loc/metrics.json": {
+      "sha256": "9403c7c88905ec32cf160d15093c2003ea3d448a1161a169b5557c3d1b6335b6",
+      "bytes": 123784
+    },
+    "analysis/loc/normalize.mjs": {
+      "sha256": "4c65407445a36d4566ff30ab324ffc5b8c5c59d2e12736ec40ee9d1a5025d893",
+      "bytes": 4049
+    },
+    "analysis/loc/normalized/angular/b1/server.mjs": {
+      "sha256": "8075a7fd2918c2c24257a301e31f8618098051a22a4faa23bf3e91ef2e4c9c2a",
+      "bytes": 1358
+    },
+    "analysis/loc/normalized/angular/b1/src/app/api.ts": {
+      "sha256": "6601e3e6b24ae5e38afd2aa5ffd71ac15797aab2745ac0291ef981d084b86ed4",
+      "bytes": 2259
+    },
+    "analysis/loc/normalized/angular/b1/src/app/app.config.ts": {
+      "sha256": "177d5e77f954d351513ca29a979b8b04c36dc8c01ee77ae5f300e1fc70fcd1c8",
+      "bytes": 306
+    },
+    "analysis/loc/normalized/angular/b1/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/app.html": {
+      "sha256": "0e0d9aa30a5f9a77cb92c7c4ac24887059e1948a42fb180c429529463ba4a70b",
+      "bytes": 20401
+    },
+    "analysis/loc/normalized/angular/b1/src/app/app.routes.ts": {
+      "sha256": "a7d33bbbc48ee542832592f1c7e43ef245726d0b221844acc69692146a98d23c",
+      "bytes": 713
+    },
+    "analysis/loc/normalized/angular/b1/src/app/app.ts": {
+      "sha256": "684b260fce22cc972e4abc8e9bb71b78aa7abd0dc4a23120c8ba025d3985126a",
+      "bytes": 620
+    },
+    "analysis/loc/normalized/angular/b1/src/app/cards/cards.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/cards/cards.html": {
+      "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+      "bytes": 20
+    },
+    "analysis/loc/normalized/angular/b1/src/app/cards/cards.ts": {
+      "sha256": "b9c5991016be3c10032a62fcba54ea91866e4f1fadd158d71db1f12b16e47beb",
+      "bytes": 1206
+    },
+    "analysis/loc/normalized/angular/b1/src/app/evolution/evolution.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/evolution/evolution.html": {
+      "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+      "bytes": 24
+    },
+    "analysis/loc/normalized/angular/b1/src/app/evolution/evolution.ts": {
+      "sha256": "c84f203bd872e2adc0cad2ea4fa1dddcd46784302c82e453150a2862c2f01e1c",
+      "bytes": 625
+    },
+    "analysis/loc/normalized/angular/b1/src/app/home/home.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/home/home.html": {
+      "sha256": "38b99e5767d880afb368b089ae90e15ccad2e68a47e50308e7bc2bb174baaf3d",
+      "bytes": 1456
+    },
+    "analysis/loc/normalized/angular/b1/src/app/home/home.ts": {
+      "sha256": "ea7101248b12897bd6f642013f2f158220605107cbe5af62b6cb35d577b70e16",
+      "bytes": 3530
+    },
+    "analysis/loc/normalized/angular/b1/src/app/models.ts": {
+      "sha256": "4000c47f378a480db2c4520e92fa40f4981117f14b91f8346c8fe970e6dd2397",
+      "bytes": 2527
+    },
+    "analysis/loc/normalized/angular/b1/src/app/move-tables/move-tables.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/move-tables/move-tables.html": {
+      "sha256": "1f9953a85db1dbec24ee3c5f162da5f16f0c8bf4ab3bc9ae73b65f3d8328e1b1",
+      "bytes": 1850
+    },
+    "analysis/loc/normalized/angular/b1/src/app/move-tables/move-tables.ts": {
+      "sha256": "249f8bd4bd2e62ad371bcfc7ff441575a565d720c7e68094b47533e2ce7939e9",
+      "bytes": 5466
+    },
+    "analysis/loc/normalized/angular/b1/src/app/not-found/not-found.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/not-found/not-found.html": {
+      "sha256": "dc8309b8d2e845a2988ad1083941a0144fc9708a05288a1a90e563b36ec583e9",
+      "bytes": 24
+    },
+    "analysis/loc/normalized/angular/b1/src/app/not-found/not-found.ts": {
+      "sha256": "6906b13756b5eb6e333c6c957683bd9280ff6e2b9d3d3db114a3842390f8bd4a",
+      "bytes": 331
+    },
+    "analysis/loc/normalized/angular/b1/src/app/pokemon/pokemon.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/pokemon/pokemon.html": {
+      "sha256": "02a471b2b0ecc4bc26e1e194b4742af720c4e4136b0f77eb086546eb1a6d8c54",
+      "bytes": 3016
+    },
+    "analysis/loc/normalized/angular/b1/src/app/pokemon/pokemon.ts": {
+      "sha256": "6e9523136bf990f7d9ef0fa5350c02fda3b2e6e34ebb66c873e81d1efedb3045",
+      "bytes": 2063
+    },
+    "analysis/loc/normalized/angular/b1/src/app/resource-page/resource-page.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/resource-page/resource-page.html": {
+      "sha256": "afe3a7b6bcc2076b8f901fd468c57676b9587a7df61d28d3f2942486a6aa4126",
+      "bytes": 2881
+    },
+    "analysis/loc/normalized/angular/b1/src/app/resource-page/resource-page.ts": {
+      "sha256": "1f4844fc2380d6f3e23e6e61810901cb7b0ca39cc853a83894a8369b210736c5",
+      "bytes": 2815
+    },
+    "analysis/loc/normalized/angular/b1/src/app/type-list/type-list.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b1/src/app/type-list/type-list.html": {
+      "sha256": "edb1a9ce8b849b2ef84079e7969ad21bececa98d74d54aa16f442a3f0d5e5c5f",
+      "bytes": 24
+    },
+    "analysis/loc/normalized/angular/b1/src/app/type-list/type-list.ts": {
+      "sha256": "f99b6892064b19c153187546a9c6d5903c209082be0da7bcb04ee52502450956",
+      "bytes": 791
+    },
+    "analysis/loc/normalized/angular/b1/src/index.html": {
+      "sha256": "b758820fad9ad37ed45e25790ae95e998f18da12cd242527d4ec2ce5cfc5203a",
+      "bytes": 356
+    },
+    "analysis/loc/normalized/angular/b1/src/main.ts": {
+      "sha256": "133e4fd7056eb3df1e0af6a7e2f415254fb9607d6d80959dc37f04a22c190cd6",
+      "bytes": 219
+    },
+    "analysis/loc/normalized/angular/b1/src/styles.css": {
+      "sha256": "f03a6b05ba40ce20711f810badfc9a7067fcd55f836832240a5dec0b8b0f4bfb",
+      "bytes": 7041
+    },
+    "analysis/loc/normalized/angular/b2/server.mjs": {
+      "sha256": "5c0d11c68cfa51cd3f995ddcb2eb97ff3c5e53761746f5fc130e830c464c84d1",
+      "bytes": 1255
+    },
+    "analysis/loc/normalized/angular/b2/src/app/app.config.ts": {
+      "sha256": "177d5e77f954d351513ca29a979b8b04c36dc8c01ee77ae5f300e1fc70fcd1c8",
+      "bytes": 306
+    },
+    "analysis/loc/normalized/angular/b2/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b2/src/app/app.html": {
+      "sha256": "5bf7a7bd956937d0295cbc3f42023a7e9228b71998b1fef290f0421dc4e1f0ff",
+      "bytes": 9299
+    },
+    "analysis/loc/normalized/angular/b2/src/app/app.routes.ts": {
+      "sha256": "bfb8adfd83ee24c958850a8284d41d7085a1b847d90ceb1d900fac1c1e99d9f7",
+      "bytes": 152
+    },
+    "analysis/loc/normalized/angular/b2/src/app/app.ts": {
+      "sha256": "ac88b1af8d832d93b81710389f969906df84dbed4e7f758a5fc4ed8ed3e927d7",
+      "bytes": 7673
+    },
+    "analysis/loc/normalized/angular/b2/src/app/cards/cards.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b2/src/app/cards/cards.html": {
+      "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+      "bytes": 20
+    },
+    "analysis/loc/normalized/angular/b2/src/app/cards/cards.ts": {
+      "sha256": "646f80f383fb70637ed12fa7e92bcef46ab73c5899741effc66b1f62c954e426",
+      "bytes": 991
+    },
+    "analysis/loc/normalized/angular/b2/src/app/data.ts": {
+      "sha256": "96a8365a2693b55bfe8cea9100261b18840c2aa395798ddcc5c7cdcfae8ea90c",
+      "bytes": 2892
+    },
+    "analysis/loc/normalized/angular/b2/src/app/evolution/evolution.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b2/src/app/evolution/evolution.html": {
+      "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+      "bytes": 24
+    },
+    "analysis/loc/normalized/angular/b2/src/app/evolution/evolution.ts": {
+      "sha256": "ef4bef3ba9a70a137c761ff4c91314478e34c7d0df9ee375b628139844ef500e",
+      "bytes": 504
+    },
+    "analysis/loc/normalized/angular/b2/src/app/move-tables/move-tables.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b2/src/app/move-tables/move-tables.html": {
+      "sha256": "b29aa1fb9f50c8f284a90edd18d339940f7fe3015fcf93c9b161e7939cd0b0a7",
+      "bytes": 26
+    },
+    "analysis/loc/normalized/angular/b2/src/app/move-tables/move-tables.ts": {
+      "sha256": "e70907c6f3263bf68d1ef6e3ea465c7efccc14d6ce97757cece846685ef3120d",
+      "bytes": 6314
+    },
+    "analysis/loc/normalized/angular/b2/src/app/shell.ts": {
+      "sha256": "ad59c69f5dde2b06d168a03d3b2fe0f15c1aa6221a121eac1391202812aed052",
+      "bytes": 213
+    },
+    "analysis/loc/normalized/angular/b2/src/index.html": {
+      "sha256": "6bf44994a77d0d1a1cdc4d7aedf2d62cd16c6a8fd722dc0ff8be52bfb72e5dcd",
+      "bytes": 321
+    },
+    "analysis/loc/normalized/angular/b2/src/main.ts": {
+      "sha256": "4490ad8cb37f3d2bead5ddf1ee3d8967ad223bfa7749f89b9c1f914d7714204b",
+      "bytes": 225
+    },
+    "analysis/loc/normalized/angular/b2/src/styles.css": {
+      "sha256": "3d9f370c3af1825110a08bb080e47a9fb5347077176531cc15ba205e68f42958",
+      "bytes": 6888
+    },
+    "analysis/loc/normalized/angular/b3/server.mjs": {
+      "sha256": "4c0866ba00114f21f25b5baf1c08b3516dd01933c468a3c6147a06cbc163a94d",
+      "bytes": 1182
+    },
+    "analysis/loc/normalized/angular/b3/src/app/api.ts": {
+      "sha256": "6304034238f491ad41a483ce877ac266d5d8531506876ffb9024ce80ec894015",
+      "bytes": 1944
+    },
+    "analysis/loc/normalized/angular/b3/src/app/app.config.ts": {
+      "sha256": "6e2091db8c20b18d81b366ea435b6f12948d013d544df262bea9be453b026d5b",
+      "bytes": 195
+    },
+    "analysis/loc/normalized/angular/b3/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b3/src/app/app.html": {
+      "sha256": "01401df6636cda9525b32c9e7c363164d28c2de04da45be99782beb0f563b601",
+      "bytes": 11800
+    },
+    "analysis/loc/normalized/angular/b3/src/app/app.routes.ts": {
+      "sha256": "f219af0ee5514a1ff057dc04830d1901707449992efac0d502d4844b9dbc6a47",
+      "bytes": 77
+    },
+    "analysis/loc/normalized/angular/b3/src/app/app.ts": {
+      "sha256": "ef8c53951d3a1a5819771201c478747ba4138c392b3fb95339412d86c8dee9fe",
+      "bytes": 10518
+    },
+    "analysis/loc/normalized/angular/b3/src/app/cards.ts": {
+      "sha256": "f08314b1ccf66923c4b45d84b53e0f24130116d2e91d978223c3795768a49424",
+      "bytes": 956
+    },
+    "analysis/loc/normalized/angular/b3/src/app/evolution.ts": {
+      "sha256": "b4ab8d70e1c0e1ca7507a63c7faaefea936655c7f7b342576ddf521767100354",
+      "bytes": 534
+    },
+    "analysis/loc/normalized/angular/b3/src/app/models.ts": {
+      "sha256": "d01648c540f614ea1d9d49086af6f528b494033880588b448b20456d7b04b625",
+      "bytes": 1671
+    },
+    "analysis/loc/normalized/angular/b3/src/index.html": {
+      "sha256": "8718549cd78e9dbd917d9b8bd11d86b2f3fb4b7965c996db9c287005a59b37ea",
+      "bytes": 298
+    },
+    "analysis/loc/normalized/angular/b3/src/main.ts": {
+      "sha256": "133e4fd7056eb3df1e0af6a7e2f415254fb9607d6d80959dc37f04a22c190cd6",
+      "bytes": 219
+    },
+    "analysis/loc/normalized/angular/b3/src/styles.css": {
+      "sha256": "f0f53f4da718583df779b13928d3d4fbf6cb39aedca7716630c3b4a55f5465b8",
+      "bytes": 9606
+    },
+    "analysis/loc/normalized/angular/b4/server.mjs": {
+      "sha256": "2f38f35dac9deb6adc401175b33528d7739df27e22044b6f90b4372dff6f8998",
+      "bytes": 1239
+    },
+    "analysis/loc/normalized/angular/b4/src/app/api.ts": {
+      "sha256": "600b9a812ac7a24e2fe4ae368414c0d80d8b57a5a9f527671bbd08a445728328",
+      "bytes": 1763
+    },
+    "analysis/loc/normalized/angular/b4/src/app/app.config.ts": {
+      "sha256": "177d5e77f954d351513ca29a979b8b04c36dc8c01ee77ae5f300e1fc70fcd1c8",
+      "bytes": 306
+    },
+    "analysis/loc/normalized/angular/b4/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b4/src/app/app.html": {
+      "sha256": "0e0d9aa30a5f9a77cb92c7c4ac24887059e1948a42fb180c429529463ba4a70b",
+      "bytes": 20401
+    },
+    "analysis/loc/normalized/angular/b4/src/app/app.routes.ts": {
+      "sha256": "9555792b368ba5887a9eb509544f1fcbb63ce9cf296448627502f9f27e4e3a6f",
+      "bytes": 173
+    },
+    "analysis/loc/normalized/angular/b4/src/app/app.ts": {
+      "sha256": "06977e6584223f1150a603ca8ab3313a6b6375d161e96f530d57b7165b6b19de",
+      "bytes": 582
+    },
+    "analysis/loc/normalized/angular/b4/src/app/cards/cards.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b4/src/app/cards/cards.html": {
+      "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+      "bytes": 20
+    },
+    "analysis/loc/normalized/angular/b4/src/app/cards/cards.ts": {
+      "sha256": "45979778d68b2580ef6293544ba61567fdd6f0f7022e30fe140da8cd34f42351",
+      "bytes": 1082
+    },
+    "analysis/loc/normalized/angular/b4/src/app/evolution/evolution.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b4/src/app/evolution/evolution.html": {
+      "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+      "bytes": 24
+    },
+    "analysis/loc/normalized/angular/b4/src/app/evolution/evolution.ts": {
+      "sha256": "005f3fa639ef92428d862e40a4fa787a603df3230016c3e52a24216c38681d6f",
+      "bytes": 564
+    },
+    "analysis/loc/normalized/angular/b4/src/app/models.ts": {
+      "sha256": "7ba2f998fae7eddb2ca0ca6a9f9a8ee4dc5f92af4b7fcc59c1e574c5b2e583b3",
+      "bytes": 2547
+    },
+    "analysis/loc/normalized/angular/b4/src/app/pages/pages.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "analysis/loc/normalized/angular/b4/src/app/pages/pages.html": {
+      "sha256": "7cfa9db4e97f9afdccdb9bf08d43ee54da60101613b45914cf660324e4769119",
+      "bytes": 11224
+    },
+    "analysis/loc/normalized/angular/b4/src/app/pages/pages.ts": {
+      "sha256": "4de823a4333b69a57e7925ca2e2896d0b1d47b45557658faa02d2bc176cdb914",
+      "bytes": 11036
+    },
+    "analysis/loc/normalized/angular/b4/src/index.html": {
+      "sha256": "6bf44994a77d0d1a1cdc4d7aedf2d62cd16c6a8fd722dc0ff8be52bfb72e5dcd",
+      "bytes": 321
+    },
+    "analysis/loc/normalized/angular/b4/src/main.ts": {
+      "sha256": "133e4fd7056eb3df1e0af6a7e2f415254fb9607d6d80959dc37f04a22c190cd6",
+      "bytes": 219
+    },
+    "analysis/loc/normalized/angular/b4/src/styles.css": {
+      "sha256": "785493e08f3a39fef0ac5c280e4a54e41a349d51600a56f67e8632e4179a85cc",
+      "bytes": 7272
+    },
+    "analysis/loc/normalized/marionette/b1/index.html": {
+      "sha256": "9216358b88125e64535b3eee1b5469fc548cf50f64937096a69814f099722826",
+      "bytes": 286
+    },
+    "analysis/loc/normalized/marionette/b1/main.js": {
+      "sha256": "c96a7b65fd9362792916e159dd3e1e60f72a540357dab8bdfc4549f7f94ceed9",
+      "bytes": 19260
+    },
+    "analysis/loc/normalized/marionette/b1/server.mjs": {
+      "sha256": "e1ebcd006d5fc0eedc9d4dfb6a0ef80a97419fc113383273706b79d8cf53fa74",
+      "bytes": 742
+    },
+    "analysis/loc/normalized/marionette/b1/style.css": {
+      "sha256": "1d492f2e8368d44ce93338d55194202ec62c3e52370f9f027cd1ba9530dae06f",
+      "bytes": 6489
+    },
+    "analysis/loc/normalized/marionette/b1/vite.config.js": {
+      "sha256": "cc433953cca6ad61504246da328b0c84b497ba977891de57c1e9e4f8ab26aeca",
+      "bytes": 206
+    },
+    "analysis/loc/normalized/marionette/b2/index.html": {
+      "sha256": "ac02bcac2f760eb1b36d263dab3603a87dd7da2ccbdbc06374e85f8c7fa9a9af",
+      "bytes": 290
+    },
+    "analysis/loc/normalized/marionette/b2/server.mjs": {
+      "sha256": "d3522299717aca45efe7c419ff9ffb4540b09cd128bb90900587f1523ec13eb3",
+      "bytes": 1157
+    },
+    "analysis/loc/normalized/marionette/b2/src/api.js": {
+      "sha256": "9077331ff4426a24dc809e5bcddbd27d4da65bf917e474a65d4200b4cc2adfe1",
+      "bytes": 1416
+    },
+    "analysis/loc/normalized/marionette/b2/src/main.js": {
+      "sha256": "3f60297dd297d4f61e29a4f077308e3fbcf3db1216492d8aa733ce0a460a9730",
+      "bytes": 16350
+    },
+    "analysis/loc/normalized/marionette/b2/src/style.css": {
+      "sha256": "d27f536b26f5272162d0219173f634e991865b3f88186e5a1b03fcafafcdeee3",
+      "bytes": 6764
+    },
+    "analysis/loc/normalized/marionette/b3/api.js": {
+      "sha256": "363126981731b0ce710937d7a6fb237157eb3a57eaaa7a432d36aac3beabae9a",
+      "bytes": 2260
+    },
+    "analysis/loc/normalized/marionette/b3/index.html": {
+      "sha256": "9216358b88125e64535b3eee1b5469fc548cf50f64937096a69814f099722826",
+      "bytes": 286
+    },
+    "analysis/loc/normalized/marionette/b3/main.js": {
+      "sha256": "7819c5d055230b8a891a06efbfa93affb34b83030ec6af2b02bf6f9af5c52dc3",
+      "bytes": 17157
+    },
+    "analysis/loc/normalized/marionette/b3/server.mjs": {
+      "sha256": "76e843ae9acfe00e776ee2d55672288a5cb973de9f0547bff3a2cf55b9ab75db",
+      "bytes": 1112
+    },
+    "analysis/loc/normalized/marionette/b3/style.css": {
+      "sha256": "e1047d6386e61a54704dd8a62b4c6520a10a50696485b5bb5b45e57e01b4a706",
+      "bytes": 7073
+    },
+    "analysis/loc/normalized/marionette/b4/index.html": {
+      "sha256": "fa38e76cae206cd27ed12c0b0860034012791e5531ebf01c9d602c29d1457452",
+      "bytes": 289
+    },
+    "analysis/loc/normalized/marionette/b4/main.js": {
+      "sha256": "6d23d4b661e8cf68f04a97ba049a13c3cb06d51acbc74c13717254c6e9ebd9d9",
+      "bytes": 19467
+    },
+    "analysis/loc/normalized/marionette/b4/server.mjs": {
+      "sha256": "91a77b320fb1fb7994657258c4db1bf14a2c9c9e60e2175e638672a7c8c0da86",
+      "bytes": 1089
+    },
+    "analysis/loc/normalized/marionette/b4/style.css": {
+      "sha256": "eb805550016433380e16a58206b19add40ecaf07c04ce34fac8071f0b4115715",
+      "bytes": 7316
+    },
+    "analysis/loc/normalized/nuxt/b1/app/app.vue": {
+      "sha256": "1caf6ff34e3d3b1b17f7aaa1e4e03b4b193859ef2b49e3cb2fcbb90855215c36",
+      "bytes": 11533
+    },
+    "analysis/loc/normalized/nuxt/b1/app/assets/main.css": {
+      "sha256": "244fa6537bbd980210263123880515bdd631f7c80c816736ce4f4d01104a99ed",
+      "bytes": 6401
+    },
+    "analysis/loc/normalized/nuxt/b1/app/components/Cards.vue": {
+      "sha256": "36ab6d66442828853d8c79e57f7bcad7fbf5cc7d6fc5186a9c4f5a4ec0fd1076",
+      "bytes": 906
+    },
+    "analysis/loc/normalized/nuxt/b1/app/components/Evolution.vue": {
+      "sha256": "dd3b61d5e7ed32536d52d8bd509aa291e2ee2da06e5de06f0f7fc9c3a04dba75",
+      "bytes": 385
+    },
+    "analysis/loc/normalized/nuxt/b1/app/components/MoveTable.vue": {
+      "sha256": "91c6aaf5ba6f53bb799fd680a65af667d38cc2c80131d40512367142e60a3c91",
+      "bytes": 2196
+    },
+    "analysis/loc/normalized/nuxt/b1/app/pages/[...slug].vue": {
+      "sha256": "9ad562f9d14f7b6fc38257d8cd05511af78a091b664b2074cf437c1f4209c335",
+      "bytes": 29
+    },
+    "analysis/loc/normalized/nuxt/b1/nuxt.config.ts": {
+      "sha256": "cb835f747d86d3896286c54c074b4291da5d7780e17e43c58fab283fb7981054",
+      "bytes": 221
+    },
+    "analysis/loc/normalized/nuxt/b1/server/api/dex.get.ts": {
+      "sha256": "e07aa6c057c46276a331277c19cec62de329ac31907e14d5db82065912acc1b5",
+      "bytes": 4176
+    },
+    "analysis/loc/normalized/nuxt/b1/server/api/sprite.get.ts": {
+      "sha256": "58e7a163252065ca9683005d271b6c870bab830562b1d04bf27ceced290525b5",
+      "bytes": 246
+    },
+    "analysis/loc/normalized/nuxt/b2/app/app.vue": {
+      "sha256": "681f55c1056c5ab96f1116446afc5d1cbe16dae70250e2e9a5c4f0b6aa812d37",
+      "bytes": 333
+    },
+    "analysis/loc/normalized/nuxt/b2/app/assets/main.css": {
+      "sha256": "dd83d9ff8e3835877f9d7e30ade70bb7fdedbb7aca6ed8e29d9ef4a7e84e8c6c",
+      "bytes": 6745
+    },
+    "analysis/loc/normalized/nuxt/b2/app/components/EvolutionTree.vue": {
+      "sha256": "cfbf56b56e67b1911b560191174c222a227bf8f0bf722bf42ba0ad63e11fd089",
+      "bytes": 436
+    },
+    "analysis/loc/normalized/nuxt/b2/app/components/MoveTable.vue": {
+      "sha256": "7219e2156e07b274be13bc558e51f95364b44f3319b832e996abdb1fe85a5888",
+      "bytes": 2137
+    },
+    "analysis/loc/normalized/nuxt/b2/app/components/PokemonCards.vue": {
+      "sha256": "61a355870b4eeceb01779187707900af459a38705fa28918a87fb4638da242ad",
+      "bytes": 688
+    },
+    "analysis/loc/normalized/nuxt/b2/app/components/TypeBadge.vue": {
+      "sha256": "6c2348301fe0b757e86d50f84c084980563473cc1764c20195b8d4bed3b74a87",
+      "bytes": 408
+    },
+    "analysis/loc/normalized/nuxt/b2/app/pages/[...slug].vue": {
+      "sha256": "33e8b15b0ec7a3248d6c1f183870fc9d68758ac1ab2eb009d16075d4917cc8bc",
+      "bytes": 10124
+    },
+    "analysis/loc/normalized/nuxt/b2/nuxt.config.ts": {
+      "sha256": "d959b4a8edf163449f61e0cb19b2f3ad11e861ed30dd5cabe2d4d54c4e6070aa",
+      "bytes": 206
+    },
+    "analysis/loc/normalized/nuxt/b2/server/api/page.get.ts": {
+      "sha256": "16b9bf4bad7fff17d560c2254918d5ad4ac59fc06e6e51cf3366d5c7cd0aef86",
+      "bytes": 6340
+    },
+    "analysis/loc/normalized/nuxt/b3/app/assets/style.css": {
+      "sha256": "eb0e50074bbe8153edbd774d73c0f8c25d57a9344bfdadb964e61e7864fce5f5",
+      "bytes": 6619
+    },
+    "analysis/loc/normalized/nuxt/b3/app/components/EvolutionTree.vue": {
+      "sha256": "91890d01aa79a47599ac44ffb053c2c0f74824c8858ad231fa234580498ae547",
+      "bytes": 431
+    },
+    "analysis/loc/normalized/nuxt/b3/app/components/MoveTable.vue": {
+      "sha256": "9aa961bd4cd5429c08db5a9151316e14b39e8a1a49a6cbe2ec9a7512c8991368",
+      "bytes": 2334
+    },
+    "analysis/loc/normalized/nuxt/b3/app/components/PokeCards.vue": {
+      "sha256": "89d54e0a4caf28760761ad61bee8ca8ed6204453ef6f660e2e3d888c01269867",
+      "bytes": 802
+    },
+    "analysis/loc/normalized/nuxt/b3/app/pages/[...slug].vue": {
+      "sha256": "ee5784c56a7aa0fe07dd42cea6cba05392a6d5fb6ba7b349984f58e3f2e3946d",
+      "bytes": 11587
+    },
+    "analysis/loc/normalized/nuxt/b3/nuxt.config.ts": {
+      "sha256": "066366d8e845cd68d1524b610debf596b1e1748228c3ffe8b653d063a2cc7f3d",
+      "bytes": 265
+    },
+    "analysis/loc/normalized/nuxt/b3/server/api/page.get.ts": {
+      "sha256": "31c785cc8c2173c2c75bd32d198761948b57b423dc1ddc4b52725216f898d534",
+      "bytes": 3809
+    },
+    "analysis/loc/normalized/nuxt/b4/app/app.vue": {
+      "sha256": "118e76c5c824a5b393bce778de5732f29fd052db7e9294361c82391e897da6fd",
+      "bytes": 394
+    },
+    "analysis/loc/normalized/nuxt/b4/app/assets/main.css": {
+      "sha256": "50efff03c080cdfba7229ed4969ad9ccc501d3f772d276c54dc6855156c62bee",
+      "bytes": 5528
+    },
+    "analysis/loc/normalized/nuxt/b4/app/components/EvolutionTree.vue": {
+      "sha256": "cd8db4ee85ba6c89c8e584609524f77e778fb4a6bd8dc33e4124b2ca87ab3810",
+      "bytes": 437
+    },
+    "analysis/loc/normalized/nuxt/b4/app/components/MoveTable.vue": {
+      "sha256": "46a688fed67328b4872471c19c0ef6b9bc49c0665fabbc9d71c76dd449e7213f",
+      "bytes": 2049
+    },
+    "analysis/loc/normalized/nuxt/b4/app/components/PokemonCards.vue": {
+      "sha256": "0269b4581a73084bdcbf12fcc33e518f6a1e587d7f2fac19367dd2bd5dd76c99",
+      "bytes": 741
+    },
+    "analysis/loc/normalized/nuxt/b4/app/components/TypeBadge.vue": {
+      "sha256": "9e32c338e6006a84bec838d1c3c1db843e5566c0f65e193c5fb853cf562c1709",
+      "bytes": 500
+    },
+    "analysis/loc/normalized/nuxt/b4/app/pages/[...slug].vue": {
+      "sha256": "d57cfafdc03ef15dabc126a170a857e6902b3d08e756802814eb0739af522abf",
+      "bytes": 9460
+    },
+    "analysis/loc/normalized/nuxt/b4/nuxt.config.ts": {
+      "sha256": "a0c1b3f2bc78b80f506ead3722594f848ee7fea8a6b0c0583e2bd4019e6e8654",
+      "bytes": 174
+    },
+    "analysis/loc/normalized/nuxt/b4/server/api/page.get.ts": {
+      "sha256": "8e87feec0806b81f15a48075a69701b0bcd5bf42012510b1ee921a5674275a48",
+      "bytes": 6373
+    },
+    "analysis/loc/normalized/react-router/b1/app/api.server.ts": {
+      "sha256": "2b486d91fdb46ddca2c0a4f51eb6ef305dd0f3ff2749e2ae59ecb489bee1f67d",
+      "bytes": 5013
+    },
+    "analysis/loc/normalized/react-router/b1/app/page.tsx": {
+      "sha256": "9f808ea7330c7aae73751cca966b3bea04d0a75c459fdd2abbb82d8f154f6f39",
+      "bytes": 14198
+    },
+    "analysis/loc/normalized/react-router/b1/app/root.tsx": {
+      "sha256": "12aaab81c5e6e9f7c81a87b9063f44a79c0abe017faaaef9864013add3d60d7a",
+      "bytes": 875
+    },
+    "analysis/loc/normalized/react-router/b1/app/routes.ts": {
+      "sha256": "0812086f9173b194cc8373232a79c0b040da60f73989e866458292113be7ef86",
+      "bytes": 156
+    },
+    "analysis/loc/normalized/react-router/b1/app/style.css": {
+      "sha256": "6a6d91ca7e91f39cd204fceae59ce7f4809f4d5bcb91275844d2b910ae45cc15",
+      "bytes": 6270
+    },
+    "analysis/loc/normalized/react-router/b1/vite.config.ts": {
+      "sha256": "aa7eb793a788f461075b050364a0bb68e1d3834834445f60d39d5162e0b83f11",
+      "bytes": 150
+    },
+    "analysis/loc/normalized/react-router/b2/app/api.server.ts": {
+      "sha256": "f7cc2a7d399e07b378fd9ff1b6ef99a7583620916b2793f2a18f07106e928cb2",
+      "bytes": 1433
+    },
+    "analysis/loc/normalized/react-router/b2/app/root.tsx": {
+      "sha256": "107c4b26402ff69a8f257ffe9eedf53a85ede6448a37a2bce6850894c8fc6c27",
+      "bytes": 925
+    },
+    "analysis/loc/normalized/react-router/b2/app/routes/detail.tsx": {
+      "sha256": "a678a5541e9751c57e3d460e21aabe17257f6780a59b75f18e127eaf46fd3ff4",
+      "bytes": 3254
+    },
+    "analysis/loc/normalized/react-router/b2/app/routes/home.tsx": {
+      "sha256": "d5c341127167aa9f04f71ab947344d068c5d28b5ea8bdfcec6d37f616aecf798",
+      "bytes": 3674
+    },
+    "analysis/loc/normalized/react-router/b2/app/routes/missing.tsx": {
+      "sha256": "896069d70287578715016cf65ab75954db9b8d48a4664e899764d45499817341",
+      "bytes": 122
+    },
+    "analysis/loc/normalized/react-router/b2/app/routes/pokemon.tsx": {
+      "sha256": "43f9b5d81651421a321c59180a78e811da51cdadcf3e9f701c7a3c35846dfe3b",
+      "bytes": 8162
+    },
+    "analysis/loc/normalized/react-router/b2/app/routes/types.tsx": {
+      "sha256": "0f58ce50931cee2ca8c74a89456a8ae7800ee6620982f27935097a75ab2d1f58",
+      "bytes": 688
+    },
+    "analysis/loc/normalized/react-router/b2/app/routes.ts": {
+      "sha256": "392c136a7434fd0c9ba7527d7af39f182deff9d2fd9ea52d49bcfbcd15b2b819",
+      "bytes": 272
+    },
+    "analysis/loc/normalized/react-router/b2/app/style.css": {
+      "sha256": "f476933687be1e579c1ad16da219a9cc2ea26c8ed1ca6dff120bc3d4435b44bc",
+      "bytes": 6572
+    },
+    "analysis/loc/normalized/react-router/b2/app/ui.tsx": {
+      "sha256": "956f40ade4ac32ac2b66492edd72721ff6fc7881ea2488b22dadbebdc0cf7393",
+      "bytes": 2129
+    },
+    "analysis/loc/normalized/react-router/b2/vite.config.ts": {
+      "sha256": "aa7eb793a788f461075b050364a0bb68e1d3834834445f60d39d5162e0b83f11",
+      "bytes": 150
+    },
+    "analysis/loc/normalized/react-router/b3/app/api.server.ts": {
+      "sha256": "158e4ba832eb36b69646655252973513b8ba433cc9dbc049f8f61076630aa9e7",
+      "bytes": 5911
+    },
+    "analysis/loc/normalized/react-router/b3/app/page.tsx": {
+      "sha256": "df0d86dbba21ec42106a73dc04d793603d39a2581cc79bc02fc238bab58cba63",
+      "bytes": 15899
+    },
+    "analysis/loc/normalized/react-router/b3/app/root.tsx": {
+      "sha256": "cea3cfd1486835c9c6c590d747440e66ad5a98571854fe8aeb6dc4792efce771",
+      "bytes": 977
+    },
+    "analysis/loc/normalized/react-router/b3/app/routes.ts": {
+      "sha256": "049900ddebae33465371dcb48fe0e6d541f1803331c0e19478f12fac1f94ea62",
+      "bytes": 410
+    },
+    "analysis/loc/normalized/react-router/b3/app/style.css": {
+      "sha256": "a4245212a5dbb9407f1fed9803dd78d9e73985f5aa64fe7701d8b00fe4f7914c",
+      "bytes": 7380
+    },
+    "analysis/loc/normalized/react-router/b3/vite.config.ts": {
+      "sha256": "aa7eb793a788f461075b050364a0bb68e1d3834834445f60d39d5162e0b83f11",
+      "bytes": 150
+    },
+    "analysis/loc/normalized/react-router/b4/app/api.server.ts": {
+      "sha256": "d133a04786f6e0a2cfb36de8aeb5adf5111dfbf7889ef77c5bc61d4130d07fa6",
+      "bytes": 4658
+    },
+    "analysis/loc/normalized/react-router/b4/app/home.tsx": {
+      "sha256": "c6635ca2d879c94bb28448b1a85cbafbc6356fce7dab7df0cd80d5eb20638eb2",
+      "bytes": 63
+    },
+    "analysis/loc/normalized/react-router/b4/app/page.tsx": {
+      "sha256": "8302028be3e6f3bd0c75b1bab7a1942c2da0166e82f126cb0d1c52856782ae8a",
+      "bytes": 14202
+    },
+    "analysis/loc/normalized/react-router/b4/app/root.tsx": {
+      "sha256": "e9e7b73693cf84f8ab9827889dc2d9de2f8f60391b5e1820335d759ee7fe01c7",
+      "bytes": 852
+    },
+    "analysis/loc/normalized/react-router/b4/app/routes.ts": {
+      "sha256": "ea247c981ba60df6f7103b190345d194630e940f075252aed36481d1e2f8f1b1",
+      "bytes": 117
+    },
+    "analysis/loc/normalized/react-router/b4/app/style.css": {
+      "sha256": "371fa02213b4893c5c1b9a2c52299679cf133e95bacdbe366190a1e4668047a5",
+      "bytes": 6047
+    },
+    "analysis/loc/normalized/react-router/b4/vite.config.ts": {
+      "sha256": "aa7eb793a788f461075b050364a0bb68e1d3834834445f60d39d5162e0b83f11",
+      "bytes": 150
+    },
+    "analysis/loc/normalized/sveltekit/b1/src/app.html": {
+      "sha256": "260c0040233e5ba93fd9e64c8127a20c15ff4602053ba045ad64842f702f7547",
+      "bytes": 298
+    },
+    "analysis/loc/normalized/sveltekit/b1/src/lib/Cards.svelte": {
+      "sha256": "53c53098b4a7bb99991957b38651f166554c3c15136c8eb7d4434347c33d5ba5",
+      "bytes": 811
+    },
+    "analysis/loc/normalized/sveltekit/b1/src/lib/MoveTable.svelte": {
+      "sha256": "06b32f3b59d890d235bb88127aaf02e9ce2ece29fbd67cd63b2b3ae8a307ab67",
+      "bytes": 2170
+    },
+    "analysis/loc/normalized/sveltekit/b1/src/lib/api.js": {
+      "sha256": "8f997aca1d424aabebbc2037c78f1c44f732a4f1032b7ff5fd856733b26a987d",
+      "bytes": 5683
+    },
+    "analysis/loc/normalized/sveltekit/b1/src/lib/style.css": {
+      "sha256": "2a8062510cb955f3635139803b90a6f8b2d181cb0c12924399af95066d9cde47",
+      "bytes": 6009
+    },
+    "analysis/loc/normalized/sveltekit/b1/src/routes/[...path]/+page.server.js": {
+      "sha256": "13f0f1b72ed69d17f905d053bb35db9c728cfacb027e171c2d4ac4436379750b",
+      "bytes": 209
+    },
+    "analysis/loc/normalized/sveltekit/b1/src/routes/[...path]/+page.svelte": {
+      "sha256": "3195850e6adc67c87664d895fb8bf744da8de398d5b2ae45800f3bcb3b96e48d",
+      "bytes": 10148
+    },
+    "analysis/loc/normalized/sveltekit/b1/vite.config.js": {
+      "sha256": "4298cd38a4acd6c4c793cf8ed16b3fae6c1ff4e408509b403a4697f57a23ab43",
+      "bytes": 159
+    },
+    "analysis/loc/normalized/sveltekit/b2/src/app.html": {
+      "sha256": "260c0040233e5ba93fd9e64c8127a20c15ff4602053ba045ad64842f702f7547",
+      "bytes": 298
+    },
+    "analysis/loc/normalized/sveltekit/b2/src/lib/Cards.svelte": {
+      "sha256": "d44e60f37c6c7afadb67c3c7eb205b21d1bcc0308313981512765f5ef2edb5f8",
+      "bytes": 701
+    },
+    "analysis/loc/normalized/sveltekit/b2/src/lib/MoveTable.svelte": {
+      "sha256": "e54ba65564078729791a1b44c3da844a9803e1c87acfbf27c51c00e6867b9977",
+      "bytes": 1835
+    },
+    "analysis/loc/normalized/sveltekit/b2/src/lib/style.css": {
+      "sha256": "bbcd4b6f67910b9e3e44785d263a6be628bb4b98aeac1719c72d46bc5e1e99ed",
+      "bytes": 6015
+    },
+    "analysis/loc/normalized/sveltekit/b2/src/lib/utils.js": {
+      "sha256": "c1857542892d4e61d16ad8d2a13eab2afb4ac21e46fd1ec58058e391abf9b54d",
+      "bytes": 453
+    },
+    "analysis/loc/normalized/sveltekit/b2/src/routes/[...path]/+page.server.js": {
+      "sha256": "e675724d7fd5fe41b0aa3a62be03779a5507d57a4ccd7b60238c2c03b0528eed",
+      "bytes": 6946
+    },
+    "analysis/loc/normalized/sveltekit/b2/src/routes/[...path]/+page.svelte": {
+      "sha256": "53da94386070ba67db1480e0ce585fd03cc30513523c37cb8722e814855addf4",
+      "bytes": 8990
+    },
+    "analysis/loc/normalized/sveltekit/b2/vite.config.js": {
+      "sha256": "1ed9211ae37c07d585ec495c9efc2187a256b9bad9411642eba8d32e02bf13b0",
+      "bytes": 210
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/app.html": {
+      "sha256": "260c0040233e5ba93fd9e64c8127a20c15ff4602053ba045ad64842f702f7547",
+      "bytes": 298
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/lib/Cards.svelte": {
+      "sha256": "647bac1b7fcb1cd618b2998ae604722b5d8be21c3a21d3a7a7cffb56e9749f27",
+      "bytes": 746
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/lib/MoveTable.svelte": {
+      "sha256": "41c8327d6d2ceee79d3ec8f3de089a98d38fb2d293ac5622950adcae2ba498f1",
+      "bytes": 2040
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/lib/api.js": {
+      "sha256": "91b15b02208ff90888f206cc444f2dae34c4a9ef65898456524ad599fef1e8de",
+      "bytes": 6461
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/lib/style.css": {
+      "sha256": "97c8fe1227c477bed9483b2926fa602ee563352412f1e0379a688ba13e472990",
+      "bytes": 6431
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/lib/utils.js": {
+      "sha256": "706a02231f4555dea33e123c0cff959530d6c396774577c92aa9cd1ec3e57d71",
+      "bytes": 541
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/routes/[...path]/+page.server.js": {
+      "sha256": "0ec869867e2b203d26fb4e8a2bf523fe14e574405c6063d92a9f76916ef1fefb",
+      "bytes": 188
+    },
+    "analysis/loc/normalized/sveltekit/b3/src/routes/[...path]/+page.svelte": {
+      "sha256": "4f6a46d8ebc5b0e2f41ab9fe8ce489406fa621e8dbfc1e0c39b337498cecd61e",
+      "bytes": 9059
+    },
+    "analysis/loc/normalized/sveltekit/b3/vite.config.js": {
+      "sha256": "1ed9211ae37c07d585ec495c9efc2187a256b9bad9411642eba8d32e02bf13b0",
+      "bytes": 210
+    },
+    "analysis/loc/normalized/sveltekit/b4/src/app.html": {
+      "sha256": "260c0040233e5ba93fd9e64c8127a20c15ff4602053ba045ad64842f702f7547",
+      "bytes": 298
+    },
+    "analysis/loc/normalized/sveltekit/b4/src/lib/Cards.svelte": {
+      "sha256": "39b32ddd4f66a8a0aa697e6586f3b1ad65e40225e13c777a990c2ae823d374cd",
+      "bytes": 767
+    },
+    "analysis/loc/normalized/sveltekit/b4/src/lib/MoveTable.svelte": {
+      "sha256": "598f636f30ae4318573b96bbbf8a4c036bfb612276c5e0449932ef824ae724f0",
+      "bytes": 1845
+    },
+    "analysis/loc/normalized/sveltekit/b4/src/lib/app.css": {
+      "sha256": "1924bbb8304f98b1b4a1eb4100749fc4eefb6065cff4dc3482ddaaa2fe805b5b",
+      "bytes": 6639
+    },
+    "analysis/loc/normalized/sveltekit/b4/src/lib/utils.js": {
+      "sha256": "052ae6f8c59cfc55cb16440c4cfecfbc5cf1643369e30ebed8c9142c88dac491",
+      "bytes": 503
+    },
+    "analysis/loc/normalized/sveltekit/b4/src/routes/[...path]/+page.server.js": {
+      "sha256": "9faed98084728b060fa451f3f4f4f92abea4483abdae04dc9cde40f0a3bc4bca",
+      "bytes": 7076
+    },
+    "analysis/loc/normalized/sveltekit/b4/src/routes/[...path]/+page.svelte": {
+      "sha256": "cf7d2438f5fcfd576fa86ca3f04ec52766b6abb5a74d0a3f0523d865ba384ba2",
+      "bytes": 9247
+    },
+    "analysis/loc/normalized/sveltekit/b4/vite.config.js": {
+      "sha256": "ad4034fd42e5eaae081f558fbcfa4552e6468be76b3dbc7b8c6d86c4ca5c2484",
+      "bytes": 210
+    },
+    "analysis/loc/normalized/vanilla/b1/index.html": {
+      "sha256": "0580cf451c94f70759b8a07f453db222e2c2568a5665bd26392bbfa248713068",
+      "bytes": 573
+    },
+    "analysis/loc/normalized/vanilla/b1/main.js": {
+      "sha256": "f18aa4a8905eff9478ab867f20aef7f78af7a0ff89e5b26d4a410f52c4ce2c31",
+      "bytes": 14191
+    },
+    "analysis/loc/normalized/vanilla/b1/server.mjs": {
+      "sha256": "735a07122c97e79a11f99047c509b1baddd3efc8e5534b34abe93b15917ddfce",
+      "bytes": 805
+    },
+    "analysis/loc/normalized/vanilla/b1/style.css": {
+      "sha256": "1598834383d80186dee6e6039752906aa59b84210db3cf0056b238a5090658ff",
+      "bytes": 7363
+    },
+    "analysis/loc/normalized/vanilla/b1/vite.config.js": {
+      "sha256": "47f0b775b3a251ef35a927865ac7cc299844ac9b556a2269644cf0be1293103e",
+      "bytes": 183
+    },
+    "analysis/loc/normalized/vanilla/b2/index.html": {
+      "sha256": "1ad6a3fa4a7da712286cd123e1c2648a66ada5c3af43fa76ad76c875cd52e5d8",
+      "bytes": 632
+    },
+    "analysis/loc/normalized/vanilla/b2/server.mjs": {
+      "sha256": "ce63edc807e95e4925360dc8b3cf450e27a3fcc99ab3a7592063eb8ea7c9d3e9",
+      "bytes": 1026
+    },
+    "analysis/loc/normalized/vanilla/b2/src.js": {
+      "sha256": "2548b692443a3b083327fa5f767f6ed9ed5be8047ff692ef5d813a50e2161f59",
+      "bytes": 14423
+    },
+    "analysis/loc/normalized/vanilla/b2/style.css": {
+      "sha256": "90d88238c6249661d704bf19f269c2cd38dfaa84af2b2d5a6302dda70cfec858",
+      "bytes": 6357
+    },
+    "analysis/loc/normalized/vanilla/b3/index.html": {
+      "sha256": "3c9e071aaf59bdf93b42dcf106f713c8fbabb04fc6ee204f5fa517a30b7979c1",
+      "bytes": 613
+    },
+    "analysis/loc/normalized/vanilla/b3/main.js": {
+      "sha256": "395f8c522f1d2615b9c27e8666877bfb56ba375cafa383b413cb0aa31e90ca58",
+      "bytes": 15978
+    },
+    "analysis/loc/normalized/vanilla/b3/server.mjs": {
+      "sha256": "c5f2da4d9b1191b575bbd6e5f87fc3e98249197d6afdabf85c9fd10521ba969b",
+      "bytes": 1031
+    },
+    "analysis/loc/normalized/vanilla/b3/style.css": {
+      "sha256": "7e322cbc93d5c0ddbe4e7ffcf83b0f546349915f51cd9d70e60dcfbabec8ca2e",
+      "bytes": 6757
+    },
+    "analysis/loc/normalized/vanilla/b4/index.html": {
+      "sha256": "a79490650663e5c350492158923660f91c757033a8265adcfef4a8674090ca88",
+      "bytes": 611
+    },
+    "analysis/loc/normalized/vanilla/b4/server.mjs": {
+      "sha256": "5e49ff58a894b576d51ddfa4aff5101c94485643c86fbcf8e556e2780535cfaf",
+      "bytes": 1051
+    },
+    "analysis/loc/normalized/vanilla/b4/src.js": {
+      "sha256": "8d5f918819e6b94b9f08d059ea1638911daf6fa9b99d84940fab278a0b90e83b",
+      "bytes": 15457
+    },
+    "analysis/loc/normalized/vanilla/b4/style.css": {
+      "sha256": "6ffff8fa1cd97140545babe0b307495aa6468e3bf5e0542692151b2ad2756bd5",
+      "bytes": 7385
+    },
+    "analysis/loc/package-lock.json": {
+      "sha256": "6c57ab600c855e1c3f171d0c919a84b7c651d20fe6ce876ccf4f5064c825f082",
+      "bytes": 8727
+    },
+    "analysis/loc/package.json": {
+      "sha256": "362170ed011f445d4ab57db044c761be4538754af59027fd74cf89834d351622",
+      "bytes": 155
+    },
+    "analysis/loc/policy.json": {
+      "sha256": "5a33e5aa204832e84f89b7dc360436880f28fbeefda387129c72b15575be0b98",
+      "bytes": 3375
+    },
+    "analysis/loc/source-selection.json": {
+      "sha256": "c012876f087af756b1ef345892393442a6006b3069b42b10a045a2244a30e5ec",
+      "bytes": 90491
+    },
+    "analysis/loc/summary.json": {
+      "sha256": "a42daaa9f7fa3b9b0f1d8c3e7ef407034ab1e6cd166c40d2b94377911a3dea04",
+      "bytes": 1260
+    },
+    "angular/b1/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "angular/b1/agent/final-test.stdout": {
+      "sha256": "73a5e92c2c58574e2f4caf3a2c49166a63a111862201d424071c3db3360ebb82",
+      "bytes": 7423
+    },
+    "angular/b1/agent/native-timing-usage.json": {
+      "sha256": "78533156fcc3423f8209b36175fc93f12b3e5b8b3500440a1f17246a4f8681d6",
+      "bytes": 1310
+    },
+    "angular/b1/agent/prompt.txt": {
+      "sha256": "3456d7ee621e0837ad8a0a2d4a4e01addf95dba3fd31e6044e16981b68e85f37",
+      "bytes": 127
+    },
+    "angular/b1/agent/run-info.json": {
+      "sha256": "4fc74b55984bfa350560d3ff9a2181a617cb4a3c06b71e5b905452faba3e3d30",
+      "bytes": 1467
+    },
+    "angular/b1/agent/tooling.json": {
+      "sha256": "d6b7d8e0f1b86589d4a314bda4cb0fc52bd788ca6b76b4647285f9a597ae7025",
+      "bytes": 2040
+    },
+    "angular/b1/measure/lighthouse/home-mobile.json": {
+      "sha256": "27145db9e0d237dc67b6520ae0caa0a9d8fac356af11096bd830db0e5845bf3a",
+      "bytes": 371610
+    },
+    "angular/b1/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "1aae56e9a1187e0e44b381990a4b5de49788259b0cced1a368b4177836f240c3",
+      "bytes": 406956
+    },
+    "angular/b1/measure/results.json": {
+      "sha256": "82eeb55beef73a4568bcc7bbf0136127b85b547a71ad817237ec36cbda52ee3d",
+      "bytes": 16414
+    },
+    "angular/b1/measure/source-counts.json": {
+      "sha256": "62356a974f3f8b2b06b8887189fbc0d5a4ac5824b1ec9f0c58f51991f975ba6d",
+      "bytes": 199
+    },
+    "angular/b1/repo/app/.gitignore": {
+      "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+      "bytes": 622
+    },
+    "angular/b1/repo/app/.vscode/extensions.json": {
+      "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+      "bytes": 130
+    },
+    "angular/b1/repo/app/.vscode/launch.json": {
+      "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+      "bytes": 470
+    },
+    "angular/b1/repo/app/.vscode/tasks.json": {
+      "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+      "bytes": 978
+    },
+    "angular/b1/repo/app/angular.json": {
+      "sha256": "94bcb6aa00cec1a6b35705f01c4105c9480537e2891fda37fae65b68015f40c7",
+      "bytes": 1894
+    },
+    "angular/b1/repo/app/package-lock.json": {
+      "sha256": "ae495e28209bdd63d3135c266de1325eac3ab62eccbdb76404587ce7a42f8707",
+      "bytes": 227363
+    },
+    "angular/b1/repo/app/package.json": {
+      "sha256": "0f7e557e5757d8b6a8c8f6eaa8a2c25c4283f7139ccc94cec36aa683073123c8",
+      "bytes": 786
+    },
+    "angular/b1/repo/app/server.mjs": {
+      "sha256": "0453819797c7a2b9ee03101d07e3a998f02478048df9594600ba8ad143b24bbc",
+      "bytes": 1128
+    },
+    "angular/b1/repo/app/src/app/api.ts": {
+      "sha256": "7a1c02215b14bf55547ef91860fb3cfea15d460386f5b2be5e0d48faae0f04af",
+      "bytes": 1877
+    },
+    "angular/b1/repo/app/src/app/app.config.ts": {
+      "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+      "bytes": 312
+    },
+    "angular/b1/repo/app/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/app.html": {
+      "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+      "bytes": 20144
+    },
+    "angular/b1/repo/app/src/app/app.routes.ts": {
+      "sha256": "6545ce434022dc50f53f29274e550753af412d2a94127ca351a696bf1fbb7d65",
+      "bytes": 623
+    },
+    "angular/b1/repo/app/src/app/app.spec.ts": {
+      "sha256": "ffbf40d8dece008651f3d4fd6ab4fda9f0034260635f862b6e5e66d9cd11e4ab",
+      "bytes": 677
+    },
+    "angular/b1/repo/app/src/app/app.ts": {
+      "sha256": "b781692cd1f78635a6771389f1dc090aba3fe4a9cd0d0499938ea54db8752a7e",
+      "bytes": 530
+    },
+    "angular/b1/repo/app/src/app/cards/cards.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/cards/cards.html": {
+      "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+      "bytes": 20
+    },
+    "angular/b1/repo/app/src/app/cards/cards.spec.ts": {
+      "sha256": "ab565617ef2a3fdcaadab4aa946c4f89d2496af1060d16364d37655dc2bf5a3b",
+      "bytes": 519
+    },
+    "angular/b1/repo/app/src/app/cards/cards.ts": {
+      "sha256": "ef2641133de17adc0d15ade45d52486cea4514574f39d86f6a33c8cbbff6cbe1",
+      "bytes": 821
+    },
+    "angular/b1/repo/app/src/app/evolution/evolution.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/evolution/evolution.html": {
+      "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+      "bytes": 24
+    },
+    "angular/b1/repo/app/src/app/evolution/evolution.spec.ts": {
+      "sha256": "7a9192fc61ce1fa441bcea4108ea91b528a1ca0877b41920432d4e4d960f29ea",
+      "bytes": 547
+    },
+    "angular/b1/repo/app/src/app/evolution/evolution.ts": {
+      "sha256": "9cd9d9794885e9f2ad9c7a7b9ca55fa2b00552a3824c359ee62c564815bfaa22",
+      "bytes": 500
+    },
+    "angular/b1/repo/app/src/app/home/home.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/home/home.html": {
+      "sha256": "f6037309c94506abb3218925306a2a44f5ee943ab0872d2952d3da884b69a83a",
+      "bytes": 1137
+    },
+    "angular/b1/repo/app/src/app/home/home.spec.ts": {
+      "sha256": "b23e52002088ea8a28428f5a5d1527f4792a93ceaa62b3d569c22ac6a457baa5",
+      "bytes": 512
+    },
+    "angular/b1/repo/app/src/app/home/home.ts": {
+      "sha256": "554b8c63a6f4c60c05a10bd535695206534b22968983da08a5d1d77fbad76ac5",
+      "bytes": 2796
+    },
+    "angular/b1/repo/app/src/app/models.ts": {
+      "sha256": "443b7df87b1c1d2185494e796d41a6a7fe6b4be9590c2e6cc4429734a3d4fcc8",
+      "bytes": 2312
+    },
+    "angular/b1/repo/app/src/app/move-tables/move-tables.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/move-tables/move-tables.html": {
+      "sha256": "c759416b23e18137c882381ff04a9fa49c6e68aeaa57c62045b91077fa0960f1",
+      "bytes": 1028
+    },
+    "angular/b1/repo/app/src/app/move-tables/move-tables.spec.ts": {
+      "sha256": "25ebe4f5523a4e6e83a7eb71264447ca33bad3be428292a076531d063a65ca63",
+      "bytes": 555
+    },
+    "angular/b1/repo/app/src/app/move-tables/move-tables.ts": {
+      "sha256": "939f9f740e1823c71bcf43117da583f2d1bc8e1803f74b9cb766c77375fc2102",
+      "bytes": 4106
+    },
+    "angular/b1/repo/app/src/app/not-found/not-found.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/not-found/not-found.html": {
+      "sha256": "dc8309b8d2e845a2988ad1083941a0144fc9708a05288a1a90e563b36ec583e9",
+      "bytes": 24
+    },
+    "angular/b1/repo/app/src/app/not-found/not-found.spec.ts": {
+      "sha256": "f5ed3b9c08731c075e4583462b18a2388e8ed9c3915ebae616322af0948f55b6",
+      "bytes": 541
+    },
+    "angular/b1/repo/app/src/app/not-found/not-found.ts": {
+      "sha256": "4d837b12139a471816eb68c048b7a0006a1f7b44deb7928898209d247a6503c0",
+      "bytes": 293
+    },
+    "angular/b1/repo/app/src/app/pokemon/pokemon.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/pokemon/pokemon.html": {
+      "sha256": "1bdd2a01c4d1464c5d20af38cf77ffe2f48ea457c6db07673ad73b6ff435a196",
+      "bytes": 1917
+    },
+    "angular/b1/repo/app/src/app/pokemon/pokemon.spec.ts": {
+      "sha256": "ebb3ce44baa35f08c4a17e820a84763c7c248bb803d535f96b2ba2b0179c1ffe",
+      "bytes": 533
+    },
+    "angular/b1/repo/app/src/app/pokemon/pokemon.ts": {
+      "sha256": "c07f11a481d3f61522bd2ec41c48a6a50c88d0e444eebdaca8149e2dba970a96",
+      "bytes": 1745
+    },
+    "angular/b1/repo/app/src/app/resource-page/resource-page.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/resource-page/resource-page.html": {
+      "sha256": "a5653140ae9c5559c705ca1e8f9ff3fe5a4197b4407011b56bd392f50a85a42b",
+      "bytes": 2057
+    },
+    "angular/b1/repo/app/src/app/resource-page/resource-page.spec.ts": {
+      "sha256": "a9d397fd9ae6b0c28cd39b4a6d20c2ae16f94b335efc4b8c7301eee542fb47ec",
+      "bytes": 569
+    },
+    "angular/b1/repo/app/src/app/resource-page/resource-page.ts": {
+      "sha256": "d353d07263196eb46b36ac567247c481ed9f74543f772c74a1676c6dac8f85af",
+      "bytes": 2334
+    },
+    "angular/b1/repo/app/src/app/type-list/type-list.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b1/repo/app/src/app/type-list/type-list.html": {
+      "sha256": "edb1a9ce8b849b2ef84079e7969ad21bececa98d74d54aa16f442a3f0d5e5c5f",
+      "bytes": 24
+    },
+    "angular/b1/repo/app/src/app/type-list/type-list.spec.ts": {
+      "sha256": "ba14fe97efa1bc571fa2eab2359627307d26d96c3931edca12751f3f00e1ec61",
+      "bytes": 541
+    },
+    "angular/b1/repo/app/src/app/type-list/type-list.ts": {
+      "sha256": "aa959b953222a565b4a8da6595ad3f39523b62e9ffc01834d592caf3610199f5",
+      "bytes": 611
+    },
+    "angular/b1/repo/app/src/index.html": {
+      "sha256": "26bc4e4e717152c81d30b115c8a82364eb9242d7f5d8b7e9b99e3a83c34b6b0d",
+      "bytes": 326
+    },
+    "angular/b1/repo/app/src/main.ts": {
+      "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+      "bytes": 222
+    },
+    "angular/b1/repo/app/src/styles.css": {
+      "sha256": "a2ec6d08297f7ad6c2a0065807549120585c5366ab9846196119e2841ad7aea3",
+      "bytes": 5996
+    },
+    "angular/b1/repo/app/tsconfig.app.json": {
+      "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+      "bytes": 398
+    },
+    "angular/b1/repo/app/tsconfig.json": {
+      "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+      "bytes": 908
+    },
+    "angular/b1/repo/app/tsconfig.spec.json": {
+      "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+      "bytes": 409
+    },
+    "angular/b1/repo/source-files.json": {
+      "sha256": "888dc02b29035bdc2a62977997fe50ababd7ec7cf250402eeabf82a31a599791",
+      "bytes": 10296
+    },
+    "angular/b2/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "angular/b2/agent/final-test.stdout": {
+      "sha256": "eefe6a07d1940461c71f508c0b4ad6b4b12775f0102ab8188644582995fed71f",
+      "bytes": 6929
+    },
+    "angular/b2/agent/native-timing-usage.json": {
+      "sha256": "b67ffc823b55d121eb7e1c55bb2e9b7acb286683cd2d48c7cb6e9d0a5339d514",
+      "bytes": 1304
+    },
+    "angular/b2/agent/prompt.txt": {
+      "sha256": "3456d7ee621e0837ad8a0a2d4a4e01addf95dba3fd31e6044e16981b68e85f37",
+      "bytes": 127
+    },
+    "angular/b2/agent/run-info.json": {
+      "sha256": "4f7def1c64aecced583659b4c62a3703f84431cecdce12c64cc0984bda295c86",
+      "bytes": 1462
+    },
+    "angular/b2/agent/tooling.json": {
+      "sha256": "d6b7d8e0f1b86589d4a314bda4cb0fc52bd788ca6b76b4647285f9a597ae7025",
+      "bytes": 2040
+    },
+    "angular/b2/measure/lighthouse/home-mobile.json": {
+      "sha256": "56fce5779dd71248e5ce422f56769b225c03b4c14fa3001201a479b6977d25a8",
+      "bytes": 379631
+    },
+    "angular/b2/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "ee012b902162aac5cbcf56a772b790a67b96b64276657084dbffec144fdd1ac3",
+      "bytes": 342064
+    },
+    "angular/b2/measure/results.json": {
+      "sha256": "5ee48be93a5c41797300d953ec77cecc396eb3754bdf6943f8320a19f808dcdd",
+      "bytes": 16395
+    },
+    "angular/b2/measure/source-counts.json": {
+      "sha256": "a7a50faf285384723d06c20ce5161457f473980fd2172105bdb6d7aa29963c3a",
+      "bytes": 200
+    },
+    "angular/b2/repo/app/.gitignore": {
+      "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+      "bytes": 622
+    },
+    "angular/b2/repo/app/.vscode/extensions.json": {
+      "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+      "bytes": 130
+    },
+    "angular/b2/repo/app/.vscode/launch.json": {
+      "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+      "bytes": 470
+    },
+    "angular/b2/repo/app/.vscode/tasks.json": {
+      "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+      "bytes": 978
+    },
+    "angular/b2/repo/app/angular.json": {
+      "sha256": "4407584b456e36136d5543f4821f38e0282227d6b62046c548c234516348eeb1",
+      "bytes": 1906
+    },
+    "angular/b2/repo/app/package-lock.json": {
+      "sha256": "0b51fd1e3bb978384a60039e76bd85f45e65416cc76b4e81405ad32f8a3fa94b",
+      "bytes": 227371
+    },
+    "angular/b2/repo/app/package.json": {
+      "sha256": "10b4f7f029be836d2e1ccb01818e3b59861fc26beb43e6a3f70f9c1457e6458c",
+      "bytes": 790
+    },
+    "angular/b2/repo/app/server.mjs": {
+      "sha256": "2ed7e6a48fc6ec564d25dfe04a93fce530b462aeb51f21fe69c072a9c9f85402",
+      "bytes": 1219
+    },
+    "angular/b2/repo/app/src/app/app.config.ts": {
+      "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+      "bytes": 312
+    },
+    "angular/b2/repo/app/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b2/repo/app/src/app/app.html": {
+      "sha256": "1d3b9ee5099d4973d12cf903ce3b985b57db6629a62fe58a0c03eb257193f782",
+      "bytes": 8849
+    },
+    "angular/b2/repo/app/src/app/app.routes.ts": {
+      "sha256": "c019a926e937da047748eeffd041ae052e9b3c05375e2647dd85a6244cfe62e7",
+      "bytes": 152
+    },
+    "angular/b2/repo/app/src/app/app.spec.ts": {
+      "sha256": "a48176339d8419dd278df8db911d2105600cc5b76eb29da0de064eba6354a339",
+      "bytes": 681
+    },
+    "angular/b2/repo/app/src/app/app.ts": {
+      "sha256": "34eb40f2e4b29d9d9534ba2725955348097ee80dfb7abc8fe90f516faf795d27",
+      "bytes": 7473
+    },
+    "angular/b2/repo/app/src/app/cards/cards.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b2/repo/app/src/app/cards/cards.html": {
+      "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+      "bytes": 20
+    },
+    "angular/b2/repo/app/src/app/cards/cards.spec.ts": {
+      "sha256": "ab565617ef2a3fdcaadab4aa946c4f89d2496af1060d16364d37655dc2bf5a3b",
+      "bytes": 519
+    },
+    "angular/b2/repo/app/src/app/cards/cards.ts": {
+      "sha256": "c45cde856e5a45450362a555be947d9e7df122c87ddd439911caa08bf20cae9c",
+      "bytes": 941
+    },
+    "angular/b2/repo/app/src/app/data.ts": {
+      "sha256": "5981e46695d12666baf7e2ecd2d9823eaad75dcff4c4d17f37423dc40d4028e2",
+      "bytes": 2861
+    },
+    "angular/b2/repo/app/src/app/evolution/evolution.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b2/repo/app/src/app/evolution/evolution.html": {
+      "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+      "bytes": 24
+    },
+    "angular/b2/repo/app/src/app/evolution/evolution.spec.ts": {
+      "sha256": "7a9192fc61ce1fa441bcea4108ea91b528a1ca0877b41920432d4e4d960f29ea",
+      "bytes": 547
+    },
+    "angular/b2/repo/app/src/app/evolution/evolution.ts": {
+      "sha256": "39cea195197b4efac77bc54a00b10ddb1de08a32350e98fa85b3455bf1f2d7a1",
+      "bytes": 490
+    },
+    "angular/b2/repo/app/src/app/move-tables/move-tables.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b2/repo/app/src/app/move-tables/move-tables.html": {
+      "sha256": "b29aa1fb9f50c8f284a90edd18d339940f7fe3015fcf93c9b161e7939cd0b0a7",
+      "bytes": 26
+    },
+    "angular/b2/repo/app/src/app/move-tables/move-tables.spec.ts": {
+      "sha256": "25ebe4f5523a4e6e83a7eb71264447ca33bad3be428292a076531d063a65ca63",
+      "bytes": 555
+    },
+    "angular/b2/repo/app/src/app/move-tables/move-tables.ts": {
+      "sha256": "455851f3b2601be761490afdc414b452aa94c88a62c7afa4674cc86b082c421d",
+      "bytes": 6018
+    },
+    "angular/b2/repo/app/src/app/shell.ts": {
+      "sha256": "98b6894b842ca8b6bc6ce49c988203929e5a209729ba2c8ab4bfd0b4ed9c61ec",
+      "bytes": 206
+    },
+    "angular/b2/repo/app/src/index.html": {
+      "sha256": "95fb6e9d57e84a26bacdef4603298ac43b1c8045e630a2b203420f852470f54f",
+      "bytes": 293
+    },
+    "angular/b2/repo/app/src/main.ts": {
+      "sha256": "2ee647ee4601cf71b98258483b663e66ddf8dbd7faff25d8af2ebf0b7288ba07",
+      "bytes": 228
+    },
+    "angular/b2/repo/app/src/styles.css": {
+      "sha256": "3f0313147816cabbe7ee314241e2ca3a0eaa3d530cd2612de7c168ce57ada0c8",
+      "bytes": 6888
+    },
+    "angular/b2/repo/app/tsconfig.app.json": {
+      "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+      "bytes": 398
+    },
+    "angular/b2/repo/app/tsconfig.json": {
+      "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+      "bytes": 908
+    },
+    "angular/b2/repo/app/tsconfig.spec.json": {
+      "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+      "bytes": 409
+    },
+    "angular/b2/repo/source-files.json": {
+      "sha256": "f65ea47c3a79e40b567f69b5925ab8811c91d03f73e801e2dce855a7b55ac00c",
+      "bytes": 6403
+    },
+    "angular/b3/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "angular/b3/agent/final-test.stdout": {
+      "sha256": "c6f65b7ef4bf4bdb0126e11cd0b511c2d3f315ea3bbc8a2ab4470510d44fcf09",
+      "bytes": 6685
+    },
+    "angular/b3/agent/native-timing-usage.json": {
+      "sha256": "15448325785246466b90f60ecd41d98151a2006d4447c1fba2a1300d50721650",
+      "bytes": 1305
+    },
+    "angular/b3/agent/prompt.txt": {
+      "sha256": "3456d7ee621e0837ad8a0a2d4a4e01addf95dba3fd31e6044e16981b68e85f37",
+      "bytes": 127
+    },
+    "angular/b3/agent/run-info.json": {
+      "sha256": "9f643bd0cf663583ccc5b3536bc63994153291bc9ceca7b8fb7c4b95e5c354a5",
+      "bytes": 1462
+    },
+    "angular/b3/agent/tooling.json": {
+      "sha256": "9d93280279dafbc48f734a6bdb2842d7ea1f8e07bfef96df155d6991ccb70353",
+      "bytes": 2041
+    },
+    "angular/b3/measure/lighthouse/home-mobile.json": {
+      "sha256": "f282352d787ec40260fa7328d91a82a84f0f35895989b3c1428f8fb43e63421b",
+      "bytes": 367151
+    },
+    "angular/b3/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "332645a7c522580049079a92e3de033bb3ef8cf64607b71d940781e91698e941",
+      "bytes": 335392
+    },
+    "angular/b3/measure/results.json": {
+      "sha256": "1c97de45d135403546cebead088a8452aa5c6bbef87b065b3ab946e6cc807099",
+      "bytes": 15974
+    },
+    "angular/b3/measure/source-counts.json": {
+      "sha256": "97548bf72e55c7b14816a83c1463824391e748eda2f7792bb34124cda668fd73",
+      "bytes": 200
+    },
+    "angular/b3/repo/app/.gitignore": {
+      "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+      "bytes": 622
+    },
+    "angular/b3/repo/app/.vscode/extensions.json": {
+      "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+      "bytes": 130
+    },
+    "angular/b3/repo/app/.vscode/launch.json": {
+      "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+      "bytes": 470
+    },
+    "angular/b3/repo/app/.vscode/tasks.json": {
+      "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+      "bytes": 978
+    },
+    "angular/b3/repo/app/angular.json": {
+      "sha256": "4407584b456e36136d5543f4821f38e0282227d6b62046c548c234516348eeb1",
+      "bytes": 1906
+    },
+    "angular/b3/repo/app/package-lock.json": {
+      "sha256": "0b51fd1e3bb978384a60039e76bd85f45e65416cc76b4e81405ad32f8a3fa94b",
+      "bytes": 227371
+    },
+    "angular/b3/repo/app/package.json": {
+      "sha256": "10b4f7f029be836d2e1ccb01818e3b59861fc26beb43e6a3f70f9c1457e6458c",
+      "bytes": 790
+    },
+    "angular/b3/repo/app/server.mjs": {
+      "sha256": "723783bb5d1e2ce65547410235162775167561e3e03bf51683d6fcea67dd4e42",
+      "bytes": 1147
+    },
+    "angular/b3/repo/app/src/app/api.ts": {
+      "sha256": "6f29114d6f58e5cf836f906e525841c8966e44b7b0b45eee1457184b265a8ff3",
+      "bytes": 1924
+    },
+    "angular/b3/repo/app/src/app/app.config.ts": {
+      "sha256": "0d89d2482b81f6aa9605d8480e7797b8ab24229194e012eeb38f204ffb6080cd",
+      "bytes": 190
+    },
+    "angular/b3/repo/app/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b3/repo/app/src/app/app.html": {
+      "sha256": "cf32997c0ffdce3bfbd191ab1ed2e1983194e4091ac44ac3aef57803aa8c8330",
+      "bytes": 11278
+    },
+    "angular/b3/repo/app/src/app/app.routes.ts": {
+      "sha256": "e2ef74b4c1f7f52a30a417c6808f01b2a29e69bb0d20302527ae5001607f7180",
+      "bytes": 77
+    },
+    "angular/b3/repo/app/src/app/app.spec.ts": {
+      "sha256": "c6d6777103b1f4feb9ac378052ec221702b24f2df051f22d04d8e70901724be2",
+      "bytes": 1596
+    },
+    "angular/b3/repo/app/src/app/app.ts": {
+      "sha256": "3325854de16add15c85bc0af3bcb7282a23100abbb1a96ff7459e3906db9c259",
+      "bytes": 10281
+    },
+    "angular/b3/repo/app/src/app/cards.ts": {
+      "sha256": "dfe11de96d4cd1111c579cd2983c2985dab4f5f06982c7eaa72cec6799dd252d",
+      "bytes": 919
+    },
+    "angular/b3/repo/app/src/app/evolution.ts": {
+      "sha256": "3f22fdd3a1e4f58db69ca6ad168aae2891946bff89b2320b1bd657974e572a71",
+      "bytes": 520
+    },
+    "angular/b3/repo/app/src/app/models.ts": {
+      "sha256": "49ea326e6c34c286f2079ebc720b99b5b09a4a79cc25e417ac3929c5028f923f",
+      "bytes": 1660
+    },
+    "angular/b3/repo/app/src/index.html": {
+      "sha256": "8718549cd78e9dbd917d9b8bd11d86b2f3fb4b7965c996db9c287005a59b37ea",
+      "bytes": 298
+    },
+    "angular/b3/repo/app/src/main.ts": {
+      "sha256": "ecc610fb7d56c95a01a8aa6c274a63210d45b2944dd6b9a88b2c8f70b6351037",
+      "bytes": 219
+    },
+    "angular/b3/repo/app/src/styles.css": {
+      "sha256": "174bcb5e4ce2336a2ad666400004087011c74d3950600ea72d762ee3a2b9084f",
+      "bytes": 9598
+    },
+    "angular/b3/repo/app/tsconfig.app.json": {
+      "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+      "bytes": 398
+    },
+    "angular/b3/repo/app/tsconfig.json": {
+      "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+      "bytes": 908
+    },
+    "angular/b3/repo/app/tsconfig.spec.json": {
+      "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+      "bytes": 409
+    },
+    "angular/b3/repo/source-files.json": {
+      "sha256": "36b7b5c97d885f09892adbdbf8eb0ae0e304e79ff9114483d6401bbf3c630117",
+      "bytes": 4442
+    },
+    "angular/b4/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "angular/b4/agent/final-test.stdout": {
+      "sha256": "d78925c067fe1d7c497e951839837089177890ebfc8397d1c0fc1f6aafa4d51e",
+      "bytes": 6900
+    },
+    "angular/b4/agent/native-timing-usage.json": {
+      "sha256": "2f5c3a48f24605c801ef072a99a253db8c3aacdefefea116ebf7b304bcf8cc95",
+      "bytes": 1309
+    },
+    "angular/b4/agent/prompt.txt": {
+      "sha256": "3456d7ee621e0837ad8a0a2d4a4e01addf95dba3fd31e6044e16981b68e85f37",
+      "bytes": 127
+    },
+    "angular/b4/agent/run-info.json": {
+      "sha256": "8c5907b3198c042ba3da16e3d4f052132ef9ee88e3e4fc79c2daa6a2738362f7",
+      "bytes": 1467
+    },
+    "angular/b4/agent/tooling.json": {
+      "sha256": "d6b7d8e0f1b86589d4a314bda4cb0fc52bd788ca6b76b4647285f9a597ae7025",
+      "bytes": 2040
+    },
+    "angular/b4/measure/lighthouse/home-mobile.json": {
+      "sha256": "31c8a293dd2c62937e2e281c26cdad0145e9eea989018f13f198c8de730f7ca1",
+      "bytes": 383629
+    },
+    "angular/b4/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "df2b9b7e1c923bbc092627b1a32ffadbe4c884f459e4d8217f992baa0e8d117c",
+      "bytes": 342931
+    },
+    "angular/b4/measure/results.json": {
+      "sha256": "39c38a3f695b5c399cc656ea3145687d9639e36d5f1db96e890371ab6f86ff93",
+      "bytes": 16328
+    },
+    "angular/b4/measure/source-counts.json": {
+      "sha256": "fba7b4f40f208007d18642e7cf6702d34143c1dfe3716a96afb8bae0f6c83476",
+      "bytes": 199
+    },
+    "angular/b4/repo/app/.gitignore": {
+      "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+      "bytes": 622
+    },
+    "angular/b4/repo/app/.vscode/extensions.json": {
+      "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+      "bytes": 130
+    },
+    "angular/b4/repo/app/.vscode/launch.json": {
+      "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+      "bytes": 470
+    },
+    "angular/b4/repo/app/.vscode/tasks.json": {
+      "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+      "bytes": 978
+    },
+    "angular/b4/repo/app/angular.json": {
+      "sha256": "4407584b456e36136d5543f4821f38e0282227d6b62046c548c234516348eeb1",
+      "bytes": 1906
+    },
+    "angular/b4/repo/app/package-lock.json": {
+      "sha256": "0b51fd1e3bb978384a60039e76bd85f45e65416cc76b4e81405ad32f8a3fa94b",
+      "bytes": 227371
+    },
+    "angular/b4/repo/app/package.json": {
+      "sha256": "10b4f7f029be836d2e1ccb01818e3b59861fc26beb43e6a3f70f9c1457e6458c",
+      "bytes": 790
+    },
+    "angular/b4/repo/app/server.mjs": {
+      "sha256": "ef47b07d3d1c57049e633e8f380b46edc07ef4e01f2977d959d4ac27b27de828",
+      "bytes": 1058
+    },
+    "angular/b4/repo/app/src/app/api.ts": {
+      "sha256": "aac6838314c7c269d583e2d31c6773b11fdc059f49d9e44b3a730e7acbac80da",
+      "bytes": 1458
+    },
+    "angular/b4/repo/app/src/app/app.config.ts": {
+      "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+      "bytes": 312
+    },
+    "angular/b4/repo/app/src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b4/repo/app/src/app/app.html": {
+      "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+      "bytes": 20144
+    },
+    "angular/b4/repo/app/src/app/app.routes.ts": {
+      "sha256": "bb0bc145c032642e47828c88334654a33cb31d611e851cc85e418c94d6ab2de3",
+      "bytes": 143
+    },
+    "angular/b4/repo/app/src/app/app.spec.ts": {
+      "sha256": "48de2fa64b4be3006046eb84b503ab397c817fab4b6f9ccbf3fcc77bdb9488b9",
+      "bytes": 711
+    },
+    "angular/b4/repo/app/src/app/app.ts": {
+      "sha256": "1884f0da97fdac3697160329999c63fd914507544982105e0ac186e454f544a1",
+      "bytes": 504
+    },
+    "angular/b4/repo/app/src/app/cards/cards.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b4/repo/app/src/app/cards/cards.html": {
+      "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+      "bytes": 20
+    },
+    "angular/b4/repo/app/src/app/cards/cards.ts": {
+      "sha256": "9a7aeda17df30a284fdd86ba3a541761059e15ad2b6037e7f6c61bc19671b120",
+      "bytes": 739
+    },
+    "angular/b4/repo/app/src/app/evolution/evolution.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b4/repo/app/src/app/evolution/evolution.html": {
+      "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+      "bytes": 24
+    },
+    "angular/b4/repo/app/src/app/evolution/evolution.ts": {
+      "sha256": "68ea082afc8d0881ae96c3960f0efba71874965abcd6d0799e9134332d94261d",
+      "bytes": 476
+    },
+    "angular/b4/repo/app/src/app/models.ts": {
+      "sha256": "1463d1644ca65ea5009df1fefb50383f6984aa3d8fee2d477b1ed2197ed46c7b",
+      "bytes": 2150
+    },
+    "angular/b4/repo/app/src/app/pages/pages.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "angular/b4/repo/app/src/app/pages/pages.html": {
+      "sha256": "665ec21ccbed923d1d314fa05a20ccc700bea23c3794159c27ca507ac2adafaa",
+      "bytes": 6079
+    },
+    "angular/b4/repo/app/src/app/pages/pages.ts": {
+      "sha256": "ac780ef82294595618e9225f71515ed403efb4f005c900166cf8d6f7fce0b4ba",
+      "bytes": 8313
+    },
+    "angular/b4/repo/app/src/index.html": {
+      "sha256": "95fb6e9d57e84a26bacdef4603298ac43b1c8045e630a2b203420f852470f54f",
+      "bytes": 293
+    },
+    "angular/b4/repo/app/src/main.ts": {
+      "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+      "bytes": 222
+    },
+    "angular/b4/repo/app/src/styles.css": {
+      "sha256": "415e70089f86924469be7bc127efdf2fedf0e2eeebfc2085593cf36aa572d636",
+      "bytes": 5988
+    },
+    "angular/b4/repo/app/tsconfig.app.json": {
+      "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+      "bytes": 398
+    },
+    "angular/b4/repo/app/tsconfig.json": {
+      "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+      "bytes": 908
+    },
+    "angular/b4/repo/app/tsconfig.spec.json": {
+      "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+      "bytes": 409
+    },
+    "angular/b4/repo/source-files.json": {
+      "sha256": "6711d8c978652c582c18622437defd10665e40c1806afcff02b293f873fd1020",
+      "bytes": 5777
+    },
+    "harness/README.md": {
+      "sha256": "938781fd52a697cdb8209c5c623f68f6347b7b6392f0bf088cb2dfcddc1a42be",
+      "bytes": 3668
+    },
+    "harness/generation-adapter.cjs": {
+      "sha256": "9f091cfaff5ab446d1febc9ae09ec9b6eb51ca0b298a683230911cb9320c5e3a",
+      "bytes": 10182
+    },
+    "harness/measurement-image.patch": {
+      "sha256": "2006edc825018322c879cd038ebe8b34fa72a8f08efe469fb35bf7896349e1d9",
+      "bytes": 3935
+    },
+    "harness/source-provenance.json": {
+      "sha256": "408ddc2214c34f44952801fe469c05b5ca3b5582ab96b1faaaa9a614f6ef6627",
+      "bytes": 379
+    },
+    "marionette/b1/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "marionette/b1/agent/final-test.stdout": {
+      "sha256": "fc0e11581a0e33ccafc408b5bc6a12b9b7298eb77fb1cbc1002b25e9bccf49ba",
+      "bytes": 6573
+    },
+    "marionette/b1/agent/native-timing-usage.json": {
+      "sha256": "fbcb957593ed9675ca81f15de81e612bbc9c2dbcd3c2d2068b13b962ef6b5c0b",
+      "bytes": 1303
+    },
+    "marionette/b1/agent/prompt.txt": {
+      "sha256": "a6180545b31d1736cea3315bedd33a1e243750cbffb03b315408f400fc957136",
+      "bytes": 140
+    },
+    "marionette/b1/agent/run-info.json": {
+      "sha256": "c1ddfd0c275eeb8e00cec66b09cb741a846c441ae5733600844fb84284128bf4",
+      "bytes": 1117
+    },
+    "marionette/b1/agent/tooling.json": {
+      "sha256": "9db2d30e4ff5c1ccfd7ded911f316f8521ca61e165f47fdf1f0cff0fbd02b612",
+      "bytes": 2265
+    },
+    "marionette/b1/measure/lighthouse/ability-mobile.json": {
+      "sha256": "1141fb2b96288efbb847018e84dd9528934ba39868dfef1c69ba643d11f87e6e",
+      "bytes": 240640
+    },
+    "marionette/b1/measure/lighthouse/home-filtered-mobile.json": {
+      "sha256": "332bc6f2ed37939e172c4be6c9744e18acb1a1884d3bfcef5ba40c471ff41b0b",
+      "bytes": 282820
+    },
+    "marionette/b1/measure/lighthouse/home-mobile.json": {
+      "sha256": "d5e3c293ffea1850c6cf553f277699446b1da53749e1a88492e9e62ddce33743",
+      "bytes": 361328
+    },
+    "marionette/b1/measure/lighthouse/move-mobile.json": {
+      "sha256": "6ed057b6b0786101b8ba4cec36d29cc1c843d79c1db7ca1450926be0b31b5c60",
+      "bytes": 499592
+    },
+    "marionette/b1/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "e8069fa2f29a0c203437f2a93ad641d04fc306bef828c8e1ac9e2cced0d8ddd1",
+      "bytes": 386213
+    },
+    "marionette/b1/measure/lighthouse/type-mobile.json": {
+      "sha256": "d4a20361e417e3efffc769aa1609db27e4d7e797212d06f469691e233b3417c2",
+      "bytes": 309957
+    },
+    "marionette/b1/measure/results.json": {
+      "sha256": "77379d0924e1133ae47b14cc5614df2620328548831565e95fa10ab01f5ba914",
+      "bytes": 15618
+    },
+    "marionette/b1/measure/source-counts.json": {
+      "sha256": "accfb8c164e9a809a461ef440260420c2272f77d7bad606fb4b088c682bf6c07",
+      "bytes": 196
+    },
+    "marionette/b1/repo/app/index.html": {
+      "sha256": "dbdbbd90c74180edf56ec4f2b11ee63202c6d2284c40fa1d450fca8e095f2174",
+      "bytes": 243
+    },
+    "marionette/b1/repo/app/main.js": {
+      "sha256": "e41e838c2bb492de672a5cfdaac82fbc321cb703af9a6926864e9dee41626021",
+      "bytes": 13770
+    },
+    "marionette/b1/repo/app/package-lock.json": {
+      "sha256": "005f9606b92f6460f50db790992d2550545a508c27389a34b333c5a8e4f8d93e",
+      "bytes": 30716
+    },
+    "marionette/b1/repo/app/package.json": {
+      "sha256": "eab3d660bdf468e2e3b41ad97abe2abb670db1bfe9d154b3141ddbb001d95a72",
+      "bytes": 423
+    },
+    "marionette/b1/repo/app/server.mjs": {
+      "sha256": "62b5c85183d1ea0eaf004f65857e74f6032e1b099bc8737e23449ac87030d116",
+      "bytes": 593
+    },
+    "marionette/b1/repo/app/style.css": {
+      "sha256": "2526438428bad292e50269b516c043087a7fce60d37e9b78e9202ede1382c15e",
+      "bytes": 5303
+    },
+    "marionette/b1/repo/app/vite.config.js": {
+      "sha256": "f78e4e9c28b129fc29d7b16f3b1abda4902dba309871483836b49c84cc188118",
+      "bytes": 175
+    },
+    "marionette/b1/repo/source-files.json": {
+      "sha256": "e601006debe95e9c87bb9d2b9a0eba0d43192867a482a7f54cdf03d32e972c67",
+      "bytes": 1829
+    },
+    "marionette/b2/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "marionette/b2/agent/final-test.stdout": {
+      "sha256": "a1391e57a28e357f21939ae7493ef8134b7c42c99ba262172833053de42cd180",
+      "bytes": 6577
+    },
+    "marionette/b2/agent/native-timing-usage.json": {
+      "sha256": "378eefdcee16de62b2837d54a59f31bac86d5b9ce07163c5f75339859113be64",
+      "bytes": 1306
+    },
+    "marionette/b2/agent/prompt.txt": {
+      "sha256": "a6180545b31d1736cea3315bedd33a1e243750cbffb03b315408f400fc957136",
+      "bytes": 140
+    },
+    "marionette/b2/agent/run-info.json": {
+      "sha256": "72525cfbe0e14f6d30f911ebc342d905b68e3e707f854f8d542e9661dc84527d",
+      "bytes": 1095
+    },
+    "marionette/b2/agent/tooling.json": {
+      "sha256": "5f9e7f533097b573c12804a9f39a546b64ef3988b3a98fd9619449aa6ac9f7dc",
+      "bytes": 2265
+    },
+    "marionette/b2/measure/lighthouse/ability-mobile.json": {
+      "sha256": "0eee227fe847d993809100dc6ef85ff482889e1da18769b23a1944eb1ddc76e8",
+      "bytes": 241708
+    },
+    "marionette/b2/measure/lighthouse/home-filtered-mobile.json": {
+      "sha256": "c8f673846782f44c301be4b1f0eb73c68bb1ac794378f32de8fe4de399142d4e",
+      "bytes": 265725
+    },
+    "marionette/b2/measure/lighthouse/home-mobile.json": {
+      "sha256": "b03cb3d05af025f42b760bc6b477b7527b8bd5ce6f0686cd9b5c2cb0c325b6b7",
+      "bytes": 305783
+    },
+    "marionette/b2/measure/lighthouse/move-mobile.json": {
+      "sha256": "6039a383265f4f215648150b1b93a3ac868a2bfa229b0975051e4b9f647dbfa1",
+      "bytes": 501378
+    },
+    "marionette/b2/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "011bb71d94f431f31972588a9df32732af66eb40984920993cffd302bdbf756e",
+      "bytes": 330908
+    },
+    "marionette/b2/measure/lighthouse/type-mobile.json": {
+      "sha256": "9d9a84aedb3558de3e8ef7b899b79761eb2b713b862ca9ca7a1f819b920de8ac",
+      "bytes": 312272
+    },
+    "marionette/b2/measure/results.json": {
+      "sha256": "d54bfafd70d8d0b9d90751901ae4e3f6f2674ad9c32f57b22f65053057d4a833",
+      "bytes": 15605
+    },
+    "marionette/b2/measure/source-counts.json": {
+      "sha256": "f70caec0bb4723b700a8672f9cf58d888e2cc9f6fc0ba4d626cfec89893c03e5",
+      "bytes": 198
+    },
+    "marionette/b2/repo/app/index.html": {
+      "sha256": "ac02bcac2f760eb1b36d263dab3603a87dd7da2ccbdbc06374e85f8c7fa9a9af",
+      "bytes": 290
+    },
+    "marionette/b2/repo/app/package-lock.json": {
+      "sha256": "feb0dc5ae128239d20d7ac7889d11a148bf59b8b07b7b03dbe087b5007e05066",
+      "bytes": 30222
+    },
+    "marionette/b2/repo/app/package.json": {
+      "sha256": "7b534de1ad265f83918ebe9852e12bbf3c5ca9e765f7bce204b0325887c2fad2",
+      "bytes": 259
+    },
+    "marionette/b2/repo/app/server.mjs": {
+      "sha256": "d3522299717aca45efe7c419ff9ffb4540b09cd128bb90900587f1523ec13eb3",
+      "bytes": 1157
+    },
+    "marionette/b2/repo/app/src/api.js": {
+      "sha256": "9077331ff4426a24dc809e5bcddbd27d4da65bf917e474a65d4200b4cc2adfe1",
+      "bytes": 1416
+    },
+    "marionette/b2/repo/app/src/main.js": {
+      "sha256": "cb0fd002e8df3396e0c1549ed260fe101b45f3995e441b735fca181685b31eeb",
+      "bytes": 16394
+    },
+    "marionette/b2/repo/app/src/style.css": {
+      "sha256": "d27f536b26f5272162d0219173f634e991865b3f88186e5a1b03fcafafcdeee3",
+      "bytes": 6764
+    },
+    "marionette/b2/repo/source-files.json": {
+      "sha256": "e88780c63ef8f4b1197f828378d72d7be96502818f21212aad66dcf89092197a",
+      "bytes": 1835
+    },
+    "marionette/b3/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "marionette/b3/agent/final-test.stdout": {
+      "sha256": "58c5f2da215394f7301901ab96d56140207321a3d7ec7a52d1e81101bb5581af",
+      "bytes": 6574
+    },
+    "marionette/b3/agent/native-timing-usage.json": {
+      "sha256": "cf9ce213ad044cb1e0deb800cd3d41f2fea166de79f51aaac851a087b6659488",
+      "bytes": 1306
+    },
+    "marionette/b3/agent/prompt.txt": {
+      "sha256": "a6180545b31d1736cea3315bedd33a1e243750cbffb03b315408f400fc957136",
+      "bytes": 140
+    },
+    "marionette/b3/agent/run-info.json": {
+      "sha256": "84b3a4d330177adebf4d682a39e744e452018ff8949b93255e5d1a033535469f",
+      "bytes": 1178
+    },
+    "marionette/b3/agent/tooling.json": {
+      "sha256": "5f9e7f533097b573c12804a9f39a546b64ef3988b3a98fd9619449aa6ac9f7dc",
+      "bytes": 2265
+    },
+    "marionette/b3/measure/lighthouse/ability-mobile.json": {
+      "sha256": "e89de215fbba779e7bcd6ec48234dbf0b45b5f5822dc50059eecba24e6d0c4f9",
+      "bytes": 242002
+    },
+    "marionette/b3/measure/lighthouse/home-filtered-mobile.json": {
+      "sha256": "ca24494b4b4e01a83934b030c858de57f45cb71973dab804067a67a8f894f16e",
+      "bytes": 283710
+    },
+    "marionette/b3/measure/lighthouse/home-mobile.json": {
+      "sha256": "6815f15d9b658c84ddd5ec172da29a439a7f330c02d429d976da9d188083ec81",
+      "bytes": 361327
+    },
+    "marionette/b3/measure/lighthouse/move-mobile.json": {
+      "sha256": "39168e790db01c764726740d55f876895e83e4840b4375ec28c41bf36ab242c6",
+      "bytes": 502578
+    },
+    "marionette/b3/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "dbf1ef0b5c71ffc4a76dff25494f4bb97ffc8d1cc90e0a5ead4444f3402bd4fc",
+      "bytes": 389328
+    },
+    "marionette/b3/measure/lighthouse/type-mobile.json": {
+      "sha256": "6720e97aa876b3918c4f696c7b6a74a62ccc135edc23bf619782d1983e464ed1",
+      "bytes": 311664
+    },
+    "marionette/b3/measure/results.json": {
+      "sha256": "bedd809c69398816af55fc82929a412dace93372117b6f61c3206adb2555536c",
+      "bytes": 15786
+    },
+    "marionette/b3/measure/source-counts.json": {
+      "sha256": "436131e726b0dcdaf18bde223ec11e079bf162ca0b5b4a793f2ce96fd944c17a",
+      "bytes": 198
+    },
+    "marionette/b3/repo/app/api.js": {
+      "sha256": "d6a5c879bab157914170f64ed7e42f5efbffcc60454dc4cb6d3d077c93ce7027",
+      "bytes": 1928
+    },
+    "marionette/b3/repo/app/index.html": {
+      "sha256": "dbdbbd90c74180edf56ec4f2b11ee63202c6d2284c40fa1d450fca8e095f2174",
+      "bytes": 243
+    },
+    "marionette/b3/repo/app/main.js": {
+      "sha256": "f9fb9397e1eceb3dd58b413758e636d6a714ab0ebaff52823a169c0e9a805a25",
+      "bytes": 12356
+    },
+    "marionette/b3/repo/app/package-lock.json": {
+      "sha256": "fd7984b6411b0c6d3c8dedc87ce159ca3dbf61c0cf4ef903fcffa721e86b234a",
+      "bytes": 30780
+    },
+    "marionette/b3/repo/app/package.json": {
+      "sha256": "ad06fea85ec9362791dc4f9ac331272c785d1f0e8826d3ed9ee3b8c7359558b7",
+      "bytes": 498
+    },
+    "marionette/b3/repo/app/server.mjs": {
+      "sha256": "8580c602d2ec3cc19de0e45c2151b50942e0e12caa40e230b16308d29268c007",
+      "bytes": 910
+    },
+    "marionette/b3/repo/app/style.css": {
+      "sha256": "e4ed949c3cd89ec39b915a3ddba092cfd4264cbf886cb86ddfb45fdb352178a2",
+      "bytes": 5805
+    },
+    "marionette/b3/repo/source-files.json": {
+      "sha256": "5d603e80c669af6a1b5350728e1217f6a6cf5eb7cd606eb64bc4beabfa4822e4",
+      "bytes": 1822
+    },
+    "marionette/b4/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "marionette/b4/agent/final-test.stdout": {
+      "sha256": "2c57e642486708831f4bd5c3530296325d503d0068fec5f6f9540d5067d0d3ca",
+      "bytes": 6570
+    },
+    "marionette/b4/agent/native-timing-usage.json": {
+      "sha256": "dc63b935b325e0cc6b2892819ee68d98e59a99505214b669d5686e5f905f4fe8",
+      "bytes": 1308
+    },
+    "marionette/b4/agent/prompt.txt": {
+      "sha256": "a6180545b31d1736cea3315bedd33a1e243750cbffb03b315408f400fc957136",
+      "bytes": 140
+    },
+    "marionette/b4/agent/run-info.json": {
+      "sha256": "81b3365a7821321296c6814fcb6bd8a914e60c855846df3fb904637aa1136a1b",
+      "bytes": 1122
+    },
+    "marionette/b4/agent/tooling.json": {
+      "sha256": "5f9e7f533097b573c12804a9f39a546b64ef3988b3a98fd9619449aa6ac9f7dc",
+      "bytes": 2265
+    },
+    "marionette/b4/measure/lighthouse/ability-mobile.json": {
+      "sha256": "9e0db84137fa1ccc1f95dd4011492dad5268eb259aa35df18702a2b8e4cf0625",
+      "bytes": 264823
+    },
+    "marionette/b4/measure/lighthouse/home-filtered-mobile.json": {
+      "sha256": "0330dd50866e023eebf1946c4835f6fab27347cb79c391fd55f8f0ddcd07e1e3",
+      "bytes": 266903
+    },
+    "marionette/b4/measure/lighthouse/home-mobile.json": {
+      "sha256": "6bb64f26d6c4a01d97e46caec68bf4c9e5e5ed94555ad9fb7f2a02725253a81d",
+      "bytes": 304412
+    },
+    "marionette/b4/measure/lighthouse/move-mobile.json": {
+      "sha256": "9580b1afdfc040f8906f2c93c98def0c8dac4d5265d2b87b7628bd48cee6e771",
+      "bytes": 523545
+    },
+    "marionette/b4/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "00ee4d048b2492aceb9983d753e46de0e5c9f5bbe41795d6125db24a173a845c",
+      "bytes": 410663
+    },
+    "marionette/b4/measure/lighthouse/type-mobile.json": {
+      "sha256": "2500464d7680547923e23d8ff95a5b16201652836764aea3f3550b844d8baa40",
+      "bytes": 332624
+    },
+    "marionette/b4/measure/results.json": {
+      "sha256": "882e06380a42688685ff89de1ec3241c0dbffbefdf1325b0b77fe85b13fff3b1",
+      "bytes": 15640
+    },
+    "marionette/b4/measure/source-counts.json": {
+      "sha256": "d71ba10fdf1e526092235d263ca8a5cfad6569e577d7dfeb5deac0eeea1d36aa",
+      "bytes": 197
+    },
+    "marionette/b4/repo/app/index.html": {
+      "sha256": "55f39d03b7c3286c9659762c5a4a7f4cdc7487bc1612ac9710af09e558ec92c9",
+      "bytes": 246
+    },
+    "marionette/b4/repo/app/main.js": {
+      "sha256": "5fb294d3ea4dc4af419d5c865ef3bf6709f71501cc03531ad54c4292575f9022",
+      "bytes": 14365
+    },
+    "marionette/b4/repo/app/package-lock.json": {
+      "sha256": "e911b789f7f2d518b7483bd793fe608365eb2cac31295a9f51360e77b59bde0a",
+      "bytes": 30715
+    },
+    "marionette/b4/repo/app/package.json": {
+      "sha256": "41cf37e9a203f594344347fdd6a9abb2ea8ed67037868701dc304933cbdce279",
+      "bytes": 441
+    },
+    "marionette/b4/repo/app/server.mjs": {
+      "sha256": "3462cbcd8e5d1388feddf7288b95f3e6681569e69420744d056ca10e9ebb39b7",
+      "bytes": 888
+    },
+    "marionette/b4/repo/app/style.css": {
+      "sha256": "ef9ff7ae86561a6fceaf2aef4cf3e520dde73754f115a46aac99c8e525fbf57e",
+      "bytes": 6050
+    },
+    "marionette/b4/repo/source-files.json": {
+      "sha256": "4690d658467006841bbe12dd0a466e8346942c665032dcb23c9c0471f9eb582a",
+      "bytes": 1651
+    },
+    "metrics.csv": {
+      "sha256": "713891d3d6422bc78f7c11f5e5ee353ace649c2f7ce338ce06316f34fe2405a1",
+      "bytes": 15403
+    },
+    "nuxt/b1/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "nuxt/b1/agent/final-test.stdout": {
+      "sha256": "6ddea9a5e6d5931e70b706c4ac8685967e2960ff820256ed0b2b938ddd1f7076",
+      "bytes": 10591
+    },
+    "nuxt/b1/agent/native-timing-usage.json": {
+      "sha256": "e8b5e0ad4523ab3ea9b67dbf4e0f334d99f08cd74bcd10a197691786047d084e",
+      "bytes": 1305
+    },
+    "nuxt/b1/agent/prompt.txt": {
+      "sha256": "1d7490e8740f977aef0e88886fb37a386be62cc792392cf2203437d57baaa65d",
+      "bytes": 124
+    },
+    "nuxt/b1/agent/run-info.json": {
+      "sha256": "4fd8dd907b5fd8293f4957e700eb82eba366b13a8ab335b6527aad25c363f5fe",
+      "bytes": 1030
+    },
+    "nuxt/b1/agent/tooling.json": {
+      "sha256": "3916bc057b3b48aa67ee01c1a1d1b7318c5f85b5302d937ce4da4bcfac496a08",
+      "bytes": 1787
+    },
+    "nuxt/b1/measure/lighthouse/home-mobile.json": {
+      "sha256": "1e89a44d00a990bbe850d261f774c62d6c5ec4cb7a76cd132e43e0cc46554c27",
+      "bytes": 277136
+    },
+    "nuxt/b1/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "f462b074e00fc6f13374258766081b0f42fe87f9aa595eb6c2e0ae10a707137e",
+      "bytes": 235122
+    },
+    "nuxt/b1/measure/results.json": {
+      "sha256": "75633129ac3e1085e1795ac50f60e5e71b3b8ba9470b92b4dcd7120c91ccd4f0",
+      "bytes": 15073
+    },
+    "nuxt/b1/measure/source-counts.json": {
+      "sha256": "879c4c9f84d52795f9ffd4beac07b5160982be6f5b9630a38f10c2479599c7f1",
+      "bytes": 199
+    },
+    "nuxt/b1/repo/app/app/app.vue": {
+      "sha256": "7b88ca587f52ca3835868c2d6a2005a1814a833824ab18316a6869abae19c7db",
+      "bytes": 7774
+    },
+    "nuxt/b1/repo/app/app/assets/main.css": {
+      "sha256": "f38f608c025d669627dd13dfcabba64efac1252c5646eca2c0d78e63394825e1",
+      "bytes": 5180
+    },
+    "nuxt/b1/repo/app/app/components/Cards.vue": {
+      "sha256": "fab51a901e76e6c63c8b52dac3da641829488f493e6096d751ca1ffc3056e4f8",
+      "bytes": 702
+    },
+    "nuxt/b1/repo/app/app/components/Evolution.vue": {
+      "sha256": "47013e40ffeb10122f46b8b19da016974ab5d2eda30dedfdc215e94cfbe35f62",
+      "bytes": 301
+    },
+    "nuxt/b1/repo/app/app/components/MoveTable.vue": {
+      "sha256": "9926c35fec52d2a0590349a029142ad76a483d775a989c080a216b1db8b25647",
+      "bytes": 1515
+    },
+    "nuxt/b1/repo/app/app/pages/[...slug].vue": {
+      "sha256": "9ad562f9d14f7b6fc38257d8cd05511af78a091b664b2074cf437c1f4209c335",
+      "bytes": 29
+    },
+    "nuxt/b1/repo/app/nuxt.config.ts": {
+      "sha256": "2f24555993c2f4e2e31bf1a12102445e28cf1d77d648e6af7244155ce3262968",
+      "bytes": 193
+    },
+    "nuxt/b1/repo/app/package-lock.json": {
+      "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+      "bytes": 290072
+    },
+    "nuxt/b1/repo/app/package.json": {
+      "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+      "bytes": 155
+    },
+    "nuxt/b1/repo/app/server/api/dex.get.ts": {
+      "sha256": "89bcd38914116bf8506cae657541fd7c11906ad22c1ec0d49fead804e4c6c76a",
+      "bytes": 3141
+    },
+    "nuxt/b1/repo/app/server/api/sprite.get.ts": {
+      "sha256": "12e893da272f64f7aaa0fdd063cccb85e464a456cccb8155582b42a4b4afb16e",
+      "bytes": 191
+    },
+    "nuxt/b1/repo/source-files.json": {
+      "sha256": "9a89233853578be94ea723ffbe2fbf033fad0d3c7f46435f84c6e926ecee1c21",
+      "bytes": 2146
+    },
+    "nuxt/b2/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "nuxt/b2/agent/final-test.stdout": {
+      "sha256": "804bbf11b7068ed87166c2cb495f51cb69512562d631a56ca1d7a2e7254e92f9",
+      "bytes": 10108
+    },
+    "nuxt/b2/agent/native-timing-usage.json": {
+      "sha256": "a59b63ce40370529e6e648cc4e537ba641b38234f60a4e77e20bd7af1378ebef",
+      "bytes": 1303
+    },
+    "nuxt/b2/agent/prompt.txt": {
+      "sha256": "1d7490e8740f977aef0e88886fb37a386be62cc792392cf2203437d57baaa65d",
+      "bytes": 124
+    },
+    "nuxt/b2/agent/run-info.json": {
+      "sha256": "edbd0d4f0fe5410b320fbb25e4b99e3123eb5cc86715c9be83e8394ab353be65",
+      "bytes": 1030
+    },
+    "nuxt/b2/agent/tooling.json": {
+      "sha256": "3916bc057b3b48aa67ee01c1a1d1b7318c5f85b5302d937ce4da4bcfac496a08",
+      "bytes": 1787
+    },
+    "nuxt/b2/measure/lighthouse/home-mobile.json": {
+      "sha256": "737160837f0aabe8baac810ad4d144a5546feb76f469877bd1538e60698a1f32",
+      "bytes": 289141
+    },
+    "nuxt/b2/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "0ba18e31d430808bfd63547c0e0a8fb168f6984723f8374554cafc926ffb737b",
+      "bytes": 233236
+    },
+    "nuxt/b2/measure/results.json": {
+      "sha256": "2a9cc4ca6b8dca2e13317d3182d0fd58f41173e38b68119b3d68803296ac3b43",
+      "bytes": 15246
+    },
+    "nuxt/b2/measure/source-counts.json": {
+      "sha256": "9999920f0d8c8cf414abad5226761bd65af4a43e5f2aa48518a29f321432153c",
+      "bytes": 200
+    },
+    "nuxt/b2/repo/app/app/app.vue": {
+      "sha256": "568811e9d1ccdeb1b16fc6f9643196fa2758373e43eec224965af519b74663da",
+      "bytes": 283
+    },
+    "nuxt/b2/repo/app/app/assets/main.css": {
+      "sha256": "c7d23ccd0e4e44ab1b6d3d2b10cf2d08056123eb28e6df101b3fe33a75d040ec",
+      "bytes": 5508
+    },
+    "nuxt/b2/repo/app/app/components/EvolutionTree.vue": {
+      "sha256": "5e88cbeacec0d8dd462f52683b6f3be66420e20cc326c082a6ca23bd9533a48f",
+      "bytes": 366
+    },
+    "nuxt/b2/repo/app/app/components/MoveTable.vue": {
+      "sha256": "05ba14660b92ea43299ce0dc1895a5bc4664d994eaea628a305db012552b6d87",
+      "bytes": 1429
+    },
+    "nuxt/b2/repo/app/app/components/PokemonCards.vue": {
+      "sha256": "42c1d9238db46f3c05fb701093f09985003c8e22bf5dc8fe821a8ec745033633",
+      "bytes": 521
+    },
+    "nuxt/b2/repo/app/app/components/TypeBadge.vue": {
+      "sha256": "b7ebbfd2cb6ecd4d8e9cb427e535c194e41072a7ea484ca9d631c5063fc4f69a",
+      "bytes": 351
+    },
+    "nuxt/b2/repo/app/app/pages/[...slug].vue": {
+      "sha256": "4b4623b67e441205b1ddbed8568fd1c054d950bb3c485675caf0c84d8f193c4d",
+      "bytes": 6898
+    },
+    "nuxt/b2/repo/app/nuxt.config.ts": {
+      "sha256": "2e45dc9503018b45173afe35239b57ba1a0602a222ed54739e943b07dc4acb26",
+      "bytes": 182
+    },
+    "nuxt/b2/repo/app/package-lock.json": {
+      "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+      "bytes": 290072
+    },
+    "nuxt/b2/repo/app/package.json": {
+      "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+      "bytes": 155
+    },
+    "nuxt/b2/repo/app/server/api/page.get.ts": {
+      "sha256": "ee7af8f1622b6e4b630e1e5b129b631d06a484cfdabdb37846c0e5b03ab2b584",
+      "bytes": 4475
+    },
+    "nuxt/b2/repo/source-files.json": {
+      "sha256": "2a75004e9a9237cd376810db8955d1426e6a6e4e3f937252502130ef7c9b6139",
+      "bytes": 2163
+    },
+    "nuxt/b3/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "nuxt/b3/agent/final-test.stdout": {
+      "sha256": "377f43ef95e9b20ad25e465121544f09c97ec5be7966cdc2a0e2077563e8c527",
+      "bytes": 10083
+    },
+    "nuxt/b3/agent/native-timing-usage.json": {
+      "sha256": "59f4da1b1ef174cb592903d3164508279648c5b2fd28e6e1b58acb1afb0c7cfd",
+      "bytes": 1309
+    },
+    "nuxt/b3/agent/prompt.txt": {
+      "sha256": "1d7490e8740f977aef0e88886fb37a386be62cc792392cf2203437d57baaa65d",
+      "bytes": 124
+    },
+    "nuxt/b3/agent/run-info.json": {
+      "sha256": "a1035a97de6ecdf70cbbe46c57f0328ba144f78b859b82af80ef360f67e6b33d",
+      "bytes": 1035
+    },
+    "nuxt/b3/agent/tooling.json": {
+      "sha256": "3916bc057b3b48aa67ee01c1a1d1b7318c5f85b5302d937ce4da4bcfac496a08",
+      "bytes": 1787
+    },
+    "nuxt/b3/measure/lighthouse/home-mobile.json": {
+      "sha256": "3bb1d06449e05a2eeb41f960d0d4a4e5222b4311d408c30543817661d60381e2",
+      "bytes": 289874
+    },
+    "nuxt/b3/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "715831971ed13fdedbbd99f6e93b89305f1e4887fc28aa567ddac7f70d22f9ec",
+      "bytes": 235928
+    },
+    "nuxt/b3/measure/results.json": {
+      "sha256": "d4010c63baa5d51a0e89cbb9732aa4d0418177976c618da37928ef53b1891cef",
+      "bytes": 15358
+    },
+    "nuxt/b3/measure/source-counts.json": {
+      "sha256": "69b655d1ace17aa8f87ffab2d6dd9393575997417b9f6d4c75c9c79fea891b26",
+      "bytes": 199
+    },
+    "nuxt/b3/repo/app/app/assets/style.css": {
+      "sha256": "5fe5db89d816b43eb69bc8dec34895a572e0ccb38bfe1198575e37a0fcb07911",
+      "bytes": 5451
+    },
+    "nuxt/b3/repo/app/app/components/EvolutionTree.vue": {
+      "sha256": "e2b12e533ed475982cf0832adf2dc8ce2e1a9b8aa2badda2681227d12f09ff36",
+      "bytes": 352
+    },
+    "nuxt/b3/repo/app/app/components/MoveTable.vue": {
+      "sha256": "36e823c7326726acc748abad525b5ad559296d7029dd892423cf3ac1f5321e2b",
+      "bytes": 1580
+    },
+    "nuxt/b3/repo/app/app/components/PokeCards.vue": {
+      "sha256": "32258d5b073c28b45d92c4c35481f44c9a08dd8fd4df580b774001a32e94e773",
+      "bytes": 598
+    },
+    "nuxt/b3/repo/app/app/pages/[...slug].vue": {
+      "sha256": "6ce1b199033a3928c251b4f258f541bacff5a928ba59176061f0a1d463d38315",
+      "bytes": 7883
+    },
+    "nuxt/b3/repo/app/nuxt.config.ts": {
+      "sha256": "92a4dcc1acf6d0e4d5ac1a5a5244974787cae6750136a32a039b4cf85a55d6bc",
+      "bytes": 238
+    },
+    "nuxt/b3/repo/app/package-lock.json": {
+      "sha256": "3cd9bf640f60a75097bb499bcf3e8069c9ac65bff9302095c6994d9eed5b5c9e",
+      "bytes": 290082
+    },
+    "nuxt/b3/repo/app/package.json": {
+      "sha256": "95d9d06c8616ed69d2f26bc5f524f6fd35c792596b602582d487256fecc96669",
+      "bytes": 160
+    },
+    "nuxt/b3/repo/app/server/api/page.get.ts": {
+      "sha256": "254d2a76b7ca5eb75fa13423dba2eb88f4a032d42dd5fa72607a7eebca7b13be",
+      "bytes": 2597
+    },
+    "nuxt/b3/repo/source-files.json": {
+      "sha256": "01fbd810530d823a61173c504400363f76a6240ee73aff6c0fb74a1b7a712fcc",
+      "bytes": 1794
+    },
+    "nuxt/b4/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "nuxt/b4/agent/final-test.stdout": {
+      "sha256": "9d321ad7161950fa2e08109f7821767b0ea1407da336ca00cb995b251a3f00ba",
+      "bytes": 9928
+    },
+    "nuxt/b4/agent/native-timing-usage.json": {
+      "sha256": "555da65004ea0195d4a2b5ffafef1010a1d7c7bf3acaae19c3128ccafbedadbc",
+      "bytes": 1304
+    },
+    "nuxt/b4/agent/prompt.txt": {
+      "sha256": "1d7490e8740f977aef0e88886fb37a386be62cc792392cf2203437d57baaa65d",
+      "bytes": 124
+    },
+    "nuxt/b4/agent/run-info.json": {
+      "sha256": "27bd6d8f364dc46dfd9c258957fcac4555e19378d5d72b3b8d5b3d51742b9b9c",
+      "bytes": 1030
+    },
+    "nuxt/b4/agent/tooling.json": {
+      "sha256": "3916bc057b3b48aa67ee01c1a1d1b7318c5f85b5302d937ce4da4bcfac496a08",
+      "bytes": 1787
+    },
+    "nuxt/b4/measure/lighthouse/home-mobile.json": {
+      "sha256": "7c75956513bc7fd993837f6aa2774928b057e75e42fac45da6b53a690c914059",
+      "bytes": 289159
+    },
+    "nuxt/b4/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "5faaf1cd2aedb3068069e845793dc334f99d0d4d6b2c6db3e9daeb7034cbadc0",
+      "bytes": 234739
+    },
+    "nuxt/b4/measure/results.json": {
+      "sha256": "577c6579e212420ca3ac5823b41981562434cfcab5013de175f4ac6f4ea8a90d",
+      "bytes": 15501
+    },
+    "nuxt/b4/measure/source-counts.json": {
+      "sha256": "e3348917bd2cd696cc6d75562f7d019edb342a49d07d36c3d82ed9bb5104fe8c",
+      "bytes": 196
+    },
+    "nuxt/b4/repo/app/.gitignore": {
+      "sha256": "b337c2d3e6f980e187a36c8bf8dbe9cfd46da7c05dbda094328ad81c2d3c7973",
+      "bytes": 30
+    },
+    "nuxt/b4/repo/app/app/app.vue": {
+      "sha256": "6669e4ad83a04e77d0250ab1a096c5700781717af69ab9ef2cdb202895fbdf3c",
+      "bytes": 319
+    },
+    "nuxt/b4/repo/app/app/assets/main.css": {
+      "sha256": "05e1cafc7913cd22c1d1f77f96558cf3b0930ad7c6259c863f023d3df758603c",
+      "bytes": 4395
+    },
+    "nuxt/b4/repo/app/app/components/EvolutionTree.vue": {
+      "sha256": "a0946ca567cce4142e54ef0736c8e4354d5c7a6bb3b46b7b99388bf728efe69a",
+      "bytes": 351
+    },
+    "nuxt/b4/repo/app/app/components/MoveTable.vue": {
+      "sha256": "d4562e3a5ad3d78d499a5119caf53c9f3975fb22d36ca48dd5671dcd1ba7eab8",
+      "bytes": 1420
+    },
+    "nuxt/b4/repo/app/app/components/PokemonCards.vue": {
+      "sha256": "9d03818d467698e065c3f71dfcb94681dd5ba1da71e6f3340ebb903ad0d88e25",
+      "bytes": 569
+    },
+    "nuxt/b4/repo/app/app/components/TypeBadge.vue": {
+      "sha256": "e7b117c179a4d97c0e49dd1f352e67b58e255cb08b95c88ff234a8bed41fda86",
+      "bytes": 398
+    },
+    "nuxt/b4/repo/app/app/pages/[...slug].vue": {
+      "sha256": "cf85d049c44d2acc1a226f430dfb55b5b779a9364f16523486aebc207fdcb62b",
+      "bytes": 6291
+    },
+    "nuxt/b4/repo/app/nuxt.config.ts": {
+      "sha256": "4781f80e3ce8b423ba0b31b2ffef2288e3e246984ab131a337e86e65b68095ef",
+      "bytes": 154
+    },
+    "nuxt/b4/repo/app/package-lock.json": {
+      "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+      "bytes": 290072
+    },
+    "nuxt/b4/repo/app/package.json": {
+      "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+      "bytes": 155
+    },
+    "nuxt/b4/repo/app/server/api/page.get.ts": {
+      "sha256": "ad1b28dce02de15d5f1fd5b659f95493a9501ab1e4a9c625ce092d8603dfd338",
+      "bytes": 4460
+    },
+    "nuxt/b4/repo/source-files.json": {
+      "sha256": "9df4a20114dfed6d54f90bb0af33bb2a540ea5356a73da49ea328aacd8dcede5",
+      "bytes": 2336
+    },
+    "provided-stylesheets.json": {
+      "sha256": "8e2b0e17343a45f6f690b892a40055af237021a9a25b3cee33c4f5be271a904e",
+      "bytes": 3916
+    },
+    "publication-adaptations.json": {
+      "sha256": "9075e718864039d4ddbf11aa84e38dc043beae97620c930bdb59c99aca4961da",
+      "bytes": 1892
+    },
+    "react-router/b1/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "react-router/b1/agent/final-test.stdout": {
+      "sha256": "1aae3c4010ec3b531906e20937876f45da9aa145a893ee211aa064344297ce9d",
+      "bytes": 7430
+    },
+    "react-router/b1/agent/native-timing-usage.json": {
+      "sha256": "e9cee4c5be1adf17ec9c46c3d99d37199538f49f1dd52e6aaf5abffb40b08091",
+      "bytes": 1303
+    },
+    "react-router/b1/agent/prompt.txt": {
+      "sha256": "6aab0ca2f6c7c7dc3e93ae38b41616d5b0c6ef996f3692935af4fa8b83ee8edb",
+      "bytes": 150
+    },
+    "react-router/b1/agent/run-info.json": {
+      "sha256": "4ba883a0d0fa20618bd07f54f139b3487ce9e9a035d39f5695ef7af611743ed6",
+      "bytes": 1270
+    },
+    "react-router/b1/agent/tooling.json": {
+      "sha256": "bdeaa84dc7fda644608bce4f45dfaf29187c8a48cf01b32df8b0bcbb877855a9",
+      "bytes": 1297
+    },
+    "react-router/b1/measure/lighthouse/home-mobile.json": {
+      "sha256": "f1aa42ee0ffa539ac61b70fcf4c9f9ce7b3c69f597f6da1a4851f77feec92118",
+      "bytes": 292166
+    },
+    "react-router/b1/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "67c374c136ef7ff12f83ce1fe33004080dca2ffab9b0500c95eeae0036f0802f",
+      "bytes": 239104
+    },
+    "react-router/b1/measure/results.json": {
+      "sha256": "ce07f8f7063ab07a291f05d6f3bfa61f9222b4027a22a8473669614d57149cc2",
+      "bytes": 15560
+    },
+    "react-router/b1/measure/source-counts.json": {
+      "sha256": "d022db0965746597278ad7aa5a6877866b88b00757eeecaee0a512a46eeb7d58",
+      "bytes": 198
+    },
+    "react-router/b1/repo/app/app/api.server.ts": {
+      "sha256": "8d3b09da05e806c97a4ee73a442064a69a5d074e34e0e6b2670f86ffebefc8c1",
+      "bytes": 3721
+    },
+    "react-router/b1/repo/app/app/page.tsx": {
+      "sha256": "ee8f1bb3a5faed24c22a34d33374ab7e81c6e2cc77e0aac6c56aa7724489f80e",
+      "bytes": 8167
+    },
+    "react-router/b1/repo/app/app/root.tsx": {
+      "sha256": "73c879a688b6b746cc0d2e3bd969ce9790b11ca8875fffcd410d255855fab9eb",
+      "bytes": 581
+    },
+    "react-router/b1/repo/app/app/routes.ts": {
+      "sha256": "69ea96600ca363841c8a8d80f49e6ba8b9ef7053c0d87421985dccffba946c05",
+      "bytes": 136
+    },
+    "react-router/b1/repo/app/app/style.css": {
+      "sha256": "ab0c12495659aa743a6c60a3bfde02de231541bf4ce635cf8ec40e5dd4c4bef2",
+      "bytes": 5123
+    },
+    "react-router/b1/repo/app/package-lock.json": {
+      "sha256": "bae159a42ecf5c3a7ca35b49a1cf866a77bf44dbb50793b19062334f6f728e04",
+      "bytes": 105348
+    },
+    "react-router/b1/repo/app/package.json": {
+      "sha256": "75b68aaf5a48459d7a168fbd86da5cbe354aecaeefc2d0b5a04883f34f4abfe4",
+      "bytes": 363
+    },
+    "react-router/b1/repo/app/vite.config.ts": {
+      "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+      "bytes": 147
+    },
+    "react-router/b1/repo/source-files.json": {
+      "sha256": "e1834c0a0ecf8beb0d51697b6ec9963786c67f17a839c1cdeca4f8575a6a5eed",
+      "bytes": 1543
+    },
+    "react-router/b2/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "react-router/b2/agent/final-test.stdout": {
+      "sha256": "cea0e5355b5a4f070d6cc68e5f643a0efe8573676e7df3117990960317cd1ac3",
+      "bytes": 7810
+    },
+    "react-router/b2/agent/native-timing-usage.json": {
+      "sha256": "fb1a8c2a348ea12f8d2cfba5074d4ea11d2d381d9ff42bea7660697c5dfba392",
+      "bytes": 1306
+    },
+    "react-router/b2/agent/prompt.txt": {
+      "sha256": "6aab0ca2f6c7c7dc3e93ae38b41616d5b0c6ef996f3692935af4fa8b83ee8edb",
+      "bytes": 150
+    },
+    "react-router/b2/agent/run-info.json": {
+      "sha256": "833de8a5fe21c1ffce62bf9237d8b5b8edb91a2987bc6be4a24ef6ecb5583e39",
+      "bytes": 1276
+    },
+    "react-router/b2/agent/tooling.json": {
+      "sha256": "bdeaa84dc7fda644608bce4f45dfaf29187c8a48cf01b32df8b0bcbb877855a9",
+      "bytes": 1297
+    },
+    "react-router/b2/measure/lighthouse/home-mobile.json": {
+      "sha256": "6da5f82bbe2d3b7f76bb481e7a30fbb77d59d3a4c522582091d1536f90ec26bc",
+      "bytes": 293291
+    },
+    "react-router/b2/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "4e0cb6171cf4a76c47fbac3fa31cc1a9871caef32e57f2bf55ebc18d9796ff6f",
+      "bytes": 238498
+    },
+    "react-router/b2/measure/results.json": {
+      "sha256": "63d50e00596249339faa88eb22d59bd3cbfaa8e62d1235ed34bfa9151adf14f5",
+      "bytes": 15506
+    },
+    "react-router/b2/measure/source-counts.json": {
+      "sha256": "e28e289878ab9805a51247026836f9091dbca6be6f98e46730a3c9d5943d9afa",
+      "bytes": 199
+    },
+    "react-router/b2/repo/app/app/api.server.ts": {
+      "sha256": "486303fd3d54b963822e5db998925f1557ba799332c2d46dadcb3779ad624f01",
+      "bytes": 1068
+    },
+    "react-router/b2/repo/app/app/root.tsx": {
+      "sha256": "85aa9417025ff709e2b176005bfc1672208d908a19b9c2716a36c0881380142c",
+      "bytes": 631
+    },
+    "react-router/b2/repo/app/app/routes/detail.tsx": {
+      "sha256": "4686b0dba2042b811c9915c6483f8fc90ca7e1279e4bca47d1f6123f7bcaa003",
+      "bytes": 2073
+    },
+    "react-router/b2/repo/app/app/routes/home.tsx": {
+      "sha256": "190dd648fefc1a56615dc5b93920cf251fdfedd4d5628621bf83c2c28139a8bd",
+      "bytes": 2594
+    },
+    "react-router/b2/repo/app/app/routes/missing.tsx": {
+      "sha256": "f5e5cc7bb9a4b1eb39d9f76d05b60325959bfc3a92df42f3d3e85185b858a2d9",
+      "bytes": 113
+    },
+    "react-router/b2/repo/app/app/routes/pokemon.tsx": {
+      "sha256": "0c1230a60d338271e51adf53c3d85d9961e663e4a1f7d72fd26a7d573cf52ba6",
+      "bytes": 4844
+    },
+    "react-router/b2/repo/app/app/routes/types.tsx": {
+      "sha256": "97e727960d4801894bb6384574ab5ab8ab14d1e2de3ff790779760841f919d19",
+      "bytes": 499
+    },
+    "react-router/b2/repo/app/app/routes.ts": {
+      "sha256": "1423c39735e0d054b5000a8f0250e613278e2124c829a6151f4a214c261cb1fe",
+      "bytes": 249
+    },
+    "react-router/b2/repo/app/app/style.css": {
+      "sha256": "28a103c80ec4914b766fe45d4925195c1e62b0e5b501e67d6e3cbbd0fbf17419",
+      "bytes": 5379
+    },
+    "react-router/b2/repo/app/app/ui.tsx": {
+      "sha256": "ea7ea974d2912933d960c0d756cc461c4a13717efc50b2c7aca777ef8801d07e",
+      "bytes": 1566
+    },
+    "react-router/b2/repo/app/package-lock.json": {
+      "sha256": "f6b098fa1c310ae53b40dfb09d8121d47d188e92a0eaf52d5997be7e4b2a64e5",
+      "bytes": 105381
+    },
+    "react-router/b2/repo/app/package.json": {
+      "sha256": "b1b4c1441b09af4b4995fb36aab319935f108605755bd69d9ad379612b7d3df9",
+      "bytes": 383
+    },
+    "react-router/b2/repo/app/vite.config.ts": {
+      "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+      "bytes": 147
+    },
+    "react-router/b2/repo/source-files.json": {
+      "sha256": "5e12504b2a041763c704e6f50f94c3f77258cc8947c9b7d92860b8c74a47f035",
+      "bytes": 2468
+    },
+    "react-router/b3/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "react-router/b3/agent/final-test.stdout": {
+      "sha256": "afa86ff2ef5571cb70ee18ab5efcb0a0dd1f18cf4ffd1e7bf85ea74ec9ce4b34",
+      "bytes": 7427
+    },
+    "react-router/b3/agent/native-timing-usage.json": {
+      "sha256": "29d7b506dc45f31e6fcc9ac9268fa9b7bb4d82c48ac433cf32ea038d5fcc9283",
+      "bytes": 1308
+    },
+    "react-router/b3/agent/prompt.txt": {
+      "sha256": "6aab0ca2f6c7c7dc3e93ae38b41616d5b0c6ef996f3692935af4fa8b83ee8edb",
+      "bytes": 150
+    },
+    "react-router/b3/agent/run-info.json": {
+      "sha256": "0630825d7cd84aed6a3a24ae60f4fabff8c05983776a4ec2dfa590e9c839f98e",
+      "bytes": 1276
+    },
+    "react-router/b3/agent/tooling.json": {
+      "sha256": "bdeaa84dc7fda644608bce4f45dfaf29187c8a48cf01b32df8b0bcbb877855a9",
+      "bytes": 1297
+    },
+    "react-router/b3/measure/lighthouse/home-mobile.json": {
+      "sha256": "8d8e538db24cc2994eabf9d974a218008346723c5716cc7c9c95c8be41fd96d7",
+      "bytes": 289094
+    },
+    "react-router/b3/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "020d9128743457130c1b99e63eb4e067a6c439522d983bc814bcf85263f4367e",
+      "bytes": 241645
+    },
+    "react-router/b3/measure/results.json": {
+      "sha256": "daed421c842ef7469faf8fc3497e26f4f40b302c00c854c4118e91b0178164a0",
+      "bytes": 15644
+    },
+    "react-router/b3/measure/source-counts.json": {
+      "sha256": "cfb97581d1d9493e1418a73de7ccad233f91f4dae403d5e9186121bf7b3a7c33",
+      "bytes": 199
+    },
+    "react-router/b3/repo/app/app/api.server.ts": {
+      "sha256": "ac7fa99681c53c6100fd5dde9b9dda0066bc9fcc7a2224de1ce950e314cdbad2",
+      "bytes": 4456
+    },
+    "react-router/b3/repo/app/app/page.tsx": {
+      "sha256": "170e78dc4bb9a9fc997b3af59f91744e111aaf74762ab3e7f49dbe4b633331b7",
+      "bytes": 9247
+    },
+    "react-router/b3/repo/app/app/root.tsx": {
+      "sha256": "8c2a93655954670aa863b5ee25980ff24bc649b4f154d1966cdc38e676514ee1",
+      "bytes": 641
+    },
+    "react-router/b3/repo/app/app/routes.ts": {
+      "sha256": "1b5817817262d8e05b5dbef63e6c99c5a1ffe8ec1325c4ee00495960a7a2b857",
+      "bytes": 357
+    },
+    "react-router/b3/repo/app/app/style.css": {
+      "sha256": "770fdb06919f7972ff23ddfef503e3bc932fb2756de091a78e7c7129301323dc",
+      "bytes": 6059
+    },
+    "react-router/b3/repo/app/package-lock.json": {
+      "sha256": "23ca47c7c5f48946c0477e74f08b956da8717a57ced8e4923477d1fe8e5773cf",
+      "bytes": 105377
+    },
+    "react-router/b3/repo/app/package.json": {
+      "sha256": "d8073bdbf6d204f87ceaf2e591d0bc701ac5faae83a50d4b5605ab9db55da969",
+      "bytes": 380
+    },
+    "react-router/b3/repo/app/vite.config.ts": {
+      "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+      "bytes": 147
+    },
+    "react-router/b3/repo/source-files.json": {
+      "sha256": "70c2d31b8c7db720f3ee2fb0836889722b603f5b9eaa71def128023593901104",
+      "bytes": 1543
+    },
+    "react-router/b4/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "react-router/b4/agent/final-test.stdout": {
+      "sha256": "fc0e328d15b46a28903ce96bd8b3d5881646d4d87240ba5e38005a373f2df9ae",
+      "bytes": 7576
+    },
+    "react-router/b4/agent/native-timing-usage.json": {
+      "sha256": "32380539f600c1d8fb70d1f18cd591622dd32d09d6324f2b46713879f6d1cded",
+      "bytes": 1303
+    },
+    "react-router/b4/agent/prompt.txt": {
+      "sha256": "6aab0ca2f6c7c7dc3e93ae38b41616d5b0c6ef996f3692935af4fa8b83ee8edb",
+      "bytes": 150
+    },
+    "react-router/b4/agent/run-info.json": {
+      "sha256": "785d2827f2b01e4949587fda1dc17cb9e40aa319da388197cd5aa58f42938f52",
+      "bytes": 1270
+    },
+    "react-router/b4/agent/tooling.json": {
+      "sha256": "bdeaa84dc7fda644608bce4f45dfaf29187c8a48cf01b32df8b0bcbb877855a9",
+      "bytes": 1297
+    },
+    "react-router/b4/measure/lighthouse/home-mobile.json": {
+      "sha256": "d44f43be7d00ec7d7d5e8d7897a79f67f3072e3a22fbffa6da10fe752a2b0f21",
+      "bytes": 294248
+    },
+    "react-router/b4/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "e0b8f46203ed885124a4e1268693927f725133fde8188e3f9067f69d528fd15f",
+      "bytes": 240135
+    },
+    "react-router/b4/measure/results.json": {
+      "sha256": "f49952e0d0ae43195e43da73d3d1a6fb7e53b4d0a016259a549d889d63e60446",
+      "bytes": 15638
+    },
+    "react-router/b4/measure/source-counts.json": {
+      "sha256": "2e1cab41f2b43843e39efc5f35944e07b6eaa8c22d5c22e03850a37742bce056",
+      "bytes": 198
+    },
+    "react-router/b4/repo/app/app/api.server.ts": {
+      "sha256": "844d693608340f3ebc88761e58df80eefe8257041aeede208c4b287316a8c6c7",
+      "bytes": 3531
+    },
+    "react-router/b4/repo/app/app/home.tsx": {
+      "sha256": "6f3c3bac79c4ba2a96e0347f069678d25493273e9eac558001826a85487cc8c3",
+      "bytes": 58
+    },
+    "react-router/b4/repo/app/app/page.tsx": {
+      "sha256": "57dced9885e1ac2fb360becb5f4bfe95cb67f013d946f997ee3d433886441781",
+      "bytes": 8204
+    },
+    "react-router/b4/repo/app/app/root.tsx": {
+      "sha256": "973383fbd4330d3ca079a230afb3efd836647ec077795d79469b3bf88e572da0",
+      "bytes": 559
+    },
+    "react-router/b4/repo/app/app/routes.ts": {
+      "sha256": "fb83ff5d494ed2a606856fdf8e0a72a7c6b2417686cc876c14e658d743377611",
+      "bytes": 112
+    },
+    "react-router/b4/repo/app/app/style.css": {
+      "sha256": "8a5992aa0dea25c7b398151b69a0415ee102f3cc0f5162a4a0a1b47245d56acc",
+      "bytes": 4933
+    },
+    "react-router/b4/repo/app/package-lock.json": {
+      "sha256": "bae159a42ecf5c3a7ca35b49a1cf866a77bf44dbb50793b19062334f6f728e04",
+      "bytes": 105348
+    },
+    "react-router/b4/repo/app/package.json": {
+      "sha256": "8cdfa0f97d9e6fdcb7838d76faa98ed9472a3673e5325d9ff46e8e454bcba335",
+      "bytes": 361
+    },
+    "react-router/b4/repo/app/vite.config.ts": {
+      "sha256": "b7bfffe11bc6b89988e85e90e50bc8b44c9fea48decaea8ef9648c63782c7724",
+      "bytes": 147
+    },
+    "react-router/b4/repo/source-files.json": {
+      "sha256": "f371001c13830b0f8c209eafd76c44cb119fc4a1195b0db8ac6ab2da12fb5f70",
+      "bytes": 1718
+    },
+    "report.md": {
+      "sha256": "adf5b4a5197a52e443fa9cbd279c16c2b34f1a859fb369340995f1f9b5623fca",
+      "bytes": 33545
+    },
+    "restore-provided-styles.py": {
+      "sha256": "74cf0e2141e98c02bb693a0c4940ce3e74acd5ff97e4292fa1ca3c52fa40ea76",
+      "bytes": 881
+    },
+    "summary.json": {
+      "sha256": "358b349e424b022b94685d0c849803aafaac4a3d4efb130dcfff1bd11b22849d",
+      "bytes": 72988
+    },
+    "sveltekit/b1/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "sveltekit/b1/agent/final-test.stdout": {
+      "sha256": "e348442705262f23cf022286b0979a402cbf612d2979903a3b478fa25f209660",
+      "bytes": 10964
+    },
+    "sveltekit/b1/agent/native-timing-usage.json": {
+      "sha256": "3ea06e9d81c9f1b3bc31c74a4d9b15df6fd31dc560f38f95fae4d555591a58f0",
+      "bytes": 1309
+    },
+    "sveltekit/b1/agent/prompt.txt": {
+      "sha256": "c2a95a8ba1f352fcd40addf2d38821c08623929c6fe951d376afc41995109ad5",
+      "bytes": 129
+    },
+    "sveltekit/b1/agent/run-info.json": {
+      "sha256": "ddae02184936304be9d75648ee12a96e32f2457a4883c72b96fad1be467c91eb",
+      "bytes": 1178
+    },
+    "sveltekit/b1/agent/tooling.json": {
+      "sha256": "9e2f1d46bc9026fa93f688b70895ff146991515e5e409335e175a3d4ed1215c7",
+      "bytes": 1839
+    },
+    "sveltekit/b1/measure/lighthouse/home-mobile.json": {
+      "sha256": "a5d2bacb62b29d92a19e1335cedcb209a28120f7345f230e838e68fcb2e7e8fe",
+      "bytes": 266700
+    },
+    "sveltekit/b1/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "57d5feaab60c79a235814d911cd5d4688049ad460b143a25e82ae7e4c3f8ea01",
+      "bytes": 239983
+    },
+    "sveltekit/b1/measure/results.json": {
+      "sha256": "7f363511942bd53c1d92de1d22a215de0c916936ebae870262fc76f1ca3c2904",
+      "bytes": 15233
+    },
+    "sveltekit/b1/measure/source-counts.json": {
+      "sha256": "d38d538ad711e6b0c81b92aa64e210c6411fde03da306da06e1be4914ae238ed",
+      "bytes": 199
+    },
+    "sveltekit/b1/repo/app/package-lock.json": {
+      "sha256": "991db28c5e9f7a812e7bf7c55be8953b13ac4520f335218fc8004b75d88e845e",
+      "bytes": 38308
+    },
+    "sveltekit/b1/repo/app/package.json": {
+      "sha256": "c8bbf39d43cd3bebef91f3e69e096887773b75e4a0db881e0f4f7fd7fd3a56ac",
+      "bytes": 393
+    },
+    "sveltekit/b1/repo/app/src/app.html": {
+      "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+      "bytes": 261
+    },
+    "sveltekit/b1/repo/app/src/lib/Cards.svelte": {
+      "sha256": "6a62ca6f523c80429987a7b26cf84056a6a845ec1ad54a396de575ec31c1698d",
+      "bytes": 596
+    },
+    "sveltekit/b1/repo/app/src/lib/MoveTable.svelte": {
+      "sha256": "3a7c99a0757d1fe1445aca5872e9c2be095f72509492253f1d69388d62ad28c9",
+      "bytes": 1416
+    },
+    "sveltekit/b1/repo/app/src/lib/api.js": {
+      "sha256": "62cce7cb0499ef96752c38356dba5b0288d6f4f17a083d6a13eaf559e203b171",
+      "bytes": 4195
+    },
+    "sveltekit/b1/repo/app/src/lib/style.css": {
+      "sha256": "85e328474836d0139a9866db423cca56073d5a769cc7a6eb334c589c56459250",
+      "bytes": 4880
+    },
+    "sveltekit/b1/repo/app/src/routes/[...path]/+page.server.js": {
+      "sha256": "85808b0e1e5968fbbb096878a050850420af0c60bd253d214f7504f0f7aee429",
+      "bytes": 174
+    },
+    "sveltekit/b1/repo/app/src/routes/[...path]/+page.svelte": {
+      "sha256": "0c69d699ab5b4528fd2c52f9f6f1baa5a74e082a40f032c413727cf2f9db57c1",
+      "bytes": 7280
+    },
+    "sveltekit/b1/repo/app/vite.config.js": {
+      "sha256": "4d79496be1df153e8d95ed1339858789451275ac45bd707e11ec3cc2e0dceab5",
+      "bytes": 151
+    },
+    "sveltekit/b1/repo/source-files.json": {
+      "sha256": "03d1ac98ed1b39252dc52c10b7a71b68c0259625a4fdef49fe472e7cea80841f",
+      "bytes": 1960
+    },
+    "sveltekit/b2/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "sveltekit/b2/agent/final-test.stdout": {
+      "sha256": "fa447403658daf56b8aaac8d322dd5ce91672443a513af4d0a0a225f1bcabf12",
+      "bytes": 11085
+    },
+    "sveltekit/b2/agent/native-timing-usage.json": {
+      "sha256": "eac5ce4079ccc98153775d050b5f79c5f685d95e433d65801277a57fe0324613",
+      "bytes": 1304
+    },
+    "sveltekit/b2/agent/prompt.txt": {
+      "sha256": "c2a95a8ba1f352fcd40addf2d38821c08623929c6fe951d376afc41995109ad5",
+      "bytes": 129
+    },
+    "sveltekit/b2/agent/run-info.json": {
+      "sha256": "1107a8ad1e93eab4f5e33d4c037d4376c3cd432e5046873846485755d82397fb",
+      "bytes": 1193
+    },
+    "sveltekit/b2/agent/tooling.json": {
+      "sha256": "2f4f41b76d5fcdacc32459d91dd950669855b7b9f75e8e24fb3fd1933d5c0aff",
+      "bytes": 1840
+    },
+    "sveltekit/b2/measure/lighthouse/home-mobile.json": {
+      "sha256": "3d1684e58caa10d7c114512f60d21e3efe775ac1e384aed44958865d4110ae72",
+      "bytes": 292992
+    },
+    "sveltekit/b2/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "45e6bab092be85251a76ab18b872a408748c9c280c568c5cf323cd47e06579a9",
+      "bytes": 239116
+    },
+    "sveltekit/b2/measure/results.json": {
+      "sha256": "e8343a38d71c639e0fcc3fabecfad5c5d7938af04627b48c3db24796a841b98e",
+      "bytes": 15293
+    },
+    "sveltekit/b2/measure/source-counts.json": {
+      "sha256": "1e8b128d4bf07c3dac1c86a8671605223e6556d2c5fc71aaed5f0f89ce90c860",
+      "bytes": 198
+    },
+    "sveltekit/b2/repo/app/.gitignore": {
+      "sha256": "f97f85b0e91f15c9a45517c5fc6404f218c97f101353ed64d8ad644539fcb92d",
+      "bytes": 34
+    },
+    "sveltekit/b2/repo/app/package-lock.json": {
+      "sha256": "62c5be13a43723219846433e4bac1eb4432ad581b4ce72e6a3491d210430e990",
+      "bytes": 39419
+    },
+    "sveltekit/b2/repo/app/package.json": {
+      "sha256": "57336f51634252a6e246bafad2077dca7ab1eb69c83d9349bfabdc015d58aa44",
+      "bytes": 418
+    },
+    "sveltekit/b2/repo/app/src/app.html": {
+      "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+      "bytes": 261
+    },
+    "sveltekit/b2/repo/app/src/lib/Cards.svelte": {
+      "sha256": "d44e60f37c6c7afadb67c3c7eb205b21d1bcc0308313981512765f5ef2edb5f8",
+      "bytes": 701
+    },
+    "sveltekit/b2/repo/app/src/lib/MoveTable.svelte": {
+      "sha256": "e54ba65564078729791a1b44c3da844a9803e1c87acfbf27c51c00e6867b9977",
+      "bytes": 1835
+    },
+    "sveltekit/b2/repo/app/src/lib/style.css": {
+      "sha256": "bbcd4b6f67910b9e3e44785d263a6be628bb4b98aeac1719c72d46bc5e1e99ed",
+      "bytes": 6015
+    },
+    "sveltekit/b2/repo/app/src/lib/utils.js": {
+      "sha256": "c1857542892d4e61d16ad8d2a13eab2afb4ac21e46fd1ec58058e391abf9b54d",
+      "bytes": 453
+    },
+    "sveltekit/b2/repo/app/src/routes/[...path]/+page.server.js": {
+      "sha256": "e675724d7fd5fe41b0aa3a62be03779a5507d57a4ccd7b60238c2c03b0528eed",
+      "bytes": 6946
+    },
+    "sveltekit/b2/repo/app/src/routes/[...path]/+page.svelte": {
+      "sha256": "53da94386070ba67db1480e0ce585fd03cc30513523c37cb8722e814855addf4",
+      "bytes": 8990
+    },
+    "sveltekit/b2/repo/app/vite.config.js": {
+      "sha256": "1ed9211ae37c07d585ec495c9efc2187a256b9bad9411642eba8d32e02bf13b0",
+      "bytes": 210
+    },
+    "sveltekit/b2/repo/source-files.json": {
+      "sha256": "d5fb1504f918b16bfb005726d1facb86386b1d153ab6e272cefdd8d7afad74c9",
+      "bytes": 2135
+    },
+    "sveltekit/b3/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "sveltekit/b3/agent/final-test.stdout": {
+      "sha256": "afa9bedf39d1969c3d6432b2b67f65c7409294b007c2040ba0cdef1155584656",
+      "bytes": 11091
+    },
+    "sveltekit/b3/agent/native-timing-usage.json": {
+      "sha256": "80d41162660fd931e071baf6c39ef007821d66a7480dcf90db5caa28c5810291",
+      "bytes": 1304
+    },
+    "sveltekit/b3/agent/prompt.txt": {
+      "sha256": "c2a95a8ba1f352fcd40addf2d38821c08623929c6fe951d376afc41995109ad5",
+      "bytes": 129
+    },
+    "sveltekit/b3/agent/run-info.json": {
+      "sha256": "a319d0e39c8d27d288a4b761083446e10b922e638c130343bdb7f9b9c7684edf",
+      "bytes": 1173
+    },
+    "sveltekit/b3/agent/tooling.json": {
+      "sha256": "2f4f41b76d5fcdacc32459d91dd950669855b7b9f75e8e24fb3fd1933d5c0aff",
+      "bytes": 1840
+    },
+    "sveltekit/b3/measure/lighthouse/home-mobile.json": {
+      "sha256": "dfe263a688a259924a676b90af562f838bac0f6d7f6c3a6aaa5f1d1af190c36d",
+      "bytes": 293619
+    },
+    "sveltekit/b3/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "0601652283649332e221052c4541f5dcbfcbdda2f0f6997ef290d4b1e6c8779c",
+      "bytes": 238076
+    },
+    "sveltekit/b3/measure/results.json": {
+      "sha256": "576cea59c7cea64b52f33bb4efd86991d0f818b687f9b91a1b567afdf861ec47",
+      "bytes": 15284
+    },
+    "sveltekit/b3/measure/source-counts.json": {
+      "sha256": "0de5bde4c2dd92b7ef4908bd282aa56f2ab53905a60c3aada4de82f867109b3d",
+      "bytes": 199
+    },
+    "sveltekit/b3/repo/app/package-lock.json": {
+      "sha256": "b4291270ed2718ac5195c3f3d5666f40a5ce872ef15919b6cbed066adfdc2aaf",
+      "bytes": 38280
+    },
+    "sveltekit/b3/repo/app/package.json": {
+      "sha256": "179572a7d209aaa44042e9c8d47fb085e49b6441c81dd2f7bfea09fd7df11a3b",
+      "bytes": 370
+    },
+    "sveltekit/b3/repo/app/src/app.html": {
+      "sha256": "348275e8b35985ec780a545748e87b299cba99cf975fd6b3a9f9bd23b33650b8",
+      "bytes": 262
+    },
+    "sveltekit/b3/repo/app/src/lib/Cards.svelte": {
+      "sha256": "9fb584e4bfb318767e2a615f17878c0c58306ca33b6f00232d3ac88de6b5858c",
+      "bytes": 558
+    },
+    "sveltekit/b3/repo/app/src/lib/MoveTable.svelte": {
+      "sha256": "764de284d88c080175789b85739a6ab5a66b6ef0a414a41c95e16a8ee31124f5",
+      "bytes": 1447
+    },
+    "sveltekit/b3/repo/app/src/lib/api.js": {
+      "sha256": "0ae569d73b205be9c0ca3d7b2717c9cf9b9ba7171c641081b0aa7c1bd1a3cf93",
+      "bytes": 4543
+    },
+    "sveltekit/b3/repo/app/src/lib/style.css": {
+      "sha256": "7f68d14c0e3f8ae532fe5102129a65e2548a3974db0dc569a26518b879d7a1df",
+      "bytes": 5245
+    },
+    "sveltekit/b3/repo/app/src/lib/utils.js": {
+      "sha256": "b69988f15cecc9f4470fa7a3f7ccc2b10832a59394474064db4dcfe156c1fcda",
+      "bytes": 465
+    },
+    "sveltekit/b3/repo/app/src/routes/[...path]/+page.server.js": {
+      "sha256": "abd33b67f70c92672c3c796509c61b94229cf32e7179133f111f0f72a925c1c9",
+      "bytes": 153
+    },
+    "sveltekit/b3/repo/app/src/routes/[...path]/+page.svelte": {
+      "sha256": "2a8277347fc1d2dc52c77fc22f0f3b16f5b351e51bcacf9cb695ae6d21c99e71",
+      "bytes": 6584
+    },
+    "sveltekit/b3/repo/app/vite.config.js": {
+      "sha256": "51a49eda8f90f5553822dfa612f349ee69649565c556da8a067760f563f259f6",
+      "bytes": 200
+    },
+    "sveltekit/b3/repo/source-files.json": {
+      "sha256": "4559df48bec90ef8698f9eaebb04676ad170629f13635c26531e955e424f99fa",
+      "bytes": 2140
+    },
+    "sveltekit/b4/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "sveltekit/b4/agent/final-test.stdout": {
+      "sha256": "6966367f4ee6f95d0104a3e2f4c41db29420b3ce64e9f5fa4037fc7ff8d7f8f6",
+      "bytes": 11098
+    },
+    "sveltekit/b4/agent/native-timing-usage.json": {
+      "sha256": "2acad6535b3f7402e642612a2321ff2bf45f8b421b2cbdc5467bc7240f457205",
+      "bytes": 1304
+    },
+    "sveltekit/b4/agent/prompt.txt": {
+      "sha256": "c2a95a8ba1f352fcd40addf2d38821c08623929c6fe951d376afc41995109ad5",
+      "bytes": 129
+    },
+    "sveltekit/b4/agent/run-info.json": {
+      "sha256": "3cf9bc0459aec65c9eece9994f67245f6774139445cb8ad2718a2cdb14bf0985",
+      "bytes": 1173
+    },
+    "sveltekit/b4/agent/tooling.json": {
+      "sha256": "2f4f41b76d5fcdacc32459d91dd950669855b7b9f75e8e24fb3fd1933d5c0aff",
+      "bytes": 1840
+    },
+    "sveltekit/b4/measure/lighthouse/home-mobile.json": {
+      "sha256": "fb96c5c7abdafea81c74539812e426c76f934f3b42031037ee87b45897bc73fc",
+      "bytes": 291623
+    },
+    "sveltekit/b4/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "324753105be448019b0dd975ec46a676c37eba7b01f544f45f4a1f1d3338f5ab",
+      "bytes": 238703
+    },
+    "sveltekit/b4/measure/results.json": {
+      "sha256": "c800ee3bb5559b22fad2251d9bb2efec3cd8b3ff12e6a47ea3c0c760182058d8",
+      "bytes": 15170
+    },
+    "sveltekit/b4/measure/source-counts.json": {
+      "sha256": "7abe990750be547f7ea5a3e8655e3982156440a017e7f147110b1f2bd997d544",
+      "bytes": 199
+    },
+    "sveltekit/b4/repo/app/package-lock.json": {
+      "sha256": "d7135a46cec6e9b51c09efa53f98398bfcea7ec7df8bd69fe1acbc203c7275f5",
+      "bytes": 38346
+    },
+    "sveltekit/b4/repo/app/package.json": {
+      "sha256": "1ec0f51009926844a45ba91d1ff523c84a84abaa89c9b0f012704b4256654156",
+      "bytes": 419
+    },
+    "sveltekit/b4/repo/app/src/app.html": {
+      "sha256": "348275e8b35985ec780a545748e87b299cba99cf975fd6b3a9f9bd23b33650b8",
+      "bytes": 262
+    },
+    "sveltekit/b4/repo/app/src/lib/Cards.svelte": {
+      "sha256": "6dd3ef2eafb624bf001c82dfbf75ed358aa3fa68a52638db46cd6f582fba37e5",
+      "bytes": 562
+    },
+    "sveltekit/b4/repo/app/src/lib/MoveTable.svelte": {
+      "sha256": "747bc233607fd06d951f79fa0e25b99c1a1b3a5281c1358fb73f14390eaf71c6",
+      "bytes": 1262
+    },
+    "sveltekit/b4/repo/app/src/lib/app.css": {
+      "sha256": "a183ea13efd99d3120ade57cab17ad4fd4e288528c083ca4d7da38b9b1dec505",
+      "bytes": 5425
+    },
+    "sveltekit/b4/repo/app/src/lib/utils.js": {
+      "sha256": "118f122e90ad369fa056e1b0872855b47d5e35f56a98ff3eb63a8b44a8e9f21f",
+      "bytes": 435
+    },
+    "sveltekit/b4/repo/app/src/routes/[...path]/+page.server.js": {
+      "sha256": "03ff5e4b04995ab9fdf67196dcceef432eb3dd1d5e0dfd8bd00eea0d3d93b499",
+      "bytes": 4797
+    },
+    "sveltekit/b4/repo/app/src/routes/[...path]/+page.svelte": {
+      "sha256": "25cbeff86c451dce398aa2c7a63591face0cc1b1bc9bc185db76c12860a3b550",
+      "bytes": 6700
+    },
+    "sveltekit/b4/repo/app/vite.config.js": {
+      "sha256": "c0bb299a18e4573eb5dd97ce676820a91a47b9e26818a55cf95c2ab943a56042",
+      "bytes": 207
+    },
+    "sveltekit/b4/repo/source-files.json": {
+      "sha256": "0212037f1499185ad3860430b03f14f3f63aa2a28bd2e6aa6315b92430ea61e7",
+      "bytes": 1960
+    },
+    "validate.py": {
+      "sha256": "0ddd97834307134a2f2ab64b6899544c4c02a95a06260461938dfa0b617336c7",
+      "bytes": 4347
+    },
+    "vanilla/b1/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "vanilla/b1/agent/final-test.stdout": {
+      "sha256": "37cba41f97e059048581794b6657307ee979485f6e3431f91d90b2e150712f98",
+      "bytes": 6553
+    },
+    "vanilla/b1/agent/native-timing-usage.json": {
+      "sha256": "633d145684350556acab78ec38a5bc5e496f49d355cc1a5402ddd8565af4e323",
+      "bytes": 1301
+    },
+    "vanilla/b1/agent/prompt.txt": {
+      "sha256": "f495913de52cab3c6f78d126cc8b664c2dfc20ebf0621c28acb0a677cc6c5824",
+      "bytes": 186
+    },
+    "vanilla/b1/agent/run-info.json": {
+      "sha256": "1ffd453288fca6a04cbe72f9e11fef181a6928b2b962753f41848ec3e14a1da5",
+      "bytes": 1033
+    },
+    "vanilla/b1/agent/tooling.json": {
+      "sha256": "dcc88290b9337b7bb2deaa08b4346454026d555eabadb94d90d440fba82a0d7a",
+      "bytes": 1185
+    },
+    "vanilla/b1/measure/lighthouse/home-mobile.json": {
+      "sha256": "f21911e4bab776b81ddce3ee2e13b65753ad1728d304b26c1aae1c27976a8986",
+      "bytes": 340444
+    },
+    "vanilla/b1/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "442c04fe3580ff716aa1b7d8d3a47117f9ebadd5e24924babe8c235d2441db0d",
+      "bytes": 327901
+    },
+    "vanilla/b1/measure/results.json": {
+      "sha256": "b555472f9d51fa9b4e0bf991d61071f2dfa59642ad75cff70298fa24ffa54432",
+      "bytes": 15401
+    },
+    "vanilla/b1/measure/source-counts.json": {
+      "sha256": "e3570d82f53e26399492dd219fe93121a8aaa68f866eeb8b3eb81105e5e7744e",
+      "bytes": 196
+    },
+    "vanilla/b1/repo/app/index.html": {
+      "sha256": "901ceb27a1bfbc72fc4826ea994b87de9de7843c5fea6e022a7315ad65b15441",
+      "bytes": 465
+    },
+    "vanilla/b1/repo/app/main.js": {
+      "sha256": "2a75821ad7dcf299d127c41fa4d677c0661647897cb413ff8789dedbc902d48a",
+      "bytes": 11167
+    },
+    "vanilla/b1/repo/app/package-lock.json": {
+      "sha256": "cdc6b0e96962dadfd90b5a213b7bd25c34c0558f60a6f9eecf88682bcbf20bfa",
+      "bytes": 24564
+    },
+    "vanilla/b1/repo/app/package.json": {
+      "sha256": "40eed9fec845baceb6168affe2a2bc90d798fff3ec25c8f9f82397d48ad651ef",
+      "bytes": 141
+    },
+    "vanilla/b1/repo/app/server.mjs": {
+      "sha256": "a8823a3ef23e60a39c925aeed765b1ddc767bbc3f886ffbff368fd606e3d2d8a",
+      "bytes": 633
+    },
+    "vanilla/b1/repo/app/style.css": {
+      "sha256": "8065eeffc40c02e61d562ba02e8a93124659069c4dfdadee305b633af32f5e26",
+      "bytes": 6017
+    },
+    "vanilla/b1/repo/app/vite.config.js": {
+      "sha256": "cbae62c05f7a8341442708b34688200952bc215bdc84a93a0351f57684cf4a25",
+      "bytes": 152
+    },
+    "vanilla/b1/repo/source-files.json": {
+      "sha256": "d4e607d09ea6a468ef89e9aec9fd2ae7dbad598d0768134039f957c6b81ff2b0",
+      "bytes": 1347
+    },
+    "vanilla/b2/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "vanilla/b2/agent/final-test.stdout": {
+      "sha256": "a7cc795df936743ac5225adc862c6fa3d99952262657ef45dcba66fa36efec6b",
+      "bytes": 6564
+    },
+    "vanilla/b2/agent/native-timing-usage.json": {
+      "sha256": "eed18f772d1252a5b61fd02a3439f4d8d1b47df16e3f3481b3b4b3c8f6f3123e",
+      "bytes": 1301
+    },
+    "vanilla/b2/agent/prompt.txt": {
+      "sha256": "f495913de52cab3c6f78d126cc8b664c2dfc20ebf0621c28acb0a677cc6c5824",
+      "bytes": 186
+    },
+    "vanilla/b2/agent/run-info.json": {
+      "sha256": "816e89704a2a33e19a37284bb8ebd91b3a7f1eb2f1216479c189b1cf6b864199",
+      "bytes": 1033
+    },
+    "vanilla/b2/agent/tooling.json": {
+      "sha256": "dcc88290b9337b7bb2deaa08b4346454026d555eabadb94d90d440fba82a0d7a",
+      "bytes": 1185
+    },
+    "vanilla/b2/measure/lighthouse/home-mobile.json": {
+      "sha256": "ed07ae694197f3cf79db9d2856736909c8beae9ff9ced0b03600bdbfe8d02114",
+      "bytes": 362188
+    },
+    "vanilla/b2/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "91b35fcd6ef0fa5fb9f093bd97e8a914d5adbaf44acc801e535233cb8f33ebdc",
+      "bytes": 389412
+    },
+    "vanilla/b2/measure/results.json": {
+      "sha256": "621a516911c3ba2c5a2136dfec296cdb143ebf5fd0e53ef6dd2d02323e4dc16d",
+      "bytes": 15620
+    },
+    "vanilla/b2/measure/source-counts.json": {
+      "sha256": "567024ddbaac0b57aa8a5a7940bcc5456bca68c7553b9c3de7bbf04f81dbd808",
+      "bytes": 196
+    },
+    "vanilla/b2/repo/app/.gitignore": {
+      "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+      "bytes": 20
+    },
+    "vanilla/b2/repo/app/index.html": {
+      "sha256": "f135183e8da3d22b39a92da034dfb31fb12df63df8bc7520248deb29d2cd39d3",
+      "bytes": 519
+    },
+    "vanilla/b2/repo/app/package-lock.json": {
+      "sha256": "a4802ddfc420447ca0275f342bcb9f0ec4be771aed1c639e20f1a3f385f2aa9d",
+      "bytes": 25327
+    },
+    "vanilla/b2/repo/app/package.json": {
+      "sha256": "c2f81cb6fcab5fde85c9f23016fc096ea3baf39b85bac1ee1cb26e280126b1de",
+      "bytes": 144
+    },
+    "vanilla/b2/repo/app/server.mjs": {
+      "sha256": "cc850e0bd38d89436e375e4914e360ea525ca0b3ef2a23dd9fa248d5ca5e0cf6",
+      "bytes": 783
+    },
+    "vanilla/b2/repo/app/src.js": {
+      "sha256": "c7edac3f7b02356d127a95ebf0d173a5df65f992990698cfd3dd07e3195fea7b",
+      "bytes": 11216
+    },
+    "vanilla/b2/repo/app/style.css": {
+      "sha256": "bde55d84aa07a10ccc2a03eea0dd78b8bae97915abd1573022f30924df942f02",
+      "bytes": 5182
+    },
+    "vanilla/b2/repo/source-files.json": {
+      "sha256": "6399d213361ba2789548d19c6ab31e73f556999cdff8c198ce682fe2cc5bb3a5",
+      "bytes": 1341
+    },
+    "vanilla/b3/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "vanilla/b3/agent/final-test.stdout": {
+      "sha256": "330b8693e1633c63553bd10ddc9976aa7ca2d552f7440652bd1be40db5083e59",
+      "bytes": 6560
+    },
+    "vanilla/b3/agent/native-timing-usage.json": {
+      "sha256": "c460ace45152960b665b96fb35bb7c821a6b4781cdc2b047b687b0674cf9fbdd",
+      "bytes": 1301
+    },
+    "vanilla/b3/agent/prompt.txt": {
+      "sha256": "f495913de52cab3c6f78d126cc8b664c2dfc20ebf0621c28acb0a677cc6c5824",
+      "bytes": 186
+    },
+    "vanilla/b3/agent/run-info.json": {
+      "sha256": "34757e69f402063fe4011d8fe38975f895c7761160dad9c7b2f894a83cc272eb",
+      "bytes": 1033
+    },
+    "vanilla/b3/agent/tooling.json": {
+      "sha256": "dcc88290b9337b7bb2deaa08b4346454026d555eabadb94d90d440fba82a0d7a",
+      "bytes": 1185
+    },
+    "vanilla/b3/measure/lighthouse/home-mobile.json": {
+      "sha256": "e8c114b9abb31e9a8b8d2150217234ccde9c40294792cd8c928018be97cf2626",
+      "bytes": 361015
+    },
+    "vanilla/b3/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "c09dc850dbb5f4d1eb9e617335f3630ed453d8b93294258a0e8fb4819c65eee9",
+      "bytes": 331768
+    },
+    "vanilla/b3/measure/results.json": {
+      "sha256": "abdb43e1b22da6ae01cb0109515196f7fa7fad32dd32f585299f47338edb1b64",
+      "bytes": 15548
+    },
+    "vanilla/b3/measure/source-counts.json": {
+      "sha256": "6d7d4f5e66f4fde5a7722aa1305aaf3d90adcc7fb955150253696bd1b77c626b",
+      "bytes": 196
+    },
+    "vanilla/b3/repo/app/index.html": {
+      "sha256": "933c31d398c09a5286abb4a354b53de46888ec6fcda77fe813c1a6fb8b0be4c7",
+      "bytes": 500
+    },
+    "vanilla/b3/repo/app/main.js": {
+      "sha256": "fc3b5896483680cac90e43cb274bc3cc2244cc19d2068068a2b5a2c32f509bab",
+      "bytes": 12289
+    },
+    "vanilla/b3/repo/app/package-lock.json": {
+      "sha256": "38de857caa57c0599083728437721f1b21a85903573eb7ce785466ea85c0ccad",
+      "bytes": 25327
+    },
+    "vanilla/b3/repo/app/package.json": {
+      "sha256": "41763b9a538ccad6cea2b62e3fda69faa050064c85b01974b9521de6c42ac652",
+      "bytes": 144
+    },
+    "vanilla/b3/repo/app/server.mjs": {
+      "sha256": "a052797394d49bec2ed9db536ce73763a48a2136c254297d4feda01df99da1c8",
+      "bytes": 774
+    },
+    "vanilla/b3/repo/app/style.css": {
+      "sha256": "63a02d17e95ed43f46c500779228c39d57d4bba322e1a3823e11ea0be899fe8a",
+      "bytes": 5535
+    },
+    "vanilla/b3/repo/source-files.json": {
+      "sha256": "de1fbf06b46b340dccd5b318bdb7c104219be55ac6704b09cf37d1aa962b4d95",
+      "bytes": 1169
+    },
+    "vanilla/b4/agent/acceptance.json": {
+      "sha256": "ae940517d84f9f2651689c28439631fdfcab5a8aa2de7da51249231881d0d6c2",
+      "bytes": 108
+    },
+    "vanilla/b4/agent/final-test.stdout": {
+      "sha256": "3da71138ec3f667cf34e3ff92420f2adbd9d82785a8bc9920f4ded0143736870",
+      "bytes": 6560
+    },
+    "vanilla/b4/agent/native-timing-usage.json": {
+      "sha256": "bd14ee1fbf68937705336153c6ef6669234e893cc620dee02a7eb8df314d6113",
+      "bytes": 1301
+    },
+    "vanilla/b4/agent/prompt.txt": {
+      "sha256": "f495913de52cab3c6f78d126cc8b664c2dfc20ebf0621c28acb0a677cc6c5824",
+      "bytes": 186
+    },
+    "vanilla/b4/agent/run-info.json": {
+      "sha256": "400c97bd2384590d6857dce24669114460ff4e159af1caac910bc074ea2301e6",
+      "bytes": 1032
+    },
+    "vanilla/b4/agent/tooling.json": {
+      "sha256": "dcc88290b9337b7bb2deaa08b4346454026d555eabadb94d90d440fba82a0d7a",
+      "bytes": 1185
+    },
+    "vanilla/b4/measure/lighthouse/home-mobile.json": {
+      "sha256": "37c614347cf3a281e418ad3326f5de9a8d37e577e41a7a0ab6c270ed8036be73",
+      "bytes": 363968
+    },
+    "vanilla/b4/measure/lighthouse/pokemon-mobile.json": {
+      "sha256": "f2c6c8e4442184b9f1da285a40fd65ff514405f526d88ad58c51863688d2791b",
+      "bytes": 355256
+    },
+    "vanilla/b4/measure/results.json": {
+      "sha256": "0a889f45923bddcecb512f5ed3a3600bc313053619a62897c6e45f2ae569c9a3",
+      "bytes": 15501
+    },
+    "vanilla/b4/measure/source-counts.json": {
+      "sha256": "8ac25a420fb4087094f781b3a083244516419e5ce97c4a9888763f5ba183c31c",
+      "bytes": 196
+    },
+    "vanilla/b4/repo/app/index.html": {
+      "sha256": "f5c6ebac7928200c784974cad5e8159fc24b2e3510605c6b26c769fa636d2688",
+      "bytes": 498
+    },
+    "vanilla/b4/repo/app/package-lock.json": {
+      "sha256": "38de857caa57c0599083728437721f1b21a85903573eb7ce785466ea85c0ccad",
+      "bytes": 25327
+    },
+    "vanilla/b4/repo/app/package.json": {
+      "sha256": "41763b9a538ccad6cea2b62e3fda69faa050064c85b01974b9521de6c42ac652",
+      "bytes": 144
+    },
+    "vanilla/b4/repo/app/server.mjs": {
+      "sha256": "d82283653cacf0af0d70f4b863e2eada81b6d3a6eed4c7db2a7ff145627a8002",
+      "bytes": 830
+    },
+    "vanilla/b4/repo/app/src.js": {
+      "sha256": "6647e9da43413b15eb1121dade213f2719163046d61be9b882101aa528e396e2",
+      "bytes": 11776
+    },
+    "vanilla/b4/repo/app/style.css": {
+      "sha256": "087b502a28ed8449b193cea6e9c42bf0a70f8483a7fbc17be56e382b82e54d30",
+      "bytes": 6010
+    },
+    "vanilla/b4/repo/source-files.json": {
+      "sha256": "78aa0b2f28293031f4d8d7faaa0686e33dcaa77b2a0299e93014febeaeb974ca",
+      "bytes": 1168
+    }
+  }
+}

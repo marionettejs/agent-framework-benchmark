@@ -1,0 +1,1695 @@
+{
+  "builds": [
+    {
+      "framework": "marionette",
+      "build": "b1",
+      "files": [
+        {
+          "path": "index.html",
+          "input": "../../marionette/b1/repo/app/index.html",
+          "parser": "html",
+          "sha256": "dbdbbd90c74180edf56ec4f2b11ee63202c6d2284c40fa1d450fca8e095f2174",
+          "bytes": 243
+        },
+        {
+          "path": "main.js",
+          "input": "../../marionette/b1/repo/app/main.js",
+          "parser": "babel",
+          "sha256": "e41e838c2bb492de672a5cfdaac82fbc321cb703af9a6926864e9dee41626021",
+          "bytes": 13770
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../marionette/b1/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "62b5c85183d1ea0eaf004f65857e74f6032e1b099bc8737e23449ac87030d116",
+          "bytes": 593
+        },
+        {
+          "path": "style.css",
+          "input": "../../marionette/b1/repo/app/style.css",
+          "parser": "css",
+          "sha256": "2526438428bad292e50269b516c043087a7fce60d37e9b78e9202ede1382c15e",
+          "bytes": 5303
+        },
+        {
+          "path": "vite.config.js",
+          "input": "../../marionette/b1/repo/app/vite.config.js",
+          "parser": "babel",
+          "sha256": "f78e4e9c28b129fc29d7b16f3b1abda4902dba309871483836b49c84cc188118",
+          "bytes": 175
+        }
+      ]
+    },
+    {
+      "framework": "marionette",
+      "build": "b2",
+      "files": [
+        {
+          "path": "index.html",
+          "input": "../../marionette/b2/repo/app/index.html",
+          "parser": "html",
+          "sha256": "ac02bcac2f760eb1b36d263dab3603a87dd7da2ccbdbc06374e85f8c7fa9a9af",
+          "bytes": 290
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../marionette/b2/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "d3522299717aca45efe7c419ff9ffb4540b09cd128bb90900587f1523ec13eb3",
+          "bytes": 1157
+        },
+        {
+          "path": "src/api.js",
+          "input": "../../marionette/b2/repo/app/src/api.js",
+          "parser": "babel",
+          "sha256": "9077331ff4426a24dc809e5bcddbd27d4da65bf917e474a65d4200b4cc2adfe1",
+          "bytes": 1416
+        },
+        {
+          "path": "src/main.js",
+          "input": "../../marionette/b2/repo/app/src/main.js",
+          "parser": "babel",
+          "sha256": "cb0fd002e8df3396e0c1549ed260fe101b45f3995e441b735fca181685b31eeb",
+          "bytes": 16394
+        },
+        {
+          "path": "src/style.css",
+          "input": "../../marionette/b2/repo/app/src/style.css",
+          "parser": "css",
+          "sha256": "d27f536b26f5272162d0219173f634e991865b3f88186e5a1b03fcafafcdeee3",
+          "bytes": 6764
+        }
+      ]
+    },
+    {
+      "framework": "marionette",
+      "build": "b3",
+      "files": [
+        {
+          "path": "api.js",
+          "input": "../../marionette/b3/repo/app/api.js",
+          "parser": "babel",
+          "sha256": "d6a5c879bab157914170f64ed7e42f5efbffcc60454dc4cb6d3d077c93ce7027",
+          "bytes": 1928
+        },
+        {
+          "path": "index.html",
+          "input": "../../marionette/b3/repo/app/index.html",
+          "parser": "html",
+          "sha256": "dbdbbd90c74180edf56ec4f2b11ee63202c6d2284c40fa1d450fca8e095f2174",
+          "bytes": 243
+        },
+        {
+          "path": "main.js",
+          "input": "../../marionette/b3/repo/app/main.js",
+          "parser": "babel",
+          "sha256": "f9fb9397e1eceb3dd58b413758e636d6a714ab0ebaff52823a169c0e9a805a25",
+          "bytes": 12356
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../marionette/b3/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "8580c602d2ec3cc19de0e45c2151b50942e0e12caa40e230b16308d29268c007",
+          "bytes": 910
+        },
+        {
+          "path": "style.css",
+          "input": "../../marionette/b3/repo/app/style.css",
+          "parser": "css",
+          "sha256": "e4ed949c3cd89ec39b915a3ddba092cfd4264cbf886cb86ddfb45fdb352178a2",
+          "bytes": 5805
+        }
+      ]
+    },
+    {
+      "framework": "marionette",
+      "build": "b4",
+      "files": [
+        {
+          "path": "index.html",
+          "input": "../../marionette/b4/repo/app/index.html",
+          "parser": "html",
+          "sha256": "55f39d03b7c3286c9659762c5a4a7f4cdc7487bc1612ac9710af09e558ec92c9",
+          "bytes": 246
+        },
+        {
+          "path": "main.js",
+          "input": "../../marionette/b4/repo/app/main.js",
+          "parser": "babel",
+          "sha256": "5fb294d3ea4dc4af419d5c865ef3bf6709f71501cc03531ad54c4292575f9022",
+          "bytes": 14365
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../marionette/b4/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "3462cbcd8e5d1388feddf7288b95f3e6681569e69420744d056ca10e9ebb39b7",
+          "bytes": 888
+        },
+        {
+          "path": "style.css",
+          "input": "../../marionette/b4/repo/app/style.css",
+          "parser": "css",
+          "sha256": "ef9ff7ae86561a6fceaf2aef4cf3e520dde73754f115a46aac99c8e525fbf57e",
+          "bytes": 6050
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b1",
+      "files": [
+        {
+          "path": "server.mjs",
+          "input": "../../angular/b1/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "0453819797c7a2b9ee03101d07e3a998f02478048df9594600ba8ad143b24bbc",
+          "bytes": 1128
+        },
+        {
+          "path": "src/app/api.ts",
+          "input": "../../angular/b1/repo/app/src/app/api.ts",
+          "parser": "typescript",
+          "sha256": "7a1c02215b14bf55547ef91860fb3cfea15d460386f5b2be5e0d48faae0f04af",
+          "bytes": 1877
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "input": "../../angular/b1/repo/app/src/app/app.config.ts",
+          "parser": "typescript",
+          "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+          "bytes": 312
+        },
+        {
+          "path": "src/app/app.css",
+          "input": "../../angular/b1/repo/app/src/app/app.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/app.html",
+          "input": "../../angular/b1/repo/app/src/app/app.html",
+          "parser": "angular",
+          "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+          "bytes": 20144
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "input": "../../angular/b1/repo/app/src/app/app.routes.ts",
+          "parser": "typescript",
+          "sha256": "6545ce434022dc50f53f29274e550753af412d2a94127ca351a696bf1fbb7d65",
+          "bytes": 623
+        },
+        {
+          "path": "src/app/app.ts",
+          "input": "../../angular/b1/repo/app/src/app/app.ts",
+          "parser": "typescript",
+          "sha256": "b781692cd1f78635a6771389f1dc090aba3fe4a9cd0d0499938ea54db8752a7e",
+          "bytes": 530
+        },
+        {
+          "path": "src/app/cards/cards.css",
+          "input": "../../angular/b1/repo/app/src/app/cards/cards.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/cards/cards.html",
+          "input": "../../angular/b1/repo/app/src/app/cards/cards.html",
+          "parser": "angular",
+          "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+          "bytes": 20
+        },
+        {
+          "path": "src/app/cards/cards.ts",
+          "input": "../../angular/b1/repo/app/src/app/cards/cards.ts",
+          "parser": "typescript",
+          "sha256": "ef2641133de17adc0d15ade45d52486cea4514574f39d86f6a33c8cbbff6cbe1",
+          "bytes": 821
+        },
+        {
+          "path": "src/app/evolution/evolution.css",
+          "input": "../../angular/b1/repo/app/src/app/evolution/evolution.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/evolution/evolution.html",
+          "input": "../../angular/b1/repo/app/src/app/evolution/evolution.html",
+          "parser": "angular",
+          "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+          "bytes": 24
+        },
+        {
+          "path": "src/app/evolution/evolution.ts",
+          "input": "../../angular/b1/repo/app/src/app/evolution/evolution.ts",
+          "parser": "typescript",
+          "sha256": "9cd9d9794885e9f2ad9c7a7b9ca55fa2b00552a3824c359ee62c564815bfaa22",
+          "bytes": 500
+        },
+        {
+          "path": "src/app/home/home.css",
+          "input": "../../angular/b1/repo/app/src/app/home/home.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/home/home.html",
+          "input": "../../angular/b1/repo/app/src/app/home/home.html",
+          "parser": "angular",
+          "sha256": "f6037309c94506abb3218925306a2a44f5ee943ab0872d2952d3da884b69a83a",
+          "bytes": 1137
+        },
+        {
+          "path": "src/app/home/home.ts",
+          "input": "../../angular/b1/repo/app/src/app/home/home.ts",
+          "parser": "typescript",
+          "sha256": "554b8c63a6f4c60c05a10bd535695206534b22968983da08a5d1d77fbad76ac5",
+          "bytes": 2796
+        },
+        {
+          "path": "src/app/models.ts",
+          "input": "../../angular/b1/repo/app/src/app/models.ts",
+          "parser": "typescript",
+          "sha256": "443b7df87b1c1d2185494e796d41a6a7fe6b4be9590c2e6cc4429734a3d4fcc8",
+          "bytes": 2312
+        },
+        {
+          "path": "src/app/move-tables/move-tables.css",
+          "input": "../../angular/b1/repo/app/src/app/move-tables/move-tables.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/move-tables/move-tables.html",
+          "input": "../../angular/b1/repo/app/src/app/move-tables/move-tables.html",
+          "parser": "angular",
+          "sha256": "c759416b23e18137c882381ff04a9fa49c6e68aeaa57c62045b91077fa0960f1",
+          "bytes": 1028
+        },
+        {
+          "path": "src/app/move-tables/move-tables.ts",
+          "input": "../../angular/b1/repo/app/src/app/move-tables/move-tables.ts",
+          "parser": "typescript",
+          "sha256": "939f9f740e1823c71bcf43117da583f2d1bc8e1803f74b9cb766c77375fc2102",
+          "bytes": 4106
+        },
+        {
+          "path": "src/app/not-found/not-found.css",
+          "input": "../../angular/b1/repo/app/src/app/not-found/not-found.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/not-found/not-found.html",
+          "input": "../../angular/b1/repo/app/src/app/not-found/not-found.html",
+          "parser": "angular",
+          "sha256": "dc8309b8d2e845a2988ad1083941a0144fc9708a05288a1a90e563b36ec583e9",
+          "bytes": 24
+        },
+        {
+          "path": "src/app/not-found/not-found.ts",
+          "input": "../../angular/b1/repo/app/src/app/not-found/not-found.ts",
+          "parser": "typescript",
+          "sha256": "4d837b12139a471816eb68c048b7a0006a1f7b44deb7928898209d247a6503c0",
+          "bytes": 293
+        },
+        {
+          "path": "src/app/pokemon/pokemon.css",
+          "input": "../../angular/b1/repo/app/src/app/pokemon/pokemon.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/pokemon/pokemon.html",
+          "input": "../../angular/b1/repo/app/src/app/pokemon/pokemon.html",
+          "parser": "angular",
+          "sha256": "1bdd2a01c4d1464c5d20af38cf77ffe2f48ea457c6db07673ad73b6ff435a196",
+          "bytes": 1917
+        },
+        {
+          "path": "src/app/pokemon/pokemon.ts",
+          "input": "../../angular/b1/repo/app/src/app/pokemon/pokemon.ts",
+          "parser": "typescript",
+          "sha256": "c07f11a481d3f61522bd2ec41c48a6a50c88d0e444eebdaca8149e2dba970a96",
+          "bytes": 1745
+        },
+        {
+          "path": "src/app/resource-page/resource-page.css",
+          "input": "../../angular/b1/repo/app/src/app/resource-page/resource-page.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/resource-page/resource-page.html",
+          "input": "../../angular/b1/repo/app/src/app/resource-page/resource-page.html",
+          "parser": "angular",
+          "sha256": "a5653140ae9c5559c705ca1e8f9ff3fe5a4197b4407011b56bd392f50a85a42b",
+          "bytes": 2057
+        },
+        {
+          "path": "src/app/resource-page/resource-page.ts",
+          "input": "../../angular/b1/repo/app/src/app/resource-page/resource-page.ts",
+          "parser": "typescript",
+          "sha256": "d353d07263196eb46b36ac567247c481ed9f74543f772c74a1676c6dac8f85af",
+          "bytes": 2334
+        },
+        {
+          "path": "src/app/type-list/type-list.css",
+          "input": "../../angular/b1/repo/app/src/app/type-list/type-list.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/type-list/type-list.html",
+          "input": "../../angular/b1/repo/app/src/app/type-list/type-list.html",
+          "parser": "angular",
+          "sha256": "edb1a9ce8b849b2ef84079e7969ad21bececa98d74d54aa16f442a3f0d5e5c5f",
+          "bytes": 24
+        },
+        {
+          "path": "src/app/type-list/type-list.ts",
+          "input": "../../angular/b1/repo/app/src/app/type-list/type-list.ts",
+          "parser": "typescript",
+          "sha256": "aa959b953222a565b4a8da6595ad3f39523b62e9ffc01834d592caf3610199f5",
+          "bytes": 611
+        },
+        {
+          "path": "src/index.html",
+          "input": "../../angular/b1/repo/app/src/index.html",
+          "parser": "angular",
+          "sha256": "26bc4e4e717152c81d30b115c8a82364eb9242d7f5d8b7e9b99e3a83c34b6b0d",
+          "bytes": 326
+        },
+        {
+          "path": "src/main.ts",
+          "input": "../../angular/b1/repo/app/src/main.ts",
+          "parser": "typescript",
+          "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+          "bytes": 222
+        },
+        {
+          "path": "src/styles.css",
+          "input": "../../angular/b1/repo/app/src/styles.css",
+          "parser": "css",
+          "sha256": "a2ec6d08297f7ad6c2a0065807549120585c5366ab9846196119e2841ad7aea3",
+          "bytes": 5996
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b2",
+      "files": [
+        {
+          "path": "server.mjs",
+          "input": "../../angular/b2/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "2ed7e6a48fc6ec564d25dfe04a93fce530b462aeb51f21fe69c072a9c9f85402",
+          "bytes": 1219
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "input": "../../angular/b2/repo/app/src/app/app.config.ts",
+          "parser": "typescript",
+          "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+          "bytes": 312
+        },
+        {
+          "path": "src/app/app.css",
+          "input": "../../angular/b2/repo/app/src/app/app.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/app.html",
+          "input": "../../angular/b2/repo/app/src/app/app.html",
+          "parser": "angular",
+          "sha256": "1d3b9ee5099d4973d12cf903ce3b985b57db6629a62fe58a0c03eb257193f782",
+          "bytes": 8849
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "input": "../../angular/b2/repo/app/src/app/app.routes.ts",
+          "parser": "typescript",
+          "sha256": "c019a926e937da047748eeffd041ae052e9b3c05375e2647dd85a6244cfe62e7",
+          "bytes": 152
+        },
+        {
+          "path": "src/app/app.ts",
+          "input": "../../angular/b2/repo/app/src/app/app.ts",
+          "parser": "typescript",
+          "sha256": "34eb40f2e4b29d9d9534ba2725955348097ee80dfb7abc8fe90f516faf795d27",
+          "bytes": 7473
+        },
+        {
+          "path": "src/app/cards/cards.css",
+          "input": "../../angular/b2/repo/app/src/app/cards/cards.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/cards/cards.html",
+          "input": "../../angular/b2/repo/app/src/app/cards/cards.html",
+          "parser": "angular",
+          "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+          "bytes": 20
+        },
+        {
+          "path": "src/app/cards/cards.ts",
+          "input": "../../angular/b2/repo/app/src/app/cards/cards.ts",
+          "parser": "typescript",
+          "sha256": "c45cde856e5a45450362a555be947d9e7df122c87ddd439911caa08bf20cae9c",
+          "bytes": 941
+        },
+        {
+          "path": "src/app/data.ts",
+          "input": "../../angular/b2/repo/app/src/app/data.ts",
+          "parser": "typescript",
+          "sha256": "5981e46695d12666baf7e2ecd2d9823eaad75dcff4c4d17f37423dc40d4028e2",
+          "bytes": 2861
+        },
+        {
+          "path": "src/app/evolution/evolution.css",
+          "input": "../../angular/b2/repo/app/src/app/evolution/evolution.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/evolution/evolution.html",
+          "input": "../../angular/b2/repo/app/src/app/evolution/evolution.html",
+          "parser": "angular",
+          "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+          "bytes": 24
+        },
+        {
+          "path": "src/app/evolution/evolution.ts",
+          "input": "../../angular/b2/repo/app/src/app/evolution/evolution.ts",
+          "parser": "typescript",
+          "sha256": "39cea195197b4efac77bc54a00b10ddb1de08a32350e98fa85b3455bf1f2d7a1",
+          "bytes": 490
+        },
+        {
+          "path": "src/app/move-tables/move-tables.css",
+          "input": "../../angular/b2/repo/app/src/app/move-tables/move-tables.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/move-tables/move-tables.html",
+          "input": "../../angular/b2/repo/app/src/app/move-tables/move-tables.html",
+          "parser": "angular",
+          "sha256": "b29aa1fb9f50c8f284a90edd18d339940f7fe3015fcf93c9b161e7939cd0b0a7",
+          "bytes": 26
+        },
+        {
+          "path": "src/app/move-tables/move-tables.ts",
+          "input": "../../angular/b2/repo/app/src/app/move-tables/move-tables.ts",
+          "parser": "typescript",
+          "sha256": "455851f3b2601be761490afdc414b452aa94c88a62c7afa4674cc86b082c421d",
+          "bytes": 6018
+        },
+        {
+          "path": "src/app/shell.ts",
+          "input": "../../angular/b2/repo/app/src/app/shell.ts",
+          "parser": "typescript",
+          "sha256": "98b6894b842ca8b6bc6ce49c988203929e5a209729ba2c8ab4bfd0b4ed9c61ec",
+          "bytes": 206
+        },
+        {
+          "path": "src/index.html",
+          "input": "../../angular/b2/repo/app/src/index.html",
+          "parser": "angular",
+          "sha256": "95fb6e9d57e84a26bacdef4603298ac43b1c8045e630a2b203420f852470f54f",
+          "bytes": 293
+        },
+        {
+          "path": "src/main.ts",
+          "input": "../../angular/b2/repo/app/src/main.ts",
+          "parser": "typescript",
+          "sha256": "2ee647ee4601cf71b98258483b663e66ddf8dbd7faff25d8af2ebf0b7288ba07",
+          "bytes": 228
+        },
+        {
+          "path": "src/styles.css",
+          "input": "../../angular/b2/repo/app/src/styles.css",
+          "parser": "css",
+          "sha256": "3f0313147816cabbe7ee314241e2ca3a0eaa3d530cd2612de7c168ce57ada0c8",
+          "bytes": 6888
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b3",
+      "files": [
+        {
+          "path": "server.mjs",
+          "input": "../../angular/b3/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "723783bb5d1e2ce65547410235162775167561e3e03bf51683d6fcea67dd4e42",
+          "bytes": 1147
+        },
+        {
+          "path": "src/app/api.ts",
+          "input": "../../angular/b3/repo/app/src/app/api.ts",
+          "parser": "typescript",
+          "sha256": "6f29114d6f58e5cf836f906e525841c8966e44b7b0b45eee1457184b265a8ff3",
+          "bytes": 1924
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "input": "../../angular/b3/repo/app/src/app/app.config.ts",
+          "parser": "typescript",
+          "sha256": "0d89d2482b81f6aa9605d8480e7797b8ab24229194e012eeb38f204ffb6080cd",
+          "bytes": 190
+        },
+        {
+          "path": "src/app/app.css",
+          "input": "../../angular/b3/repo/app/src/app/app.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/app.html",
+          "input": "../../angular/b3/repo/app/src/app/app.html",
+          "parser": "angular",
+          "sha256": "cf32997c0ffdce3bfbd191ab1ed2e1983194e4091ac44ac3aef57803aa8c8330",
+          "bytes": 11278
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "input": "../../angular/b3/repo/app/src/app/app.routes.ts",
+          "parser": "typescript",
+          "sha256": "e2ef74b4c1f7f52a30a417c6808f01b2a29e69bb0d20302527ae5001607f7180",
+          "bytes": 77
+        },
+        {
+          "path": "src/app/app.ts",
+          "input": "../../angular/b3/repo/app/src/app/app.ts",
+          "parser": "typescript",
+          "sha256": "3325854de16add15c85bc0af3bcb7282a23100abbb1a96ff7459e3906db9c259",
+          "bytes": 10281
+        },
+        {
+          "path": "src/app/cards.ts",
+          "input": "../../angular/b3/repo/app/src/app/cards.ts",
+          "parser": "typescript",
+          "sha256": "dfe11de96d4cd1111c579cd2983c2985dab4f5f06982c7eaa72cec6799dd252d",
+          "bytes": 919
+        },
+        {
+          "path": "src/app/evolution.ts",
+          "input": "../../angular/b3/repo/app/src/app/evolution.ts",
+          "parser": "typescript",
+          "sha256": "3f22fdd3a1e4f58db69ca6ad168aae2891946bff89b2320b1bd657974e572a71",
+          "bytes": 520
+        },
+        {
+          "path": "src/app/models.ts",
+          "input": "../../angular/b3/repo/app/src/app/models.ts",
+          "parser": "typescript",
+          "sha256": "49ea326e6c34c286f2079ebc720b99b5b09a4a79cc25e417ac3929c5028f923f",
+          "bytes": 1660
+        },
+        {
+          "path": "src/index.html",
+          "input": "../../angular/b3/repo/app/src/index.html",
+          "parser": "angular",
+          "sha256": "8718549cd78e9dbd917d9b8bd11d86b2f3fb4b7965c996db9c287005a59b37ea",
+          "bytes": 298
+        },
+        {
+          "path": "src/main.ts",
+          "input": "../../angular/b3/repo/app/src/main.ts",
+          "parser": "typescript",
+          "sha256": "ecc610fb7d56c95a01a8aa6c274a63210d45b2944dd6b9a88b2c8f70b6351037",
+          "bytes": 219
+        },
+        {
+          "path": "src/styles.css",
+          "input": "../../angular/b3/repo/app/src/styles.css",
+          "parser": "css",
+          "sha256": "174bcb5e4ce2336a2ad666400004087011c74d3950600ea72d762ee3a2b9084f",
+          "bytes": 9598
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b4",
+      "files": [
+        {
+          "path": "server.mjs",
+          "input": "../../angular/b4/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "ef47b07d3d1c57049e633e8f380b46edc07ef4e01f2977d959d4ac27b27de828",
+          "bytes": 1058
+        },
+        {
+          "path": "src/app/api.ts",
+          "input": "../../angular/b4/repo/app/src/app/api.ts",
+          "parser": "typescript",
+          "sha256": "aac6838314c7c269d583e2d31c6773b11fdc059f49d9e44b3a730e7acbac80da",
+          "bytes": 1458
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "input": "../../angular/b4/repo/app/src/app/app.config.ts",
+          "parser": "typescript",
+          "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+          "bytes": 312
+        },
+        {
+          "path": "src/app/app.css",
+          "input": "../../angular/b4/repo/app/src/app/app.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/app.html",
+          "input": "../../angular/b4/repo/app/src/app/app.html",
+          "parser": "angular",
+          "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+          "bytes": 20144
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "input": "../../angular/b4/repo/app/src/app/app.routes.ts",
+          "parser": "typescript",
+          "sha256": "bb0bc145c032642e47828c88334654a33cb31d611e851cc85e418c94d6ab2de3",
+          "bytes": 143
+        },
+        {
+          "path": "src/app/app.ts",
+          "input": "../../angular/b4/repo/app/src/app/app.ts",
+          "parser": "typescript",
+          "sha256": "1884f0da97fdac3697160329999c63fd914507544982105e0ac186e454f544a1",
+          "bytes": 504
+        },
+        {
+          "path": "src/app/cards/cards.css",
+          "input": "../../angular/b4/repo/app/src/app/cards/cards.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/cards/cards.html",
+          "input": "../../angular/b4/repo/app/src/app/cards/cards.html",
+          "parser": "angular",
+          "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+          "bytes": 20
+        },
+        {
+          "path": "src/app/cards/cards.ts",
+          "input": "../../angular/b4/repo/app/src/app/cards/cards.ts",
+          "parser": "typescript",
+          "sha256": "9a7aeda17df30a284fdd86ba3a541761059e15ad2b6037e7f6c61bc19671b120",
+          "bytes": 739
+        },
+        {
+          "path": "src/app/evolution/evolution.css",
+          "input": "../../angular/b4/repo/app/src/app/evolution/evolution.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/evolution/evolution.html",
+          "input": "../../angular/b4/repo/app/src/app/evolution/evolution.html",
+          "parser": "angular",
+          "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+          "bytes": 24
+        },
+        {
+          "path": "src/app/evolution/evolution.ts",
+          "input": "../../angular/b4/repo/app/src/app/evolution/evolution.ts",
+          "parser": "typescript",
+          "sha256": "68ea082afc8d0881ae96c3960f0efba71874965abcd6d0799e9134332d94261d",
+          "bytes": 476
+        },
+        {
+          "path": "src/app/models.ts",
+          "input": "../../angular/b4/repo/app/src/app/models.ts",
+          "parser": "typescript",
+          "sha256": "1463d1644ca65ea5009df1fefb50383f6984aa3d8fee2d477b1ed2197ed46c7b",
+          "bytes": 2150
+        },
+        {
+          "path": "src/app/pages/pages.css",
+          "input": "../../angular/b4/repo/app/src/app/pages/pages.css",
+          "parser": "css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "src/app/pages/pages.html",
+          "input": "../../angular/b4/repo/app/src/app/pages/pages.html",
+          "parser": "angular",
+          "sha256": "665ec21ccbed923d1d314fa05a20ccc700bea23c3794159c27ca507ac2adafaa",
+          "bytes": 6079
+        },
+        {
+          "path": "src/app/pages/pages.ts",
+          "input": "../../angular/b4/repo/app/src/app/pages/pages.ts",
+          "parser": "typescript",
+          "sha256": "ac780ef82294595618e9225f71515ed403efb4f005c900166cf8d6f7fce0b4ba",
+          "bytes": 8313
+        },
+        {
+          "path": "src/index.html",
+          "input": "../../angular/b4/repo/app/src/index.html",
+          "parser": "angular",
+          "sha256": "95fb6e9d57e84a26bacdef4603298ac43b1c8045e630a2b203420f852470f54f",
+          "bytes": 293
+        },
+        {
+          "path": "src/main.ts",
+          "input": "../../angular/b4/repo/app/src/main.ts",
+          "parser": "typescript",
+          "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+          "bytes": 222
+        },
+        {
+          "path": "src/styles.css",
+          "input": "../../angular/b4/repo/app/src/styles.css",
+          "parser": "css",
+          "sha256": "415e70089f86924469be7bc127efdf2fedf0e2eeebfc2085593cf36aa572d636",
+          "bytes": 5988
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b1",
+      "files": [
+        {
+          "path": "app/app.vue",
+          "input": "../../nuxt/b1/repo/app/app/app.vue",
+          "parser": "vue",
+          "sha256": "7b88ca587f52ca3835868c2d6a2005a1814a833824ab18316a6869abae19c7db",
+          "bytes": 7774
+        },
+        {
+          "path": "app/assets/main.css",
+          "input": "../../nuxt/b1/repo/app/app/assets/main.css",
+          "parser": "css",
+          "sha256": "f38f608c025d669627dd13dfcabba64efac1252c5646eca2c0d78e63394825e1",
+          "bytes": 5180
+        },
+        {
+          "path": "app/components/Cards.vue",
+          "input": "../../nuxt/b1/repo/app/app/components/Cards.vue",
+          "parser": "vue",
+          "sha256": "fab51a901e76e6c63c8b52dac3da641829488f493e6096d751ca1ffc3056e4f8",
+          "bytes": 702
+        },
+        {
+          "path": "app/components/Evolution.vue",
+          "input": "../../nuxt/b1/repo/app/app/components/Evolution.vue",
+          "parser": "vue",
+          "sha256": "47013e40ffeb10122f46b8b19da016974ab5d2eda30dedfdc215e94cfbe35f62",
+          "bytes": 301
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "input": "../../nuxt/b1/repo/app/app/components/MoveTable.vue",
+          "parser": "vue",
+          "sha256": "9926c35fec52d2a0590349a029142ad76a483d775a989c080a216b1db8b25647",
+          "bytes": 1515
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "input": "../../nuxt/b1/repo/app/app/pages/[...slug].vue",
+          "parser": "vue",
+          "sha256": "9ad562f9d14f7b6fc38257d8cd05511af78a091b664b2074cf437c1f4209c335",
+          "bytes": 29
+        },
+        {
+          "path": "nuxt.config.ts",
+          "input": "../../nuxt/b1/repo/app/nuxt.config.ts",
+          "parser": "typescript",
+          "sha256": "2f24555993c2f4e2e31bf1a12102445e28cf1d77d648e6af7244155ce3262968",
+          "bytes": 193
+        },
+        {
+          "path": "server/api/dex.get.ts",
+          "input": "../../nuxt/b1/repo/app/server/api/dex.get.ts",
+          "parser": "typescript",
+          "sha256": "89bcd38914116bf8506cae657541fd7c11906ad22c1ec0d49fead804e4c6c76a",
+          "bytes": 3141
+        },
+        {
+          "path": "server/api/sprite.get.ts",
+          "input": "../../nuxt/b1/repo/app/server/api/sprite.get.ts",
+          "parser": "typescript",
+          "sha256": "12e893da272f64f7aaa0fdd063cccb85e464a456cccb8155582b42a4b4afb16e",
+          "bytes": 191
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b2",
+      "files": [
+        {
+          "path": "app/app.vue",
+          "input": "../../nuxt/b2/repo/app/app/app.vue",
+          "parser": "vue",
+          "sha256": "568811e9d1ccdeb1b16fc6f9643196fa2758373e43eec224965af519b74663da",
+          "bytes": 283
+        },
+        {
+          "path": "app/assets/main.css",
+          "input": "../../nuxt/b2/repo/app/app/assets/main.css",
+          "parser": "css",
+          "sha256": "c7d23ccd0e4e44ab1b6d3d2b10cf2d08056123eb28e6df101b3fe33a75d040ec",
+          "bytes": 5508
+        },
+        {
+          "path": "app/components/EvolutionTree.vue",
+          "input": "../../nuxt/b2/repo/app/app/components/EvolutionTree.vue",
+          "parser": "vue",
+          "sha256": "5e88cbeacec0d8dd462f52683b6f3be66420e20cc326c082a6ca23bd9533a48f",
+          "bytes": 366
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "input": "../../nuxt/b2/repo/app/app/components/MoveTable.vue",
+          "parser": "vue",
+          "sha256": "05ba14660b92ea43299ce0dc1895a5bc4664d994eaea628a305db012552b6d87",
+          "bytes": 1429
+        },
+        {
+          "path": "app/components/PokemonCards.vue",
+          "input": "../../nuxt/b2/repo/app/app/components/PokemonCards.vue",
+          "parser": "vue",
+          "sha256": "42c1d9238db46f3c05fb701093f09985003c8e22bf5dc8fe821a8ec745033633",
+          "bytes": 521
+        },
+        {
+          "path": "app/components/TypeBadge.vue",
+          "input": "../../nuxt/b2/repo/app/app/components/TypeBadge.vue",
+          "parser": "vue",
+          "sha256": "b7ebbfd2cb6ecd4d8e9cb427e535c194e41072a7ea484ca9d631c5063fc4f69a",
+          "bytes": 351
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "input": "../../nuxt/b2/repo/app/app/pages/[...slug].vue",
+          "parser": "vue",
+          "sha256": "4b4623b67e441205b1ddbed8568fd1c054d950bb3c485675caf0c84d8f193c4d",
+          "bytes": 6898
+        },
+        {
+          "path": "nuxt.config.ts",
+          "input": "../../nuxt/b2/repo/app/nuxt.config.ts",
+          "parser": "typescript",
+          "sha256": "2e45dc9503018b45173afe35239b57ba1a0602a222ed54739e943b07dc4acb26",
+          "bytes": 182
+        },
+        {
+          "path": "server/api/page.get.ts",
+          "input": "../../nuxt/b2/repo/app/server/api/page.get.ts",
+          "parser": "typescript",
+          "sha256": "ee7af8f1622b6e4b630e1e5b129b631d06a484cfdabdb37846c0e5b03ab2b584",
+          "bytes": 4475
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b3",
+      "files": [
+        {
+          "path": "app/assets/style.css",
+          "input": "../../nuxt/b3/repo/app/app/assets/style.css",
+          "parser": "css",
+          "sha256": "5fe5db89d816b43eb69bc8dec34895a572e0ccb38bfe1198575e37a0fcb07911",
+          "bytes": 5451
+        },
+        {
+          "path": "app/components/EvolutionTree.vue",
+          "input": "../../nuxt/b3/repo/app/app/components/EvolutionTree.vue",
+          "parser": "vue",
+          "sha256": "e2b12e533ed475982cf0832adf2dc8ce2e1a9b8aa2badda2681227d12f09ff36",
+          "bytes": 352
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "input": "../../nuxt/b3/repo/app/app/components/MoveTable.vue",
+          "parser": "vue",
+          "sha256": "36e823c7326726acc748abad525b5ad559296d7029dd892423cf3ac1f5321e2b",
+          "bytes": 1580
+        },
+        {
+          "path": "app/components/PokeCards.vue",
+          "input": "../../nuxt/b3/repo/app/app/components/PokeCards.vue",
+          "parser": "vue",
+          "sha256": "32258d5b073c28b45d92c4c35481f44c9a08dd8fd4df580b774001a32e94e773",
+          "bytes": 598
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "input": "../../nuxt/b3/repo/app/app/pages/[...slug].vue",
+          "parser": "vue",
+          "sha256": "6ce1b199033a3928c251b4f258f541bacff5a928ba59176061f0a1d463d38315",
+          "bytes": 7883
+        },
+        {
+          "path": "nuxt.config.ts",
+          "input": "../../nuxt/b3/repo/app/nuxt.config.ts",
+          "parser": "typescript",
+          "sha256": "92a4dcc1acf6d0e4d5ac1a5a5244974787cae6750136a32a039b4cf85a55d6bc",
+          "bytes": 238
+        },
+        {
+          "path": "server/api/page.get.ts",
+          "input": "../../nuxt/b3/repo/app/server/api/page.get.ts",
+          "parser": "typescript",
+          "sha256": "254d2a76b7ca5eb75fa13423dba2eb88f4a032d42dd5fa72607a7eebca7b13be",
+          "bytes": 2597
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b4",
+      "files": [
+        {
+          "path": "app/app.vue",
+          "input": "../../nuxt/b4/repo/app/app/app.vue",
+          "parser": "vue",
+          "sha256": "6669e4ad83a04e77d0250ab1a096c5700781717af69ab9ef2cdb202895fbdf3c",
+          "bytes": 319
+        },
+        {
+          "path": "app/assets/main.css",
+          "input": "../../nuxt/b4/repo/app/app/assets/main.css",
+          "parser": "css",
+          "sha256": "05e1cafc7913cd22c1d1f77f96558cf3b0930ad7c6259c863f023d3df758603c",
+          "bytes": 4395
+        },
+        {
+          "path": "app/components/EvolutionTree.vue",
+          "input": "../../nuxt/b4/repo/app/app/components/EvolutionTree.vue",
+          "parser": "vue",
+          "sha256": "a0946ca567cce4142e54ef0736c8e4354d5c7a6bb3b46b7b99388bf728efe69a",
+          "bytes": 351
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "input": "../../nuxt/b4/repo/app/app/components/MoveTable.vue",
+          "parser": "vue",
+          "sha256": "d4562e3a5ad3d78d499a5119caf53c9f3975fb22d36ca48dd5671dcd1ba7eab8",
+          "bytes": 1420
+        },
+        {
+          "path": "app/components/PokemonCards.vue",
+          "input": "../../nuxt/b4/repo/app/app/components/PokemonCards.vue",
+          "parser": "vue",
+          "sha256": "9d03818d467698e065c3f71dfcb94681dd5ba1da71e6f3340ebb903ad0d88e25",
+          "bytes": 569
+        },
+        {
+          "path": "app/components/TypeBadge.vue",
+          "input": "../../nuxt/b4/repo/app/app/components/TypeBadge.vue",
+          "parser": "vue",
+          "sha256": "e7b117c179a4d97c0e49dd1f352e67b58e255cb08b95c88ff234a8bed41fda86",
+          "bytes": 398
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "input": "../../nuxt/b4/repo/app/app/pages/[...slug].vue",
+          "parser": "vue",
+          "sha256": "cf85d049c44d2acc1a226f430dfb55b5b779a9364f16523486aebc207fdcb62b",
+          "bytes": 6291
+        },
+        {
+          "path": "nuxt.config.ts",
+          "input": "../../nuxt/b4/repo/app/nuxt.config.ts",
+          "parser": "typescript",
+          "sha256": "4781f80e3ce8b423ba0b31b2ffef2288e3e246984ab131a337e86e65b68095ef",
+          "bytes": 154
+        },
+        {
+          "path": "server/api/page.get.ts",
+          "input": "../../nuxt/b4/repo/app/server/api/page.get.ts",
+          "parser": "typescript",
+          "sha256": "ad1b28dce02de15d5f1fd5b659f95493a9501ab1e4a9c625ce092d8603dfd338",
+          "bytes": 4460
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b1",
+      "files": [
+        {
+          "path": "app/api.server.ts",
+          "input": "../../react-router/b1/repo/app/app/api.server.ts",
+          "parser": "typescript",
+          "sha256": "8d3b09da05e806c97a4ee73a442064a69a5d074e34e0e6b2670f86ffebefc8c1",
+          "bytes": 3721
+        },
+        {
+          "path": "app/page.tsx",
+          "input": "../../react-router/b1/repo/app/app/page.tsx",
+          "parser": "typescript",
+          "sha256": "ee8f1bb3a5faed24c22a34d33374ab7e81c6e2cc77e0aac6c56aa7724489f80e",
+          "bytes": 8167
+        },
+        {
+          "path": "app/root.tsx",
+          "input": "../../react-router/b1/repo/app/app/root.tsx",
+          "parser": "typescript",
+          "sha256": "73c879a688b6b746cc0d2e3bd969ce9790b11ca8875fffcd410d255855fab9eb",
+          "bytes": 581
+        },
+        {
+          "path": "app/routes.ts",
+          "input": "../../react-router/b1/repo/app/app/routes.ts",
+          "parser": "typescript",
+          "sha256": "69ea96600ca363841c8a8d80f49e6ba8b9ef7053c0d87421985dccffba946c05",
+          "bytes": 136
+        },
+        {
+          "path": "app/style.css",
+          "input": "../../react-router/b1/repo/app/app/style.css",
+          "parser": "css",
+          "sha256": "ab0c12495659aa743a6c60a3bfde02de231541bf4ce635cf8ec40e5dd4c4bef2",
+          "bytes": 5123
+        },
+        {
+          "path": "vite.config.ts",
+          "input": "../../react-router/b1/repo/app/vite.config.ts",
+          "parser": "typescript",
+          "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+          "bytes": 147
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b2",
+      "files": [
+        {
+          "path": "app/api.server.ts",
+          "input": "../../react-router/b2/repo/app/app/api.server.ts",
+          "parser": "typescript",
+          "sha256": "486303fd3d54b963822e5db998925f1557ba799332c2d46dadcb3779ad624f01",
+          "bytes": 1068
+        },
+        {
+          "path": "app/root.tsx",
+          "input": "../../react-router/b2/repo/app/app/root.tsx",
+          "parser": "typescript",
+          "sha256": "85aa9417025ff709e2b176005bfc1672208d908a19b9c2716a36c0881380142c",
+          "bytes": 631
+        },
+        {
+          "path": "app/routes.ts",
+          "input": "../../react-router/b2/repo/app/app/routes.ts",
+          "parser": "typescript",
+          "sha256": "1423c39735e0d054b5000a8f0250e613278e2124c829a6151f4a214c261cb1fe",
+          "bytes": 249
+        },
+        {
+          "path": "app/routes/detail.tsx",
+          "input": "../../react-router/b2/repo/app/app/routes/detail.tsx",
+          "parser": "typescript",
+          "sha256": "4686b0dba2042b811c9915c6483f8fc90ca7e1279e4bca47d1f6123f7bcaa003",
+          "bytes": 2073
+        },
+        {
+          "path": "app/routes/home.tsx",
+          "input": "../../react-router/b2/repo/app/app/routes/home.tsx",
+          "parser": "typescript",
+          "sha256": "190dd648fefc1a56615dc5b93920cf251fdfedd4d5628621bf83c2c28139a8bd",
+          "bytes": 2594
+        },
+        {
+          "path": "app/routes/missing.tsx",
+          "input": "../../react-router/b2/repo/app/app/routes/missing.tsx",
+          "parser": "typescript",
+          "sha256": "f5e5cc7bb9a4b1eb39d9f76d05b60325959bfc3a92df42f3d3e85185b858a2d9",
+          "bytes": 113
+        },
+        {
+          "path": "app/routes/pokemon.tsx",
+          "input": "../../react-router/b2/repo/app/app/routes/pokemon.tsx",
+          "parser": "typescript",
+          "sha256": "0c1230a60d338271e51adf53c3d85d9961e663e4a1f7d72fd26a7d573cf52ba6",
+          "bytes": 4844
+        },
+        {
+          "path": "app/routes/types.tsx",
+          "input": "../../react-router/b2/repo/app/app/routes/types.tsx",
+          "parser": "typescript",
+          "sha256": "97e727960d4801894bb6384574ab5ab8ab14d1e2de3ff790779760841f919d19",
+          "bytes": 499
+        },
+        {
+          "path": "app/style.css",
+          "input": "../../react-router/b2/repo/app/app/style.css",
+          "parser": "css",
+          "sha256": "28a103c80ec4914b766fe45d4925195c1e62b0e5b501e67d6e3cbbd0fbf17419",
+          "bytes": 5379
+        },
+        {
+          "path": "app/ui.tsx",
+          "input": "../../react-router/b2/repo/app/app/ui.tsx",
+          "parser": "typescript",
+          "sha256": "ea7ea974d2912933d960c0d756cc461c4a13717efc50b2c7aca777ef8801d07e",
+          "bytes": 1566
+        },
+        {
+          "path": "vite.config.ts",
+          "input": "../../react-router/b2/repo/app/vite.config.ts",
+          "parser": "typescript",
+          "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+          "bytes": 147
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b3",
+      "files": [
+        {
+          "path": "app/api.server.ts",
+          "input": "../../react-router/b3/repo/app/app/api.server.ts",
+          "parser": "typescript",
+          "sha256": "ac7fa99681c53c6100fd5dde9b9dda0066bc9fcc7a2224de1ce950e314cdbad2",
+          "bytes": 4456
+        },
+        {
+          "path": "app/page.tsx",
+          "input": "../../react-router/b3/repo/app/app/page.tsx",
+          "parser": "typescript",
+          "sha256": "170e78dc4bb9a9fc997b3af59f91744e111aaf74762ab3e7f49dbe4b633331b7",
+          "bytes": 9247
+        },
+        {
+          "path": "app/root.tsx",
+          "input": "../../react-router/b3/repo/app/app/root.tsx",
+          "parser": "typescript",
+          "sha256": "8c2a93655954670aa863b5ee25980ff24bc649b4f154d1966cdc38e676514ee1",
+          "bytes": 641
+        },
+        {
+          "path": "app/routes.ts",
+          "input": "../../react-router/b3/repo/app/app/routes.ts",
+          "parser": "typescript",
+          "sha256": "1b5817817262d8e05b5dbef63e6c99c5a1ffe8ec1325c4ee00495960a7a2b857",
+          "bytes": 357
+        },
+        {
+          "path": "app/style.css",
+          "input": "../../react-router/b3/repo/app/app/style.css",
+          "parser": "css",
+          "sha256": "770fdb06919f7972ff23ddfef503e3bc932fb2756de091a78e7c7129301323dc",
+          "bytes": 6059
+        },
+        {
+          "path": "vite.config.ts",
+          "input": "../../react-router/b3/repo/app/vite.config.ts",
+          "parser": "typescript",
+          "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+          "bytes": 147
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b4",
+      "files": [
+        {
+          "path": "app/api.server.ts",
+          "input": "../../react-router/b4/repo/app/app/api.server.ts",
+          "parser": "typescript",
+          "sha256": "844d693608340f3ebc88761e58df80eefe8257041aeede208c4b287316a8c6c7",
+          "bytes": 3531
+        },
+        {
+          "path": "app/home.tsx",
+          "input": "../../react-router/b4/repo/app/app/home.tsx",
+          "parser": "typescript",
+          "sha256": "6f3c3bac79c4ba2a96e0347f069678d25493273e9eac558001826a85487cc8c3",
+          "bytes": 58
+        },
+        {
+          "path": "app/page.tsx",
+          "input": "../../react-router/b4/repo/app/app/page.tsx",
+          "parser": "typescript",
+          "sha256": "57dced9885e1ac2fb360becb5f4bfe95cb67f013d946f997ee3d433886441781",
+          "bytes": 8204
+        },
+        {
+          "path": "app/root.tsx",
+          "input": "../../react-router/b4/repo/app/app/root.tsx",
+          "parser": "typescript",
+          "sha256": "973383fbd4330d3ca079a230afb3efd836647ec077795d79469b3bf88e572da0",
+          "bytes": 559
+        },
+        {
+          "path": "app/routes.ts",
+          "input": "../../react-router/b4/repo/app/app/routes.ts",
+          "parser": "typescript",
+          "sha256": "fb83ff5d494ed2a606856fdf8e0a72a7c6b2417686cc876c14e658d743377611",
+          "bytes": 112
+        },
+        {
+          "path": "app/style.css",
+          "input": "../../react-router/b4/repo/app/app/style.css",
+          "parser": "css",
+          "sha256": "8a5992aa0dea25c7b398151b69a0415ee102f3cc0f5162a4a0a1b47245d56acc",
+          "bytes": 4933
+        },
+        {
+          "path": "vite.config.ts",
+          "input": "../../react-router/b4/repo/app/vite.config.ts",
+          "parser": "typescript",
+          "sha256": "b7bfffe11bc6b89988e85e90e50bc8b44c9fea48decaea8ef9648c63782c7724",
+          "bytes": 147
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b1",
+      "files": [
+        {
+          "path": "src/app.html",
+          "input": "../../sveltekit/b1/repo/app/src/app.html",
+          "parser": "html",
+          "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+          "bytes": 261
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "input": "../../sveltekit/b1/repo/app/src/lib/Cards.svelte",
+          "parser": "svelte",
+          "sha256": "6a62ca6f523c80429987a7b26cf84056a6a845ec1ad54a396de575ec31c1698d",
+          "bytes": 596
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "input": "../../sveltekit/b1/repo/app/src/lib/MoveTable.svelte",
+          "parser": "svelte",
+          "sha256": "3a7c99a0757d1fe1445aca5872e9c2be095f72509492253f1d69388d62ad28c9",
+          "bytes": 1416
+        },
+        {
+          "path": "src/lib/api.js",
+          "input": "../../sveltekit/b1/repo/app/src/lib/api.js",
+          "parser": "babel",
+          "sha256": "62cce7cb0499ef96752c38356dba5b0288d6f4f17a083d6a13eaf559e203b171",
+          "bytes": 4195
+        },
+        {
+          "path": "src/lib/style.css",
+          "input": "../../sveltekit/b1/repo/app/src/lib/style.css",
+          "parser": "css",
+          "sha256": "85e328474836d0139a9866db423cca56073d5a769cc7a6eb334c589c56459250",
+          "bytes": 4880
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "input": "../../sveltekit/b1/repo/app/src/routes/[...path]/+page.server.js",
+          "parser": "babel",
+          "sha256": "85808b0e1e5968fbbb096878a050850420af0c60bd253d214f7504f0f7aee429",
+          "bytes": 174
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "input": "../../sveltekit/b1/repo/app/src/routes/[...path]/+page.svelte",
+          "parser": "svelte",
+          "sha256": "0c69d699ab5b4528fd2c52f9f6f1baa5a74e082a40f032c413727cf2f9db57c1",
+          "bytes": 7280
+        },
+        {
+          "path": "vite.config.js",
+          "input": "../../sveltekit/b1/repo/app/vite.config.js",
+          "parser": "babel",
+          "sha256": "4d79496be1df153e8d95ed1339858789451275ac45bd707e11ec3cc2e0dceab5",
+          "bytes": 151
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b2",
+      "files": [
+        {
+          "path": "src/app.html",
+          "input": "../../sveltekit/b2/repo/app/src/app.html",
+          "parser": "html",
+          "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+          "bytes": 261
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "input": "../../sveltekit/b2/repo/app/src/lib/Cards.svelte",
+          "parser": "svelte",
+          "sha256": "d44e60f37c6c7afadb67c3c7eb205b21d1bcc0308313981512765f5ef2edb5f8",
+          "bytes": 701
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "input": "../../sveltekit/b2/repo/app/src/lib/MoveTable.svelte",
+          "parser": "svelte",
+          "sha256": "e54ba65564078729791a1b44c3da844a9803e1c87acfbf27c51c00e6867b9977",
+          "bytes": 1835
+        },
+        {
+          "path": "src/lib/style.css",
+          "input": "../../sveltekit/b2/repo/app/src/lib/style.css",
+          "parser": "css",
+          "sha256": "bbcd4b6f67910b9e3e44785d263a6be628bb4b98aeac1719c72d46bc5e1e99ed",
+          "bytes": 6015
+        },
+        {
+          "path": "src/lib/utils.js",
+          "input": "../../sveltekit/b2/repo/app/src/lib/utils.js",
+          "parser": "babel",
+          "sha256": "c1857542892d4e61d16ad8d2a13eab2afb4ac21e46fd1ec58058e391abf9b54d",
+          "bytes": 453
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "input": "../../sveltekit/b2/repo/app/src/routes/[...path]/+page.server.js",
+          "parser": "babel",
+          "sha256": "e675724d7fd5fe41b0aa3a62be03779a5507d57a4ccd7b60238c2c03b0528eed",
+          "bytes": 6946
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "input": "../../sveltekit/b2/repo/app/src/routes/[...path]/+page.svelte",
+          "parser": "svelte",
+          "sha256": "53da94386070ba67db1480e0ce585fd03cc30513523c37cb8722e814855addf4",
+          "bytes": 8990
+        },
+        {
+          "path": "vite.config.js",
+          "input": "../../sveltekit/b2/repo/app/vite.config.js",
+          "parser": "babel",
+          "sha256": "1ed9211ae37c07d585ec495c9efc2187a256b9bad9411642eba8d32e02bf13b0",
+          "bytes": 210
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b3",
+      "files": [
+        {
+          "path": "src/app.html",
+          "input": "../../sveltekit/b3/repo/app/src/app.html",
+          "parser": "html",
+          "sha256": "348275e8b35985ec780a545748e87b299cba99cf975fd6b3a9f9bd23b33650b8",
+          "bytes": 262
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "input": "../../sveltekit/b3/repo/app/src/lib/Cards.svelte",
+          "parser": "svelte",
+          "sha256": "9fb584e4bfb318767e2a615f17878c0c58306ca33b6f00232d3ac88de6b5858c",
+          "bytes": 558
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "input": "../../sveltekit/b3/repo/app/src/lib/MoveTable.svelte",
+          "parser": "svelte",
+          "sha256": "764de284d88c080175789b85739a6ab5a66b6ef0a414a41c95e16a8ee31124f5",
+          "bytes": 1447
+        },
+        {
+          "path": "src/lib/api.js",
+          "input": "../../sveltekit/b3/repo/app/src/lib/api.js",
+          "parser": "babel",
+          "sha256": "0ae569d73b205be9c0ca3d7b2717c9cf9b9ba7171c641081b0aa7c1bd1a3cf93",
+          "bytes": 4543
+        },
+        {
+          "path": "src/lib/style.css",
+          "input": "../../sveltekit/b3/repo/app/src/lib/style.css",
+          "parser": "css",
+          "sha256": "7f68d14c0e3f8ae532fe5102129a65e2548a3974db0dc569a26518b879d7a1df",
+          "bytes": 5245
+        },
+        {
+          "path": "src/lib/utils.js",
+          "input": "../../sveltekit/b3/repo/app/src/lib/utils.js",
+          "parser": "babel",
+          "sha256": "b69988f15cecc9f4470fa7a3f7ccc2b10832a59394474064db4dcfe156c1fcda",
+          "bytes": 465
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "input": "../../sveltekit/b3/repo/app/src/routes/[...path]/+page.server.js",
+          "parser": "babel",
+          "sha256": "abd33b67f70c92672c3c796509c61b94229cf32e7179133f111f0f72a925c1c9",
+          "bytes": 153
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "input": "../../sveltekit/b3/repo/app/src/routes/[...path]/+page.svelte",
+          "parser": "svelte",
+          "sha256": "2a8277347fc1d2dc52c77fc22f0f3b16f5b351e51bcacf9cb695ae6d21c99e71",
+          "bytes": 6584
+        },
+        {
+          "path": "vite.config.js",
+          "input": "../../sveltekit/b3/repo/app/vite.config.js",
+          "parser": "babel",
+          "sha256": "51a49eda8f90f5553822dfa612f349ee69649565c556da8a067760f563f259f6",
+          "bytes": 200
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b4",
+      "files": [
+        {
+          "path": "src/app.html",
+          "input": "../../sveltekit/b4/repo/app/src/app.html",
+          "parser": "html",
+          "sha256": "348275e8b35985ec780a545748e87b299cba99cf975fd6b3a9f9bd23b33650b8",
+          "bytes": 262
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "input": "../../sveltekit/b4/repo/app/src/lib/Cards.svelte",
+          "parser": "svelte",
+          "sha256": "6dd3ef2eafb624bf001c82dfbf75ed358aa3fa68a52638db46cd6f582fba37e5",
+          "bytes": 562
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "input": "../../sveltekit/b4/repo/app/src/lib/MoveTable.svelte",
+          "parser": "svelte",
+          "sha256": "747bc233607fd06d951f79fa0e25b99c1a1b3a5281c1358fb73f14390eaf71c6",
+          "bytes": 1262
+        },
+        {
+          "path": "src/lib/app.css",
+          "input": "../../sveltekit/b4/repo/app/src/lib/app.css",
+          "parser": "css",
+          "sha256": "a183ea13efd99d3120ade57cab17ad4fd4e288528c083ca4d7da38b9b1dec505",
+          "bytes": 5425
+        },
+        {
+          "path": "src/lib/utils.js",
+          "input": "../../sveltekit/b4/repo/app/src/lib/utils.js",
+          "parser": "babel",
+          "sha256": "118f122e90ad369fa056e1b0872855b47d5e35f56a98ff3eb63a8b44a8e9f21f",
+          "bytes": 435
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "input": "../../sveltekit/b4/repo/app/src/routes/[...path]/+page.server.js",
+          "parser": "babel",
+          "sha256": "03ff5e4b04995ab9fdf67196dcceef432eb3dd1d5e0dfd8bd00eea0d3d93b499",
+          "bytes": 4797
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "input": "../../sveltekit/b4/repo/app/src/routes/[...path]/+page.svelte",
+          "parser": "svelte",
+          "sha256": "25cbeff86c451dce398aa2c7a63591face0cc1b1bc9bc185db76c12860a3b550",
+          "bytes": 6700
+        },
+        {
+          "path": "vite.config.js",
+          "input": "../../sveltekit/b4/repo/app/vite.config.js",
+          "parser": "babel",
+          "sha256": "c0bb299a18e4573eb5dd97ce676820a91a47b9e26818a55cf95c2ab943a56042",
+          "bytes": 207
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b1",
+      "files": [
+        {
+          "path": "index.html",
+          "input": "../../vanilla/b1/repo/app/index.html",
+          "parser": "html",
+          "sha256": "901ceb27a1bfbc72fc4826ea994b87de9de7843c5fea6e022a7315ad65b15441",
+          "bytes": 465
+        },
+        {
+          "path": "main.js",
+          "input": "../../vanilla/b1/repo/app/main.js",
+          "parser": "babel",
+          "sha256": "2a75821ad7dcf299d127c41fa4d677c0661647897cb413ff8789dedbc902d48a",
+          "bytes": 11167
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../vanilla/b1/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "a8823a3ef23e60a39c925aeed765b1ddc767bbc3f886ffbff368fd606e3d2d8a",
+          "bytes": 633
+        },
+        {
+          "path": "style.css",
+          "input": "../../vanilla/b1/repo/app/style.css",
+          "parser": "css",
+          "sha256": "8065eeffc40c02e61d562ba02e8a93124659069c4dfdadee305b633af32f5e26",
+          "bytes": 6017
+        },
+        {
+          "path": "vite.config.js",
+          "input": "../../vanilla/b1/repo/app/vite.config.js",
+          "parser": "babel",
+          "sha256": "cbae62c05f7a8341442708b34688200952bc215bdc84a93a0351f57684cf4a25",
+          "bytes": 152
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b2",
+      "files": [
+        {
+          "path": "index.html",
+          "input": "../../vanilla/b2/repo/app/index.html",
+          "parser": "html",
+          "sha256": "f135183e8da3d22b39a92da034dfb31fb12df63df8bc7520248deb29d2cd39d3",
+          "bytes": 519
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../vanilla/b2/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "cc850e0bd38d89436e375e4914e360ea525ca0b3ef2a23dd9fa248d5ca5e0cf6",
+          "bytes": 783
+        },
+        {
+          "path": "src.js",
+          "input": "../../vanilla/b2/repo/app/src.js",
+          "parser": "babel",
+          "sha256": "c7edac3f7b02356d127a95ebf0d173a5df65f992990698cfd3dd07e3195fea7b",
+          "bytes": 11216
+        },
+        {
+          "path": "style.css",
+          "input": "../../vanilla/b2/repo/app/style.css",
+          "parser": "css",
+          "sha256": "bde55d84aa07a10ccc2a03eea0dd78b8bae97915abd1573022f30924df942f02",
+          "bytes": 5182
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b3",
+      "files": [
+        {
+          "path": "index.html",
+          "input": "../../vanilla/b3/repo/app/index.html",
+          "parser": "html",
+          "sha256": "933c31d398c09a5286abb4a354b53de46888ec6fcda77fe813c1a6fb8b0be4c7",
+          "bytes": 500
+        },
+        {
+          "path": "main.js",
+          "input": "../../vanilla/b3/repo/app/main.js",
+          "parser": "babel",
+          "sha256": "fc3b5896483680cac90e43cb274bc3cc2244cc19d2068068a2b5a2c32f509bab",
+          "bytes": 12289
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../vanilla/b3/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "a052797394d49bec2ed9db536ce73763a48a2136c254297d4feda01df99da1c8",
+          "bytes": 774
+        },
+        {
+          "path": "style.css",
+          "input": "../../vanilla/b3/repo/app/style.css",
+          "parser": "css",
+          "sha256": "63a02d17e95ed43f46c500779228c39d57d4bba322e1a3823e11ea0be899fe8a",
+          "bytes": 5535
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b4",
+      "files": [
+        {
+          "path": "index.html",
+          "input": "../../vanilla/b4/repo/app/index.html",
+          "parser": "html",
+          "sha256": "f5c6ebac7928200c784974cad5e8159fc24b2e3510605c6b26c769fa636d2688",
+          "bytes": 498
+        },
+        {
+          "path": "server.mjs",
+          "input": "../../vanilla/b4/repo/app/server.mjs",
+          "parser": "babel",
+          "sha256": "d82283653cacf0af0d70f4b863e2eada81b6d3a6eed4c7db2a7ff145627a8002",
+          "bytes": 830
+        },
+        {
+          "path": "src.js",
+          "input": "../../vanilla/b4/repo/app/src.js",
+          "parser": "babel",
+          "sha256": "6647e9da43413b15eb1121dade213f2719163046d61be9b882101aa528e396e2",
+          "bytes": 11776
+        },
+        {
+          "path": "style.css",
+          "input": "../../vanilla/b4/repo/app/style.css",
+          "parser": "css",
+          "sha256": "087b502a28ed8449b193cea6e9c42bf0a70f8483a7fbc17be56e382b82e54d30",
+          "bytes": 6010
+        }
+      ]
+    }
+  ]
+}

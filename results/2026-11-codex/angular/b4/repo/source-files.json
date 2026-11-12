@@ -1,0 +1,161 @@
+{
+  "files": {
+    ".gitignore": {
+      "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+      "bytes": 622,
+      "byteIdenticalGeneratedSource": true
+    },
+    ".vscode/extensions.json": {
+      "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+      "bytes": 130,
+      "byteIdenticalGeneratedSource": true
+    },
+    ".vscode/launch.json": {
+      "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+      "bytes": 470,
+      "byteIdenticalGeneratedSource": true
+    },
+    ".vscode/tasks.json": {
+      "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+      "bytes": 978,
+      "byteIdenticalGeneratedSource": true
+    },
+    "angular.json": {
+      "sha256": "4407584b456e36136d5543f4821f38e0282227d6b62046c548c234516348eeb1",
+      "bytes": 1906,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "0b51fd1e3bb978384a60039e76bd85f45e65416cc76b4e81405ad32f8a3fa94b",
+      "bytes": 227371,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "10b4f7f029be836d2e1ccb01818e3b59861fc26beb43e6a3f70f9c1457e6458c",
+      "bytes": 790,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server.mjs": {
+      "sha256": "ef47b07d3d1c57049e633e8f380b46edc07ef4e01f2977d959d4ac27b27de828",
+      "bytes": 1058,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/api.ts": {
+      "sha256": "aac6838314c7c269d583e2d31c6773b11fdc059f49d9e44b3a730e7acbac80da",
+      "bytes": 1458,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/app.config.ts": {
+      "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+      "bytes": 312,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/app.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/app.html": {
+      "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+      "bytes": 20144,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/app.routes.ts": {
+      "sha256": "bb0bc145c032642e47828c88334654a33cb31d611e851cc85e418c94d6ab2de3",
+      "bytes": 143,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/app.spec.ts": {
+      "sha256": "48de2fa64b4be3006046eb84b503ab397c817fab4b6f9ccbf3fcc77bdb9488b9",
+      "bytes": 711,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/app.ts": {
+      "sha256": "1884f0da97fdac3697160329999c63fd914507544982105e0ac186e454f544a1",
+      "bytes": 504,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/cards/cards.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/cards/cards.html": {
+      "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+      "bytes": 20,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/cards/cards.ts": {
+      "sha256": "9a7aeda17df30a284fdd86ba3a541761059e15ad2b6037e7f6c61bc19671b120",
+      "bytes": 739,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/evolution/evolution.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/evolution/evolution.html": {
+      "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+      "bytes": 24,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/evolution/evolution.ts": {
+      "sha256": "68ea082afc8d0881ae96c3960f0efba71874965abcd6d0799e9134332d94261d",
+      "bytes": 476,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/models.ts": {
+      "sha256": "1463d1644ca65ea5009df1fefb50383f6984aa3d8fee2d477b1ed2197ed46c7b",
+      "bytes": 2150,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/pages/pages.css": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/pages/pages.html": {
+      "sha256": "665ec21ccbed923d1d314fa05a20ccc700bea23c3794159c27ca507ac2adafaa",
+      "bytes": 6079,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app/pages/pages.ts": {
+      "sha256": "ac780ef82294595618e9225f71515ed403efb4f005c900166cf8d6f7fce0b4ba",
+      "bytes": 8313,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/index.html": {
+      "sha256": "95fb6e9d57e84a26bacdef4603298ac43b1c8045e630a2b203420f852470f54f",
+      "bytes": 293,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/main.ts": {
+      "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+      "bytes": 222,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/styles.css": {
+      "sha256": "415e70089f86924469be7bc127efdf2fedf0e2eeebfc2085593cf36aa572d636",
+      "bytes": 5988,
+      "byteIdenticalGeneratedSource": true
+    },
+    "tsconfig.app.json": {
+      "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+      "bytes": 398,
+      "byteIdenticalGeneratedSource": true
+    },
+    "tsconfig.json": {
+      "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+      "bytes": 908,
+      "byteIdenticalGeneratedSource": true
+    },
+    "tsconfig.spec.json": {
+      "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+      "bytes": 409,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

@@ -1,0 +1,45 @@
+{
+  "files": {
+    "index.html": {
+      "sha256": "dbdbbd90c74180edf56ec4f2b11ee63202c6d2284c40fa1d450fca8e095f2174",
+      "bytes": 243,
+      "byteIdenticalGeneratedSource": true
+    },
+    "main.js": {
+      "sha256": "e41e838c2bb492de672a5cfdaac82fbc321cb703af9a6926864e9dee41626021",
+      "bytes": 13770,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "005f9606b92f6460f50db790992d2550545a508c27389a34b333c5a8e4f8d93e",
+      "bytes": 30716,
+      "originalSha256": "59cbadad6b671d7589bf5430cbeb64564ed9b17b4716a40a4f7fb4132259199f",
+      "byteIdenticalGeneratedSource": false,
+      "publicationAdaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    "package.json": {
+      "sha256": "eab3d660bdf468e2e3b41ad97abe2abb670db1bfe9d154b3141ddbb001d95a72",
+      "bytes": 423,
+      "originalSha256": "bfff095e58c75f1ab57cc2bd765af44f5a2adf43db1dbccdff0d83dcfc3eb37e",
+      "byteIdenticalGeneratedSource": false,
+      "publicationAdaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    "server.mjs": {
+      "sha256": "62b5c85183d1ea0eaf004f65857e74f6032e1b099bc8737e23449ac87030d116",
+      "bytes": 593,
+      "byteIdenticalGeneratedSource": true
+    },
+    "style.css": {
+      "sha256": "2526438428bad292e50269b516c043087a7fce60d37e9b78e9202ede1382c15e",
+      "bytes": 5303,
+      "byteIdenticalGeneratedSource": true
+    },
+    "vite.config.js": {
+      "sha256": "f78e4e9c28b129fc29d7b16f3b1abda4902dba309871483836b49c84cc188118",
+      "bytes": 175,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

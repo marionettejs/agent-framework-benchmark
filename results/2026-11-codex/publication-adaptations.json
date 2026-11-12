@@ -1,0 +1,45 @@
+{
+  "applicationManifestAdaptations": [
+    {
+      "build": "marionette/b1",
+      "file": "package.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    {
+      "build": "marionette/b1",
+      "file": "package-lock.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    {
+      "build": "marionette/b2",
+      "file": "package.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    {
+      "build": "marionette/b2",
+      "file": "package-lock.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    {
+      "build": "marionette/b3",
+      "file": "package.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    {
+      "build": "marionette/b3",
+      "file": "package-lock.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    {
+      "build": "marionette/b4",
+      "file": "package.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    {
+      "build": "marionette/b4",
+      "file": "package-lock.json",
+      "adaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    }
+  ],
+  "method": "Only publication-copy local dependency routing changed; application source and original private lockfiles remain unchanged."
+}

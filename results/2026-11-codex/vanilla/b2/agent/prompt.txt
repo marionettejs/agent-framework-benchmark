@@ -1,0 +1,1 @@
+Implement the app described in SPEC.md using vanilla JavaScript or TypeScript with Vite, without a UI framework. Use the latest stable version. Work autonomously until `npm test` passes.

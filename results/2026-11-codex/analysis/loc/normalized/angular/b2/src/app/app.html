@@ -1,0 +1,283 @@
+<header>
+  <div class="header-inner">
+    <a class="brand" href="/">Pokédex</a>
+    <nav><a href="/">Pokémon</a><a href="/types">Types</a></nav>
+  </div>
+</header>
+<main>
+  @if (ready()) {
+    @if (kind === "pokemon") {
+      <div class="summary">
+        <img
+          class="artwork"
+          [src]="pokemon.sprites.other['official-artwork'].front_default"
+          [alt]="heading"
+        />
+        <div>
+          <p class="muted">#{{ detail.id.toString().padStart(4, "0") }}</p>
+          <h1>{{ heading }}</h1>
+          <p class="muted">{{ genus() }}</p>
+          <div class="badges">
+            @for (t of pokemon.types; track t.slot) {
+              <a
+                class="badge"
+                [style.background]="'var(--type-' + t.type.name + ')'"
+                [href]="'/types/' + t.type.name"
+                >{{ human(t.type.name) }}</a
+              >
+            }
+          </div>
+          <dl class="inline">
+            <div>
+              <dt>Height</dt>
+              <dd>{{ (pokemon.height / 10).toFixed(1) }} m</dd>
+            </div>
+            <div>
+              <dt>Weight</dt>
+              <dd>{{ (pokemon.weight / 10).toFixed(1) }} kg</dd>
+            </div>
+          </dl>
+          <p>{{ flavor(detail) }}</p>
+        </div>
+      </div>
+      <section aria-labelledby="stats-heading">
+        <h2 id="stats-heading">Base stats</h2>
+        <table class="stats">
+          <tbody>
+            @for (s of pokemon.stats; track s.stat.name; let i = $index) {
+              <tr>
+                <th scope="row">{{ statNames[i] }}</th>
+                <td>{{ s.base_stat }}</td>
+                <td>
+                  <div class="track">
+                    <div [style.width.%]="(s.base_stat / 255) * 100"></div>
+                  </div>
+                </td>
+              </tr>
+            }
+            <tr>
+              <th scope="row">Total</th>
+              <td>{{ total }}</td>
+              <td>
+                <div class="track">
+                  <div [style.width.%]="(total / 1530) * 100"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section aria-labelledby="abilities-heading">
+        <h2 id="abilities-heading">Abilities</h2>
+        <ul>
+          @for (a of pokemon.abilities; track a.slot) {
+            <li>
+              <a [href]="'/abilities/' + a.ability.name">{{
+                human(a.ability.name)
+              }}</a>
+              @if (a.is_hidden) {
+                <span> (hidden)</span>
+              }
+            </li>
+          }
+        </ul>
+      </section>
+      <section aria-labelledby="evolution-heading">
+        <h2 id="evolution-heading">Evolution</h2>
+        <app-evolution [node]="chain" />
+      </section>
+      <section id="moves" aria-labelledby="moves-heading">
+        <h2 id="moves-heading">Moves</h2>
+        <app-move-tables [pokemon]="pokemon" />
+      </section>
+    } @else {
+      <h1>{{ heading }}</h1>
+      @switch (kind) {
+        @case ("home") {
+          <div class="filters">
+            <div>
+              <label for="search">Search</label
+              ><input
+                id="search"
+                type="search"
+                [value]="q"
+                (input)="change('q', $any($event.target).value)"
+              />
+            </div>
+            <div>
+              <label for="type">Type</label
+              ><select
+                id="type"
+                (change)="change('type', $any($event.target).value)"
+              >
+                <option value="" [selected]="!type">All types</option>
+                @for (t of types; track t.name) {
+                  <option [value]="t.name" [selected]="type === t.name">
+                    {{ english(t) }}
+                  </option>
+                }
+              </select>
+            </div>
+            <div>
+              <label for="generation">Generation</label
+              ><select
+                id="generation"
+                (change)="change('generation', $any($event.target).value)"
+              >
+                <option value="" [selected]="!generation">
+                  All generations
+                </option>
+                @for (g of generations; track g.name) {
+                  <option [value]="g.name" [selected]="generation === g.name">
+                    {{ english(g) }}
+                  </option>
+                }
+              </select>
+            </div>
+          </div>
+          <p class="count">{{ count() }} Pokémon</p>
+          @if (count()) {
+            <app-cards [items]="cards()" />
+          } @else {
+            <p>No Pokémon found</p>
+          }
+          <div class="pagination">
+            @if (page() > 1) {
+              <a
+                [href]="pageUrl(page() - 1)"
+                (click)="paginate($event, page() - 1)"
+                >Previous page</a
+              >
+            }
+            <span>Page {{ page() }} of {{ pages() }}</span>
+            @if (page() < pages()) {
+              <a
+                [href]="pageUrl(page() + 1)"
+                (click)="paginate($event, page() + 1)"
+                >Next page</a
+              >
+            }
+          </div>
+        }
+        @case ("moves") {
+          <dl class="details">
+            <div>
+              <dt>Type</dt>
+              <dd>
+                <a
+                  class="badge"
+                  [style.background]="'var(--type-' + move.type.name + ')'"
+                  [href]="'/types/' + move.type.name"
+                  >{{ human(move.type.name) }}</a
+                >
+              </dd>
+            </div>
+            <div>
+              <dt>Category</dt>
+              <dd>{{ human(move.damage_class.name) }}</dd>
+            </div>
+            <div>
+              <dt>Power</dt>
+              <dd>{{ move.power ?? "—" }}</dd>
+            </div>
+            <div>
+              <dt>Accuracy</dt>
+              <dd>{{ move.accuracy ?? "—" }}</dd>
+            </div>
+            <div>
+              <dt>PP</dt>
+              <dd>{{ move.pp ?? "—" }}</dd>
+            </div>
+          </dl>
+          <section aria-labelledby="effect-heading">
+            <h2 id="effect-heading">Effect</h2>
+            <p>{{ effect }}</p>
+          </section>
+          <section aria-labelledby="learned-heading">
+            <h2 id="learned-heading">Learned by</h2>
+            <p class="count">{{ count() }} Pokémon</p>
+            <app-cards [items]="cards()" />
+          </section>
+        }
+        @case ("abilities") {
+          <section aria-labelledby="effect-heading">
+            <h2 id="effect-heading">Effect</h2>
+            <p>{{ effect }}</p>
+          </section>
+          <section aria-labelledby="pokemon-heading">
+            <h2 id="pokemon-heading">Pokémon</h2>
+            <p class="count">{{ count() }} Pokémon</p>
+            <app-cards [items]="cards()" />
+          </section>
+        }
+        @case ("types") {
+          @if (typeDetail) {
+            <section aria-labelledby="damage-heading">
+              <h2 id="damage-heading">Damage relations</h2>
+              <dl class="relations">
+                @for (r of relations; track r[0]) {
+                  <div>
+                    <dt>{{ r[0] }}</dt>
+                    <dd>
+                      @for (
+                        t of typeDetail.damage_relations[r[1]];
+                        track t.name
+                      ) {
+                        <a
+                          class="badge"
+                          [style.background]="'var(--type-' + t.name + ')'"
+                          [href]="'/types/' + t.name"
+                          >{{ human(t.name) }}</a
+                        >
+                      } @empty {
+                        None
+                      }
+                    </dd>
+                  </div>
+                }
+              </dl>
+            </section>
+            <section aria-labelledby="pokemon-heading">
+              <h2 id="pokemon-heading">Pokémon</h2>
+              <p class="count">{{ count() }} Pokémon</p>
+              <app-cards [items]="cards()" />
+            </section>
+            <section aria-labelledby="moves-heading">
+              <h2 id="moves-heading">Moves</h2>
+              <p class="count">{{ typeDetail.moves.length }} moves</p>
+              <ul class="move-list">
+                @for (m of typeDetail.moves; track m.name) {
+                  <li>
+                    <a [href]="'/moves/' + m.name">{{ human(m.name) }}</a>
+                  </li>
+                }
+              </ul>
+            </section>
+          } @else {
+            <ul class="type-list">
+              @for (t of types; track t.name) {
+                <li>
+                  <a
+                    class="badge"
+                    [style.background]="'var(--type-' + t.name + ')'"
+                    [href]="'/types/' + t.name"
+                    >{{ english(t) }}</a
+                  >
+                </li>
+              }
+            </ul>
+          }
+        }
+        @default {
+          <p><a href="/">Back to Pokémon</a></p>
+        }
+      }
+    }
+  } @else {
+    <p role="status">Loading…</p>
+  }
+</main>
+<footer>
+  Data from PokéAPI. Pokémon and Pokémon character names are trademarks of
+  Nintendo.
+</footer>

@@ -1,0 +1,11 @@
+@if(error()){<app-not-found />} @else if(loading()){<p role="status">Loading…</p>} @else {
+@if(move();as m){
+<h1>{{english(m)}}</h1><dl class="summary-values detail-values"><div><dt>Type</dt><dd><a class="badge" [style.background]="'var(--type-'+m.type.name+')'" [routerLink]="['/types',m.type.name]">{{human(m.type.name)}}</a></dd></div><div><dt>Category</dt><dd>{{human(m.damage_class.name)}}</dd></div><div><dt>Power</dt><dd>{{m.power??'—'}}</dd></div><div><dt>Accuracy</dt><dd>{{m.accuracy??'—'}}</dd></div><div><dt>PP</dt><dd>{{m.pp??'—'}}</dd></div></dl>
+<section aria-labelledby="effect-heading"><h2 id="effect-heading">Effect</h2><p>{{effectText(m)||flavor(m)}}</p></section>
+<section aria-labelledby="learned-heading"><h2 id="learned-heading">Learned by</h2><p class="count">{{cards().length}} Pokémon</p><app-cards [cards]="cards()" /></section>
+}
+@if(ability();as a){<h1>{{english(a)}}</h1><section aria-labelledby="effect-heading"><h2 id="effect-heading">Effect</h2><p>{{effectText(a)||'—'}}</p></section><section aria-labelledby="pokemon-heading"><h2 id="pokemon-heading">Pokémon</h2><p class="count">{{cards().length}} Pokémon</p><app-cards [cards]="cards()" /></section>}
+@if(type();as t){<h1>{{english(t)}}</h1><section aria-labelledby="relations-heading"><h2 id="relations-heading">Damage relations</h2><dl class="relations">@for(r of relations;track r[1]){<dt>{{r[0]}}</dt><dd>@for(rel of t.damage_relations[r[1]];track rel.name){<a class="badge" [style.background]="'var(--type-'+rel.name+')'" [routerLink]="['/types',rel.name]">{{human(rel.name)}}</a>}@empty{None}</dd>}</dl></section>
+<section aria-labelledby="pokemon-heading"><h2 id="pokemon-heading">Pokémon</h2><p class="count">{{cards().length}} Pokémon</p><app-cards [cards]="cards()" /></section>
+<section aria-labelledby="moves-heading"><h2 id="moves-heading">Moves</h2><p class="count">{{t.moves.length}} moves</p><ul class="move-links">@for(m of sortedMoves(t);track m.name){<li><a [routerLink]="['/moves',m.name]">{{human(m.name)}}</a></li>}</ul></section>}
+}

@@ -1,0 +1,95 @@
+{
+  "same_session": true,
+  "gate": "PASS",
+  "skills": [
+    {
+      "name": "angular-developer",
+      "scope": "user",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "angular-new-app",
+      "scope": "user",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "imagegen",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "openai-docs",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "review-agent",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "skill-creator",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "skill-installer",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    }
+  ],
+  "servers": [
+    {
+      "name": "angular-cli",
+      "runtime_status_snapshot": "connected",
+      "plugin_id": null,
+      "origin": null,
+      "server_info": {
+        "name": "angular-cli-server",
+        "version": "22.2.5"
+      },
+      "advertised_tools": [
+        "ai_tutor",
+        "devserver_start",
+        "devserver_stop",
+        "devserver_wait_for_build",
+        "get_best_practices",
+        "list_projects",
+        "onpush_zoneless_migration",
+        "run_target",
+        "search_documentation"
+      ]
+    }
+  ],
+  "catalog_provenance": null,
+  "handshake_evidence": "Native tool advertisement/capabilities, not captured wire messages",
+  "wire_messages_captured": false,
+  "native_configuration": {
+    "model": null,
+    "model_reasoning_effort": null,
+    "service_tier": null,
+    "web_search": null,
+    "agents": null
+  },
+  "native_multi_agent_mode": "explicitRequestOnly",
+  "context_controls": {
+    "fresh_home": true,
+    "remote_plugin": false,
+    "apps": false,
+    "frozen_cloud_skills": []
+  },
+  "observed_completed_mcp_calls": [
+    {
+      "server": "angular-cli",
+      "tool": "get_best_practices",
+      "count": 1
+    }
+  ]
+}

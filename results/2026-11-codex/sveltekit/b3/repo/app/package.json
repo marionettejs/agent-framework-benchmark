@@ -1,0 +1,19 @@
+{
+  "name": "pokedex",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "start": "node build"
+  },
+  "dependencies": {
+    "@sveltejs/adapter-node": "latest",
+    "@sveltejs/kit": "3.1.1",
+    "@sveltejs/vite-plugin-svelte": "latest",
+    "svelte": "5.57.3",
+    "vite": "latest"
+  },
+  "imports": {
+    "#lib/*": "./src/lib/*"
+  }
+}

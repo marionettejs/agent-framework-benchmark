@@ -1,0 +1,83 @@
+{
+  "sameSession": true,
+  "skills": [
+    {
+      "name": "marionette",
+      "scope": "repo"
+    },
+    {
+      "name": "imagegen",
+      "scope": "system"
+    },
+    {
+      "name": "openai-docs",
+      "scope": "system"
+    },
+    {
+      "name": "review-agent",
+      "scope": "system"
+    },
+    {
+      "name": "skill-creator",
+      "scope": "system"
+    },
+    {
+      "name": "skill-installer",
+      "scope": "system"
+    }
+  ],
+  "servers": [
+    {
+      "name": "marionette-docs",
+      "toolCount": 7,
+      "serverCapabilities": {
+        "resources": {
+          "listChanged": true
+        },
+        "tools": {
+          "listChanged": true
+        }
+      }
+    }
+  ],
+  "catalogBefore": {
+    "packageVersion": "5.0.0",
+    "channel": "latest",
+    "publication": "stable release (published on npm)",
+    "sourceRepository": "https://github.com/marionettejs/marionette",
+    "sourceRevision": "0f2284ad4bbfe8c82ce82714471697a68c2acaeb",
+    "sourceDirty": false,
+    "sourceContentSha256": "44c0d535fd36d11f31d909246f4ee7c6592eae3f25fb7513c61af65842593a90",
+    "corpusKind": "package-artifact",
+    "corpusSha256": "7438a8e7be53f13067dedbf19c04f8a0d5efdbb2acc4b4a80eea90a29f9ec45d"
+  },
+  "catalogAfter": {
+    "packageVersion": "5.0.0",
+    "channel": "latest",
+    "publication": "stable release (published on npm)",
+    "sourceRepository": "https://github.com/marionettejs/marionette",
+    "sourceRevision": "0f2284ad4bbfe8c82ce82714471697a68c2acaeb",
+    "sourceDirty": false,
+    "sourceContentSha256": "44c0d535fd36d11f31d909246f4ee7c6592eae3f25fb7513c61af65842593a90",
+    "corpusKind": "package-artifact",
+    "corpusSha256": "7438a8e7be53f13067dedbf19c04f8a0d5efdbb2acc4b4a80eea90a29f9ec45d"
+  },
+  "serviceRevisionBefore": {
+    "status": 405,
+    "revision": "992446b95f2885a6128d8c8111ac8db0f2e3bfa1"
+  },
+  "serviceRevisionAfter": {
+    "status": 405,
+    "revision": "992446b95f2885a6128d8c8111ac8db0f2e3bfa1"
+  },
+  "agentMcpToolInvocations": 0,
+  "handshakeEvidence": "Native tool advertisement/capabilities; not wire capture",
+  "nativeConfiguration": {
+    "model": null,
+    "model_reasoning_effort": null,
+    "service_tier": null,
+    "web_search": null,
+    "agents": null
+  },
+  "multiAgentMode": "explicitRequestOnly"
+}

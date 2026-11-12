@@ -1,0 +1,2 @@
+<script setup>defineProps(['cards']);const human=s=>s.split('-').map(x=>x[0].toUpperCase()+x.slice(1)).join(' ')</script>
+<template><ul class="cards"><li v-for="p in cards" :key="p.id"><a :href="`/pokemon/${p.name}`"><img :src="p.sprite" :alt="human(p.name)" width="96" height="96"><span class="dex">#{{String(p.id).padStart(4,'0')}}</span><span>{{human(p.name)}}</span><span class="badges"><TypeBadge v-for="t in p.types" :key="t" :name="t"/></span><small v-if="p.hidden">Hidden ability</small></a></li></ul></template>

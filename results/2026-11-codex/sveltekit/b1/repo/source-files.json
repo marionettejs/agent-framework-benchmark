@@ -1,0 +1,56 @@
+{
+  "files": {
+    "package-lock.json": {
+      "sha256": "991db28c5e9f7a812e7bf7c55be8953b13ac4520f335218fc8004b75d88e845e",
+      "bytes": 38308,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "c8bbf39d43cd3bebef91f3e69e096887773b75e4a0db881e0f4f7fd7fd3a56ac",
+      "bytes": 393,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app.html": {
+      "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+      "bytes": 261,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/Cards.svelte": {
+      "sha256": "6a62ca6f523c80429987a7b26cf84056a6a845ec1ad54a396de575ec31c1698d",
+      "bytes": 596,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/MoveTable.svelte": {
+      "sha256": "3a7c99a0757d1fe1445aca5872e9c2be095f72509492253f1d69388d62ad28c9",
+      "bytes": 1416,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/api.js": {
+      "sha256": "62cce7cb0499ef96752c38356dba5b0288d6f4f17a083d6a13eaf559e203b171",
+      "bytes": 4195,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/style.css": {
+      "sha256": "85e328474836d0139a9866db423cca56073d5a769cc7a6eb334c589c56459250",
+      "bytes": 4880,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/routes/[...path]/+page.server.js": {
+      "sha256": "85808b0e1e5968fbbb096878a050850420af0c60bd253d214f7504f0f7aee429",
+      "bytes": 174,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/routes/[...path]/+page.svelte": {
+      "sha256": "0c69d699ab5b4528fd2c52f9f6f1baa5a74e082a40f032c413727cf2f9db57c1",
+      "bytes": 7280,
+      "byteIdenticalGeneratedSource": true
+    },
+    "vite.config.js": {
+      "sha256": "4d79496be1df153e8d95ed1339858789451275ac45bd707e11ec3cc2e0dceab5",
+      "bytes": 151,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

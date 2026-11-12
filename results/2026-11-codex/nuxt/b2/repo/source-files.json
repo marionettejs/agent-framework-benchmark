@@ -1,0 +1,61 @@
+{
+  "files": {
+    "app/app.vue": {
+      "sha256": "568811e9d1ccdeb1b16fc6f9643196fa2758373e43eec224965af519b74663da",
+      "bytes": 283,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/assets/main.css": {
+      "sha256": "c7d23ccd0e4e44ab1b6d3d2b10cf2d08056123eb28e6df101b3fe33a75d040ec",
+      "bytes": 5508,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/EvolutionTree.vue": {
+      "sha256": "5e88cbeacec0d8dd462f52683b6f3be66420e20cc326c082a6ca23bd9533a48f",
+      "bytes": 366,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/MoveTable.vue": {
+      "sha256": "05ba14660b92ea43299ce0dc1895a5bc4664d994eaea628a305db012552b6d87",
+      "bytes": 1429,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/PokemonCards.vue": {
+      "sha256": "42c1d9238db46f3c05fb701093f09985003c8e22bf5dc8fe821a8ec745033633",
+      "bytes": 521,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/TypeBadge.vue": {
+      "sha256": "b7ebbfd2cb6ecd4d8e9cb427e535c194e41072a7ea484ca9d631c5063fc4f69a",
+      "bytes": 351,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/pages/[...slug].vue": {
+      "sha256": "4b4623b67e441205b1ddbed8568fd1c054d950bb3c485675caf0c84d8f193c4d",
+      "bytes": 6898,
+      "byteIdenticalGeneratedSource": true
+    },
+    "nuxt.config.ts": {
+      "sha256": "2e45dc9503018b45173afe35239b57ba1a0602a222ed54739e943b07dc4acb26",
+      "bytes": 182,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+      "bytes": 290072,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+      "bytes": 155,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server/api/page.get.ts": {
+      "sha256": "ee7af8f1622b6e4b630e1e5b129b631d06a484cfdabdb37846c0e5b03ab2b584",
+      "bytes": 4475,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

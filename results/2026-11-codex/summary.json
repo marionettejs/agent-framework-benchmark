@@ -1,0 +1,2359 @@
+{
+  "schemaVersion": 2,
+  "cohort": "Four published Marionette 5.1.0 applications and four functioning applications per peer",
+  "records": [
+    {
+      "framework": "marionette",
+      "build": "b1",
+      "generationSeconds": 334.332721778,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1373295,
+        "cached_input_tokens": 1320704,
+        "uncached_input_tokens": 52591,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9380,
+        "reasoning_output_tokens": 726
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1893.796,
+          "tbt": 1,
+          "cls": 0.111,
+          "scriptBytes": 26224
+        },
+        "home-filtered/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1890.414,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 26224
+        },
+        "pokemon/mobile": {
+          "performance": 0.75,
+          "accessibility": 1,
+          "lcp": 6093.552,
+          "tbt": 43,
+          "cls": 0.111,
+          "scriptBytes": 26224
+        },
+        "move/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1093.851,
+          "tbt": 55,
+          "cls": 0.111,
+          "scriptBytes": 26224
+        },
+        "ability/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1850.962,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 26224
+        },
+        "type/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1978.749,
+          "tbt": 29,
+          "cls": 0.111,
+          "scriptBytes": 26224
+        }
+      },
+      "installed": {
+        "@mnjs/data": "5.1.0",
+        "@mnjs/html": "1.0.0",
+        "marionette": "5.1.0",
+        "vite": "8.3.8"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 78,
+        "snapshotNonblankLines": 72,
+        "formatterNormalizedNonblankLines": 998
+      },
+      "evidenceSha256": {
+        "generationReceipt": "0bbf570c69e9b1cbed7d683a55feace85dd734ccb77e2b0080fc1118d114e304",
+        "nativeUsageReceipt": "79ee4317a294e94f8aa12f1c739ace716caaf836cdb750edaa1cbf576366ec47",
+        "measurementResults": "4cd30d39a8e5b3f1ad09c96afd5527bb6fc0a0500bdb79f5e4f645561b58660e",
+        "generatedSourceArchive": "029e8113ffc01e961ebe3dc5a81748fa6705cfea4ff5dad11a2377e5dd2489fc",
+        "emittedGenerationStream": "588e88d2320003cf4e3cebac412729b44a049f4535612df74acdd5291c46d284",
+        "nativeSessionReceipt": "79ee4317a294e94f8aa12f1c739ace716caaf836cdb750edaa1cbf576366ec47",
+        "publishedMeasurementResults": "77379d0924e1133ae47b14cc5614df2620328548831565e95fa10ab01f5ba914"
+      },
+      "hostedMcp": {
+        "serviceRevision": "992446b95f2885a6128d8c8111ac8db0f2e3bfa1",
+        "corpusSha256": "7438a8e7be53f13067dedbf19c04f8a0d5efdbb2acc4b4a80eea90a29f9ec45d",
+        "catalogPackageVersion": "5.0.0",
+        "stableWithinBuild": true,
+        "advertisedToolCount": 7,
+        "agentToolInvocations": 0
+      },
+      "bundledSkillSha256": "591e2c338e732da101109c730dcf0e1b5602dfa95cb431aad1da52bba4f32d4e",
+      "path": "marionette/b1",
+      "sourceSize": {
+        "originalBytes": 20084,
+        "originalNonblankLoc": 72,
+        "normalizedBytes": 26983,
+        "normalizedNonblankLoc": 998
+      }
+    },
+    {
+      "framework": "marionette",
+      "build": "b2",
+      "generationSeconds": 247.26817704799998,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 989328,
+        "cached_input_tokens": 933120,
+        "uncached_input_tokens": 56208,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8459,
+        "reasoning_output_tokens": 460
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1884.787,
+          "tbt": 8,
+          "cls": 0.111,
+          "scriptBytes": 24323
+        },
+        "home-filtered/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1872.09,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 24339
+        },
+        "pokemon/mobile": {
+          "performance": 0.81,
+          "accessibility": 1,
+          "lcp": 4410.556,
+          "tbt": 18,
+          "cls": 0.111,
+          "scriptBytes": 24323
+        },
+        "move/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1913.202,
+          "tbt": 92,
+          "cls": 0.111,
+          "scriptBytes": 24323
+        },
+        "ability/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1243.26,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 24323
+        },
+        "type/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1185.927,
+          "tbt": 15.5,
+          "cls": 0.111,
+          "scriptBytes": 24323
+        }
+      },
+      "installed": {
+        "marionette": "5.1.0",
+        "@mnjs/html": "1.0.0",
+        "vite": "8.3.8"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 1103,
+        "snapshotNonblankLines": 952,
+        "formatterNormalizedNonblankLines": 950
+      },
+      "evidenceSha256": {
+        "generationReceipt": "0304f82d1828e8c87cf43d0f638d4df9905f7a6fc055375e538f43d2b477386e",
+        "nativeUsageReceipt": "d12fd343114e00b34480bdf52bc3687010f0bc06b3639c97ebec71f5882493bd",
+        "measurementResults": "af4405af707c0e694a3750c01f07a5d1ef8ecd72221b8c190b9d839b86a27514",
+        "generatedSourceArchive": "f828236b8f0b6f4c614f06d9de98b5752a5754322ade2574212f545e5b595ebe",
+        "emittedGenerationStream": "e0cd52d7ddb7f9f9c04227ed16b1e51c384aaffd865d8921d753eb5c97da1d6b",
+        "nativeSessionReceipt": "d12fd343114e00b34480bdf52bc3687010f0bc06b3639c97ebec71f5882493bd",
+        "publishedMeasurementResults": "d54bfafd70d8d0b9d90751901ae4e3f6f2674ad9c32f57b22f65053057d4a833"
+      },
+      "hostedMcp": {
+        "serviceRevision": "572cc10d2d3405a63d61cb49b5b445cffc68d133",
+        "corpusSha256": "acb4be738b453d80262023463c68f7081d1a7d5889c71ad0593ca16710bd7ab6",
+        "catalogPackageVersion": "5.1.0",
+        "stableWithinBuild": true,
+        "advertisedToolCount": 7,
+        "agentToolInvocations": 0
+      },
+      "bundledSkillSha256": "591e2c338e732da101109c730dcf0e1b5602dfa95cb431aad1da52bba4f32d4e",
+      "path": "marionette/b2",
+      "sourceSize": {
+        "originalBytes": 26021,
+        "originalNonblankLoc": 952,
+        "normalizedBytes": 25977,
+        "normalizedNonblankLoc": 950
+      }
+    },
+    {
+      "framework": "marionette",
+      "build": "b3",
+      "generationSeconds": 290.14654435799997,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 982101,
+        "cached_input_tokens": 930304,
+        "uncached_input_tokens": 51797,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9209,
+        "reasoning_output_tokens": 432
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "lcp": 1864.987,
+          "tbt": 1,
+          "cls": 0.172,
+          "scriptBytes": 26129
+        },
+        "home-filtered/mobile": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "lcp": 1892.455,
+          "tbt": 0,
+          "cls": 0.172,
+          "scriptBytes": 26129
+        },
+        "pokemon/mobile": {
+          "performance": 0.75,
+          "accessibility": 1,
+          "lcp": 6143.585,
+          "tbt": 31,
+          "cls": 0.111,
+          "scriptBytes": 26129
+        },
+        "move/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1893.15,
+          "tbt": 104,
+          "cls": 0.111,
+          "scriptBytes": 26129
+        },
+        "ability/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1098.245,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 26129
+        },
+        "type/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1845.002,
+          "tbt": 29.5,
+          "cls": 0.111,
+          "scriptBytes": 26129
+        }
+      },
+      "installed": {
+        "@mnjs/data": "5.1.0",
+        "@mnjs/html": "1.0.0",
+        "@mnjs/radio": "5.1.0",
+        "@mnjs/utils": "5.1.0",
+        "marionette": "5.1.0",
+        "vite": "8.3.8"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 118,
+        "snapshotNonblankLines": 112,
+        "formatterNormalizedNonblankLines": 1027
+      },
+      "evidenceSha256": {
+        "generationReceipt": "e32f61d4d892a6a1c6ce60ba70101cae6a2ffe37f8b2f03af1f5d12bec61dc8f",
+        "nativeUsageReceipt": "3c27b1d38eab0905229d905e5c95cd8cadc7efe958a46d235c97d30f595bf430",
+        "measurementResults": "2780e798efbbe021b47a981979b08a93a69f4f7dc8eefd6e1ff599bed907e5ed",
+        "generatedSourceArchive": "61d757bd6307813a428123862f4b9dfa28be4827fc4b494e122a75af286d26cd",
+        "emittedGenerationStream": "e9b1469528213bb041db65e9edc629609df852fe50036e6b306dc4e89674b6d3",
+        "nativeSessionReceipt": "3c27b1d38eab0905229d905e5c95cd8cadc7efe958a46d235c97d30f595bf430",
+        "publishedMeasurementResults": "bedd809c69398816af55fc82929a412dace93372117b6f61c3206adb2555536c"
+      },
+      "hostedMcp": {
+        "serviceRevision": "572cc10d2d3405a63d61cb49b5b445cffc68d133",
+        "corpusSha256": "acb4be738b453d80262023463c68f7081d1a7d5889c71ad0593ca16710bd7ab6",
+        "catalogPackageVersion": "5.1.0",
+        "stableWithinBuild": true,
+        "advertisedToolCount": 7,
+        "agentToolInvocations": 0
+      },
+      "bundledSkillSha256": "591e2c338e732da101109c730dcf0e1b5602dfa95cb431aad1da52bba4f32d4e",
+      "path": "marionette/b3",
+      "sourceSize": {
+        "originalBytes": 21242,
+        "originalNonblankLoc": 112,
+        "normalizedBytes": 27888,
+        "normalizedNonblankLoc": 1027
+      }
+    },
+    {
+      "framework": "marionette",
+      "build": "b4",
+      "generationSeconds": 318.06296836900003,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1227620,
+        "cached_input_tokens": 1168896,
+        "uncached_input_tokens": 58724,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9932,
+        "reasoning_output_tokens": 702
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1881.773,
+          "tbt": 13,
+          "cls": 0.103,
+          "scriptBytes": 26351
+        },
+        "home-filtered/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1908.214,
+          "tbt": 0,
+          "cls": 0.103,
+          "scriptBytes": 26351
+        },
+        "pokemon/mobile": {
+          "performance": 0.74,
+          "accessibility": 1,
+          "lcp": 6360.826,
+          "tbt": 72,
+          "cls": 0.103,
+          "scriptBytes": 26351
+        },
+        "move/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 1949.369,
+          "tbt": 137,
+          "cls": 0.103,
+          "scriptBytes": 26351
+        },
+        "ability/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1994.844,
+          "tbt": 0,
+          "cls": 0.103,
+          "scriptBytes": 26351
+        },
+        "type/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1904.596,
+          "tbt": 29,
+          "cls": 0.103,
+          "scriptBytes": 26351
+        }
+      },
+      "installed": {
+        "@mnjs/data": "5.1.0",
+        "@mnjs/html": "1.0.0",
+        "marionette": "5.1.0",
+        "vite": "8.3.8"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 87,
+        "snapshotNonblankLines": 81,
+        "formatterNormalizedNonblankLines": 1053
+      },
+      "evidenceSha256": {
+        "generationReceipt": "9241aa61bd755a3386d55ddfd17a51e98302cb67191de4d634e17c5ac5686519",
+        "nativeUsageReceipt": "87c9702a43c23ed2e77a818a11119031cfb2cb7657ec5e977673b6a2d84afbd5",
+        "measurementResults": "f147d678e8b62f8eb5129b22b21913d3b66508a5ce40eb10f30ed9e02eefc5f5",
+        "generatedSourceArchive": "3c916024c43e85c321659713905af126fe5e12a999bb863f0aae484a1b9b9e48",
+        "emittedGenerationStream": "bed030e89ee2d76fd65ff27a1a54e6a5a812ff959548d92759d55f9bc781c2c5",
+        "nativeSessionReceipt": "87c9702a43c23ed2e77a818a11119031cfb2cb7657ec5e977673b6a2d84afbd5",
+        "publishedMeasurementResults": "882e06380a42688685ff89de1ec3241c0dbffbefdf1325b0b77fe85b13fff3b1"
+      },
+      "hostedMcp": {
+        "serviceRevision": "572cc10d2d3405a63d61cb49b5b445cffc68d133",
+        "corpusSha256": "acb4be738b453d80262023463c68f7081d1a7d5889c71ad0593ca16710bd7ab6",
+        "catalogPackageVersion": "5.1.0",
+        "stableWithinBuild": true,
+        "advertisedToolCount": 7,
+        "agentToolInvocations": 0
+      },
+      "bundledSkillSha256": "591e2c338e732da101109c730dcf0e1b5602dfa95cb431aad1da52bba4f32d4e",
+      "path": "marionette/b4",
+      "sourceSize": {
+        "originalBytes": 21549,
+        "originalNonblankLoc": 81,
+        "normalizedBytes": 28161,
+        "normalizedNonblankLoc": 1053
+      }
+    },
+    {
+      "framework": "angular",
+      "build": "b1",
+      "generationSeconds": 443.79726409899996,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1905652,
+        "cached_input_tokens": 1817472,
+        "uncached_input_tokens": 88180,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15239,
+        "reasoning_output_tokens": 2464
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.73,
+          "accessibility": 1,
+          "lcp": 1545.782,
+          "tbt": 983.073,
+          "cls": 0.134,
+          "scriptBytes": 98051
+        },
+        "home-filtered/mobile": {
+          "performance": 0.85,
+          "accessibility": 1,
+          "lcp": 1793.442,
+          "tbt": 255,
+          "cls": 0.204,
+          "scriptBytes": 98051
+        },
+        "pokemon/mobile": {
+          "performance": 0.49,
+          "accessibility": 1,
+          "lcp": 7242.16,
+          "tbt": 1783.323,
+          "cls": 0.004,
+          "scriptBytes": 99980
+        },
+        "move/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 1427.58,
+          "tbt": 112.5,
+          "cls": 0.115,
+          "scriptBytes": 81518
+        },
+        "ability/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1397.823,
+          "tbt": 47.5,
+          "cls": 0.115,
+          "scriptBytes": 81518
+        },
+        "type/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1406.677,
+          "tbt": 71,
+          "cls": 0.115,
+          "scriptBytes": 81518
+        }
+      },
+      "installed": {
+        "@angular/common": "22.2.4",
+        "@angular/compiler": "22.2.4",
+        "@angular/core": "22.2.4",
+        "@angular/forms": "22.2.4",
+        "@angular/platform-browser": "22.2.4",
+        "@angular/router": "22.2.4",
+        "rxjs": "7.8.2",
+        "tslib": "2.9.1",
+        "@angular/build": "22.2.5",
+        "@angular/cli": "22.2.5",
+        "@angular/compiler-cli": "22.2.4",
+        "jsdom": "30.1.3",
+        "prettier": "3.9.10",
+        "typescript": "6.0.3",
+        "vitest": "5.1.0"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 679,
+        "snapshotNonblankLines": 679,
+        "formatterNormalizedNonblankLines": 1890
+      },
+      "evidenceSha256": {
+        "generationReceipt": "e96f4915dc49ff7284756fb6b44dff95e05bd616d9d16f833b249d158d2a1bf9",
+        "nativeUsageReceipt": "e6e4be767b2cffc88fe4b47d9a21640d6a928c8af755b6cec154aa648208d02d",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "82eeb55beef73a4568bcc7bbf0136127b85b547a71ad817237ec36cbda52ee3d",
+        "nativeSessionReceipt": "b3cfa43ff12bfc6965294c02b0769ec0d592ed354fde4944d4a8917651825cda",
+        "publishedMeasurementResults": "82eeb55beef73a4568bcc7bbf0136127b85b547a71ad817237ec36cbda52ee3d"
+      },
+      "path": "angular/b1",
+      "sourceSize": {
+        "originalBytes": 52907,
+        "originalNonblankLoc": 679,
+        "normalizedBytes": 61922,
+        "normalizedNonblankLoc": 1890
+      }
+    },
+    {
+      "framework": "angular",
+      "build": "b2",
+      "generationSeconds": 392.378623163,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1429286,
+        "cached_input_tokens": 1369344,
+        "uncached_input_tokens": 59942,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12820,
+        "reasoning_output_tokens": 941
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.8,
+          "accessibility": 1,
+          "lcp": 1746.748,
+          "tbt": 757.783,
+          "cls": 0.107,
+          "scriptBytes": 77749
+        },
+        "home-filtered/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 1563.549,
+          "tbt": 149.254,
+          "cls": 0.107,
+          "scriptBytes": 77749
+        },
+        "pokemon/mobile": {
+          "performance": 0.8,
+          "accessibility": 1,
+          "lcp": 2595.272,
+          "tbt": 548,
+          "cls": 0.104,
+          "scriptBytes": 77749
+        },
+        "move/mobile": {
+          "performance": 0.7,
+          "accessibility": 1,
+          "lcp": 2261.788,
+          "tbt": 2343.189,
+          "cls": 0,
+          "scriptBytes": 77749
+        },
+        "ability/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 1563.514,
+          "tbt": 138.5,
+          "cls": 0.107,
+          "scriptBytes": 77749
+        },
+        "type/mobile": {
+          "performance": 0.76,
+          "accessibility": 1,
+          "lcp": 1565.788,
+          "tbt": 921.758,
+          "cls": 0.107,
+          "scriptBytes": 77749
+        }
+      },
+      "installed": {
+        "@angular/common": "22.2.4",
+        "@angular/compiler": "22.2.4",
+        "@angular/core": "22.2.4",
+        "@angular/forms": "22.2.4",
+        "@angular/platform-browser": "22.2.4",
+        "@angular/router": "22.2.4",
+        "rxjs": "7.8.2",
+        "tslib": "2.9.1",
+        "@angular/build": "22.2.5",
+        "@angular/cli": "22.2.5",
+        "@angular/compiler-cli": "22.2.4",
+        "jsdom": "30.1.3",
+        "prettier": "3.9.10",
+        "typescript": "6.0.3",
+        "vitest": "5.1.0"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 1257,
+        "snapshotNonblankLines": 1257,
+        "formatterNormalizedNonblankLines": 1343
+      },
+      "evidenceSha256": {
+        "generationReceipt": "12f870eea0f187fc46dad701e4e6ba96af115c4f3becadb6d655d7c8f45b76b7",
+        "nativeUsageReceipt": "c235eec34efdcb1de812921856e622574015b4e8261b2176ebed72b6c21b6c34",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "5ee48be93a5c41797300d953ec77cecc396eb3754bdf6943f8320a19f808dcdd",
+        "nativeSessionReceipt": "1d9cbb5444e20b22579361da7d19f3d3063e85c6c820b25fdb1fd904b6efb6b8",
+        "publishedMeasurementResults": "5ee48be93a5c41797300d953ec77cecc396eb3754bdf6943f8320a19f808dcdd"
+      },
+      "path": "angular/b2",
+      "sourceSize": {
+        "originalBytes": 36000,
+        "originalNonblankLoc": 1257,
+        "normalizedBytes": 37103,
+        "normalizedNonblankLoc": 1343
+      }
+    },
+    {
+      "framework": "angular",
+      "build": "b3",
+      "generationSeconds": 480.652355135,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 2541453,
+        "cached_input_tokens": 2467200,
+        "uncached_input_tokens": 74253,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14610,
+        "reasoning_output_tokens": 1641
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.93,
+          "accessibility": 1,
+          "lcp": 1989.485,
+          "tbt": 206,
+          "cls": 0.111,
+          "scriptBytes": 50172
+        },
+        "home-filtered/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1979.15,
+          "tbt": 90,
+          "cls": 0.111,
+          "scriptBytes": 50172
+        },
+        "pokemon/mobile": {
+          "performance": 0.79,
+          "accessibility": 1,
+          "lcp": 4728.484,
+          "tbt": 76,
+          "cls": 0.111,
+          "scriptBytes": 50172
+        },
+        "move/mobile": {
+          "performance": 0.76,
+          "accessibility": 1,
+          "lcp": 1982.376,
+          "tbt": 841.001,
+          "cls": 0.111,
+          "scriptBytes": 50172
+        },
+        "ability/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 1917.653,
+          "tbt": 45,
+          "cls": 0.111,
+          "scriptBytes": 50172
+        },
+        "type/mobile": {
+          "performance": 0.91,
+          "accessibility": 1,
+          "lcp": 1981.004,
+          "tbt": 243,
+          "cls": 0.111,
+          "scriptBytes": 50172
+        }
+      },
+      "installed": {
+        "@angular/common": "22.2.4",
+        "@angular/compiler": "22.2.4",
+        "@angular/core": "22.2.4",
+        "@angular/forms": "22.2.4",
+        "@angular/platform-browser": "22.2.4",
+        "@angular/router": "22.2.4",
+        "rxjs": "7.8.2",
+        "tslib": "2.9.1",
+        "@angular/build": "22.2.5",
+        "@angular/cli": "22.2.5",
+        "@angular/compiler-cli": "22.2.4",
+        "jsdom": "30.1.3",
+        "prettier": "3.9.10",
+        "typescript": "6.0.3",
+        "vitest": "5.1.0"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 1309,
+        "snapshotNonblankLines": 1309,
+        "formatterNormalizedNonblankLines": 1392
+      },
+      "evidenceSha256": {
+        "generationReceipt": "cfd27d714a33a074d0477623c25094ec322fcab6053e2c4695bc9e0fbde78d4e",
+        "nativeUsageReceipt": "33a7253592f05d7608fc1f264dc1aad0dbae856bd9a2f2372dc96597a3157932",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "1c97de45d135403546cebead088a8452aa5c6bbef87b065b3ab946e6cc807099",
+        "nativeSessionReceipt": "2b7853e93fdfeceff5705c583e02460138d957af1008e72e200051dd6f4d30b6",
+        "publishedMeasurementResults": "1c97de45d135403546cebead088a8452aa5c6bbef87b065b3ab946e6cc807099"
+      },
+      "path": "angular/b3",
+      "sourceSize": {
+        "originalBytes": 38111,
+        "originalNonblankLoc": 1309,
+        "normalizedBytes": 39000,
+        "normalizedNonblankLoc": 1392
+      }
+    },
+    {
+      "framework": "angular",
+      "build": "b4",
+      "generationSeconds": 352.68483272199995,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1401683,
+        "cached_input_tokens": 1337984,
+        "uncached_input_tokens": 63699,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12114,
+        "reasoning_output_tokens": 755
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.78,
+          "accessibility": 1,
+          "lcp": 1438.886,
+          "tbt": 1031.5,
+          "cls": 0.008,
+          "scriptBytes": 79377
+        },
+        "home-filtered/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 1426.612,
+          "tbt": 103.5,
+          "cls": 0.118,
+          "scriptBytes": 79377
+        },
+        "pokemon/mobile": {
+          "performance": 0.68,
+          "accessibility": 1,
+          "lcp": 5171.324,
+          "tbt": 365,
+          "cls": 0.118,
+          "scriptBytes": 79377
+        },
+        "move/mobile": {
+          "performance": 0.71,
+          "accessibility": 1,
+          "lcp": 1553.429,
+          "tbt": 2214.882,
+          "cls": 0.008,
+          "scriptBytes": 79377
+        },
+        "ability/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 1403.324,
+          "tbt": 117.5,
+          "cls": 0.118,
+          "scriptBytes": 79377
+        },
+        "type/mobile": {
+          "performance": 0.75,
+          "accessibility": 1,
+          "lcp": 1489.898,
+          "tbt": 903.742,
+          "cls": 0.118,
+          "scriptBytes": 79377
+        }
+      },
+      "installed": {
+        "@angular/common": "22.2.4",
+        "@angular/compiler": "22.2.4",
+        "@angular/core": "22.2.4",
+        "@angular/forms": "22.2.4",
+        "@angular/platform-browser": "22.2.4",
+        "@angular/router": "22.2.4",
+        "rxjs": "7.8.2",
+        "tslib": "2.9.1",
+        "@angular/build": "22.2.5",
+        "@angular/cli": "22.2.5",
+        "@angular/compiler-cli": "22.2.4",
+        "jsdom": "30.1.3",
+        "prettier": "3.9.10",
+        "typescript": "6.0.3",
+        "vitest": "5.1.0"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 510,
+        "snapshotNonblankLines": 510,
+        "formatterNormalizedNonblankLines": 1711
+      },
+      "evidenceSha256": {
+        "generationReceipt": "0deee96b4bae7a3a32dda39ee0cc6d15ec8b13e5f2ade6a9e1e8145550ca14ec",
+        "nativeUsageReceipt": "70283739bafa2c9a06df4bf16ca019cbe3f7880b06979bca263fa0fcbd0d400b",
+        "acceptanceReceipt": "047e59d21bc4e1d02aa5941bfa3a24a109b766aee5ed27304ecc69831d5bd649",
+        "measurementResults": "39c38a3f695b5c399cc656ea3145687d9639e36d5f1db96e890371ab6f86ff93",
+        "nativeSessionReceipt": "b7c7c59f16c01cca37d8fb77db0ab345b355d1a09721ac3988b7312e1d45a239",
+        "publishedMeasurementResults": "39c38a3f695b5c399cc656ea3145687d9639e36d5f1db96e890371ab6f86ff93"
+      },
+      "path": "angular/b4",
+      "sourceSize": {
+        "originalBytes": 47923,
+        "originalNonblankLoc": 510,
+        "normalizedBytes": 58773,
+        "normalizedNonblankLoc": 1711
+      }
+    },
+    {
+      "framework": "nuxt",
+      "build": "b1",
+      "generationSeconds": 404.179661185,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 2242973,
+        "cached_input_tokens": 2195712,
+        "uncached_input_tokens": 47261,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10741,
+        "reasoning_output_tokens": 1087
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 2086.339,
+          "tbt": 8,
+          "cls": 0,
+          "scriptBytes": 77830
+        },
+        "home-filtered/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1608.096,
+          "tbt": 16,
+          "cls": 0,
+          "scriptBytes": 77780
+        },
+        "pokemon/mobile": {
+          "performance": 0.69,
+          "accessibility": 1,
+          "lcp": 4906.173,
+          "tbt": 174,
+          "cls": 0,
+          "scriptBytes": 77780
+        },
+        "move/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 2226.639,
+          "tbt": 42.5,
+          "cls": 0,
+          "scriptBytes": 77780
+        },
+        "ability/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1385.616,
+          "tbt": 9,
+          "cls": 0,
+          "scriptBytes": 77780
+        },
+        "type/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 1822.796,
+          "tbt": 32,
+          "cls": 0,
+          "scriptBytes": 77780
+        }
+      },
+      "installed": {
+        "nuxt": "4.6.4"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 13600,
+        "snapshotNonblankLines": null,
+        "formatterNormalizedNonblankLines": 997
+      },
+      "evidenceSha256": {
+        "generationReceipt": "e67606399b7468f121aedc153aa2e733aac7a979b032d0841e27b5b2894af3b6",
+        "nativeUsageReceipt": "6741efa2cdba23246df779bbfb67e05a8cf0a0328f23ce4beb4a699076e41bd8",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "75633129ac3e1085e1795ac50f60e5e71b3b8ba9470b92b4dcd7120c91ccd4f0",
+        "nativeSessionReceipt": "8ae954763657fe03c1f0ac5466e4482c8f6c0663bfe81da9988834a3b943aef1",
+        "publishedMeasurementResults": "75633129ac3e1085e1795ac50f60e5e71b3b8ba9470b92b4dcd7120c91ccd4f0"
+      },
+      "path": "nuxt/b1",
+      "sourceSize": {
+        "originalBytes": 19026,
+        "originalNonblankLoc": 96,
+        "normalizedBytes": 26093,
+        "normalizedNonblankLoc": 997
+      }
+    },
+    {
+      "framework": "nuxt",
+      "build": "b2",
+      "generationSeconds": 270.883025293,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1103551,
+        "cached_input_tokens": 1058560,
+        "uncached_input_tokens": 44991,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9165,
+        "reasoning_output_tokens": 842
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1849.128,
+          "tbt": 78,
+          "cls": 0,
+          "scriptBytes": 84560
+        },
+        "home-filtered/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1833.561,
+          "tbt": 25.5,
+          "cls": 0,
+          "scriptBytes": 84509
+        },
+        "pokemon/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 2424.942,
+          "tbt": 81,
+          "cls": 0,
+          "scriptBytes": 84509
+        },
+        "move/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2251.522,
+          "tbt": 92,
+          "cls": 0,
+          "scriptBytes": 84509
+        },
+        "ability/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1760.973,
+          "tbt": 37,
+          "cls": 0,
+          "scriptBytes": 84509
+        },
+        "type/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1996.659,
+          "tbt": 62.5,
+          "cls": 0,
+          "scriptBytes": 84509
+        }
+      },
+      "installed": {
+        "nuxt": "4.6.4"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 13929,
+        "snapshotNonblankLines": 106,
+        "formatterNormalizedNonblankLines": 1031
+      },
+      "evidenceSha256": {
+        "generationReceipt": "e98d2f7439ad5ae9f7533b8cba4b632346e5c67af5875092a3e2da91a6f84293",
+        "nativeUsageReceipt": "95b7b4bdf9b51d8fcdae6e3fb06256e04970394eb8017c613cbf9c4e240eb3b0",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "2a9cc4ca6b8dca2e13317d3182d0fd58f41173e38b68119b3d68803296ac3b43",
+        "nativeSessionReceipt": "ba415243581417943bff638018d09d6049ec569285cdf30b89ac8b68fee71e4e",
+        "publishedMeasurementResults": "2a9cc4ca6b8dca2e13317d3182d0fd58f41173e38b68119b3d68803296ac3b43"
+      },
+      "path": "nuxt/b2",
+      "sourceSize": {
+        "originalBytes": 20013,
+        "originalNonblankLoc": 106,
+        "normalizedBytes": 27417,
+        "normalizedNonblankLoc": 1031
+      }
+    },
+    {
+      "framework": "nuxt",
+      "build": "b3",
+      "generationSeconds": 425.99676338800003,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 2025491,
+        "cached_input_tokens": 1970688,
+        "uncached_input_tokens": 54803,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10181,
+        "reasoning_output_tokens": 920
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1985.076,
+          "tbt": 60.5,
+          "cls": 0,
+          "scriptBytes": 84677
+        },
+        "home-filtered/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1983.906,
+          "tbt": 55.5,
+          "cls": 0,
+          "scriptBytes": 84677
+        },
+        "pokemon/mobile": {
+          "performance": 0.69,
+          "accessibility": 1,
+          "lcp": 4932.357,
+          "tbt": 191,
+          "cls": 0,
+          "scriptBytes": 84677
+        },
+        "move/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 2144.68,
+          "tbt": 167,
+          "cls": 0,
+          "scriptBytes": 84677
+        },
+        "ability/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1841.497,
+          "tbt": 51,
+          "cls": 0,
+          "scriptBytes": 84677
+        },
+        "type/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1841.941,
+          "tbt": 63.5,
+          "cls": 0,
+          "scriptBytes": 84677
+        }
+      },
+      "installed": {
+        "nuxt": "4.6.4"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 14162,
+        "snapshotNonblankLines": 77,
+        "formatterNormalizedNonblankLines": 981
+      },
+      "evidenceSha256": {
+        "generationReceipt": "12caea68b7ca5f73a4f51465697bd884dbe1fe4afeefb4cbc6173867c691ef29",
+        "nativeUsageReceipt": "1c27e4c91002697d1ee6b72528874eaf71ed3aabfed72174576a9453a5216031",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "d4010c63baa5d51a0e89cbb9732aa4d0418177976c618da37928ef53b1891cef",
+        "nativeSessionReceipt": "a72e8bc2612e255e39c9d0c7965421b8d0d1954be5abb35cb16ee6b575fc076c",
+        "publishedMeasurementResults": "d4010c63baa5d51a0e89cbb9732aa4d0418177976c618da37928ef53b1891cef"
+      },
+      "path": "nuxt/b3",
+      "sourceSize": {
+        "originalBytes": 18699,
+        "originalNonblankLoc": 77,
+        "normalizedBytes": 25847,
+        "normalizedNonblankLoc": 981
+      }
+    },
+    {
+      "framework": "nuxt",
+      "build": "b4",
+      "generationSeconds": 435.734764432,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 2528764,
+        "cached_input_tokens": 2474880,
+        "uncached_input_tokens": 53884,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12744,
+        "reasoning_output_tokens": 830
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 2022.003,
+          "tbt": 31,
+          "cls": 0,
+          "scriptBytes": 84546
+        },
+        "home-filtered/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1851.189,
+          "tbt": 63.5,
+          "cls": 0,
+          "scriptBytes": 84495
+        },
+        "pokemon/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 2453.599,
+          "tbt": 117,
+          "cls": 0,
+          "scriptBytes": 84495
+        },
+        "move/mobile": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "lcp": 2239.745,
+          "tbt": 274,
+          "cls": 0,
+          "scriptBytes": 84495
+        },
+        "ability/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1748.617,
+          "tbt": 89.5,
+          "cls": 0,
+          "scriptBytes": 84495
+        },
+        "type/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1850.947,
+          "tbt": 161.5,
+          "cls": 0,
+          "scriptBytes": 84495
+        }
+      },
+      "installed": {
+        "nuxt": "4.6.4"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 56,
+        "snapshotNonblankLines": 56,
+        "formatterNormalizedNonblankLines": 989
+      },
+      "evidenceSha256": {
+        "generationReceipt": "6c535aa88d34bcbde2d2c03fd8dcd63c07f1ef32f0af10ddea25998af3476dd1",
+        "nativeUsageReceipt": "bbd45cd217f219272c41d903225134748b37ab358bdec087aac6501110e6fe06",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "577c6579e212420ca3ac5823b41981562434cfcab5013de175f4ac6f4ea8a90d",
+        "nativeSessionReceipt": "082677716f88160e9d7e6cde2cdd6734c63479c649e4daba5f0abbc310f9e363",
+        "publishedMeasurementResults": "577c6579e212420ca3ac5823b41981562434cfcab5013de175f4ac6f4ea8a90d"
+      },
+      "path": "nuxt/b4",
+      "sourceSize": {
+        "originalBytes": 18357,
+        "originalNonblankLoc": 56,
+        "normalizedBytes": 25656,
+        "normalizedNonblankLoc": 989
+      }
+    },
+    {
+      "framework": "react-router",
+      "build": "b1",
+      "generationSeconds": 393.20072219,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1849272,
+        "cached_input_tokens": 1737984,
+        "uncached_input_tokens": 111288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9794,
+        "reasoning_output_tokens": 987
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2230.33,
+          "tbt": 5,
+          "cls": 0,
+          "scriptBytes": 118398
+        },
+        "home-filtered/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2197.714,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118449
+        },
+        "pokemon/mobile": {
+          "performance": 0.67,
+          "accessibility": 1,
+          "lcp": 2842.221,
+          "tbt": 805.456,
+          "cls": 0,
+          "scriptBytes": 118398
+        },
+        "move/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1215.904,
+          "tbt": 43,
+          "cls": 0,
+          "scriptBytes": 118398
+        },
+        "ability/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 2039.012,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118398
+        },
+        "type/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1843.495,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118398
+        }
+      },
+      "installed": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "react-router": "8.5.1",
+        "@react-router/node": "8.5.1",
+        "@react-router/serve": "8.5.1",
+        "isbot": "5.2.2",
+        "@react-router/dev": "8.5.1",
+        "vite": "8.3.5",
+        "typescript": "7.0.2"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 770,
+        "snapshotNonblankLines": 45,
+        "formatterNormalizedNonblankLines": 1029
+      },
+      "evidenceSha256": {
+        "generationReceipt": "cbc36eb00bb12c27f5ffc6b656a60cd68b2c34786b4664614af14c8b086ab9f8",
+        "nativeUsageReceipt": "3a38f6dfa44e2d5ae158f428bc843396ba2ea3e18ea6d1a1e55da2f34487074b",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "ce07f8f7063ab07a291f05d6f3bfa61f9222b4027a22a8473669614d57149cc2",
+        "nativeSessionReceipt": "6a29efca7a15f752d0d624b39b3240e35c8074972613433b637e78e0e9ca9445",
+        "publishedMeasurementResults": "ce07f8f7063ab07a291f05d6f3bfa61f9222b4027a22a8473669614d57149cc2"
+      },
+      "path": "react-router/b1",
+      "sourceSize": {
+        "originalBytes": 17875,
+        "originalNonblankLoc": 45,
+        "normalizedBytes": 26662,
+        "normalizedNonblankLoc": 1029
+      }
+    },
+    {
+      "framework": "react-router",
+      "build": "b2",
+      "generationSeconds": 267.15313041400003,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 916148,
+        "cached_input_tokens": 867328,
+        "uncached_input_tokens": 48820,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7908,
+        "reasoning_output_tokens": 192
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 2164.766,
+          "tbt": 51,
+          "cls": 0,
+          "scriptBytes": 117055
+        },
+        "home-filtered/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2150.966,
+          "tbt": 12.5,
+          "cls": 0,
+          "scriptBytes": 117106
+        },
+        "pokemon/mobile": {
+          "performance": 0.87,
+          "accessibility": 1,
+          "lcp": 2863.083,
+          "tbt": 363.959,
+          "cls": 0,
+          "scriptBytes": 118065
+        },
+        "move/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1193.913,
+          "tbt": 54,
+          "cls": 0,
+          "scriptBytes": 117157
+        },
+        "ability/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1989.606,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 117106
+        },
+        "type/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1912.38,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 117106
+        }
+      },
+      "installed": {
+        "@react-router/node": "8.5.1",
+        "@react-router/serve": "8.5.1",
+        "isbot": "5.2.2",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "react-router": "8.5.1",
+        "@react-router/dev": "8.5.1",
+        "typescript": "7.0.2",
+        "vite": "8.3.5"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 962,
+        "snapshotNonblankLines": 59,
+        "formatterNormalizedNonblankLines": 1071
+      },
+      "evidenceSha256": {
+        "generationReceipt": "d2ae26c616ea388c0ccad310bf340ee5473dadf84fd67a3e2ff998ca5a610b94",
+        "nativeUsageReceipt": "72b07e035739ca4fb8e1d7ae76776c7e3d27b3e97756b27a0a5bfb5239e5f398",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "63d50e00596249339faa88eb22d59bd3cbfaa8e62d1235ed34bfa9151adf14f5",
+        "nativeSessionReceipt": "51923d0cc99a42a3e04a8f77b57afa0179eeb3619ec9ef741cbe31c4b47a41b4",
+        "publishedMeasurementResults": "63d50e00596249339faa88eb22d59bd3cbfaa8e62d1235ed34bfa9151adf14f5"
+      },
+      "path": "react-router/b2",
+      "sourceSize": {
+        "originalBytes": 19163,
+        "originalNonblankLoc": 59,
+        "normalizedBytes": 27381,
+        "normalizedNonblankLoc": 1071
+      }
+    },
+    {
+      "framework": "react-router",
+      "build": "b3",
+      "generationSeconds": 289.31074414299997,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1277756,
+        "cached_input_tokens": 1226240,
+        "uncached_input_tokens": 51516,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9430,
+        "reasoning_output_tokens": 434
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 2117.151,
+          "tbt": 0.5,
+          "cls": 0,
+          "scriptBytes": 118505
+        },
+        "home-filtered/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 2073.154,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118505
+        },
+        "pokemon/mobile": {
+          "performance": 0.87,
+          "accessibility": 1,
+          "lcp": 2998.957,
+          "tbt": 210.204,
+          "cls": 0,
+          "scriptBytes": 118505
+        },
+        "move/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 1620.549,
+          "tbt": 46.5,
+          "cls": 0,
+          "scriptBytes": 118555
+        },
+        "ability/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 2058.478,
+          "tbt": 6,
+          "cls": 0,
+          "scriptBytes": 118555
+        },
+        "type/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1896.127,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118555
+        }
+      },
+      "installed": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "react-router": "8.5.1",
+        "@react-router/node": "8.5.1",
+        "@react-router/serve": "8.5.1",
+        "isbot": "5.2.2",
+        "@react-router/dev": "8.5.1",
+        "vite": "8.3.5",
+        "typescript": "7.0.2"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 1031,
+        "snapshotNonblankLines": 84,
+        "formatterNormalizedNonblankLines": 1167
+      },
+      "evidenceSha256": {
+        "generationReceipt": "69e107465b18028577c57b045b12101fef05c41ed1a8d09870a887a5b51861db",
+        "nativeUsageReceipt": "6f9633854973065580f988827fc0978fa01cc64b7d5b51c778491caf07e6001e",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "daed421c842ef7469faf8fc3497e26f4f40b302c00c854c4118e91b0178164a0",
+        "nativeSessionReceipt": "cfa937c659c41c22574bc125ac72d61b54e0f882549fa32b87ff2c954739f192",
+        "publishedMeasurementResults": "daed421c842ef7469faf8fc3497e26f4f40b302c00c854c4118e91b0178164a0"
+      },
+      "path": "react-router/b3",
+      "sourceSize": {
+        "originalBytes": 20907,
+        "originalNonblankLoc": 84,
+        "normalizedBytes": 30727,
+        "normalizedNonblankLoc": 1167
+      }
+    },
+    {
+      "framework": "react-router",
+      "build": "b4",
+      "generationSeconds": 376.49062542,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1720674,
+        "cached_input_tokens": 1664256,
+        "uncached_input_tokens": 56418,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9476,
+        "reasoning_output_tokens": 1067
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2236.093,
+          "tbt": 6,
+          "cls": 0,
+          "scriptBytes": 118466
+        },
+        "home-filtered/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1941.78,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118466
+        },
+        "pokemon/mobile": {
+          "performance": 0.9,
+          "accessibility": 1,
+          "lcp": 2853.563,
+          "tbt": 152.5,
+          "cls": 0,
+          "scriptBytes": 118471
+        },
+        "move/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1505.132,
+          "tbt": 44.5,
+          "cls": 0,
+          "scriptBytes": 118415
+        },
+        "ability/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1991.553,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118415
+        },
+        "type/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1917.338,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 118471
+        }
+      },
+      "installed": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "react-router": "8.5.1",
+        "@react-router/node": "8.5.1",
+        "@react-router/serve": "8.5.1",
+        "isbot": "5.2.2",
+        "@react-router/dev": "8.5.1",
+        "vite": "8.3.5",
+        "typescript": "7.0.2"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 825,
+        "snapshotNonblankLines": 78,
+        "formatterNormalizedNonblankLines": 1009
+      },
+      "evidenceSha256": {
+        "generationReceipt": "47ab71253a7f6816d76c7d22ad0364ba5f1982f817b8691f53aa3ca50b3631e2",
+        "nativeUsageReceipt": "7a104364223cdf2ff5a90b83d7de6c4872e40f6363445378ede7d965e7dbe4b1",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "f49952e0d0ae43195e43da73d3d1a6fb7e53b4d0a016259a549d889d63e60446",
+        "nativeSessionReceipt": "4e39613f1f88871a9801d06f6d01e57f18e17dd1463e3b579e934aae7bfa3ada",
+        "publishedMeasurementResults": "f49952e0d0ae43195e43da73d3d1a6fb7e53b4d0a016259a549d889d63e60446"
+      },
+      "path": "react-router/b4",
+      "sourceSize": {
+        "originalBytes": 17544,
+        "originalNonblankLoc": 78,
+        "normalizedBytes": 26089,
+        "normalizedNonblankLoc": 1009
+      }
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b1",
+      "generationSeconds": 371.86590486299997,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1930950,
+        "cached_input_tokens": 1876352,
+        "uncached_input_tokens": 54598,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10148,
+        "reasoning_output_tokens": 596
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1223.039,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37739
+        },
+        "home-filtered/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1150.642,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37739
+        },
+        "pokemon/mobile": {
+          "performance": 0.72,
+          "accessibility": 1,
+          "lcp": 3545.396,
+          "tbt": 575,
+          "cls": 0,
+          "scriptBytes": 37739
+        },
+        "move/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1148.702,
+          "tbt": 5.5,
+          "cls": 0,
+          "scriptBytes": 37739
+        },
+        "ability/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1113.523,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37739
+        },
+        "type/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1092.102,
+          "tbt": 2,
+          "cls": 0,
+          "scriptBytes": 37739
+        }
+      },
+      "installed": {
+        "@sveltejs/kit": "3.1.1",
+        "svelte": "5.57.3",
+        "@sveltejs/adapter-node": "6.0.1",
+        "vite": "8.3.5",
+        "@sveltejs/vite-plugin-svelte": "7.3.1"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 24067,
+        "snapshotNonblankLines": null,
+        "formatterNormalizedNonblankLines": 940
+      },
+      "evidenceSha256": {
+        "generationReceipt": "9725ace700f57352bce385dae2dee469a9cf2eec8b9921a06a9a750ac68fa922",
+        "nativeUsageReceipt": "b529a7d99ad9fe8bee543f1ebc10e19004bfee4869c6179780350b2681238c62",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "7f363511942bd53c1d92de1d22a215de0c916936ebae870262fc76f1ca3c2904",
+        "nativeSessionReceipt": "26e09fc0d77b626e4547bd0b85812d0aae352d0fead9f2962852f50112a51f56",
+        "publishedMeasurementResults": "7f363511942bd53c1d92de1d22a215de0c916936ebae870262fc76f1ca3c2904"
+      },
+      "path": "sveltekit/b1",
+      "sourceSize": {
+        "originalBytes": 18953,
+        "originalNonblankLoc": 105,
+        "normalizedBytes": 25487,
+        "normalizedNonblankLoc": 940
+      }
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b2",
+      "generationSeconds": 431.229551453,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 2054555,
+        "cached_input_tokens": 1987072,
+        "uncached_input_tokens": 67483,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10223,
+        "reasoning_output_tokens": 774
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1693.38,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37594
+        },
+        "home-filtered/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1678.907,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37618
+        },
+        "pokemon/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2279.378,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37594
+        },
+        "move/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1968.082,
+          "tbt": 65,
+          "cls": 0,
+          "scriptBytes": 37594
+        },
+        "ability/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1704.176,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37627
+        },
+        "type/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1749.579,
+          "tbt": 34,
+          "cls": 0,
+          "scriptBytes": 37627
+        }
+      },
+      "installed": {
+        "@sveltejs/adapter-node": "6.0.1",
+        "@sveltejs/kit": "3.1.1",
+        "svelte": "5.57.3",
+        "vite": "8.3.5",
+        "prettier": "3.9.10",
+        "prettier-plugin-svelte": "4.1.1"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 1005,
+        "snapshotNonblankLines": 1005,
+        "formatterNormalizedNonblankLines": 946
+      },
+      "evidenceSha256": {
+        "generationReceipt": "362a90dd58c4a17585198e9a2787b7ba466bf6c5466c05db9111d2009c12ca46",
+        "nativeUsageReceipt": "6dc6e622f9797f09bef08ae85a253e733463c584fd4b0acd1716beb16a0c452e",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "e8343a38d71c639e0fcc3fabecfad5c5d7938af04627b48c3db24796a841b98e",
+        "nativeSessionReceipt": "f98d331251e3fa450170f619d0773a1bfcf1fabc844ca6f455ffee555aab805f",
+        "publishedMeasurementResults": "e8343a38d71c639e0fcc3fabecfad5c5d7938af04627b48c3db24796a841b98e"
+      },
+      "path": "sveltekit/b2",
+      "sourceSize": {
+        "originalBytes": 25411,
+        "originalNonblankLoc": 936,
+        "normalizedBytes": 25448,
+        "normalizedNonblankLoc": 946
+      }
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b3",
+      "generationSeconds": 357.612853124,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1687566,
+        "cached_input_tokens": 1626368,
+        "uncached_input_tokens": 61198,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10115,
+        "reasoning_output_tokens": 781
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1683.142,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37360
+        },
+        "home-filtered/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1687.297,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37393
+        },
+        "pokemon/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2274.135,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37360
+        },
+        "move/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1856.773,
+          "tbt": 15,
+          "cls": 0,
+          "scriptBytes": 37360
+        },
+        "ability/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1689.464,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37393
+        },
+        "type/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1682.936,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37360
+        }
+      },
+      "installed": {
+        "@sveltejs/adapter-node": "6.0.1",
+        "@sveltejs/kit": "3.1.1",
+        "@sveltejs/vite-plugin-svelte": "7.3.1",
+        "svelte": "5.57.3",
+        "vite": "8.3.5"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 24012,
+        "snapshotNonblankLines": 114,
+        "formatterNormalizedNonblankLines": 959
+      },
+      "evidenceSha256": {
+        "generationReceipt": "14321ce2ccf5f3edfbcec126941ff0bb0ae0e1f120c8ec38205b18a2a18afb08",
+        "nativeUsageReceipt": "199bbab54078f8fd6a10577ac13b5d01dc17a0c8b9ef411793b2c9db7b10c209",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "576cea59c7cea64b52f33bb4efd86991d0f818b687f9b91a1b567afdf861ec47",
+        "nativeSessionReceipt": "ead4508318b61ad5f7373d067b57cca6b998519b783e65834c5793322cc0d410",
+        "publishedMeasurementResults": "576cea59c7cea64b52f33bb4efd86991d0f818b687f9b91a1b567afdf861ec47"
+      },
+      "path": "sveltekit/b3",
+      "sourceSize": {
+        "originalBytes": 19457,
+        "originalNonblankLoc": 114,
+        "normalizedBytes": 25974,
+        "normalizedNonblankLoc": 959
+      }
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b4",
+      "generationSeconds": 320.056554055,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1678585,
+        "cached_input_tokens": 1559552,
+        "uncached_input_tokens": 119033,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9686,
+        "reasoning_output_tokens": 362
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1688.722,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37502
+        },
+        "home-filtered/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1676.453,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37469
+        },
+        "pokemon/mobile": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "lcp": 2293.211,
+          "tbt": 5,
+          "cls": 0,
+          "scriptBytes": 37469
+        },
+        "move/mobile": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "lcp": 1908.296,
+          "tbt": 58,
+          "cls": 0,
+          "scriptBytes": 37502
+        },
+        "ability/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1675.816,
+          "tbt": 0,
+          "cls": 0,
+          "scriptBytes": 37502
+        },
+        "type/mobile": {
+          "performance": 1,
+          "accessibility": 1,
+          "lcp": 1681.413,
+          "tbt": 11,
+          "cls": 0,
+          "scriptBytes": 37502
+        }
+      },
+      "installed": {
+        "@sveltejs/adapter-node": "6.0.1",
+        "@sveltejs/kit": "3.1.1",
+        "@sveltejs/vite-plugin-svelte": "7.3.1",
+        "svelte": "5.57.3",
+        "vite": "8.3.5"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 24025,
+        "snapshotNonblankLines": 119,
+        "formatterNormalizedNonblankLines": 981
+      },
+      "evidenceSha256": {
+        "generationReceipt": "4ea1715abd4019a71b3c5dca35433eb91944826566637037cc571b23e0b5e562",
+        "nativeUsageReceipt": "89b63b2a2b1fa93de29fabf91c63dbcc3a7f6f3f2bf407aabf561e12ffe0d9b2",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "c800ee3bb5559b22fad2251d9bb2efec3cd8b3ff12e6a47ea3c0c760182058d8",
+        "nativeSessionReceipt": "3a730b61f20cae48c8aa5b526c0a24a09d263046d276d554315e282ee0c90cd9",
+        "publishedMeasurementResults": "c800ee3bb5559b22fad2251d9bb2efec3cd8b3ff12e6a47ea3c0c760182058d8"
+      },
+      "path": "sveltekit/b4",
+      "sourceSize": {
+        "originalBytes": 19650,
+        "originalNonblankLoc": 119,
+        "normalizedBytes": 26585,
+        "normalizedNonblankLoc": 981
+      }
+    },
+    {
+      "framework": "vanilla",
+      "build": "b1",
+      "generationSeconds": 295.504265893,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 978905,
+        "cached_input_tokens": 939008,
+        "uncached_input_tokens": 39897,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8166,
+        "reasoning_output_tokens": 490
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 805.136,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 4406
+        },
+        "home-filtered/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 839.866,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 4406
+        },
+        "pokemon/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 2294.872,
+          "tbt": 0,
+          "cls": 0.101,
+          "scriptBytes": 4406
+        },
+        "move/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 802.077,
+          "tbt": 58,
+          "cls": 0.111,
+          "scriptBytes": 4406
+        },
+        "ability/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 804.847,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 4406
+        },
+        "type/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 801.375,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 4406
+        }
+      },
+      "installed": {
+        "vite": "8.3.5"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 60,
+        "snapshotNonblankLines": 55,
+        "formatterNormalizedNonblankLines": 825
+      },
+      "evidenceSha256": {
+        "generationReceipt": "156c34a4c615d9c264cde3c0418bd99d459542bbf1cbdb6748662e6998ede1dc",
+        "nativeUsageReceipt": "7157bb2b66a5833b016a6ab6def0ab9dea24af0e0f333f1528d16bfb67f8c28d",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "b555472f9d51fa9b4e0bf991d61071f2dfa59642ad75cff70298fa24ffa54432",
+        "nativeSessionReceipt": "52aa755b660a0746227c164dcedbad60fffbbdbba571df62b07ff868a7ab83b3",
+        "publishedMeasurementResults": "b555472f9d51fa9b4e0bf991d61071f2dfa59642ad75cff70298fa24ffa54432"
+      },
+      "path": "vanilla/b1",
+      "sourceSize": {
+        "originalBytes": 18434,
+        "originalNonblankLoc": 55,
+        "normalizedBytes": 23115,
+        "normalizedNonblankLoc": 825
+      }
+    },
+    {
+      "framework": "vanilla",
+      "build": "b2",
+      "generationSeconds": 287.249289495,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 928280,
+        "cached_input_tokens": 886528,
+        "uncached_input_tokens": 41752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7430,
+        "reasoning_output_tokens": 411
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.93,
+          "accessibility": 1,
+          "lcp": 848.322,
+          "tbt": 224,
+          "cls": 0.103,
+          "scriptBytes": 4564
+        },
+        "home-filtered/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 802.285,
+          "tbt": 4.5,
+          "cls": 0.103,
+          "scriptBytes": 4564
+        },
+        "pokemon/mobile": {
+          "performance": 0.94,
+          "accessibility": 1,
+          "lcp": 2327.411,
+          "tbt": 115,
+          "cls": 0.101,
+          "scriptBytes": 4564
+        },
+        "move/mobile": {
+          "performance": 0.96,
+          "accessibility": 1,
+          "lcp": 778.968,
+          "tbt": 143,
+          "cls": 0.103,
+          "scriptBytes": 4564
+        },
+        "ability/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 1706.973,
+          "tbt": 0,
+          "cls": 0.103,
+          "scriptBytes": 4564
+        },
+        "type/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 782.5,
+          "tbt": 0,
+          "cls": 0.103,
+          "scriptBytes": 4564
+        }
+      },
+      "installed": {
+        "vite": "8.3.6"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 24,
+        "snapshotNonblankLines": 24,
+        "formatterNormalizedNonblankLines": 771
+      },
+      "evidenceSha256": {
+        "generationReceipt": "e7017cb810a6ee42c59d0a020c635ad43d94329aa787093fa23c86a23e1da491",
+        "nativeUsageReceipt": "e1bb37241f109d3d68a86777a566d28444a93f436ebee8e228927e9812582cf2",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "621a516911c3ba2c5a2136dfec296cdb143ebf5fd0e53ef6dd2d02323e4dc16d",
+        "nativeSessionReceipt": "3878d2389f8a7cd351f2108c70a2abf426c64b3be55f3a06c5ad84c364d9a9e0",
+        "publishedMeasurementResults": "621a516911c3ba2c5a2136dfec296cdb143ebf5fd0e53ef6dd2d02323e4dc16d"
+      },
+      "path": "vanilla/b2",
+      "sourceSize": {
+        "originalBytes": 17700,
+        "originalNonblankLoc": 24,
+        "normalizedBytes": 22438,
+        "normalizedNonblankLoc": 771
+      }
+    },
+    {
+      "framework": "vanilla",
+      "build": "b3",
+      "generationSeconds": 261.692774534,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 895291,
+        "cached_input_tokens": 854912,
+        "uncached_input_tokens": 40379,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8073,
+        "reasoning_output_tokens": 499
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.91,
+          "accessibility": 1,
+          "lcp": 773.069,
+          "tbt": 0,
+          "cls": 0.193,
+          "scriptBytes": 4776
+        },
+        "home-filtered/mobile": {
+          "performance": 0.91,
+          "accessibility": 1,
+          "lcp": 771.222,
+          "tbt": 0,
+          "cls": 0.193,
+          "scriptBytes": 4776
+        },
+        "pokemon/mobile": {
+          "performance": 0.82,
+          "accessibility": 1,
+          "lcp": 4275.257,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 4776
+        },
+        "move/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 799.22,
+          "tbt": 53,
+          "cls": 0.111,
+          "scriptBytes": 4776
+        },
+        "ability/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 806.907,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 4776
+        },
+        "type/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 801.133,
+          "tbt": 0,
+          "cls": 0.111,
+          "scriptBytes": 4776
+        }
+      },
+      "installed": {
+        "vite": "8.3.5"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 37,
+        "snapshotNonblankLines": 32,
+        "formatterNormalizedNonblankLines": 815
+      },
+      "evidenceSha256": {
+        "generationReceipt": "794ce13db302db3bc4d48e48b7fcaa30339b380dd60b6885ea9dc2b0c38573a6",
+        "nativeUsageReceipt": "3b84845032dc205a0072fa78bc7a48fe472a50c15df8d6442526a1dd6354014e",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "abdb43e1b22da6ae01cb0109515196f7fa7fad32dd32f585299f47338edb1b64",
+        "nativeSessionReceipt": "3ea336a2e1b18f028a51c39314d8d60d1106897e303641e12b40db502eecf551",
+        "publishedMeasurementResults": "abdb43e1b22da6ae01cb0109515196f7fa7fad32dd32f585299f47338edb1b64"
+      },
+      "path": "vanilla/b3",
+      "sourceSize": {
+        "originalBytes": 19098,
+        "originalNonblankLoc": 32,
+        "normalizedBytes": 24379,
+        "normalizedNonblankLoc": 815
+      }
+    },
+    {
+      "framework": "vanilla",
+      "build": "b4",
+      "generationSeconds": 271.92777362,
+      "acceptance": {
+        "passed": 54,
+        "total": 54
+      },
+      "nativeUsage": {
+        "input_tokens": 1048456,
+        "cached_input_tokens": 999040,
+        "uncached_input_tokens": 49416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8686,
+        "reasoning_output_tokens": 567
+      },
+      "actualSubscriptionDebitUsd": null,
+      "routes": {
+        "home/mobile": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "lcp": 774.466,
+          "tbt": 0,
+          "cls": 0.182,
+          "scriptBytes": 4610
+        },
+        "home-filtered/mobile": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "lcp": 799.884,
+          "tbt": 0,
+          "cls": 0.182,
+          "scriptBytes": 4610
+        },
+        "pokemon/mobile": {
+          "performance": 0.94,
+          "accessibility": 1,
+          "lcp": 2731.82,
+          "tbt": 0,
+          "cls": 0.103,
+          "scriptBytes": 4610
+        },
+        "move/mobile": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "lcp": 1077.105,
+          "tbt": 160.5,
+          "cls": 0.103,
+          "scriptBytes": 4610
+        },
+        "ability/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 2014.56,
+          "tbt": 0,
+          "cls": 0.103,
+          "scriptBytes": 4610
+        },
+        "type/mobile": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "lcp": 801.229,
+          "tbt": 9,
+          "cls": 0.103,
+          "scriptBytes": 4610
+        }
+      },
+      "installed": {
+        "vite": "8.3.5"
+      },
+      "sourceCounts": {
+        "recordedNolanLines": 68,
+        "snapshotNonblankLines": 63,
+        "formatterNormalizedNonblankLines": 865
+      },
+      "evidenceSha256": {
+        "generationReceipt": "3c8e2dfacd9156c71146d4713aab262d0a744ab6fd934851405ac84470e22ee9",
+        "nativeUsageReceipt": "32027998a4553a7948b924372818daed17ba5a6d765dc9bf6933f6809146e534",
+        "acceptanceReceipt": "692749e66c46c082afc404c7ae6a27f8669e7fb718c7566f8e87687741813f7b",
+        "measurementResults": "0a889f45923bddcecb512f5ed3a3600bc313053619a62897c6e45f2ae569c9a3",
+        "nativeSessionReceipt": "96e7adb526c3309b242dac162c2e8b6c26542835f5e4870e60b653ca2fb07a84",
+        "publishedMeasurementResults": "0a889f45923bddcecb512f5ed3a3600bc313053619a62897c6e45f2ae569c9a3"
+      },
+      "path": "vanilla/b4",
+      "sourceSize": {
+        "originalBytes": 19114,
+        "originalNonblankLoc": 63,
+        "normalizedBytes": 24504,
+        "normalizedNonblankLoc": 865
+      }
+    }
+  ],
+  "generationTimingDefinition": {
+    "field": "native-session-result.json elapsed_seconds",
+    "start": "Adapter monotonic timer immediately before turn/start RPC",
+    "end": "Root turn/completed notification observed by adapter",
+    "includes": "Model turn, tool work, documentation reads and self-tests within that turn",
+    "excludes": "CLI startup, subscription/config/tooling preflight, post-turn service checks, output drain/shutdown, independent acceptance and Lighthouse",
+    "notDerivedFrom": "finished_at minus started_at; finished_at is recorded after post-turn shutdown",
+    "consistency": "Same timing boundary and field for every application in all six frameworks"
+  },
+  "actualSubscriptionDebitUsd": null,
+  "normalizationPolicy": "analysis/loc/policy.json"
+}

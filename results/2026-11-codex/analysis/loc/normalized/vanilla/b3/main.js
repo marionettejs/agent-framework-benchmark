@@ -1,0 +1,401 @@
+import "./tokens.css";
+import "./style.css";
+const main = document.querySelector("main"),
+  base = window.API_BASE_URL,
+  cache = new Map();
+const esc = (s) =>
+  String(s ?? "").replace(
+    /[&<>"']/g,
+    (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
+  );
+const human = (s) =>
+  s
+    .split("-")
+    .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
+    .join(" ");
+const english = (o) =>
+  o.names?.find((n) => n.language.name === "en")?.name || human(o.name);
+const id = (o) =>
+  Number((typeof o === "string" ? o : o.url).match(/\/(\d+)\/?$/)?.[1]);
+async function api(p) {
+  const url = p.startsWith("http") ? p : `${base}/api/v2/${p}`;
+  if (!cache.has(url))
+    cache.set(
+      url,
+      fetch(url).then((r) => {
+        if (!r.ok) throw Error("Not found");
+        return r.json();
+      }),
+    );
+  return cache.get(url);
+}
+const all = async (r) => (await api(`${r}/?limit=10000`)).results;
+const flavor = (o) =>
+  o.flavor_text_entries
+    ?.filter((e) => e.language.name === "en")
+    .at(-1)
+    ?.flavor_text.replace(/\s+/g, " ") || "—";
+const link = (path, name) => `<a href="${esc(path)}">${esc(name)}</a>`;
+const badge = (n, linked = true) =>
+  `<${linked ? "a" : "span"} class="badge" style="--type:var(--type-${esc(n)})"${linked ? ` href="/types/${esc(n)}"` : ""}>${human(n)}</${linked ? "a" : "span"}>`;
+const section = (name, html) =>
+  `<section id="${name.toLowerCase().replaceAll(" ", "-")}" aria-labelledby="${name.replaceAll(" ", "-")}-heading"><h2 id="${name.replaceAll(" ", "-")}-heading">${name}</h2>${html}</section>`;
+function title(name, home = false) {
+  document.title = home ? "Pokédex" : `${name} – Pokédex`;
+}
+function dl(entries) {
+  return `<dl>${entries.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl>`;
+}
+let species;
+async function speciesList() {
+  return (species ??= await all("pokemon-species"));
+}
+async function cards(refs, types = false) {
+  const list = await speciesList(),
+    map = new Map(list.map((s) => [id(s), s]));
+  const entries = refs
+    .map((r) => ({ ref: r.pokemon || r, hidden: r.is_hidden }))
+    .filter((r) => id(r.ref) < 10000 && map.has(id(r.ref)))
+    .sort((a, b) => id(a.ref) - id(b.ref));
+  return `<ul class="cards">${(
+    await Promise.all(
+      entries.map(async (e) => {
+        const num = id(e.ref),
+          s = map.get(num),
+          p = types ? await api(`pokemon/${num}/`) : null;
+        return `<li><a href="/pokemon/${s.name}"><img src="${p?.sprites.front_default || `${base}/media/sprites/pokemon/${num}.png`}" alt="" width="96" height="96"><span class="dex">#${String(num).padStart(4, "0")}</span><span>${human(s.name)}</span>${
+          p
+            ? `<span class="badges">${p.types
+                .sort((a, b) => a.slot - b.slot)
+                .map((t) => badge(t.type.name, false))
+                .join(" ")}</span>`
+            : ""
+        }${e.hidden ? "<small>Hidden ability</small>" : ""}</a></li>`;
+      }),
+    )
+  ).join("")}</ul>`;
+}
+async function home() {
+  title("Pokémon", true);
+  const [list, ts, gs] = await Promise.all([
+    speciesList(),
+    all("type"),
+    all("generation"),
+  ]);
+  const types = await Promise.all(
+      ts
+        .filter((t) => !["stellar", "unknown", "shadow"].includes(t.name))
+        .map((t) => api(t.url)),
+    ),
+    gens = await Promise.all(gs.map((g) => api(g.url)));
+  const q = new URLSearchParams(location.search);
+  main.innerHTML = `<h1>Pokémon</h1><form class="filters"><div><label for="search">Search</label><input id="search" type="search" name="q" value="${esc(q.get("q") || "")}"></div><div><label for="type">Type</label><select id="type" name="type"><option value="">All types</option>${types.map((t) => `<option value="${t.name}">${english(t)}</option>`).join("")}</select></div><div><label for="generation">Generation</label><select id="generation" name="generation"><option value="">All generations</option>${gens.map((g) => `<option value="${g.name}">${english(g)}</option>`).join("")}</select></div></form><div id="results"></div>`;
+  for (const n of ["type", "generation"])
+    main.querySelector(`[name=${n}]`).value = q.get(n) || "";
+  let run = 0;
+  async function results() {
+    const token = ++run,
+      p = new URLSearchParams(location.search);
+    let filtered = list;
+    if (p.get("q"))
+      filtered = filtered.filter((s) =>
+        human(s.name).toLowerCase().includes(p.get("q").toLowerCase()),
+      );
+    if (p.get("type")) {
+      const t = types.find((t) => t.name === p.get("type"));
+      const ids = new Set(t?.pokemon.map((p) => id(p.pokemon)));
+      filtered = filtered.filter((s) => ids.has(id(s)));
+    }
+    if (p.get("generation")) {
+      const g = gens.find((g) => g.name === p.get("generation"));
+      const names = new Set(g?.pokemon_species.map((s) => s.name));
+      filtered = filtered.filter((s) => names.has(s.name));
+    }
+    filtered.sort((a, b) => id(a) - id(b));
+    const total = Math.max(1, Math.ceil(filtered.length / 48)),
+      page = Math.min(total, Math.max(1, Number(p.get("page")) || 1));
+    const pageLink = (n, label) => {
+      const params = new URLSearchParams(p);
+      n === 1 ? params.delete("page") : params.set("page", n);
+      return link("/" + (params.size ? "?" + params : ""), label);
+    };
+    const html = `<p class="count">${filtered.length} Pokémon</p>${filtered.length ? await cards(filtered.slice((page - 1) * 48, page * 48), true) : "<p>No Pokémon found</p>"}<div class="pagination">${page > 1 ? pageLink(page - 1, "Previous page") : ""}<span>Page ${page} of ${total}</span>${page < total ? pageLink(page + 1, "Next page") : ""}</div>`;
+    if (token === run) document.querySelector("#results").innerHTML = html;
+  }
+  let timer;
+  main.querySelector("form").onsubmit = (e) => e.preventDefault();
+  main.querySelectorAll("input,select").forEach((el) =>
+    el.addEventListener(el.tagName === "INPUT" ? "input" : "change", () => {
+      const p = new URLSearchParams(location.search);
+      el.value ? p.set(el.name, el.value) : p.delete(el.name);
+      p.delete("page");
+      history.replaceState({}, "", `/${p.size ? "?" + p : ""}`);
+      clearTimeout(timer);
+      timer = setTimeout(results, el.tagName === "INPUT" ? 100 : 0);
+    }),
+  );
+  await results();
+}
+const evolution = (c) =>
+  `<ul><li>${link("/pokemon/" + c.species.name, human(c.species.name))}${c.evolves_to.length ? c.evolves_to.map(evolution).join("") : ""}</li></ul>`;
+async function pokemon(name) {
+  const s = await api(`pokemon-species/${name}/`),
+    p = await api(`pokemon/${s.id}/`),
+    [chain, vg] = await Promise.all([
+      api(s.evolution_chain.url),
+      all("version-group"),
+    ]);
+  const gameNames = new Set(
+    p.moves.flatMap((m) =>
+      m.version_group_details.map((d) => d.version_group.name),
+    ),
+  );
+  const games = (
+    await Promise.all(
+      vg.filter((g) => gameNames.has(g.name)).map((g) => api(g.url)),
+    )
+  ).sort((a, b) => a.order - b.order);
+  const nameEn = english(s);
+  title(nameEn);
+  const labels = ["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"];
+  main.innerHTML = `<div class="summary"><img class="artwork" src="${p.sprites.other["official-artwork"].front_default || p.sprites.front_default}" alt="${esc(nameEn)}"><div><span class="dex">#${String(s.id).padStart(4, "0")}</span><h1>${esc(nameEn)}</h1><p class="genus">${esc(s.genera.find((g) => g.language.name === "en")?.genus || "")}</p><div>${p.types.map((t) => badge(t.type.name)).join(" ")}</div>${dl(
+    [
+      ["Height", `${(p.height / 10).toFixed(1)} m`],
+      ["Weight", `${(p.weight / 10).toFixed(1)} kg`],
+    ],
+  )}<p>${esc(flavor(s))}</p></div></div>${section("Base stats", `<table class="stats"><tbody>${[...p.stats.map((s, i) => [labels[i], s.base_stat]), ["Total", p.stats.reduce((a, s) => a + s.base_stat, 0)]].map(([label, val]) => `<tr><th scope="row">${label}</th><td>${val}</td><td><div class="track"><div style="width:${(val / (label === "Total" ? 720 : 255)) * 100}%"></div></div></td></tr>`).join("")}</tbody></table>`)}${section(
+    "Abilities",
+    `<ul>${p.abilities
+      .sort((a, b) => a.slot - b.slot)
+      .map(
+        (a) =>
+          `<li>${link("/abilities/" + a.ability.name, human(a.ability.name))}${a.is_hidden ? " (hidden)" : ""}</li>`,
+      )
+      .join("")}</ul>`,
+  )}${section("Evolution", evolution(chain.chain))}${section("Moves", `<div class="game"><label for="game">Game</label><select id="game">${games.map((g) => `<option value="${g.name}">${human(g.name)}</option>`).join("")}</select></div><div id="tables"></div>`)}`;
+  const select = main.querySelector(".game select");
+  select.value =
+    new URLSearchParams(location.search).get("game") || games.at(-1)?.name;
+  async function showMoves() {
+    const selected = select.value;
+    const rows = await Promise.all(
+      p.moves
+        .filter((m) =>
+          m.version_group_details.some(
+            (d) => d.version_group.name === selected,
+          ),
+        )
+        .map(async (m) => ({
+          move: await api(m.move.url),
+          details: m.version_group_details.filter(
+            (d) => d.version_group.name === selected,
+          ),
+        })),
+    );
+    const methods = {};
+    for (const r of rows)
+      for (const d of r.details)
+        (methods[d.move_learn_method.name] ??= []).push({
+          Level: d.level_learned_at,
+          Move: english(r.move),
+          Type: human(r.move.type.name),
+          Category: human(r.move.damage_class.name),
+          Power: r.move.power,
+          Accuracy: r.move.accuracy,
+          PP: r.move.pp,
+          resource: r.move,
+        });
+    const priority = ["level-up", "machine", "egg", "tutor"];
+    const keys = Object.keys(methods).sort(
+      (a, b) =>
+        (priority.includes(a) ? priority.indexOf(a) : 4) -
+          (priority.includes(b) ? priority.indexOf(b) : 4) ||
+        a.localeCompare(b),
+    );
+    document.querySelector("#tables").innerHTML = keys
+      .map(
+        (k, i) =>
+          `<div class="table-scroll"><table data-method="${i}"><caption>${human(k)}</caption><thead><tr>${(k ===
+          "level-up"
+            ? ["Level"]
+            : []
+          )
+            .concat(["Move", "Type", "Category", "Power", "Accuracy", "PP"])
+            .map(
+              (c) =>
+                `<th scope="col"><button data-col="${c}">${c}</button></th>`,
+            )
+            .join("")}</tr></thead><tbody></tbody></table></div>`,
+      )
+      .join("");
+    keys.forEach((k, i) => {
+      const table = main.querySelector(`[data-method="${i}"]`),
+        data = methods[k];
+      let sorted = "",
+        direction = 1;
+      function paint(column = k === "level-up" ? "Level" : "Move", dir = 1) {
+        data.sort((a, b) =>
+          a[column] == null
+            ? b[column] == null
+              ? 0
+              : 1
+            : b[column] == null
+              ? -1
+              : (typeof a[column] === "number"
+                  ? a[column] - b[column]
+                  : a[column].localeCompare(b[column])) * dir ||
+                a.Move.localeCompare(b.Move),
+        );
+        const cols = (k === "level-up" ? ["Level"] : []).concat([
+          "Move",
+          "Type",
+          "Category",
+          "Power",
+          "Accuracy",
+          "PP",
+        ]);
+        table.querySelector("tbody").innerHTML = data
+          .map(
+            (r) =>
+              `<tr>${cols.map((c) => `<td>${c === "Move" ? link("/moves/" + r.resource.name, r.Move) : c === "Type" ? badge(r.resource.type.name) : esc(r[c] ?? "—")}</td>`).join("")}</tr>`,
+          )
+          .join("");
+      }
+      paint();
+      table.querySelectorAll("button").forEach(
+        (b) =>
+          (b.parentElement.onclick = () => {
+            direction = sorted === b.dataset.col ? -direction : 1;
+            sorted = b.dataset.col;
+            table
+              .querySelectorAll("th")
+              .forEach((th) => th.removeAttribute("aria-sort"));
+            b.parentElement.setAttribute(
+              "aria-sort",
+              direction === 1 ? "ascending" : "descending",
+            );
+            paint(sorted, direction);
+          }),
+      );
+    });
+  }
+  select.onchange = () => {
+    const q = new URLSearchParams(location.search);
+    q.set("game", select.value);
+    history.replaceState({}, "", `${location.pathname}?${q}${location.hash}`);
+    showMoves();
+  };
+  await showMoves();
+  if (location.hash === "#moves")
+    document.querySelector("#moves").scrollIntoView();
+}
+async function detail(kind, name) {
+  const resource =
+      kind === "moves" ? "move" : kind === "abilities" ? "ability" : "type",
+    r = await api(`${resource}/${name}/`);
+  if (resource === "type" && ["stellar", "shadow", "unknown"].includes(name))
+    throw Error();
+  title(english(r));
+  let html = `<h1>${esc(english(r))}</h1>`;
+  if (resource === "move") {
+    html +=
+      dl([
+        ["Type", badge(r.type.name)],
+        ["Category", human(r.damage_class.name)],
+        ["Power", r.power ?? "—"],
+        ["Accuracy", r.accuracy ?? "—"],
+        ["PP", r.pp ?? "—"],
+      ]) +
+      section(
+        "Effect",
+        `<p>${esc(r.effect_entries.find((e) => e.language.name === "en")?.short_effect || flavor(r))}</p>`,
+      );
+    const refs = r.learned_by_pokemon.filter((p) => id(p) < 10000);
+    html += section(
+      "Learned by",
+      `<p class="count">${refs.length} Pokémon</p>${await cards(refs)}`,
+    );
+  } else if (resource === "ability") {
+    const refs = r.pokemon.filter((p) => id(p.pokemon) < 10000);
+    html +=
+      section(
+        "Effect",
+        `<p>${esc(r.effect_entries.find((e) => e.language.name === "en")?.short_effect || "—")}</p>`,
+      ) +
+      section(
+        "Pokémon",
+        `<p class="count">${refs.length} Pokémon</p>${await cards(refs)}`,
+      );
+  } else {
+    const terms = [
+        "Super effective against",
+        "Not very effective against",
+        "No effect against",
+        "Weak to",
+        "Resists",
+        "Immune to",
+      ],
+      keys = [
+        "double_damage_to",
+        "half_damage_to",
+        "no_damage_to",
+        "double_damage_from",
+        "half_damage_from",
+        "no_damage_from",
+      ];
+    html += section(
+      "Damage relations",
+      dl(
+        keys.map((k, i) => [
+          terms[i],
+          r.damage_relations[k].map((t) => badge(t.name)).join(" ") || "None",
+        ]),
+      ),
+    );
+    const refs = r.pokemon.filter((p) => id(p.pokemon) < 10000);
+    html +=
+      section(
+        "Pokémon",
+        `<p class="count">${refs.length} Pokémon</p>${await cards(refs)}`,
+      ) +
+      section(
+        "Moves",
+        `<p class="count">${r.moves.length} moves</p><ul class="move-links">${r.moves
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((m) => `<li>${link("/moves/" + m.name, human(m.name))}</li>`)
+          .join("")}</ul>`,
+      );
+  }
+  main.innerHTML = html;
+}
+async function route() {
+  try {
+    const parts = location.pathname.split("/").filter(Boolean);
+    if (!parts.length) await home();
+    else if (parts.length === 1 && parts[0] === "types") {
+      title("Types");
+      const types = await Promise.all(
+        (await all("type"))
+          .filter((t) => !["stellar", "unknown", "shadow"].includes(t.name))
+          .map((t) => api(t.url)),
+      );
+      main.innerHTML = `<h1>Types</h1><ul class="type-grid">${types.map((t) => `<li>${badge(t.name)}</li>`).join("")}</ul>`;
+    } else if (parts.length === 2 && parts[0] === "pokemon")
+      await pokemon(parts[1]);
+    else if (
+      parts.length === 2 &&
+      ["moves", "abilities", "types"].includes(parts[0])
+    )
+      await detail(...parts);
+    else throw Error();
+  } catch (e) {
+    console.error(e);
+    title("Not found");
+    main.innerHTML =
+      '<h1>Not found</h1><p>The page you are looking for could not be found.</p><a href="/">Back to Pokémon</a>';
+  }
+}
+route();

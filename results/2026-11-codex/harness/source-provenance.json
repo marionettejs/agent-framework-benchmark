@@ -1,0 +1,11 @@
+{
+  "baseHarnessCommit": "b95ada03930ca3670c8ff6377c3af815df0ac040",
+  "generationAdapter": {
+    "sha256": "9f091cfaff5ab446d1febc9ae09ec9b6eb51ca0b298a683230911cb9320c5e3a",
+    "contentChanges": []
+  },
+  "measurementPatch": {
+    "sha256": "2006edc825018322c879cd038ebe8b34fa72a8f08efe469fb35bf7896349e1d9",
+    "baseCommit": "b95ada03930ca3670c8ff6377c3af815df0ac040"
+  }
+}

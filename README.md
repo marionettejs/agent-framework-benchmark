@@ -231,3 +231,7 @@ node measure.mjs ../gold /tmp/gold-results --runs 1 --skip-build   # needs Caddy
   earlier agents saw.
 - **One iteration is an anecdote.** Agent runs vary a lot; use 3 or more iterations before
   drawing conclusions.
+
+## Codex application evidence
+
+The [Marionette 5.1.0 and peer application dataset](results/2026-11-codex/README.md) contains four functioning applications per framework, with source, native usage/timing, independent tests, six-route measurements and source-only normalized LOC. Read its methodology and limitations before comparison.

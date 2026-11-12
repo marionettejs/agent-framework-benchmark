@@ -1,0 +1,1 @@
+Implement the app described in SPEC.md using React Router in framework mode. Use the latest stable version. Work autonomously until `npm test` passes.

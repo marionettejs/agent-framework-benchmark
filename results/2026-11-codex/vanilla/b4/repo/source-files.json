@@ -1,0 +1,36 @@
+{
+  "files": {
+    "index.html": {
+      "sha256": "f5c6ebac7928200c784974cad5e8159fc24b2e3510605c6b26c769fa636d2688",
+      "bytes": 498,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "38de857caa57c0599083728437721f1b21a85903573eb7ce785466ea85c0ccad",
+      "bytes": 25327,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "41763b9a538ccad6cea2b62e3fda69faa050064c85b01974b9521de6c42ac652",
+      "bytes": 144,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server.mjs": {
+      "sha256": "d82283653cacf0af0d70f4b863e2eada81b6d3a6eed4c7db2a7ff145627a8002",
+      "bytes": 830,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src.js": {
+      "sha256": "6647e9da43413b15eb1121dade213f2719163046d61be9b882101aa528e396e2",
+      "bytes": 11776,
+      "byteIdenticalGeneratedSource": true
+    },
+    "style.css": {
+      "sha256": "087b502a28ed8449b193cea6e9c42bf0a70f8483a7fbc17be56e382b82e54d30",
+      "bytes": 6010,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

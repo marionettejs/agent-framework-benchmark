@@ -1,0 +1,25 @@
+{
+  "scope": "Selected 24 functioning applications; native timing/usage; 720 numeric samples; 221 normalized source files",
+  "baseCommit": "b95ada03930ca3670c8ff6377c3af815df0ac040",
+  "sourceReview": {
+    "knownSecretAndPrivatePathPatterns": [
+      "privateKey",
+      "providerKey",
+      "awsKey",
+      "privateHostPath",
+      "excludedRouting"
+    ],
+    "selectedTextMatches": 0,
+    "inheritedReachableTextMatches": 0,
+    "inheritedTextObjectsInspected": 145,
+    "inheritedBinaryObjectsNotTextDecoded": 18,
+    "notExhaustiveSecretOrLegalClearance": true
+  },
+  "rights": "See REDISTRIBUTION.md; no binary artwork/data/dependency implementations added; no blanket upstream license grant asserted.",
+  "normalizedSourceFilesVerified": 221,
+  "normalizedSvelteKitB2": 946,
+  "agentModelsOrAppsExecutedForPublication": false,
+  "generatedImplementationFilesByteIdentical": true,
+  "publicationManifestRoutingAdaptations": 8,
+  "rawPrivateEvidenceUnchanged": true
+}

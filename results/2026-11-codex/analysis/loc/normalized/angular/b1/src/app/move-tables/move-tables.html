@@ -1,0 +1,66 @@
+@if (games().length) {
+  <div class="game-filter">
+    <label for="game">Game</label
+    ><select id="game" [formField]="form.game">
+      @for (g of games(); track g.name) {
+        <option [value]="g.name">{{ human(g.name) }}</option>
+      }
+    </select>
+  </div>
+}
+@for (group of groups(); track group.method) {
+  <div class="table-scroll">
+    <table class="move-table">
+      <caption>
+        {{
+          human(group.method)
+        }}
+      </caption>
+      <thead>
+        <tr>
+          @for (c of columns(group.method); track c) {
+            <th
+              scope="col"
+              (click)="sort(group.method, c)"
+              [attr.aria-sort]="ariaSort(group.method, c)"
+            >
+              <button type="button">{{ c }}</button>
+            </th>
+          }
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of group.rows; track $index) {
+          <tr>
+            @for (c of columns(group.method); track c) {
+              <td>
+                @switch (c) {
+                  @case ("Move") {
+                    <a [routerLink]="['/moves', row.move.name]">{{
+                      english(row.move)
+                    }}</a>
+                  }
+                  @case ("Type") {
+                    <a
+                      class="badge"
+                      [style.background]="
+                        'var(--type-' + row.move.type.name + ')'
+                      "
+                      [routerLink]="['/types', row.move.type.name]"
+                      >{{ human(row.move.type.name) }}</a
+                    >
+                  }
+                  @default {
+                    {{ value(row, c) ?? "—" }}
+                  }
+                }
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+} @empty {
+  <p role="status">Loading moves…</p>
+}

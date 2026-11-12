@@ -1,0 +1,41 @@
+{
+  "files": {
+    "index.html": {
+      "sha256": "901ceb27a1bfbc72fc4826ea994b87de9de7843c5fea6e022a7315ad65b15441",
+      "bytes": 465,
+      "byteIdenticalGeneratedSource": true
+    },
+    "main.js": {
+      "sha256": "2a75821ad7dcf299d127c41fa4d677c0661647897cb413ff8789dedbc902d48a",
+      "bytes": 11167,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "cdc6b0e96962dadfd90b5a213b7bd25c34c0558f60a6f9eecf88682bcbf20bfa",
+      "bytes": 24564,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "40eed9fec845baceb6168affe2a2bc90d798fff3ec25c8f9f82397d48ad651ef",
+      "bytes": 141,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server.mjs": {
+      "sha256": "a8823a3ef23e60a39c925aeed765b1ddc767bbc3f886ffbff368fd606e3d2d8a",
+      "bytes": 633,
+      "byteIdenticalGeneratedSource": true
+    },
+    "style.css": {
+      "sha256": "8065eeffc40c02e61d562ba02e8a93124659069c4dfdadee305b633af32f5e26",
+      "bytes": 6017,
+      "byteIdenticalGeneratedSource": true
+    },
+    "vite.config.js": {
+      "sha256": "cbae62c05f7a8341442708b34688200952bc215bdc84a93a0351f57684cf4a25",
+      "bytes": 152,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

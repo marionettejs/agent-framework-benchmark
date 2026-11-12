@@ -1,0 +1,84 @@
+{
+  "same_session": true,
+  "gate": "PASS",
+  "skills": [
+    {
+      "name": "svelte:svelte-code-writer",
+      "scope": "user",
+      "enabled": true,
+      "pluginId": "svelte@svelte"
+    },
+    {
+      "name": "svelte:svelte-core-bestpractices",
+      "scope": "user",
+      "enabled": true,
+      "pluginId": "svelte@svelte"
+    },
+    {
+      "name": "imagegen",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "openai-docs",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "review-agent",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "skill-creator",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "skill-installer",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    }
+  ],
+  "servers": [
+    {
+      "name": "svelte",
+      "runtime_status_snapshot": "starting",
+      "plugin_id": "svelte@svelte",
+      "origin": null,
+      "server_info": {
+        "name": "Svelte MCP",
+        "version": "0.0.1"
+      },
+      "advertised_tools": [
+        "get-documentation",
+        "list-sections",
+        "playground-link",
+        "svelte-autofixer"
+      ]
+    }
+  ],
+  "catalog_provenance": null,
+  "handshake_evidence": "Native tool advertisement/capabilities, not captured wire messages",
+  "wire_messages_captured": false,
+  "native_configuration": {
+    "model": null,
+    "model_reasoning_effort": null,
+    "service_tier": null,
+    "web_search": null,
+    "agents": null
+  },
+  "native_multi_agent_mode": "explicitRequestOnly",
+  "context_controls": {
+    "fresh_home": true,
+    "remote_plugin": false,
+    "apps": false,
+    "frozen_cloud_skills": []
+  },
+  "observed_completed_mcp_calls": []
+}

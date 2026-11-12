@@ -1,0 +1,29 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": null,
+  "serviceTierOverride": null,
+  "startedAt": "2026-11-12T19:54:08.718Z",
+  "finishedAt": "2026-11-12T19:59:28.871Z",
+  "elapsed_seconds": 318.06296836900003,
+  "timingDefinition": {
+    "field": "native-session-result.json elapsed_seconds",
+    "start": "Adapter monotonic timer immediately before turn/start RPC",
+    "end": "Root turn/completed notification observed by adapter",
+    "includes": "Model turn, tool work, documentation reads and self-tests within that turn",
+    "excludes": "CLI startup, subscription/config/tooling preflight, post-turn service checks, output drain/shutdown, independent acceptance and Lighthouse",
+    "notDerivedFrom": "finished_at minus started_at; finished_at is recorded after post-turn shutdown",
+    "consistency": "Same timing boundary and field for every application in all six frameworks"
+  },
+  "terminalStatus": "completed",
+  "usage": {
+    "input_tokens": 1227620,
+    "cached_input_tokens": 1168896,
+    "uncached_input_tokens": 58724,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 9932,
+    "reasoning_output_tokens": 702
+  },
+  "sourceReceiptSha256": "87c9702a43c23ed2e77a818a11119031cfb2cb7657ec5e977673b6a2d84afbd5",
+  "actualSubscriptionDebitUsd": null,
+  "apiEquivalentCostUsd": null
+}

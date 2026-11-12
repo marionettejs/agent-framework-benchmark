@@ -1,0 +1,2605 @@
+{
+  "policy": "policy.json",
+  "builds": [
+    {
+      "framework": "marionette",
+      "build": "b1",
+      "originalSnapshotDigest": "ac339da9c2eb0a0c212f36839fde7b8464f32f7219b1b96e22170d0e1be9d44f",
+      "originalArchiveSha256": "029e8113ffc01e961ebe3dc5a81748fa6705cfea4ff5dad11a2377e5dd2489fc",
+      "inventory": [
+        {
+          "path": "dist/assets/index-BLZR5l7H.js",
+          "sha256": "e343c8fc2a70da42c35ed0c2fb27fd702b2c4dd57c8a1dfff7615136cd023769",
+          "bytes": 79378,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/assets/index-DtOgqZN1.css",
+          "sha256": "546ad9706325bbb6393140a1f2e1c5ba1384489bc995c364686acd99ebba87ce",
+          "bytes": 6518,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/index.html",
+          "sha256": "864be906b6cdb2ade2eb0c6641458ca307972c9960f82950e2e37890fdc819e4",
+          "bytes": 347,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "index.html",
+          "sha256": "dbdbbd90c74180edf56ec4f2b11ee63202c6d2284c40fa1d450fca8e095f2174",
+          "bytes": 243,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "main.js",
+          "sha256": "e41e838c2bb492de672a5cfdaac82fbc321cb703af9a6926864e9dee41626021",
+          "bytes": 13770,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "59cbadad6b671d7589bf5430cbeb64564ed9b17b4716a40a4f7fb4132259199f",
+          "bytes": 30775,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "bfff095e58c75f1ab57cc2bd765af44f5a2adf43db1dbccdff0d83dcfc3eb37e",
+          "bytes": 529,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "62b5c85183d1ea0eaf004f65857e74f6032e1b099bc8737e23449ac87030d116",
+          "bytes": 593,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "style.css",
+          "sha256": "2526438428bad292e50269b516c043087a7fce60d37e9b78e9202ede1382c15e",
+          "bytes": 5303,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "tokens.css",
+          "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03",
+          "bytes": 1835,
+          "included": false,
+          "exclusionReason": "verbatim supplied design stylesheet"
+        },
+        {
+          "path": "vite.config.js",
+          "sha256": "f78e4e9c28b129fc29d7b16f3b1abda4902dba309871483836b49c84cc188118",
+          "bytes": 175,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "marionette",
+      "build": "b2",
+      "originalSnapshotDigest": "f2a35241da9e9245053f7eb896fb04c18d0ca855e3ac22e7b71e182edc66036e",
+      "originalArchiveSha256": "f828236b8f0b6f4c614f06d9de98b5752a5754322ade2574212f545e5b595ebe",
+      "inventory": [
+        {
+          "path": "dist/assets/index-CDYgN92m.css",
+          "sha256": "79fc5163537700435bdfc41633453a361eca8cb7ba10a1fe4b0eb42992219282",
+          "bytes": 6780,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/assets/index-r9tHH6OV.js",
+          "sha256": "bfd2b10c3eec92d6e2f439ab04d0ed4616d27d08560b72b096cfffcb5492da3f",
+          "bytes": 71891,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/index.html",
+          "sha256": "acb9d90d3f290c70c4d4a48388da37dfcd5acb0de7537f3d80ef46b05c77a82d",
+          "bytes": 347,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "index.html",
+          "sha256": "ac02bcac2f760eb1b36d263dab3603a87dd7da2ccbdbc06374e85f8c7fa9a9af",
+          "bytes": 290,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "b671dadc64ce6b02ff805f7f7f1e67529a52c6848ad6137a1dafd026584b0379",
+          "bytes": 30260,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "4389093012c4673bb06ac881b2baa4da0940a23dee799472a7cdb74479d6958f",
+          "bytes": 330,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "d3522299717aca45efe7c419ff9ffb4540b09cd128bb90900587f1523ec13eb3",
+          "bytes": 1157,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/api.js",
+          "sha256": "9077331ff4426a24dc809e5bcddbd27d4da65bf917e474a65d4200b4cc2adfe1",
+          "bytes": 1416,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/main.js",
+          "sha256": "cb0fd002e8df3396e0c1549ed260fe101b45f3995e441b735fca181685b31eeb",
+          "bytes": 16394,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/style.css",
+          "sha256": "d27f536b26f5272162d0219173f634e991865b3f88186e5a1b03fcafafcdeee3",
+          "bytes": 6764,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/tokens.css",
+          "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03",
+          "bytes": 1835,
+          "included": false,
+          "exclusionReason": "verbatim supplied design stylesheet"
+        }
+      ]
+    },
+    {
+      "framework": "marionette",
+      "build": "b3",
+      "originalSnapshotDigest": "7f0fd4c4f9cead41cb3eb169392df43591824d94f937c66ee97705c9c99b94a5",
+      "originalArchiveSha256": "61d757bd6307813a428123862f4b9dfa28be4827fc4b494e122a75af286d26cd",
+      "inventory": [
+        {
+          "path": "api.js",
+          "sha256": "d6a5c879bab157914170f64ed7e42f5efbffcc60454dc4cb6d3d077c93ce7027",
+          "bytes": 1928,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "dist/assets/index-C_57PDKy.css",
+          "sha256": "a120ad2b6117396a4b1892661022e0d3546dbdddafccef0bbe37e6d76a083632",
+          "bytes": 7009,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/assets/index-DJgL0mo4.js",
+          "sha256": "863f5f759b1d026f7d9c5a8ebdc262f3f830908e85f66972615520fdb04e4266",
+          "bytes": 79169,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/index.html",
+          "sha256": "19c2cd59b8e10bb93698ca49a68008df3a03f6cb52d5002d2e66ef226c83f4db",
+          "bytes": 347,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "index.html",
+          "sha256": "dbdbbd90c74180edf56ec4f2b11ee63202c6d2284c40fa1d450fca8e095f2174",
+          "bytes": 243,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "main.js",
+          "sha256": "f9fb9397e1eceb3dd58b413758e636d6a714ab0ebaff52823a169c0e9a805a25",
+          "bytes": 12356,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "23ad13ae20a2f7826accc4b0271a4bb2ac1cfa5fda9aae10719c93ef63586c2e",
+          "bytes": 30881,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "25720942be395038078470078e663fe422466e40171f9306544e13cbe79a6a8f",
+          "bytes": 676,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "8580c602d2ec3cc19de0e45c2151b50942e0e12caa40e230b16308d29268c007",
+          "bytes": 910,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "style.css",
+          "sha256": "e4ed949c3cd89ec39b915a3ddba092cfd4264cbf886cb86ddfb45fdb352178a2",
+          "bytes": 5805,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "tokens.css",
+          "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03",
+          "bytes": 1835,
+          "included": false,
+          "exclusionReason": "verbatim supplied design stylesheet"
+        }
+      ]
+    },
+    {
+      "framework": "marionette",
+      "build": "b4",
+      "originalSnapshotDigest": "3b0407cbcda434ce73d1c6027118f17e2b6ba6e95f667f75fea35eb73f109d82",
+      "originalArchiveSha256": "3c916024c43e85c321659713905af126fe5e12a999bb863f0aae484a1b9b9e48",
+      "inventory": [
+        {
+          "path": "dist/assets/index-BAjJ3V0O.css",
+          "sha256": "f99b72f7fd252a8375167bcc95587d80be2b46375adab2eb92eb213f76a5a30d",
+          "bytes": 7180,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/assets/index-CRP6R6PP.js",
+          "sha256": "8ea14fa63f3261fecd50ea33c59ef412a14979d2be5a99fa74e4ac7df6493004",
+          "bytes": 79932,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "dist/index.html",
+          "sha256": "7ef946d6cde93e3045cad6b335513a68c74cbe260e79afb3f2a44699a5291d56",
+          "bytes": 350,
+          "included": false,
+          "exclusionReason": "excluded directory"
+        },
+        {
+          "path": "index.html",
+          "sha256": "55f39d03b7c3286c9659762c5a4a7f4cdc7487bc1612ac9710af09e558ec92c9",
+          "bytes": 246,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "main.js",
+          "sha256": "5fb294d3ea4dc4af419d5c865ef3bf6709f71501cc03531ad54c4292575f9022",
+          "bytes": 14365,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "33028ecd18b18467db6aa69fbe4220183dcee46559cc96ffe874df233d7fc453",
+          "bytes": 30774,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "9c8373df47753d6625d9e3768e5463fb92558f29ce8b5c7815c900d9840830bb",
+          "bytes": 547,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "3462cbcd8e5d1388feddf7288b95f3e6681569e69420744d056ca10e9ebb39b7",
+          "bytes": 888,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "style.css",
+          "sha256": "ef9ff7ae86561a6fceaf2aef4cf3e520dde73754f115a46aac99c8e525fbf57e",
+          "bytes": 6050,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "tokens.css",
+          "sha256": "eb043fb29db06e0df9f35aedfaefe28e42a205d1384476699ad7b31e0d9f9d03",
+          "bytes": 1835,
+          "included": false,
+          "exclusionReason": "verbatim supplied design stylesheet"
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b1",
+      "originalSnapshotDigest": "aff5b46f04a3f7b5480da6f0241166685005ac355502c7fd18fa913801bab0d0",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": ".gitignore",
+          "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+          "bytes": 622,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/extensions.json",
+          "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+          "bytes": 130,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/launch.json",
+          "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+          "bytes": 470,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/tasks.json",
+          "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+          "bytes": 978,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "AGENTS.md",
+          "sha256": "357096b6ca83e7baaeeeeb241882d22b278368217091bc1a3fb6bbea168ae3c5",
+          "bytes": 2970,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "README.md",
+          "sha256": "7e2160d8db986a8226e4691447aca16cc64ce3e2a8282dbc60591892aa52b88c",
+          "bytes": 1456,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "angular.json",
+          "sha256": "94bcb6aa00cec1a6b35705f01c4105c9480537e2891fda37fae65b68015f40c7",
+          "bytes": 1894,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "ae495e28209bdd63d3135c266de1325eac3ab62eccbdb76404587ce7a42f8707",
+          "bytes": 227363,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "0f7e557e5757d8b6a8c8f6eaa8a2c25c4283f7139ccc94cec36aa683073123c8",
+          "bytes": 786,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "0453819797c7a2b9ee03101d07e3a998f02478048df9594600ba8ad143b24bbc",
+          "bytes": 1128,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/api.ts",
+          "sha256": "7a1c02215b14bf55547ef91860fb3cfea15d460386f5b2be5e0d48faae0f04af",
+          "bytes": 1877,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+          "bytes": 312,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.html",
+          "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+          "bytes": 20144,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "sha256": "6545ce434022dc50f53f29274e550753af412d2a94127ca351a696bf1fbb7d65",
+          "bytes": 623,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.spec.ts",
+          "sha256": "ffbf40d8dece008651f3d4fd6ab4fda9f0034260635f862b6e5e66d9cd11e4ab",
+          "bytes": 677,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/app.ts",
+          "sha256": "b781692cd1f78635a6771389f1dc090aba3fe4a9cd0d0499938ea54db8752a7e",
+          "bytes": 530,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.html",
+          "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+          "bytes": 20,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.spec.ts",
+          "sha256": "ab565617ef2a3fdcaadab4aa946c4f89d2496af1060d16364d37655dc2bf5a3b",
+          "bytes": 519,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/cards/cards.ts",
+          "sha256": "ef2641133de17adc0d15ade45d52486cea4514574f39d86f6a33c8cbbff6cbe1",
+          "bytes": 821,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.html",
+          "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+          "bytes": 24,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.spec.ts",
+          "sha256": "7a9192fc61ce1fa441bcea4108ea91b528a1ca0877b41920432d4e4d960f29ea",
+          "bytes": 547,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/evolution/evolution.ts",
+          "sha256": "9cd9d9794885e9f2ad9c7a7b9ca55fa2b00552a3824c359ee62c564815bfaa22",
+          "bytes": 500,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/home/home.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/home/home.html",
+          "sha256": "f6037309c94506abb3218925306a2a44f5ee943ab0872d2952d3da884b69a83a",
+          "bytes": 1137,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/home/home.spec.ts",
+          "sha256": "b23e52002088ea8a28428f5a5d1527f4792a93ceaa62b3d569c22ac6a457baa5",
+          "bytes": 512,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/home/home.ts",
+          "sha256": "554b8c63a6f4c60c05a10bd535695206534b22968983da08a5d1d77fbad76ac5",
+          "bytes": 2796,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/models.ts",
+          "sha256": "443b7df87b1c1d2185494e796d41a6a7fe6b4be9590c2e6cc4429734a3d4fcc8",
+          "bytes": 2312,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/move-tables/move-tables.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/move-tables/move-tables.html",
+          "sha256": "c759416b23e18137c882381ff04a9fa49c6e68aeaa57c62045b91077fa0960f1",
+          "bytes": 1028,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/move-tables/move-tables.spec.ts",
+          "sha256": "25ebe4f5523a4e6e83a7eb71264447ca33bad3be428292a076531d063a65ca63",
+          "bytes": 555,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/move-tables/move-tables.ts",
+          "sha256": "939f9f740e1823c71bcf43117da583f2d1bc8e1803f74b9cb766c77375fc2102",
+          "bytes": 4106,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/not-found/not-found.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/not-found/not-found.html",
+          "sha256": "dc8309b8d2e845a2988ad1083941a0144fc9708a05288a1a90e563b36ec583e9",
+          "bytes": 24,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/not-found/not-found.spec.ts",
+          "sha256": "f5ed3b9c08731c075e4583462b18a2388e8ed9c3915ebae616322af0948f55b6",
+          "bytes": 541,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/not-found/not-found.ts",
+          "sha256": "4d837b12139a471816eb68c048b7a0006a1f7b44deb7928898209d247a6503c0",
+          "bytes": 293,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/pokemon/pokemon.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/pokemon/pokemon.html",
+          "sha256": "1bdd2a01c4d1464c5d20af38cf77ffe2f48ea457c6db07673ad73b6ff435a196",
+          "bytes": 1917,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/pokemon/pokemon.spec.ts",
+          "sha256": "ebb3ce44baa35f08c4a17e820a84763c7c248bb803d535f96b2ba2b0179c1ffe",
+          "bytes": 533,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/pokemon/pokemon.ts",
+          "sha256": "c07f11a481d3f61522bd2ec41c48a6a50c88d0e444eebdaca8149e2dba970a96",
+          "bytes": 1745,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/resource-page/resource-page.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/resource-page/resource-page.html",
+          "sha256": "a5653140ae9c5559c705ca1e8f9ff3fe5a4197b4407011b56bd392f50a85a42b",
+          "bytes": 2057,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/resource-page/resource-page.spec.ts",
+          "sha256": "a9d397fd9ae6b0c28cd39b4a6d20c2ae16f94b335efc4b8c7301eee542fb47ec",
+          "bytes": 569,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/resource-page/resource-page.ts",
+          "sha256": "d353d07263196eb46b36ac567247c481ed9f74543f772c74a1676c6dac8f85af",
+          "bytes": 2334,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/type-list/type-list.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/type-list/type-list.html",
+          "sha256": "edb1a9ce8b849b2ef84079e7969ad21bececa98d74d54aa16f442a3f0d5e5c5f",
+          "bytes": 24,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/type-list/type-list.spec.ts",
+          "sha256": "ba14fe97efa1bc571fa2eab2359627307d26d96c3931edca12751f3f00e1ec61",
+          "bytes": 541,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/type-list/type-list.ts",
+          "sha256": "aa959b953222a565b4a8da6595ad3f39523b62e9ffc01834d592caf3610199f5",
+          "bytes": 611,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/index.html",
+          "sha256": "26bc4e4e717152c81d30b115c8a82364eb9242d7f5d8b7e9b99e3a83c34b6b0d",
+          "bytes": 326,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+          "bytes": 222,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "a2ec6d08297f7ad6c2a0065807549120585c5366ab9846196119e2841ad7aea3",
+          "bytes": 5996,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "tsconfig.app.json",
+          "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+          "bytes": 398,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.json",
+          "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+          "bytes": 908,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.spec.json",
+          "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+          "bytes": 409,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b2",
+      "originalSnapshotDigest": "a78a9e320fc7de35cd1a896561c6cf1c9f871f5d543276c749d1103118decadb",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": ".gitignore",
+          "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+          "bytes": 622,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/extensions.json",
+          "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+          "bytes": 130,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/launch.json",
+          "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+          "bytes": 470,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/tasks.json",
+          "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+          "bytes": 978,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "AGENTS.md",
+          "sha256": "357096b6ca83e7baaeeeeb241882d22b278368217091bc1a3fb6bbea168ae3c5",
+          "bytes": 2970,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "README.md",
+          "sha256": "1a04b0978e10e9fbbe862d52fa65ac89af2c6bbcb60625cbe5558de41fdbe449",
+          "bytes": 1460,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "angular.json",
+          "sha256": "4407584b456e36136d5543f4821f38e0282227d6b62046c548c234516348eeb1",
+          "bytes": 1906,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "0b51fd1e3bb978384a60039e76bd85f45e65416cc76b4e81405ad32f8a3fa94b",
+          "bytes": 227371,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "10b4f7f029be836d2e1ccb01818e3b59861fc26beb43e6a3f70f9c1457e6458c",
+          "bytes": 790,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "2ed7e6a48fc6ec564d25dfe04a93fce530b462aeb51f21fe69c072a9c9f85402",
+          "bytes": 1219,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+          "bytes": 312,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.html",
+          "sha256": "1d3b9ee5099d4973d12cf903ce3b985b57db6629a62fe58a0c03eb257193f782",
+          "bytes": 8849,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "sha256": "c019a926e937da047748eeffd041ae052e9b3c05375e2647dd85a6244cfe62e7",
+          "bytes": 152,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.spec.ts",
+          "sha256": "a48176339d8419dd278df8db911d2105600cc5b76eb29da0de064eba6354a339",
+          "bytes": 681,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/app.ts",
+          "sha256": "34eb40f2e4b29d9d9534ba2725955348097ee80dfb7abc8fe90f516faf795d27",
+          "bytes": 7473,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.html",
+          "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+          "bytes": 20,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.spec.ts",
+          "sha256": "ab565617ef2a3fdcaadab4aa946c4f89d2496af1060d16364d37655dc2bf5a3b",
+          "bytes": 519,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/cards/cards.ts",
+          "sha256": "c45cde856e5a45450362a555be947d9e7df122c87ddd439911caa08bf20cae9c",
+          "bytes": 941,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/data.ts",
+          "sha256": "5981e46695d12666baf7e2ecd2d9823eaad75dcff4c4d17f37423dc40d4028e2",
+          "bytes": 2861,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.html",
+          "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+          "bytes": 24,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.spec.ts",
+          "sha256": "7a9192fc61ce1fa441bcea4108ea91b528a1ca0877b41920432d4e4d960f29ea",
+          "bytes": 547,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/evolution/evolution.ts",
+          "sha256": "39cea195197b4efac77bc54a00b10ddb1de08a32350e98fa85b3455bf1f2d7a1",
+          "bytes": 490,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/move-tables/move-tables.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/move-tables/move-tables.html",
+          "sha256": "b29aa1fb9f50c8f284a90edd18d339940f7fe3015fcf93c9b161e7939cd0b0a7",
+          "bytes": 26,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/move-tables/move-tables.spec.ts",
+          "sha256": "25ebe4f5523a4e6e83a7eb71264447ca33bad3be428292a076531d063a65ca63",
+          "bytes": 555,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/move-tables/move-tables.ts",
+          "sha256": "455851f3b2601be761490afdc414b452aa94c88a62c7afa4674cc86b082c421d",
+          "bytes": 6018,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/shell.ts",
+          "sha256": "98b6894b842ca8b6bc6ce49c988203929e5a209729ba2c8ab4bfd0b4ed9c61ec",
+          "bytes": 206,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/index.html",
+          "sha256": "95fb6e9d57e84a26bacdef4603298ac43b1c8045e630a2b203420f852470f54f",
+          "bytes": 293,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "2ee647ee4601cf71b98258483b663e66ddf8dbd7faff25d8af2ebf0b7288ba07",
+          "bytes": 228,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "3f0313147816cabbe7ee314241e2ca3a0eaa3d530cd2612de7c168ce57ada0c8",
+          "bytes": 6888,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "tsconfig.app.json",
+          "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+          "bytes": 398,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.json",
+          "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+          "bytes": 908,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.spec.json",
+          "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+          "bytes": 409,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b3",
+      "originalSnapshotDigest": "d16f94254d785859d184b4741f2f4698ea42764f02472b5a2f5d28f01dd26f25",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": ".gitignore",
+          "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+          "bytes": 622,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/extensions.json",
+          "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+          "bytes": 130,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/launch.json",
+          "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+          "bytes": 470,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/tasks.json",
+          "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+          "bytes": 978,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "AGENTS.md",
+          "sha256": "357096b6ca83e7baaeeeeb241882d22b278368217091bc1a3fb6bbea168ae3c5",
+          "bytes": 2970,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "README.md",
+          "sha256": "bc67591f81b7cbd75d891e9e8f276fac8bf79f1277513dde34e4aad94e729324",
+          "bytes": 1080,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "angular.json",
+          "sha256": "4407584b456e36136d5543f4821f38e0282227d6b62046c548c234516348eeb1",
+          "bytes": 1906,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "0b51fd1e3bb978384a60039e76bd85f45e65416cc76b4e81405ad32f8a3fa94b",
+          "bytes": 227371,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "10b4f7f029be836d2e1ccb01818e3b59861fc26beb43e6a3f70f9c1457e6458c",
+          "bytes": 790,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "723783bb5d1e2ce65547410235162775167561e3e03bf51683d6fcea67dd4e42",
+          "bytes": 1147,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/api.ts",
+          "sha256": "6f29114d6f58e5cf836f906e525841c8966e44b7b0b45eee1457184b265a8ff3",
+          "bytes": 1924,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "sha256": "0d89d2482b81f6aa9605d8480e7797b8ab24229194e012eeb38f204ffb6080cd",
+          "bytes": 190,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.html",
+          "sha256": "cf32997c0ffdce3bfbd191ab1ed2e1983194e4091ac44ac3aef57803aa8c8330",
+          "bytes": 11278,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "sha256": "e2ef74b4c1f7f52a30a417c6808f01b2a29e69bb0d20302527ae5001607f7180",
+          "bytes": 77,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.spec.ts",
+          "sha256": "c6d6777103b1f4feb9ac378052ec221702b24f2df051f22d04d8e70901724be2",
+          "bytes": 1596,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/app.ts",
+          "sha256": "3325854de16add15c85bc0af3bcb7282a23100abbb1a96ff7459e3906db9c259",
+          "bytes": 10281,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards.ts",
+          "sha256": "dfe11de96d4cd1111c579cd2983c2985dab4f5f06982c7eaa72cec6799dd252d",
+          "bytes": 919,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution.ts",
+          "sha256": "3f22fdd3a1e4f58db69ca6ad168aae2891946bff89b2320b1bd657974e572a71",
+          "bytes": 520,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/models.ts",
+          "sha256": "49ea326e6c34c286f2079ebc720b99b5b09a4a79cc25e417ac3929c5028f923f",
+          "bytes": 1660,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/index.html",
+          "sha256": "8718549cd78e9dbd917d9b8bd11d86b2f3fb4b7965c996db9c287005a59b37ea",
+          "bytes": 298,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "ecc610fb7d56c95a01a8aa6c274a63210d45b2944dd6b9a88b2c8f70b6351037",
+          "bytes": 219,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "174bcb5e4ce2336a2ad666400004087011c74d3950600ea72d762ee3a2b9084f",
+          "bytes": 9598,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "tsconfig.app.json",
+          "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+          "bytes": 398,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.json",
+          "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+          "bytes": 908,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.spec.json",
+          "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+          "bytes": 409,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        }
+      ]
+    },
+    {
+      "framework": "angular",
+      "build": "b4",
+      "originalSnapshotDigest": "4ffdd492d19de098c2a01ba8a9d3f9d0d3a5c75f93487d447f82c2c2caf844e3",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": ".gitignore",
+          "sha256": "6faa24d286aa308f683225069e0cbabf9146bcb584e5ea06c812a5f7478b2abd",
+          "bytes": 622,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/extensions.json",
+          "sha256": "6da5b6004a21316f17db45d15fc93a8d8b060ddfa4139c1fadab4d191187c898",
+          "bytes": 130,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/launch.json",
+          "sha256": "d2e7a817688daf2f187f74902717e525da165d77060fec3b0da1a9d2726971ed",
+          "bytes": 470,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".vscode/tasks.json",
+          "sha256": "fcfc78f7041bc36369d7638898bb52973adf849fc47d6fdaa27920d522d3396e",
+          "bytes": 978,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "AGENTS.md",
+          "sha256": "357096b6ca83e7baaeeeeb241882d22b278368217091bc1a3fb6bbea168ae3c5",
+          "bytes": 2970,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "README.md",
+          "sha256": "ae0f9440815c99af90e9c67b695640d232dd62f6efc2baa551ac3b0224a4916c",
+          "bytes": 506,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "angular.json",
+          "sha256": "4407584b456e36136d5543f4821f38e0282227d6b62046c548c234516348eeb1",
+          "bytes": 1906,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "0b51fd1e3bb978384a60039e76bd85f45e65416cc76b4e81405ad32f8a3fa94b",
+          "bytes": 227371,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "10b4f7f029be836d2e1ccb01818e3b59861fc26beb43e6a3f70f9c1457e6458c",
+          "bytes": 790,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "ef47b07d3d1c57049e633e8f380b46edc07ef4e01f2977d959d4ac27b27de828",
+          "bytes": 1058,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/api.ts",
+          "sha256": "aac6838314c7c269d583e2d31c6773b11fdc059f49d9e44b3a730e7acbac80da",
+          "bytes": 1458,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.config.ts",
+          "sha256": "cd624b648e994fae35c37aba4980ae1727797ce19af507a741651787e79c00fe",
+          "bytes": 312,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.html",
+          "sha256": "4d90c16abd4ac0ea5c45e5b3a2835d966ac5c2e4cc6b60131003452e6e4fc328",
+          "bytes": 20144,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.routes.ts",
+          "sha256": "bb0bc145c032642e47828c88334654a33cb31d611e851cc85e418c94d6ab2de3",
+          "bytes": 143,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/app.spec.ts",
+          "sha256": "48de2fa64b4be3006046eb84b503ab397c817fab4b6f9ccbf3fcc77bdb9488b9",
+          "bytes": 711,
+          "included": false,
+          "exclusionReason": "test/spec source"
+        },
+        {
+          "path": "src/app/app.ts",
+          "sha256": "1884f0da97fdac3697160329999c63fd914507544982105e0ac186e454f544a1",
+          "bytes": 504,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.html",
+          "sha256": "6572c8fd23524949d276cc5cfe45be7b1a48e98ec3c50058a95cdc57d24f6818",
+          "bytes": 20,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/cards/cards.ts",
+          "sha256": "9a7aeda17df30a284fdd86ba3a541761059e15ad2b6037e7f6c61bc19671b120",
+          "bytes": 739,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.html",
+          "sha256": "8d9f3e2157eeddeb2c7496b3df75f631dc94498ba2a6cd7f172488476cfeb24f",
+          "bytes": 24,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/evolution/evolution.ts",
+          "sha256": "68ea082afc8d0881ae96c3960f0efba71874965abcd6d0799e9134332d94261d",
+          "bytes": 476,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/models.ts",
+          "sha256": "1463d1644ca65ea5009df1fefb50383f6984aa3d8fee2d477b1ed2197ed46c7b",
+          "bytes": 2150,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/pages/pages.css",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/pages/pages.html",
+          "sha256": "665ec21ccbed923d1d314fa05a20ccc700bea23c3794159c27ca507ac2adafaa",
+          "bytes": 6079,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/app/pages/pages.ts",
+          "sha256": "ac780ef82294595618e9225f71515ed403efb4f005c900166cf8d6f7fce0b4ba",
+          "bytes": 8313,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/index.html",
+          "sha256": "95fb6e9d57e84a26bacdef4603298ac43b1c8045e630a2b203420f852470f54f",
+          "bytes": 293,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/main.ts",
+          "sha256": "2341253f1a947c37dfa27838951cf7e224f7abb32dff45a8d425f042b5eeed13",
+          "bytes": 222,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/styles.css",
+          "sha256": "415e70089f86924469be7bc127efdf2fedf0e2eeebfc2085593cf36aa572d636",
+          "bytes": 5988,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "tsconfig.app.json",
+          "sha256": "12e2786b56cc873a4e91f822894cc541082d16b90c0d7280aa5512469627d23f",
+          "bytes": 398,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.json",
+          "sha256": "3c3b6c2138f0a910f5284e1d64e9fc213af2b91409fdeaf5598ff495c28f79c2",
+          "bytes": 908,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "tsconfig.spec.json",
+          "sha256": "958fd251a505c5d54d94d2694b8fde3d1c71aa244b522e3e053db1ac5b987dd0",
+          "bytes": 409,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b1",
+      "originalSnapshotDigest": "588a7be8acd6aa5a6fed5ad12b663dd6048ab7423cf68308d1320821475ff784",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "app/app.vue",
+          "sha256": "7b88ca587f52ca3835868c2d6a2005a1814a833824ab18316a6869abae19c7db",
+          "bytes": 7774,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/assets/main.css",
+          "sha256": "f38f608c025d669627dd13dfcabba64efac1252c5646eca2c0d78e63394825e1",
+          "bytes": 5180,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/Cards.vue",
+          "sha256": "fab51a901e76e6c63c8b52dac3da641829488f493e6096d751ca1ffc3056e4f8",
+          "bytes": 702,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/Evolution.vue",
+          "sha256": "47013e40ffeb10122f46b8b19da016974ab5d2eda30dedfdc215e94cfbe35f62",
+          "bytes": 301,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "sha256": "9926c35fec52d2a0590349a029142ad76a483d775a989c080a216b1db8b25647",
+          "bytes": 1515,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "sha256": "9ad562f9d14f7b6fc38257d8cd05511af78a091b664b2074cf437c1f4209c335",
+          "bytes": 29,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "nuxt.config.ts",
+          "sha256": "2f24555993c2f4e2e31bf1a12102445e28cf1d77d648e6af7244155ce3262968",
+          "bytes": 193,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+          "bytes": 290072,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+          "bytes": 155,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server/api/dex.get.ts",
+          "sha256": "89bcd38914116bf8506cae657541fd7c11906ad22c1ec0d49fead804e4c6c76a",
+          "bytes": 3141,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "server/api/sprite.get.ts",
+          "sha256": "12e893da272f64f7aaa0fdd063cccb85e464a456cccb8155582b42a4b4afb16e",
+          "bytes": 191,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b2",
+      "originalSnapshotDigest": "6f17a91f77e48a5161ae3f3289df40bb5e5557e3914ac31c4cad8534fbe29961",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "app/app.vue",
+          "sha256": "568811e9d1ccdeb1b16fc6f9643196fa2758373e43eec224965af519b74663da",
+          "bytes": 283,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/assets/main.css",
+          "sha256": "c7d23ccd0e4e44ab1b6d3d2b10cf2d08056123eb28e6df101b3fe33a75d040ec",
+          "bytes": 5508,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/EvolutionTree.vue",
+          "sha256": "5e88cbeacec0d8dd462f52683b6f3be66420e20cc326c082a6ca23bd9533a48f",
+          "bytes": 366,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "sha256": "05ba14660b92ea43299ce0dc1895a5bc4664d994eaea628a305db012552b6d87",
+          "bytes": 1429,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/PokemonCards.vue",
+          "sha256": "42c1d9238db46f3c05fb701093f09985003c8e22bf5dc8fe821a8ec745033633",
+          "bytes": 521,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/TypeBadge.vue",
+          "sha256": "b7ebbfd2cb6ecd4d8e9cb427e535c194e41072a7ea484ca9d631c5063fc4f69a",
+          "bytes": 351,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "sha256": "4b4623b67e441205b1ddbed8568fd1c054d950bb3c485675caf0c84d8f193c4d",
+          "bytes": 6898,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "nuxt.config.ts",
+          "sha256": "2e45dc9503018b45173afe35239b57ba1a0602a222ed54739e943b07dc4acb26",
+          "bytes": 182,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+          "bytes": 290072,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+          "bytes": 155,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server/api/page.get.ts",
+          "sha256": "ee7af8f1622b6e4b630e1e5b129b631d06a484cfdabdb37846c0e5b03ab2b584",
+          "bytes": 4475,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b3",
+      "originalSnapshotDigest": "5365330a2d840b6817f02469cd4fbc199b9406b5078ee84d8a6fb8761e4269d2",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "app/assets/style.css",
+          "sha256": "5fe5db89d816b43eb69bc8dec34895a572e0ccb38bfe1198575e37a0fcb07911",
+          "bytes": 5451,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/EvolutionTree.vue",
+          "sha256": "e2b12e533ed475982cf0832adf2dc8ce2e1a9b8aa2badda2681227d12f09ff36",
+          "bytes": 352,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "sha256": "36e823c7326726acc748abad525b5ad559296d7029dd892423cf3ac1f5321e2b",
+          "bytes": 1580,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/PokeCards.vue",
+          "sha256": "32258d5b073c28b45d92c4c35481f44c9a08dd8fd4df580b774001a32e94e773",
+          "bytes": 598,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "sha256": "6ce1b199033a3928c251b4f258f541bacff5a928ba59176061f0a1d463d38315",
+          "bytes": 7883,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "nuxt.config.ts",
+          "sha256": "92a4dcc1acf6d0e4d5ac1a5a5244974787cae6750136a32a039b4cf85a55d6bc",
+          "bytes": 238,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "3cd9bf640f60a75097bb499bcf3e8069c9ac65bff9302095c6994d9eed5b5c9e",
+          "bytes": 290082,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "95d9d06c8616ed69d2f26bc5f524f6fd35c792596b602582d487256fecc96669",
+          "bytes": 160,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server/api/page.get.ts",
+          "sha256": "254d2a76b7ca5eb75fa13423dba2eb88f4a032d42dd5fa72607a7eebca7b13be",
+          "bytes": 2597,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "nuxt",
+      "build": "b4",
+      "originalSnapshotDigest": "59966c000af8117145084c158f42aa1f43d15f79c811e36e5795287a5efa82a6",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": ".gitignore",
+          "sha256": "b337c2d3e6f980e187a36c8bf8dbe9cfd46da7c05dbda094328ad81c2d3c7973",
+          "bytes": 30,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "app/app.vue",
+          "sha256": "6669e4ad83a04e77d0250ab1a096c5700781717af69ab9ef2cdb202895fbdf3c",
+          "bytes": 319,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/assets/main.css",
+          "sha256": "05e1cafc7913cd22c1d1f77f96558cf3b0930ad7c6259c863f023d3df758603c",
+          "bytes": 4395,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/EvolutionTree.vue",
+          "sha256": "a0946ca567cce4142e54ef0736c8e4354d5c7a6bb3b46b7b99388bf728efe69a",
+          "bytes": 351,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/MoveTable.vue",
+          "sha256": "d4562e3a5ad3d78d499a5119caf53c9f3975fb22d36ca48dd5671dcd1ba7eab8",
+          "bytes": 1420,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/PokemonCards.vue",
+          "sha256": "9d03818d467698e065c3f71dfcb94681dd5ba1da71e6f3340ebb903ad0d88e25",
+          "bytes": 569,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/components/TypeBadge.vue",
+          "sha256": "e7b117c179a4d97c0e49dd1f352e67b58e255cb08b95c88ff234a8bed41fda86",
+          "bytes": 398,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/pages/[...slug].vue",
+          "sha256": "cf85d049c44d2acc1a226f430dfb55b5b779a9364f16523486aebc207fdcb62b",
+          "bytes": 6291,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "nuxt.config.ts",
+          "sha256": "4781f80e3ce8b423ba0b31b2ffef2288e3e246984ab131a337e86e65b68095ef",
+          "bytes": 154,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "f91fb4ffd9fb8b5103b9ee4921bceb9462ae09cf21a45cdff6f2f486536292dc",
+          "bytes": 290072,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "cf08135e80e4fd500d784f45039b96326b832773d0d49e2979e13b5704b4e058",
+          "bytes": 155,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server/api/page.get.ts",
+          "sha256": "ad1b28dce02de15d5f1fd5b659f95493a9501ab1e4a9c625ce092d8603dfd338",
+          "bytes": 4460,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b1",
+      "originalSnapshotDigest": "7fd699ab390381cf42a13c6700860d203f7abd21cb008414ae74c542cc089627",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "app/api.server.ts",
+          "sha256": "8d3b09da05e806c97a4ee73a442064a69a5d074e34e0e6b2670f86ffebefc8c1",
+          "bytes": 3721,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/page.tsx",
+          "sha256": "ee8f1bb3a5faed24c22a34d33374ab7e81c6e2cc77e0aac6c56aa7724489f80e",
+          "bytes": 8167,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/root.tsx",
+          "sha256": "73c879a688b6b746cc0d2e3bd969ce9790b11ca8875fffcd410d255855fab9eb",
+          "bytes": 581,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes.ts",
+          "sha256": "69ea96600ca363841c8a8d80f49e6ba8b9ef7053c0d87421985dccffba946c05",
+          "bytes": 136,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/style.css",
+          "sha256": "ab0c12495659aa743a6c60a3bfde02de231541bf4ce635cf8ec40e5dd4c4bef2",
+          "bytes": 5123,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "bae159a42ecf5c3a7ca35b49a1cf866a77bf44dbb50793b19062334f6f728e04",
+          "bytes": 105348,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "75b68aaf5a48459d7a168fbd86da5cbe354aecaeefc2d0b5a04883f34f4abfe4",
+          "bytes": 363,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "vite.config.ts",
+          "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+          "bytes": 147,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b2",
+      "originalSnapshotDigest": "34a6282dacaf0933d1386ef9afd3d1a5210d191a7ba344da29959254a4c2cb40",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "app/api.server.ts",
+          "sha256": "486303fd3d54b963822e5db998925f1557ba799332c2d46dadcb3779ad624f01",
+          "bytes": 1068,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/root.tsx",
+          "sha256": "85aa9417025ff709e2b176005bfc1672208d908a19b9c2716a36c0881380142c",
+          "bytes": 631,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes.ts",
+          "sha256": "1423c39735e0d054b5000a8f0250e613278e2124c829a6151f4a214c261cb1fe",
+          "bytes": 249,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes/detail.tsx",
+          "sha256": "4686b0dba2042b811c9915c6483f8fc90ca7e1279e4bca47d1f6123f7bcaa003",
+          "bytes": 2073,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes/home.tsx",
+          "sha256": "190dd648fefc1a56615dc5b93920cf251fdfedd4d5628621bf83c2c28139a8bd",
+          "bytes": 2594,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes/missing.tsx",
+          "sha256": "f5e5cc7bb9a4b1eb39d9f76d05b60325959bfc3a92df42f3d3e85185b858a2d9",
+          "bytes": 113,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes/pokemon.tsx",
+          "sha256": "0c1230a60d338271e51adf53c3d85d9961e663e4a1f7d72fd26a7d573cf52ba6",
+          "bytes": 4844,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes/types.tsx",
+          "sha256": "97e727960d4801894bb6384574ab5ab8ab14d1e2de3ff790779760841f919d19",
+          "bytes": 499,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/style.css",
+          "sha256": "28a103c80ec4914b766fe45d4925195c1e62b0e5b501e67d6e3cbbd0fbf17419",
+          "bytes": 5379,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/ui.tsx",
+          "sha256": "ea7ea974d2912933d960c0d756cc461c4a13717efc50b2c7aca777ef8801d07e",
+          "bytes": 1566,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "f6b098fa1c310ae53b40dfb09d8121d47d188e92a0eaf52d5997be7e4b2a64e5",
+          "bytes": 105381,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "b1b4c1441b09af4b4995fb36aab319935f108605755bd69d9ad379612b7d3df9",
+          "bytes": 383,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "vite.config.ts",
+          "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+          "bytes": 147,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b3",
+      "originalSnapshotDigest": "05b72a2f3fc67a0fa325780b3d3911f5d5bdbf3aeefab3f3b90b3245b9b7a7fe",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "app/api.server.ts",
+          "sha256": "ac7fa99681c53c6100fd5dde9b9dda0066bc9fcc7a2224de1ce950e314cdbad2",
+          "bytes": 4456,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/page.tsx",
+          "sha256": "170e78dc4bb9a9fc997b3af59f91744e111aaf74762ab3e7f49dbe4b633331b7",
+          "bytes": 9247,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/root.tsx",
+          "sha256": "8c2a93655954670aa863b5ee25980ff24bc649b4f154d1966cdc38e676514ee1",
+          "bytes": 641,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes.ts",
+          "sha256": "1b5817817262d8e05b5dbef63e6c99c5a1ffe8ec1325c4ee00495960a7a2b857",
+          "bytes": 357,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/style.css",
+          "sha256": "770fdb06919f7972ff23ddfef503e3bc932fb2756de091a78e7c7129301323dc",
+          "bytes": 6059,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "23ca47c7c5f48946c0477e74f08b956da8717a57ced8e4923477d1fe8e5773cf",
+          "bytes": 105377,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "d8073bdbf6d204f87ceaf2e591d0bc701ac5faae83a50d4b5605ab9db55da969",
+          "bytes": 380,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "vite.config.ts",
+          "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+          "bytes": 147,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "react-router",
+      "build": "b4",
+      "originalSnapshotDigest": "17e98e4ff3646e01f54fe6c3e725b9f92eb5aa716765b7508e5e2e84baba3cb9",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "app/api.server.ts",
+          "sha256": "844d693608340f3ebc88761e58df80eefe8257041aeede208c4b287316a8c6c7",
+          "bytes": 3531,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/home.tsx",
+          "sha256": "6f3c3bac79c4ba2a96e0347f069678d25493273e9eac558001826a85487cc8c3",
+          "bytes": 58,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/page.tsx",
+          "sha256": "57dced9885e1ac2fb360becb5f4bfe95cb67f013d946f997ee3d433886441781",
+          "bytes": 8204,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/root.tsx",
+          "sha256": "973383fbd4330d3ca079a230afb3efd836647ec077795d79469b3bf88e572da0",
+          "bytes": 559,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/routes.ts",
+          "sha256": "fb83ff5d494ed2a606856fdf8e0a72a7c6b2417686cc876c14e658d743377611",
+          "bytes": 112,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "app/style.css",
+          "sha256": "8a5992aa0dea25c7b398151b69a0415ee102f3cc0f5162a4a0a1b47245d56acc",
+          "bytes": 4933,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "bae159a42ecf5c3a7ca35b49a1cf866a77bf44dbb50793b19062334f6f728e04",
+          "bytes": 105348,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "8cdfa0f97d9e6fdcb7838d76faa98ed9472a3673e5325d9ff46e8e454bcba335",
+          "bytes": 361,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "vite.config.ts",
+          "sha256": "b7bfffe11bc6b89988e85e90e50bc8b44c9fea48decaea8ef9648c63782c7724",
+          "bytes": 147,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b1",
+      "originalSnapshotDigest": "1b2a92729ea1881cb29c0928742eef2cb5d3c05e4568cb9e05d593810db27252",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "package-lock.json",
+          "sha256": "991db28c5e9f7a812e7bf7c55be8953b13ac4520f335218fc8004b75d88e845e",
+          "bytes": 38308,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "c8bbf39d43cd3bebef91f3e69e096887773b75e4a0db881e0f4f7fd7fd3a56ac",
+          "bytes": 393,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "src/app.html",
+          "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+          "bytes": 261,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "sha256": "6a62ca6f523c80429987a7b26cf84056a6a845ec1ad54a396de575ec31c1698d",
+          "bytes": 596,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "sha256": "3a7c99a0757d1fe1445aca5872e9c2be095f72509492253f1d69388d62ad28c9",
+          "bytes": 1416,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/api.js",
+          "sha256": "62cce7cb0499ef96752c38356dba5b0288d6f4f17a083d6a13eaf559e203b171",
+          "bytes": 4195,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/style.css",
+          "sha256": "85e328474836d0139a9866db423cca56073d5a769cc7a6eb334c589c56459250",
+          "bytes": 4880,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "sha256": "85808b0e1e5968fbbb096878a050850420af0c60bd253d214f7504f0f7aee429",
+          "bytes": 174,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "sha256": "0c69d699ab5b4528fd2c52f9f6f1baa5a74e082a40f032c413727cf2f9db57c1",
+          "bytes": 7280,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "vite.config.js",
+          "sha256": "4d79496be1df153e8d95ed1339858789451275ac45bd707e11ec3cc2e0dceab5",
+          "bytes": 151,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b2",
+      "originalSnapshotDigest": "1a06099161e9caee8bb7be9c74f34528e10c2ea5bd3c3273bbea640f24a749fc",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": ".gitignore",
+          "sha256": "f97f85b0e91f15c9a45517c5fc6404f218c97f101353ed64d8ad644539fcb92d",
+          "bytes": 34,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "62c5be13a43723219846433e4bac1eb4432ad581b4ce72e6a3491d210430e990",
+          "bytes": 39419,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "57336f51634252a6e246bafad2077dca7ab1eb69c83d9349bfabdc015d58aa44",
+          "bytes": 418,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "src/app.html",
+          "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+          "bytes": 261,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "sha256": "d44e60f37c6c7afadb67c3c7eb205b21d1bcc0308313981512765f5ef2edb5f8",
+          "bytes": 701,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "sha256": "e54ba65564078729791a1b44c3da844a9803e1c87acfbf27c51c00e6867b9977",
+          "bytes": 1835,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/style.css",
+          "sha256": "bbcd4b6f67910b9e3e44785d263a6be628bb4b98aeac1719c72d46bc5e1e99ed",
+          "bytes": 6015,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/utils.js",
+          "sha256": "c1857542892d4e61d16ad8d2a13eab2afb4ac21e46fd1ec58058e391abf9b54d",
+          "bytes": 453,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "sha256": "e675724d7fd5fe41b0aa3a62be03779a5507d57a4ccd7b60238c2c03b0528eed",
+          "bytes": 6946,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "sha256": "53da94386070ba67db1480e0ce585fd03cc30513523c37cb8722e814855addf4",
+          "bytes": 8990,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "vite.config.js",
+          "sha256": "1ed9211ae37c07d585ec495c9efc2187a256b9bad9411642eba8d32e02bf13b0",
+          "bytes": 210,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b3",
+      "originalSnapshotDigest": "6e81d4d4cf62b2c0d8fa387e7ec3363e750b605ac061904536f8fdc1b23b9b02",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "package-lock.json",
+          "sha256": "b4291270ed2718ac5195c3f3d5666f40a5ce872ef15919b6cbed066adfdc2aaf",
+          "bytes": 38280,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "179572a7d209aaa44042e9c8d47fb085e49b6441c81dd2f7bfea09fd7df11a3b",
+          "bytes": 370,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "src/app.html",
+          "sha256": "348275e8b35985ec780a545748e87b299cba99cf975fd6b3a9f9bd23b33650b8",
+          "bytes": 262,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "sha256": "9fb584e4bfb318767e2a615f17878c0c58306ca33b6f00232d3ac88de6b5858c",
+          "bytes": 558,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "sha256": "764de284d88c080175789b85739a6ab5a66b6ef0a414a41c95e16a8ee31124f5",
+          "bytes": 1447,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/api.js",
+          "sha256": "0ae569d73b205be9c0ca3d7b2717c9cf9b9ba7171c641081b0aa7c1bd1a3cf93",
+          "bytes": 4543,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/style.css",
+          "sha256": "7f68d14c0e3f8ae532fe5102129a65e2548a3974db0dc569a26518b879d7a1df",
+          "bytes": 5245,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/utils.js",
+          "sha256": "b69988f15cecc9f4470fa7a3f7ccc2b10832a59394474064db4dcfe156c1fcda",
+          "bytes": 465,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "sha256": "abd33b67f70c92672c3c796509c61b94229cf32e7179133f111f0f72a925c1c9",
+          "bytes": 153,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "sha256": "2a8277347fc1d2dc52c77fc22f0f3b16f5b351e51bcacf9cb695ae6d21c99e71",
+          "bytes": 6584,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "vite.config.js",
+          "sha256": "51a49eda8f90f5553822dfa612f349ee69649565c556da8a067760f563f259f6",
+          "bytes": 200,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "sveltekit",
+      "build": "b4",
+      "originalSnapshotDigest": "e1f1951a32f4e255e528d47331d248db0db01237dd8d70f40bb7c970d50465f5",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "package-lock.json",
+          "sha256": "d7135a46cec6e9b51c09efa53f98398bfcea7ec7df8bd69fe1acbc203c7275f5",
+          "bytes": 38346,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "1ec0f51009926844a45ba91d1ff523c84a84abaa89c9b0f012704b4256654156",
+          "bytes": 419,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "src/app.html",
+          "sha256": "348275e8b35985ec780a545748e87b299cba99cf975fd6b3a9f9bd23b33650b8",
+          "bytes": 262,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/Cards.svelte",
+          "sha256": "6dd3ef2eafb624bf001c82dfbf75ed358aa3fa68a52638db46cd6f582fba37e5",
+          "bytes": 562,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/MoveTable.svelte",
+          "sha256": "747bc233607fd06d951f79fa0e25b99c1a1b3a5281c1358fb73f14390eaf71c6",
+          "bytes": 1262,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/app.css",
+          "sha256": "a183ea13efd99d3120ade57cab17ad4fd4e288528c083ca4d7da38b9b1dec505",
+          "bytes": 5425,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/lib/utils.js",
+          "sha256": "118f122e90ad369fa056e1b0872855b47d5e35f56a98ff3eb63a8b44a8e9f21f",
+          "bytes": 435,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.server.js",
+          "sha256": "03ff5e4b04995ab9fdf67196dcceef432eb3dd1d5e0dfd8bd00eea0d3d93b499",
+          "bytes": 4797,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src/routes/[...path]/+page.svelte",
+          "sha256": "25cbeff86c451dce398aa2c7a63591face0cc1b1bc9bc185db76c12860a3b550",
+          "bytes": 6700,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "vite.config.js",
+          "sha256": "c0bb299a18e4573eb5dd97ce676820a91a47b9e26818a55cf95c2ab943a56042",
+          "bytes": 207,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b1",
+      "originalSnapshotDigest": "076e73dfe10e30a73d8da787a14ce76a8ff952c791a9369c869c15237b9660df",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "index.html",
+          "sha256": "901ceb27a1bfbc72fc4826ea994b87de9de7843c5fea6e022a7315ad65b15441",
+          "bytes": 465,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "main.js",
+          "sha256": "2a75821ad7dcf299d127c41fa4d677c0661647897cb413ff8789dedbc902d48a",
+          "bytes": 11167,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "cdc6b0e96962dadfd90b5a213b7bd25c34c0558f60a6f9eecf88682bcbf20bfa",
+          "bytes": 24564,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "40eed9fec845baceb6168affe2a2bc90d798fff3ec25c8f9f82397d48ad651ef",
+          "bytes": 141,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "a8823a3ef23e60a39c925aeed765b1ddc767bbc3f886ffbff368fd606e3d2d8a",
+          "bytes": 633,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "style.css",
+          "sha256": "8065eeffc40c02e61d562ba02e8a93124659069c4dfdadee305b633af32f5e26",
+          "bytes": 6017,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "vite.config.js",
+          "sha256": "cbae62c05f7a8341442708b34688200952bc215bdc84a93a0351f57684cf4a25",
+          "bytes": 152,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b2",
+      "originalSnapshotDigest": "ab1178d98c4869c5f8be7f3e780ed177fb21d82ad474cd811244f9daacfd1d82",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": ".gitignore",
+          "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+          "bytes": 20,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": ".npmrc",
+          "sha256": "c4a485ab6d3366439deb5ad2f78c540e1d7c3f5fce341c1891fb3164bef58fec",
+          "bytes": 12,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "index.html",
+          "sha256": "f135183e8da3d22b39a92da034dfb31fb12df63df8bc7520248deb29d2cd39d3",
+          "bytes": 519,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "a4802ddfc420447ca0275f342bcb9f0ec4be771aed1c639e20f1a3f385f2aa9d",
+          "bytes": 25327,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "c2f81cb6fcab5fde85c9f23016fc096ea3baf39b85bac1ee1cb26e280126b1de",
+          "bytes": 144,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "cc850e0bd38d89436e375e4914e360ea525ca0b3ef2a23dd9fa248d5ca5e0cf6",
+          "bytes": 783,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src.js",
+          "sha256": "c7edac3f7b02356d127a95ebf0d173a5df65f992990698cfd3dd07e3195fea7b",
+          "bytes": 11216,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "style.css",
+          "sha256": "bde55d84aa07a10ccc2a03eea0dd78b8bae97915abd1573022f30924df942f02",
+          "bytes": 5182,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b3",
+      "originalSnapshotDigest": "98dada5eb021c06d0c6f65cacb2b18244912b5e6a9f31ef4cb69c643b531f49d",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "index.html",
+          "sha256": "933c31d398c09a5286abb4a354b53de46888ec6fcda77fe813c1a6fb8b0be4c7",
+          "bytes": 500,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "main.js",
+          "sha256": "fc3b5896483680cac90e43cb274bc3cc2244cc19d2068068a2b5a2c32f509bab",
+          "bytes": 12289,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "38de857caa57c0599083728437721f1b21a85903573eb7ce785466ea85c0ccad",
+          "bytes": 25327,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "41763b9a538ccad6cea2b62e3fda69faa050064c85b01974b9521de6c42ac652",
+          "bytes": 144,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "a052797394d49bec2ed9db536ce73763a48a2136c254297d4feda01df99da1c8",
+          "bytes": 774,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "style.css",
+          "sha256": "63a02d17e95ed43f46c500779228c39d57d4bba322e1a3823e11ea0be899fe8a",
+          "bytes": 5535,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "build": "b4",
+      "originalSnapshotDigest": "1ae52a531f8036588b032773a3d20c057c910a8c1e9071da11ccf0c001431766",
+      "originalArchiveSha256": null,
+      "inventory": [
+        {
+          "path": "index.html",
+          "sha256": "f5c6ebac7928200c784974cad5e8159fc24b2e3510605c6b26c769fa636d2688",
+          "bytes": 498,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "package-lock.json",
+          "sha256": "38de857caa57c0599083728437721f1b21a85903573eb7ce785466ea85c0ccad",
+          "bytes": 25327,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "package.json",
+          "sha256": "41763b9a538ccad6cea2b62e3fda69faa050064c85b01974b9521de6c42ac652",
+          "bytes": 144,
+          "included": false,
+          "exclusionReason": "outside source extension whitelist"
+        },
+        {
+          "path": "server.mjs",
+          "sha256": "d82283653cacf0af0d70f4b863e2eada81b6d3a6eed4c7db2a7ff145627a8002",
+          "bytes": 830,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "src.js",
+          "sha256": "6647e9da43413b15eb1121dade213f2719163046d61be9b882101aa528e396e2",
+          "bytes": 11776,
+          "included": true,
+          "exclusionReason": null
+        },
+        {
+          "path": "style.css",
+          "sha256": "087b502a28ed8449b193cea6e9c42bf0a70f8483a7fbc17be56e382b82e54d30",
+          "bytes": 6010,
+          "included": true,
+          "exclusionReason": null
+        }
+      ]
+    }
+  ]
+}

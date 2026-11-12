@@ -1,0 +1,62 @@
+[
+  {
+    "framework": "marionette",
+    "b1": 998,
+    "b2": 950,
+    "b3": 1027,
+    "b4": 1053,
+    "medianNormalizedLines": 1012.5,
+    "medianOriginalBytes": 21395.5,
+    "medianNormalizedBytes": 27435.5
+  },
+  {
+    "framework": "vanilla",
+    "b1": 825,
+    "b2": 771,
+    "b3": 815,
+    "b4": 865,
+    "medianNormalizedLines": 820.0,
+    "medianOriginalBytes": 18766.0,
+    "medianNormalizedBytes": 23747.0
+  },
+  {
+    "framework": "react-router",
+    "b1": 1029,
+    "b2": 1071,
+    "b3": 1167,
+    "b4": 1009,
+    "medianNormalizedLines": 1050.0,
+    "medianOriginalBytes": 18519.0,
+    "medianNormalizedBytes": 27021.5
+  },
+  {
+    "framework": "sveltekit",
+    "b1": 940,
+    "b2": 946,
+    "b3": 959,
+    "b4": 981,
+    "medianNormalizedLines": 952.5,
+    "medianOriginalBytes": 19553.5,
+    "medianNormalizedBytes": 25730.5
+  },
+  {
+    "framework": "nuxt",
+    "b1": 997,
+    "b2": 1031,
+    "b3": 981,
+    "b4": 989,
+    "medianNormalizedLines": 993.0,
+    "medianOriginalBytes": 18862.5,
+    "medianNormalizedBytes": 25970.0
+  },
+  {
+    "framework": "angular",
+    "b1": 1890,
+    "b2": 1343,
+    "b3": 1392,
+    "b4": 1711,
+    "medianNormalizedLines": 1551.5,
+    "medianOriginalBytes": 43017.0,
+    "medianNormalizedBytes": 48886.5
+  }
+]

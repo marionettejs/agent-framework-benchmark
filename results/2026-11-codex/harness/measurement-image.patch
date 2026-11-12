@@ -1,0 +1,75 @@
+--- a/bench/stack.mjs
++++ b/bench/stack.mjs
+@@ -115,11 +115,29 @@
+     const app = start('App', 'npm', ['start'], { cwd: appDir, env });
+     procs.push(app);
+     await waitFor(`http://localhost:${APP_PORT}/`, app);
+-    // Chrome accepts certificates whose key hash is listed here. Unlike --ignore-certificate-errors,
+-    // this keeps Chrome's normal HTTP cache and resource priorities.
+-    const spki = (file) => crypto.createHash('sha256').update(new crypto.X509Certificate(fs.readFileSync(file)).publicKey.export({ type: 'spki', format: 'der' })).digest('base64');
+-    const chromeCertFlag = `--ignore-certificate-errors-spki-list=${[CADDY_ROOT_CERT, CADDY_INTERMEDIATE_CERT].map(spki).join(',')}`;
+-    return { chromeCertFlag, stop };
++    // Local trust adapter: trust only this disposable container's generated public root.
++    // No host store, certificate-error flag, TLS verification toggle or browser warning bypass.
++    const nss = path.join(process.env.HOME, '.local/share/pki/nssdb');
++    if (fs.existsSync(path.join(nss, 'cert9.db'))) throw new Error('Unexpected pre-existing NSS database; no trust modification');
++    fs.mkdirSync(nss, { recursive: true, mode: 0o700 });
++    for (const args of [
++      ['-N', '-d', `sql:${nss}`, '--empty-password'],
++      ['-d', `sql:${nss}`, '-A', '-t', 'C,,', '-n', 'pokedex-local-ca', '-i', CADDY_ROOT_CERT],
++    ]) {
++      const result = spawnSync('certutil', args, { stdio: 'inherit' });
++      if (result.status !== 0) throw new Error(`Container-local NSS setup failed: ${result.status}`);
++    }
++    const trustMetadata = {
++      method: 'Chromium Linux NSS Shared DB, SSL-server CA trust C,,',
++      database: nss,
++      publicRoot: CADDY_ROOT_CERT,
++      rootFingerprint256: new crypto.X509Certificate(fs.readFileSync(CADDY_ROOT_CERT)).fingerprint256,
++      hostTrustChanged: false,
++      certificateErrorBypass: false,
++      normalCertificateAndHostnameVerification: true,
++      scope: 'fresh disposable measurement container only; deleted with container',
++    };
++    return { trustMetadata, stop };
+   } catch (err) {
+     await stop();
+     throw err;
+--- a/bench/measure.mjs
++++ b/bench/measure.mjs
+@@ -134,11 +134,23 @@
+ const results = { appDir, measuredAt: new Date().toISOString(), runs: RUNS };
+ console.log(`Measuring ${appDir}`);
+ const stack = await startStack(appDir, { build: !args.includes('--skip-build') });
+-CHROME_FLAGS.push(stack.chromeCertFlag);
++results.trust = stack.trustMetadata;
+ try {
+   console.log('Lighthouse:');
+   results.lighthouse = await runLighthouse();
+   results.code = codeStats();
++  // Extra qualification proof after all timed samples; no effect on sample warmups.
++  const browser = await chromium.launch({ headless: true, executablePath: CHROME });
++  try {
++    const page = await browser.newPage();
++    const cdp = await page.context().newCDPSession(page);
++    await cdp.send('Network.enable');
++    let protocol = null;
++    cdp.on('Network.responseReceived', (event) => { if (event.type === 'Document' && event.response.url === APP_ORIGIN + '/') protocol = event.response.protocol; });
++    const response = await page.goto(APP_ORIGIN, { waitUntil: 'domcontentloaded' });
++    results.httpsQualification = { origin: APP_ORIGIN, status: response.status(), security: await response.securityDetails(), protocol, bypassFlags: [] };
++    if (protocol !== 'h2' || !results.httpsQualification.security) throw new Error('Verified HTTPS/HTTP2 qualification not established');
++  } finally { await browser.close(); }
+ } finally {
+   await stack.stop();
+ }
+--- a/bench/container/Containerfile.measure
++++ b/bench/container/Containerfile.measure
+@@ -6,7 +6,7 @@
+ 
+ USER root
+ RUN apt-get update \
+- && apt-get install -y --no-install-recommends caddy \
++ && apt-get install -y --no-install-recommends caddy libnss3-tools \
+  && install -d -o agent -g agent /home/agent/bench \
+  && rm -rf /var/lib/apt/lists/*
+ 

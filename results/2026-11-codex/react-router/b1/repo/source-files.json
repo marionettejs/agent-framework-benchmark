@@ -1,0 +1,46 @@
+{
+  "files": {
+    "app/api.server.ts": {
+      "sha256": "8d3b09da05e806c97a4ee73a442064a69a5d074e34e0e6b2670f86ffebefc8c1",
+      "bytes": 3721,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/page.tsx": {
+      "sha256": "ee8f1bb3a5faed24c22a34d33374ab7e81c6e2cc77e0aac6c56aa7724489f80e",
+      "bytes": 8167,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/root.tsx": {
+      "sha256": "73c879a688b6b746cc0d2e3bd969ce9790b11ca8875fffcd410d255855fab9eb",
+      "bytes": 581,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/routes.ts": {
+      "sha256": "69ea96600ca363841c8a8d80f49e6ba8b9ef7053c0d87421985dccffba946c05",
+      "bytes": 136,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/style.css": {
+      "sha256": "ab0c12495659aa743a6c60a3bfde02de231541bf4ce635cf8ec40e5dd4c4bef2",
+      "bytes": 5123,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "bae159a42ecf5c3a7ca35b49a1cf866a77bf44dbb50793b19062334f6f728e04",
+      "bytes": 105348,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "75b68aaf5a48459d7a168fbd86da5cbe354aecaeefc2d0b5a04883f34f4abfe4",
+      "bytes": 363,
+      "byteIdenticalGeneratedSource": true
+    },
+    "vite.config.ts": {
+      "sha256": "7700e0cbc72cccbb4eacb11e447768a6eecba0a1772a99a43a007e8378a42ffc",
+      "bytes": 147,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

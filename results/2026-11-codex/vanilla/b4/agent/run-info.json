@@ -1,0 +1,42 @@
+{
+  "framework": "vanilla",
+  "build": "b4",
+  "model": "gpt-6.1-sol",
+  "effortOverride": null,
+  "serviceTierOverride": null,
+  "generationSeconds": 271.92777362,
+  "generationTimingField": "native-session-result.json elapsed_seconds",
+  "generationTimeoutSeconds": 14400,
+  "cli": "0.166.0",
+  "node": "24.22.1",
+  "resources": {
+    "cpus": 4,
+    "memoryGiB": 8
+  },
+  "installed": {
+    "vite": "8.3.5"
+  },
+  "routeSamples": {
+    "home/mobile": 5,
+    "home-filtered/mobile": 5,
+    "pokemon/mobile": 5,
+    "move/mobile": 5,
+    "ability/mobile": 5,
+    "type/mobile": 5
+  },
+  "measurementExit": 0,
+  "promptSha256": "f495913de52cab3c6f78d126cc8b664c2dfc20ebf0621c28acb0a677cc6c5824",
+  "httpsQualification": {
+    "origin": "https://app.localhost:8443",
+    "status": 200,
+    "security": {
+      "issuer": "Caddy Local Authority - ECC Intermediate",
+      "protocol": "TLS 1.3",
+      "subjectName": "",
+      "validFrom": 1793904376,
+      "validTo": 1793947576
+    },
+    "protocol": "h2",
+    "bypassFlags": []
+  }
+}

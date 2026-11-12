@@ -1,0 +1,80 @@
+{
+  "same_session": true,
+  "gate": "PASS",
+  "skills": [
+    {
+      "name": "imagegen",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "openai-docs",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "review-agent",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "skill-creator",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    },
+    {
+      "name": "skill-installer",
+      "scope": "system",
+      "enabled": true,
+      "pluginId": null
+    }
+  ],
+  "servers": [
+    {
+      "name": "nuxt",
+      "runtime_status_snapshot": "connected",
+      "plugin_id": null,
+      "origin": "https://nuxt.com",
+      "server_info": {
+        "name": "Nuxt",
+        "version": "1.0.0"
+      },
+      "advertised_tools": [
+        "get-blog-post",
+        "get-changelog",
+        "get-deploy-provider",
+        "get-documentation-page",
+        "get-getting-started-guide",
+        "get-module",
+        "get-nuxter",
+        "list-blog-posts",
+        "list-deploy-providers",
+        "list-documentation-pages",
+        "list-modules",
+        "list-nuxters"
+      ]
+    }
+  ],
+  "catalog_provenance": null,
+  "handshake_evidence": "Native tool advertisement/capabilities, not captured wire messages",
+  "wire_messages_captured": false,
+  "native_configuration": {
+    "model": null,
+    "model_reasoning_effort": null,
+    "service_tier": null,
+    "web_search": null,
+    "agents": null
+  },
+  "native_multi_agent_mode": "explicitRequestOnly",
+  "context_controls": {
+    "fresh_home": true,
+    "remote_plugin": false,
+    "apps": false,
+    "frozen_cloud_skills": []
+  },
+  "observed_completed_mcp_calls": []
+}

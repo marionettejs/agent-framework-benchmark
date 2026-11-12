@@ -1,0 +1,16 @@
+@if(error()){<app-not-found />} @else if(species();as s){@if(pokemon();as p){
+<div class="pokemon-summary">
+<img class="artwork" [src]="p.sprites.other['official-artwork'].front_default" [alt]="english(s)" width="288" height="288" />
+<div class="summary-text"><div class="dex">{{dex(s.id)}}</div><h1>{{english(s)}}</h1>
+<p class="muted genus">{{s.genera.find(g=>g.language.name==='en')?.genus}}</p>
+<div class="badges">@for(t of p.types;track t.slot){<a class="badge" [style.background]="'var(--type-'+t.type.name+')'" [routerLink]="['/types',t.type.name]">{{human(t.type.name)}}</a>}</div>
+<dl class="summary-values"><div><dt>Height</dt><dd>{{(p.height/10).toFixed(1)}} m</dd></div><div><dt>Weight</dt><dd>{{(p.weight/10).toFixed(1)}} kg</dd></div></dl>
+<p>{{flavor(s)}}</p></div></div>
+<section aria-labelledby="stats-heading"><h2 id="stats-heading">Base stats</h2><table class="stats"><tbody>
+@for(stat of p.stats;track stat.stat.name){<tr><th scope="row">{{labels[stat.stat.name]}}</th><td>{{stat.base_stat}}</td><td><div class="stat-track"><div class="stat-bar" [style.width.%]="stat.base_stat/255*100"></div></div></td></tr>}
+<tr class="total"><th scope="row">Total</th><td>{{total(p)}}</td><td><div class="stat-track"><div class="stat-bar" [style.width.%]="total(p)/1530*100"></div></div></td></tr>
+</tbody></table></section>
+<section aria-labelledby="abilities-heading"><h2 id="abilities-heading">Abilities</h2><ul>@for(a of p.abilities;track a.slot){<li><a [routerLink]="['/abilities',a.ability.name]">{{human(a.ability.name)}}</a>@if(a.is_hidden){ (hidden)}</li>}</ul></section>
+<section aria-labelledby="evolution-heading"><h2 id="evolution-heading">Evolution</h2>@if(chain();as c){<app-evolution [nodes]="[c]" />}</section>
+<section id="moves" aria-labelledby="moves-heading"><h2 id="moves-heading">Moves</h2><app-move-tables [pokemon]="p" /></section>
+}} @else {<p role="status">Loading Pokémon…</p>}

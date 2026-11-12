@@ -1,0 +1,543 @@
+import { Link, useSearchParams } from "react-router";
+import { useState } from "react";
+import { load } from "./api.server";
+import type { Route } from "./+types/page";
+export const loader = ({ request, params }: Route.LoaderArgs) =>
+  load(request, params);
+export const meta = ({ loaderData }: any) => [
+  {
+    title:
+      loaderData?.kind === "home"
+        ? "Pokédex"
+        : (loaderData?.title || "Not found") + " – Pokédex",
+  },
+];
+const human = (s: string) =>
+  s
+    .split("-")
+    .map((w) => w[0]?.toUpperCase() + w.slice(1))
+    .join(" ");
+const en = (r: any) =>
+  r.names?.find((n: any) => n.language.name === "en")?.name || human(r.name);
+const flavor = (r: any) =>
+  r.flavor_text_entries
+    ?.filter((x: any) => x.language.name === "en")
+    .at(-1)
+    ?.flavor_text.replace(/\s+/g, " ") || "—";
+const effect = (r: any) =>
+  r.effect_entries?.find((x: any) => x.language.name === "en")?.short_effect ||
+  flavor(r);
+const dex = (n: number) => "#" + String(n).padStart(4, "0");
+function Badge({ name, label, link = true }: any) {
+  const content = label || human(name);
+  return link ? (
+    <Link
+      className="badge"
+      style={{ background: `var(--type-${name})` }}
+      to={"/types/" + name}
+    >
+      {content}
+    </Link>
+  ) : (
+    <span className="badge" style={{ background: `var(--type-${name})` }}>
+      {content}
+    </span>
+  );
+}
+function Section({ name, children }: any) {
+  const id = name.toLowerCase().replaceAll(" ", "-");
+  return (
+    <section id={id} aria-labelledby={id + "-heading"}>
+      <h2 id={id + "-heading"}>{name}</h2>
+      {children}
+    </section>
+  );
+}
+function Cards({ items }: any) {
+  return (
+    <ul className="cards">
+      {items.map((c: any) => (
+        <li key={c.id}>
+          <Link to={"/pokemon/" + c.name}>
+            <img src={c.sprite} alt={human(c.name)} />
+            <span className="dex">{dex(c.id)}</span>
+            <span>{human(c.name)}</span>
+            {c.types?.length > 0 && (
+              <span className="badges">
+                {c.types.map((t: string) => (
+                  <Badge key={t} name={t} link={false} />
+                ))}
+              </span>
+            )}
+            {c.hidden && <small>Hidden ability</small>}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+function Evolution({ chain }: any) {
+  return (
+    <ul>
+      <li>
+        <Link to={"/pokemon/" + chain.species.name}>
+          {human(chain.species.name)}
+        </Link>
+        {chain.evolves_to.length > 0 && (
+          <ul>
+            {chain.evolves_to.map((c: any) => (
+              <EvolutionItem key={c.species.name} chain={c} />
+            ))}
+          </ul>
+        )}
+      </li>
+    </ul>
+  );
+}
+function EvolutionItem({ chain }: any) {
+  return (
+    <li>
+      <Link to={"/pokemon/" + chain.species.name}>
+        {human(chain.species.name)}
+      </Link>
+      {chain.evolves_to.length > 0 && (
+        <ul>
+          {chain.evolves_to.map((c: any) => (
+            <EvolutionItem key={c.species.name} chain={c} />
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+}
+function MoveTable({ method, rows, typeNames }: any) {
+  const [sort, setSort] = useState<any>(null);
+  const level = method === "level-up";
+  const cols = [
+    ...(level ? ["Level"] : []),
+    "Move",
+    "Type",
+    "Category",
+    "Power",
+    "Accuracy",
+    "PP",
+  ];
+  const value = (r: any, k: string) =>
+    k === "Level"
+      ? r.level
+      : k === "Move"
+        ? en(r.move)
+        : k === "Type"
+          ? typeNames[r.move.type.name]
+          : k === "Category"
+            ? human(r.move.damage_class.name)
+            : r.move[k.toLowerCase()];
+  const ordered = [...rows].sort((a, b) => {
+    if (sort) {
+      const x = value(a, sort.key),
+        y = value(b, sort.key);
+      if (x == null) return y == null ? 0 : 1;
+      if (y == null) return -1;
+      const c =
+        typeof x === "number" ? x - y : String(x).localeCompare(String(y));
+      return sort.desc ? -c : c;
+    }
+    return (
+      (level ? a.level - b.level : 0) || en(a.move).localeCompare(en(b.move))
+    );
+  });
+  return (
+    <div className="table-wrap">
+      <table className="moves-table">
+        <caption>{human(method)}</caption>
+        <thead>
+          <tr>
+            {cols.map((k) => (
+              <th
+                key={k}
+                aria-sort={
+                  sort?.key === k
+                    ? sort.desc
+                      ? "descending"
+                      : "ascending"
+                    : undefined
+                }
+              >
+                <button
+                  onClick={() =>
+                    setSort({
+                      key: k,
+                      desc: sort?.key === k ? !sort.desc : false,
+                    })
+                  }
+                >
+                  {k}
+                </button>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {ordered.map((r: any, i: number) => (
+            <tr key={r.move.name + "-" + i}>
+              {cols.map((k) => (
+                <td key={k}>
+                  {k === "Move" ? (
+                    <Link to={"/moves/" + r.move.name}>{en(r.move)}</Link>
+                  ) : k === "Type" ? (
+                    <Badge
+                      name={r.move.type.name}
+                      label={typeNames[r.move.type.name]}
+                    />
+                  ) : (
+                    (value(r, k) ?? "—")
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+export default function Page({ loaderData: d }: any) {
+  const [params, setParams] = useSearchParams();
+  const change = (key: string, val: string) => {
+    const p = new URLSearchParams(params);
+    val ? p.set(key, val) : p.delete(key);
+    if (key !== "game") p.delete("page");
+    setParams(p, { preventScrollReset: key === "game" });
+  };
+  if (d.kind === "home") {
+    const pageLink = (n: number) => {
+      const p = new URLSearchParams(params);
+      n === 1 ? p.delete("page") : p.set("page", String(n));
+      return "/" + (p.size ? "?" + p : "");
+    };
+    return (
+      <>
+        <h1>Pokémon</h1>
+        <div className="filters">
+          <div>
+            <label htmlFor="search">Search</label>
+            <input
+              id="search"
+              type="search"
+              defaultValue={params.get("q") || ""}
+              onChange={(e) => change("q", e.target.value)}
+            />
+          </div>
+          <div>
+            <label htmlFor="type">Type</label>
+            <select
+              id="type"
+              value={params.get("type") || ""}
+              onChange={(e) => change("type", e.target.value)}
+            >
+              <option value="">All types</option>
+              {d.types.map((t: any) => (
+                <option key={t.name} value={t.name}>
+                  {t.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label htmlFor="generation">Generation</label>
+            <select
+              id="generation"
+              value={params.get("generation") || ""}
+              onChange={(e) => change("generation", e.target.value)}
+            >
+              <option value="">All generations</option>
+              {d.generations.map((t: any) => (
+                <option key={t.name} value={t.name}>
+                  {t.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+        <p className="count">{d.count} Pokémon</p>
+        {d.count ? <Cards items={d.cards} /> : <p>No Pokémon found</p>}
+        <div className="pagination">
+          {d.page > 1 && <Link to={pageLink(d.page - 1)}>Previous page</Link>}
+          <span>
+            Page {d.page} of {d.pages}
+          </span>
+          {d.page < d.pages && <Link to={pageLink(d.page + 1)}>Next page</Link>}
+        </div>
+      </>
+    );
+  }
+  if (d.kind === "types")
+    return (
+      <>
+        <h1>Types</h1>
+        <ul className="type-list">
+          {d.types.map((t: any) => (
+            <li key={t.name}>
+              <Badge name={t.name} label={en(t)} />
+            </li>
+          ))}
+        </ul>
+      </>
+    );
+  if (d.kind === "pokemon") {
+    const { p, s } = d;
+    const methods: any = {};
+    for (const m of d.moves)
+      for (const v of m.details) {
+        const method = v.move_learn_method.name;
+        (methods[method] ||= []).push({
+          move: m.move,
+          level: v.level_learned_at,
+        });
+      }
+    const priority = ["level-up", "machine", "egg", "tutor"];
+    const names = Object.keys(methods).sort(
+      (a, b) =>
+        (priority.includes(a) ? priority.indexOf(a) : 99) -
+          (priority.includes(b) ? priority.indexOf(b) : 99) ||
+        a.localeCompare(b),
+    );
+    return (
+      <>
+        <div className="summary">
+          <img
+            className="artwork"
+            src={
+              p.sprites.other["official-artwork"].front_default ||
+              p.sprites.front_default
+            }
+            alt={d.title}
+          />
+          <div>
+            <span className="dex">{dex(s.id)}</span>
+            <h1>{d.title}</h1>
+            <p className="genus">
+              {s.genera.find((g: any) => g.language.name === "en")?.genus}
+            </p>
+            <div className="badges">
+              {p.types.map((t: any) => (
+                <Badge
+                  key={t.slot}
+                  name={t.type.name}
+                  label={d.typeNames[t.type.name]}
+                />
+              ))}
+            </div>
+            <dl className="measurements">
+              <div>
+                <dt>Height</dt>
+                <dd>{(p.height / 10).toFixed(1)} m</dd>
+              </div>
+              <div>
+                <dt>Weight</dt>
+                <dd>{(p.weight / 10).toFixed(1)} kg</dd>
+              </div>
+            </dl>
+            <p>{flavor(s)}</p>
+          </div>
+        </div>
+        <Section name="Base stats">
+          <table className="stats">
+            <tbody>
+              {p.stats.map((st: any, i: number) => (
+                <tr key={st.stat.name}>
+                  <th scope="row">
+                    {
+                      [
+                        "HP",
+                        "Attack",
+                        "Defense",
+                        "Sp. Atk",
+                        "Sp. Def",
+                        "Speed",
+                      ][i]
+                    }
+                  </th>
+                  <td>{st.base_stat}</td>
+                  <td>
+                    <div className="track">
+                      <div
+                        style={{
+                          width:
+                            Math.min(100, (st.base_stat / 255) * 100) + "%",
+                        }}
+                      />
+                    </div>
+                  </td>
+                </tr>
+              ))}
+              <tr>
+                <th scope="row">Total</th>
+                <td>
+                  {p.stats.reduce((n: number, s: any) => n + s.base_stat, 0)}
+                </td>
+                <td>
+                  <div className="track">
+                    <div
+                      style={{
+                        width:
+                          (p.stats.reduce(
+                            (n: number, s: any) => n + s.base_stat,
+                            0,
+                          ) /
+                            1530) *
+                            100 +
+                          "%",
+                      }}
+                    />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </Section>
+        <Section name="Abilities">
+          <ul>
+            {p.abilities.map((a: any) => (
+              <li key={a.slot}>
+                <Link to={"/abilities/" + a.ability.name}>
+                  {human(a.ability.name)}
+                </Link>
+                {a.is_hidden ? " (hidden)" : ""}
+              </li>
+            ))}
+          </ul>
+        </Section>
+        <Section name="Evolution">
+          <Evolution chain={d.chain} />
+        </Section>
+        <Section name="Moves">
+          <div className="game">
+            <label htmlFor="game">Game</label>
+            <select
+              id="game"
+              value={d.game || ""}
+              onChange={(e) => change("game", e.target.value)}
+            >
+              {d.games.map((g: any) => (
+                <option key={g.name} value={g.name}>
+                  {human(g.name)}
+                </option>
+              ))}
+            </select>
+          </div>
+          {names.map((method) => (
+            <MoveTable
+              key={d.game + method}
+              method={method}
+              rows={methods[method]}
+              typeNames={d.typeNames}
+            />
+          ))}
+        </Section>
+      </>
+    );
+  }
+  const r = d.r;
+  if (d.kind === "move")
+    return (
+      <>
+        <h1>{d.title}</h1>
+        <dl className="detail-list">
+          {[
+            [
+              "Type",
+              <Badge name={r.type.name} label={d.typeNames[r.type.name]} />,
+            ],
+            ["Category", human(r.damage_class.name)],
+            ["Power", r.power ?? "—"],
+            ["Accuracy", r.accuracy ?? "—"],
+            ["PP", r.pp ?? "—"],
+          ].map(([k, v]: any) => (
+            <div key={k}>
+              <dt>{k}</dt>
+              <dd>{v}</dd>
+            </div>
+          ))}
+        </dl>
+        <Section name="Effect">
+          <p>{effect(r)}</p>
+        </Section>
+        <Section name="Learned by">
+          <p className="count">{d.cards.length} Pokémon</p>
+          <Cards items={d.cards} />
+        </Section>
+      </>
+    );
+  if (d.kind === "ability")
+    return (
+      <>
+        <h1>{d.title}</h1>
+        <Section name="Effect">
+          <p>{effect(r)}</p>
+        </Section>
+        <Section name="Pokémon">
+          <p className="count">{d.cards.length} Pokémon</p>
+          <Cards items={d.cards} />
+        </Section>
+      </>
+    );
+  return (
+    <>
+      <h1>{d.title}</h1>
+      <Section name="Damage relations">
+        <dl className="relations">
+          {[
+            ["Super effective against", "double_damage_to"],
+            ["Not very effective against", "half_damage_to"],
+            ["No effect against", "no_damage_to"],
+            ["Weak to", "double_damage_from"],
+            ["Resists", "half_damage_from"],
+            ["Immune to", "no_damage_from"],
+          ].map(([label, key]) => (
+            <div key={key}>
+              <dt>{label}</dt>
+              <dd>
+                {r.damage_relations[key].length
+                  ? r.damage_relations[key].map((t: any) => (
+                      <Badge
+                        key={t.name}
+                        name={t.name}
+                        label={d.typeNames[t.name]}
+                      />
+                    ))
+                  : "None"}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
+      <Section name="Pokémon">
+        <p className="count">{d.cards.length} Pokémon</p>
+        <Cards items={d.cards} />
+      </Section>
+      <Section name="Moves">
+        <p className="count">{r.moves.length} moves</p>
+        <ul className="move-list">
+          {[...r.moves]
+            .sort((a, b) => human(a.name).localeCompare(human(b.name)))
+            .map((m: any) => (
+              <li key={m.name}>
+                <Link to={"/moves/" + m.name}>{human(m.name)}</Link>
+              </li>
+            ))}
+        </ul>
+      </Section>
+    </>
+  );
+}
+export function ErrorBoundary() {
+  return (
+    <>
+      <h1>Not found</h1>
+      <p>
+        <Link to="/">Back to Pokémon</Link>
+      </p>
+    </>
+  );
+}

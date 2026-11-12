@@ -1,0 +1,56 @@
+{
+  "files": {
+    "package-lock.json": {
+      "sha256": "d7135a46cec6e9b51c09efa53f98398bfcea7ec7df8bd69fe1acbc203c7275f5",
+      "bytes": 38346,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "1ec0f51009926844a45ba91d1ff523c84a84abaa89c9b0f012704b4256654156",
+      "bytes": 419,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app.html": {
+      "sha256": "348275e8b35985ec780a545748e87b299cba99cf975fd6b3a9f9bd23b33650b8",
+      "bytes": 262,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/Cards.svelte": {
+      "sha256": "6dd3ef2eafb624bf001c82dfbf75ed358aa3fa68a52638db46cd6f582fba37e5",
+      "bytes": 562,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/MoveTable.svelte": {
+      "sha256": "747bc233607fd06d951f79fa0e25b99c1a1b3a5281c1358fb73f14390eaf71c6",
+      "bytes": 1262,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/app.css": {
+      "sha256": "a183ea13efd99d3120ade57cab17ad4fd4e288528c083ca4d7da38b9b1dec505",
+      "bytes": 5425,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/utils.js": {
+      "sha256": "118f122e90ad369fa056e1b0872855b47d5e35f56a98ff3eb63a8b44a8e9f21f",
+      "bytes": 435,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/routes/[...path]/+page.server.js": {
+      "sha256": "03ff5e4b04995ab9fdf67196dcceef432eb3dd1d5e0dfd8bd00eea0d3d93b499",
+      "bytes": 4797,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/routes/[...path]/+page.svelte": {
+      "sha256": "25cbeff86c451dce398aa2c7a63591face0cc1b1bc9bc185db76c12860a3b550",
+      "bytes": 6700,
+      "byteIdenticalGeneratedSource": true
+    },
+    "vite.config.js": {
+      "sha256": "c0bb299a18e4573eb5dd97ce676820a91a47b9e26818a55cf95c2ab943a56042",
+      "bytes": 207,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

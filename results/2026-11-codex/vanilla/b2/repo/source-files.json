@@ -1,0 +1,41 @@
+{
+  "files": {
+    ".gitignore": {
+      "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+      "bytes": 20,
+      "byteIdenticalGeneratedSource": true
+    },
+    "index.html": {
+      "sha256": "f135183e8da3d22b39a92da034dfb31fb12df63df8bc7520248deb29d2cd39d3",
+      "bytes": 519,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "a4802ddfc420447ca0275f342bcb9f0ec4be771aed1c639e20f1a3f385f2aa9d",
+      "bytes": 25327,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "c2f81cb6fcab5fde85c9f23016fc096ea3baf39b85bac1ee1cb26e280126b1de",
+      "bytes": 144,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server.mjs": {
+      "sha256": "cc850e0bd38d89436e375e4914e360ea525ca0b3ef2a23dd9fa248d5ca5e0cf6",
+      "bytes": 783,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src.js": {
+      "sha256": "c7edac3f7b02356d127a95ebf0d173a5df65f992990698cfd3dd07e3195fea7b",
+      "bytes": 11216,
+      "byteIdenticalGeneratedSource": true
+    },
+    "style.css": {
+      "sha256": "bde55d84aa07a10ccc2a03eea0dd78b8bae97915abd1573022f30924df942f02",
+      "bytes": 5182,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

@@ -1,0 +1,14 @@
+<h1>Pokémon</h1>
+@if(ready()) {
+<div class="filters">
+<div><label for="search">Search</label><input id="search" type="search" [formField]="form.q" /></div>
+<div><label for="type">Type</label><select id="type" [formField]="form.type"><option value="">All types</option>@for(type of types(); track type.id){<option [value]="type.name">{{english(type)}}</option>}</select></div>
+<div><label for="generation">Generation</label><select id="generation" [formField]="form.generation"><option value="">All generations</option>@for(gen of generations(); track gen.id){<option [value]="gen.name">{{english(gen)}}</option>}</select></div>
+</div>
+<p class="count">{{matches().length}} Pokémon</p>
+@if(!loading()){
+@if(matches().length){<app-cards [cards]="cards()" />
+<div class="pagination"><span>Page {{page()}} of {{pages()}}</span>@if(page()>1){<a routerLink="/" [queryParams]="params(page()-1)">Previous page</a>}@if(page()<pages()){<a routerLink="/" [queryParams]="params(page()+1)">Next page</a>}</div>
+} @else {<p>No Pokémon found</p>}
+} @else {<p role="status">Loading Pokémon…</p>}
+} @else {<p role="status">Loading Pokémon…</p>}

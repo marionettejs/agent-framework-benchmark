@@ -1,0 +1,45 @@
+{
+  "files": {
+    "index.html": {
+      "sha256": "ac02bcac2f760eb1b36d263dab3603a87dd7da2ccbdbc06374e85f8c7fa9a9af",
+      "bytes": 290,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "feb0dc5ae128239d20d7ac7889d11a148bf59b8b07b7b03dbe087b5007e05066",
+      "bytes": 30222,
+      "originalSha256": "b671dadc64ce6b02ff805f7f7f1e67529a52c6848ad6137a1dafd026584b0379",
+      "byteIdenticalGeneratedSource": false,
+      "publicationAdaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    "package.json": {
+      "sha256": "7b534de1ad265f83918ebe9852e12bbf3c5ca9e765f7bce204b0325887c2fad2",
+      "bytes": 259,
+      "originalSha256": "4389093012c4673bb06ac881b2baa4da0940a23dee799472a7cdb74479d6958f",
+      "byteIdenticalGeneratedSource": false,
+      "publicationAdaptation": "Local archive references replaced by exact public registry version/URL; integrity and package contents unchanged."
+    },
+    "server.mjs": {
+      "sha256": "d3522299717aca45efe7c419ff9ffb4540b09cd128bb90900587f1523ec13eb3",
+      "bytes": 1157,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/api.js": {
+      "sha256": "9077331ff4426a24dc809e5bcddbd27d4da65bf917e474a65d4200b4cc2adfe1",
+      "bytes": 1416,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/main.js": {
+      "sha256": "cb0fd002e8df3396e0c1549ed260fe101b45f3995e441b735fca181685b31eeb",
+      "bytes": 16394,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/style.css": {
+      "sha256": "d27f536b26f5272162d0219173f634e991865b3f88186e5a1b03fcafafcdeee3",
+      "bytes": 6764,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

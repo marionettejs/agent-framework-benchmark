@@ -1,0 +1,415 @@
+import "./style.css";
+const base = window.API_BASE_URL,
+  main = document.querySelector("main"),
+  cache = new Map();
+const esc = (s) =>
+  String(s ?? "").replace(
+    /[&<>"']/g,
+    (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
+  );
+const human = (s) =>
+  s
+    .split("-")
+    .map((s) => (s[0]?.toUpperCase() || "") + s.slice(1))
+    .join(" ");
+const english = (r) =>
+  r.names?.find((x) => x.language.name === "en")?.name || human(r.name);
+const id = (r) => Number(r.url.match(/\/(\d+)\/?$/)[1]);
+const get = (p) => {
+  const url = p.startsWith("http") ? p : base + "/api/v2/" + p;
+  if (!cache.has(url))
+    cache.set(
+      url,
+      fetch(url).then((r) => {
+        if (!r.ok) throw Error("Not found");
+        return r.json();
+      }),
+    );
+  return cache.get(url);
+};
+const all = async (r) => (await get(r + "/?limit=100000")).results;
+const flavor = (r) =>
+  r.flavor_text_entries
+    ?.filter((x) => x.language.name === "en")
+    .at(-1)
+    ?.flavor_text.replace(/\s+/g, " ") || "—";
+const effect = (r) =>
+  r.effect_entries?.find((x) => x.language.name === "en")?.short_effect ||
+  flavor(r);
+const value = (v) => v ?? "—";
+const link = (kind, name, label = human(name)) =>
+  `<a href="/${kind}/${esc(name)}">${esc(label)}</a>`;
+let typeData = [];
+let species = [];
+const badge = (name, linked = true) => {
+  const txt = english(typeData.find((x) => x.name === name) || { name });
+  return linked
+    ? `<a class="badge" style="--badge:var(--type-${name})" href="/types/${name}">${esc(txt)}</a>`
+    : `<span class="badge" style="--badge:var(--type-${name})">${esc(txt)}</span>`;
+};
+const section = (title, body) =>
+  `<section aria-labelledby="${title.toLowerCase().replaceAll(" ", "-")}-heading" id="${title.toLowerCase().replaceAll(" ", "-")}"><h2 id="${title.toLowerCase().replaceAll(" ", "-")}-heading">${title}</h2>${body}</section>`;
+const dl = (entries) =>
+  `<dl>${entries.map(([k, v]) => `<div><dt>${k}</dt> <dd>${v}</dd></div>`).join("")}</dl>`;
+function cards(entries, types = false) {
+  return `<ul class="cards">${entries
+    .map((e) => {
+      const num = e.id ?? id(e.pokemon || e),
+        sp = species.find((s) => id(s) === num);
+      if (!sp) return "";
+      return `<li><a class="card" href="/pokemon/${sp.name}"><img src="${esc(e.sprites?.front_default || base + "/media/sprites/pokemon/" + num + ".png")}" alt="" width="96" height="96"><span class="dex">#${String(num).padStart(4, "0")}</span><span>${human(sp.name)}</span>${types ? `<span class="badges">${e.types.map((t) => badge(t.type.name, false)).join(" ")}</span>` : ""}${e.is_hidden ? '<span class="hidden">Hidden ability</span>' : ""}</a></li>`;
+    })
+    .join("")}</ul>`;
+}
+const defaults = (entries) =>
+  entries
+    .filter((e) => id(e.pokemon || e) < 10000)
+    .sort((a, b) => id(a.pokemon || a) - id(b.pokemon || b));
+function heading(title) {
+  document.title = location.pathname === "/" ? "Pokédex" : title + " – Pokédex";
+  return `<h1>${esc(title)}</h1>`;
+}
+function query(changes) {
+  const u = new URL(location.href);
+  for (const [k, v] of Object.entries(changes))
+    v ? u.searchParams.set(k, v) : u.searchParams.delete(k);
+  history.pushState({}, "", u);
+}
+let renderVersion = 0;
+async function home() {
+  const generations = await Promise.all(
+    (await all("generation")).map((r) => get(r.url)),
+  );
+  main.innerHTML =
+    heading("Pokémon") +
+    `<form class="filters"><label>Search<input name="q" type="search"></label><label>Type<select name="type" aria-label="Type"><option value="">All types</option>${typeData.map((t) => `<option value="${t.name}">${english(t)}</option>`).join("")}</select></label><label>Generation<select name="generation" aria-label="Generation"><option value="">All generations</option></select></label></form><div id="results"></div>`;
+  const form = main.querySelector("form");
+  form.generation.innerHTML += generations
+    .map((g) => `<option value="${g.name}">${english(g)}</option>`)
+    .join("");
+  const params = new URLSearchParams(location.search);
+  for (const k of ["q", "type", "generation"])
+    form.elements[k].value = params.get(k) || "";
+  form.onsubmit = (e) => e.preventDefault();
+  let timer;
+  form.oninput = (e) => {
+    clearTimeout(timer);
+    timer = setTimeout(
+      () => {
+        query({
+          q: form.q.value,
+          type: form.type.value,
+          generation: form.generation.value,
+          page: "",
+        });
+        results();
+      },
+      e.target.type === "search" ? 120 : 0,
+    );
+  };
+  async function results() {
+    const version = ++renderVersion,
+      p = new URLSearchParams(location.search);
+    let list = species.filter((s) =>
+      human(s.name)
+        .toLowerCase()
+        .includes((p.get("q") || "").toLowerCase()),
+    );
+    if (p.get("type")) {
+      const t = await get("type/" + p.get("type"));
+      const ids = new Set(t.pokemon.map((x) => id(x.pokemon)));
+      list = list.filter((s) => ids.has(id(s)));
+    }
+    if (p.get("generation")) {
+      const g = generations.find((g) => g.name === p.get("generation"));
+      const ids = new Set(g?.pokemon_species.map(id));
+      list = list.filter((s) => ids.has(id(s)));
+    }
+    const pages = Math.max(1, Math.ceil(list.length / 48)),
+      page = Math.min(pages, Math.max(1, Number(p.get("page")) || 1));
+    const records = await Promise.all(
+      list
+        .slice((page - 1) * 48, page * 48)
+        .map((s) => get("pokemon/" + id(s))),
+    );
+    if (version !== renderVersion) return;
+    const url = (n) => {
+      const q = new URLSearchParams(location.search);
+      n === 1 ? q.delete("page") : q.set("page", n);
+      return "/" + (q.size ? "?" + q : "");
+    };
+    main.querySelector("#results").innerHTML =
+      `<p class="count">${list.length} Pokémon</p>${list.length ? cards(records, true) : "<p>No Pokémon found</p>"}<div class="pagination">${page > 1 ? `<a href="${url(page - 1)}">Previous page</a>` : ""}<span>Page ${page} of ${pages}</span>${page < pages ? `<a href="${url(page + 1)}">Next page</a>` : ""}</div>`;
+  }
+  await results();
+}
+function evolution(n) {
+  return `<ul><li>${link("pokemon", n.species.name)}${n.evolves_to.length ? n.evolves_to.map(evolution).join("") : ""}</li></ul>`;
+}
+async function pokemon(name) {
+  const s = await get("pokemon-species/" + name),
+    p = await get("pokemon/" + s.id),
+    chain = await get(s.evolution_chain.url);
+  const title = english(s);
+  const labels = ["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"];
+  const stats = p.stats.map((s, i) => [labels[i], s.base_stat]);
+  stats.push(["Total", stats.reduce((a, s) => a + s[1], 0)]);
+  main.innerHTML =
+    `<div class="summary"><img class="artwork" src="${esc(p.sprites.other["official-artwork"].front_default)}" alt="${esc(title)}"><div><span class="dex">#${String(s.id).padStart(4, "0")}</span>${heading(title)}<p class="genus">${esc(s.genera.find((x) => x.language.name === "en")?.genus || "")}</p><div>${p.types.map((t) => badge(t.type.name)).join(" ")}</div>${dl(
+      [
+        ["Height", (p.height / 10).toFixed(1) + " m"],
+        ["Weight", (p.weight / 10).toFixed(1) + " kg"],
+      ],
+    )}<p>${esc(flavor(s))}</p></div></div>` +
+    section(
+      "Base stats",
+      `<table class="stats"><tbody>${stats.map(([k, v]) => `<tr><th scope="row">${k}</th><td>${v}</td><td><div class="track"><div style="width:${(v / (k === "Total" ? 720 : 255)) * 100}%"></div></div></td></tr>`).join("")}</tbody></table>`,
+    ) +
+    section(
+      "Abilities",
+      `<ul>${p.abilities
+        .sort((a, b) => a.slot - b.slot)
+        .map(
+          (a) =>
+            `<li>${link("abilities", a.ability.name)}${a.is_hidden ? " (hidden)" : ""}</li>`,
+        )
+        .join("")}</ul>`,
+    ) +
+    section("Evolution", evolution(chain.chain)) +
+    section("Moves", '<div id="move-content"></div>');
+  await moves(p);
+  if (location.hash === "#moves")
+    document.querySelector("#moves").scrollIntoView();
+}
+async function moves(p) {
+  const games = [
+    ...new Set(
+      p.moves.flatMap((m) =>
+        m.version_group_details.map((v) => v.version_group.name),
+      ),
+    ),
+  ];
+  const versions = (
+    await Promise.all(games.map((g) => get("version-group/" + g)))
+  ).sort((a, b) => a.order - b.order);
+  const host = document.querySelector("#move-content");
+  let game = new URLSearchParams(location.search).get("game");
+  if (!games.includes(game)) game = versions.at(-1)?.name;
+  host.innerHTML = `<label class="game">Game <select aria-label="Game">${versions.map((v) => `<option value="${v.name}" ${v.name === game ? "selected" : ""}>${human(v.name)}</option>`).join("")}</select></label><div id="tables"></div>`;
+  host.querySelector("select").onchange = (e) => {
+    game = e.target.value;
+    query({ game });
+    tables();
+  };
+  async function tables() {
+    const groups = new Map();
+    await Promise.all(
+      p.moves.map(async (m) => {
+        const details = m.version_group_details.filter(
+          (d) => d.version_group.name === game,
+        );
+        if (!details.length) return;
+        const move = await get(m.move.url);
+        for (const d of details) {
+          const method = d.move_learn_method.name;
+          if (!groups.has(method)) groups.set(method, []);
+          groups.get(method).push({
+            level: d.level_learned_at,
+            move: english(move),
+            name: move.name,
+            type: english(
+              typeData.find((t) => t.name === move.type.name) || move.type,
+            ),
+            typeName: move.type.name,
+            category: human(move.damage_class.name),
+            power: move.power,
+            accuracy: move.accuracy,
+            pp: move.pp,
+          });
+        }
+      }),
+    );
+    const priority = ["level-up", "machine", "egg", "tutor"];
+    const methods = [...groups.keys()].sort(
+      (a, b) =>
+        (priority.includes(a) ? priority.indexOf(a) : 4) -
+          (priority.includes(b) ? priority.indexOf(b) : 4) ||
+        a.localeCompare(b),
+    );
+    const target = host.querySelector("#tables");
+    target.innerHTML = "";
+    for (const method of methods) {
+      const cols = [
+        ...(method === "level-up" ? ["Level"] : []),
+        "Move",
+        "Type",
+        "Category",
+        "Power",
+        "Accuracy",
+        "PP",
+      ];
+      const keys = cols.map((c) => c.toLowerCase());
+      let rows = groups
+        .get(method)
+        .sort(
+          (a, b) =>
+            (method === "level-up" ? a.level - b.level : 0) ||
+            a.move.localeCompare(b.move),
+        );
+      const wrap = document.createElement("div");
+      wrap.className = "table-wrap";
+      const table = document.createElement("table");
+      table.innerHTML = `<caption>${human(method)}</caption><thead><tr>${cols.map((c) => `<th scope="col"><button type="button">${c}</button></th>`).join("")}</tr></thead><tbody></tbody>`;
+      let current = "",
+        direction = 1;
+      const draw = () => {
+        table.querySelector("tbody").innerHTML = rows
+          .map(
+            (r) =>
+              `<tr>${keys.map((k) => `<td>${k === "move" ? link("moves", r.name, r.move) : k === "type" ? badge(r.typeName) : esc(value(r[k]))}</td>`).join("")}</tr>`,
+          )
+          .join("");
+      };
+      table.querySelectorAll("th").forEach(
+        (th, i) =>
+          (th.onclick = () => {
+            const key = keys[i];
+            direction = current === key ? -direction : 1;
+            current = key;
+            table
+              .querySelectorAll("th")
+              .forEach((t) => t.removeAttribute("aria-sort"));
+            th.setAttribute(
+              "aria-sort",
+              direction === 1 ? "ascending" : "descending",
+            );
+            rows.sort((a, b) =>
+              a[key] == null
+                ? b[key] == null
+                  ? 0
+                  : 1
+                : b[key] == null
+                  ? -1
+                  : direction *
+                    (typeof a[key] === "number"
+                      ? a[key] - b[key]
+                      : a[key].localeCompare(b[key])),
+            );
+            draw();
+          }),
+      );
+      draw();
+      wrap.append(table);
+      target.append(wrap);
+    }
+  }
+  await tables();
+}
+async function detail(kind, name) {
+  const resource = { moves: "move", abilities: "ability", types: "type" }[kind],
+    r = await get(resource + "/" + name);
+  main.innerHTML = heading(english(r));
+  if (kind === "moves") {
+    main.innerHTML +=
+      dl([
+        ["Type", badge(r.type.name)],
+        ["Category", human(r.damage_class.name)],
+        ["Power", value(r.power)],
+        ["Accuracy", value(r.accuracy)],
+        ["PP", value(r.pp)],
+      ]) + section("Effect", `<p>${esc(effect(r))}</p>`);
+    const entries = defaults(r.learned_by_pokemon);
+    main.innerHTML += section(
+      "Learned by",
+      `<p class="count">${entries.length} Pokémon</p>` + cards(entries),
+    );
+  }
+  if (kind === "abilities") {
+    const entries = defaults(r.pokemon);
+    main.innerHTML +=
+      section("Effect", `<p>${esc(effect(r))}</p>`) +
+      section(
+        "Pokémon",
+        `<p class="count">${entries.length} Pokémon</p>` + cards(entries),
+      );
+  }
+  if (kind === "types") {
+    const terms = [
+        "Super effective against",
+        "Not very effective against",
+        "No effect against",
+        "Weak to",
+        "Resists",
+        "Immune to",
+      ],
+      keys = [
+        "double_damage_to",
+        "half_damage_to",
+        "no_damage_to",
+        "double_damage_from",
+        "half_damage_from",
+        "no_damage_from",
+      ];
+    const entries = defaults(r.pokemon);
+    main.innerHTML +=
+      section(
+        "Damage relations",
+        dl(
+          terms.map((t, i) => [
+            t,
+            r.damage_relations[keys[i]].map((x) => badge(x.name)).join(" ") ||
+              "None",
+          ]),
+        ),
+      ) +
+      section(
+        "Pokémon",
+        `<p class="count">${entries.length} Pokémon</p>` + cards(entries),
+      ) +
+      section(
+        "Moves",
+        `<p class="count">${r.moves.length} moves</p><ul class="move-list">${r.moves
+          .sort((a, b) => human(a.name).localeCompare(human(b.name)))
+          .map((m) => `<li>${link("moves", m.name)}</li>`)
+          .join("")}</ul>`,
+      );
+  }
+}
+async function render() {
+  try {
+    [species, typeData] = await Promise.all([
+      all("pokemon-species"),
+      all("type").then((ts) =>
+        Promise.all(
+          ts
+            .filter((t) => !["stellar", "unknown", "shadow"].includes(t.name))
+            .map((t) => get(t.url)),
+        ),
+      ),
+    ]);
+    species.sort((a, b) => id(a) - id(b));
+    const parts = location.pathname.split("/").filter(Boolean);
+    if (!parts.length) return await home();
+    if (parts.length === 1 && parts[0] === "types") {
+      main.innerHTML =
+        heading("Types") +
+        `<ul class="type-list">${typeData.map((t) => `<li>${badge(t.name)}</li>`).join("")}</ul>`;
+      return;
+    }
+    if (parts.length === 2) {
+      if (parts[0] === "pokemon") return await pokemon(parts[1]);
+      if (["moves", "abilities", "types"].includes(parts[0]))
+        return await detail(...parts);
+    }
+    throw Error();
+  } catch (e) {
+    console.error(e);
+    main.innerHTML =
+      heading("Not found") + '<p><a href="/">Back to Pokémon</a></p>';
+  }
+}
+window.onpopstate = render;
+render();

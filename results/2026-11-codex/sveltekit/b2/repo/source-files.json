@@ -1,0 +1,61 @@
+{
+  "files": {
+    ".gitignore": {
+      "sha256": "f97f85b0e91f15c9a45517c5fc6404f218c97f101353ed64d8ad644539fcb92d",
+      "bytes": 34,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "62c5be13a43723219846433e4bac1eb4432ad581b4ce72e6a3491d210430e990",
+      "bytes": 39419,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "57336f51634252a6e246bafad2077dca7ab1eb69c83d9349bfabdc015d58aa44",
+      "bytes": 418,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/app.html": {
+      "sha256": "99389b9842a2817a5ba21d5dc52a0310aeaad30a6df38d7ebc6b5ccf9daf227f",
+      "bytes": 261,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/Cards.svelte": {
+      "sha256": "d44e60f37c6c7afadb67c3c7eb205b21d1bcc0308313981512765f5ef2edb5f8",
+      "bytes": 701,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/MoveTable.svelte": {
+      "sha256": "e54ba65564078729791a1b44c3da844a9803e1c87acfbf27c51c00e6867b9977",
+      "bytes": 1835,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/style.css": {
+      "sha256": "bbcd4b6f67910b9e3e44785d263a6be628bb4b98aeac1719c72d46bc5e1e99ed",
+      "bytes": 6015,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/lib/utils.js": {
+      "sha256": "c1857542892d4e61d16ad8d2a13eab2afb4ac21e46fd1ec58058e391abf9b54d",
+      "bytes": 453,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/routes/[...path]/+page.server.js": {
+      "sha256": "e675724d7fd5fe41b0aa3a62be03779a5507d57a4ccd7b60238c2c03b0528eed",
+      "bytes": 6946,
+      "byteIdenticalGeneratedSource": true
+    },
+    "src/routes/[...path]/+page.svelte": {
+      "sha256": "53da94386070ba67db1480e0ce585fd03cc30513523c37cb8722e814855addf4",
+      "bytes": 8990,
+      "byteIdenticalGeneratedSource": true
+    },
+    "vite.config.js": {
+      "sha256": "1ed9211ae37c07d585ec495c9efc2187a256b9bad9411642eba8d32e02bf13b0",
+      "bytes": 210,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

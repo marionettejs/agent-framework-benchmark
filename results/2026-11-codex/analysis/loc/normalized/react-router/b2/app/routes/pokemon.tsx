@@ -1,0 +1,280 @@
+import { Link, useLoaderData, useSearchParams } from "react-router";
+import { useState } from "react";
+import { api } from "../api.server";
+import {
+  english,
+  human,
+  flavor,
+  dex,
+  Badge,
+  Section,
+  Missing,
+  titleMeta,
+} from "../ui";
+export const meta = titleMeta;
+export async function loader({ params, request }) {
+  try {
+    const s = await api("pokemon-species/" + params.name);
+    const [p, chain] = await Promise.all([
+      api("pokemon/" + s.id),
+      api(s.evolution_chain.url),
+    ]);
+    const gameNames = [
+      ...new Set(
+        p.moves.flatMap((m) =>
+          m.version_group_details.map((v) => v.version_group.name),
+        ),
+      ),
+    ];
+    const games = (
+      await Promise.all(gameNames.map((n) => api("version-group/" + n)))
+    ).sort((a, b) => a.order - b.order);
+    const asked = new URL(request.url).searchParams.get("game");
+    const game =
+      games.find((g) => g.name === asked)?.name || games.at(-1)?.name;
+    const moves = await Promise.all(
+      p.moves
+        .filter((m) =>
+          m.version_group_details.some((v) => v.version_group.name === game),
+        )
+        .map(async (m) => ({
+          move: await api(m.move.url),
+          details: m.version_group_details.filter(
+            (v) => v.version_group.name === game,
+          ),
+        })),
+    );
+    return { title: english(s), s, p, chain: chain.chain, games, game, moves };
+  } catch (e) {
+    if (e.status === 404) return { missing: true };
+    throw e;
+  }
+}
+function Evolution({ node }) {
+  return (
+    <ul>
+      <li>
+        <Link to={"/pokemon/" + node.species.name}>
+          {human(node.species.name)}
+        </Link>
+        {node.evolves_to.map((n) => (
+          <Evolution key={n.species.name} node={n} />
+        ))}
+      </li>
+    </ul>
+  );
+}
+function MoveTable({ method, rows }) {
+  const [sort, setSort] = useState(null);
+  const cols =
+    method === "level-up"
+      ? ["Level", "Move", "Type", "Category", "Power", "Accuracy", "PP"]
+      : ["Move", "Type", "Category", "Power", "Accuracy", "PP"];
+  function val(r, k) {
+    return k === "Level"
+      ? r.level
+      : k === "Move"
+        ? english(r.move)
+        : k === "Type"
+          ? human(r.move.type.name)
+          : k === "Category"
+            ? human(r.move.damage_class.name)
+            : r.move[k.toLowerCase()];
+  }
+  const sorted = [...rows].sort((a, b) => {
+    if (sort) {
+      const av = val(a, sort.key),
+        bv = val(b, sort.key);
+      if (av == null) return bv == null ? 0 : 1;
+      if (bv == null) return -1;
+      const cmp =
+        typeof av === "number" ? av - bv : String(av).localeCompare(String(bv));
+      return cmp * (sort.desc ? -1 : 1);
+    }
+    return (
+      (method === "level-up" ? a.level - b.level : 0) ||
+      english(a.move).localeCompare(english(b.move))
+    );
+  });
+  return (
+    <div className="table-scroll">
+      <table className="moves-table">
+        <caption>{human(method)}</caption>
+        <thead>
+          <tr>
+            {cols.map((k) => (
+              <th
+                key={k}
+                aria-sort={
+                  sort?.key === k
+                    ? sort.desc
+                      ? "descending"
+                      : "ascending"
+                    : undefined
+                }
+              >
+                <button
+                  onClick={() =>
+                    setSort({
+                      key: k,
+                      desc: sort?.key === k ? !sort.desc : false,
+                    })
+                  }
+                >
+                  {k}
+                </button>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {sorted.map((r, i) => (
+            <tr key={r.move.name + "-" + i}>
+              {cols.map((k) => (
+                <td key={k}>
+                  {k === "Move" ? (
+                    <Link to={"/moves/" + r.move.name}>{english(r.move)}</Link>
+                  ) : k === "Type" ? (
+                    <Badge name={r.move.type.name} />
+                  ) : (
+                    (val(r, k) ?? "—")
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+export default function Pokemon() {
+  const d = useLoaderData();
+  const [q, setQ] = useSearchParams();
+  if (d.missing) return <Missing />;
+  const { s, p } = d;
+  const stats = ["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"];
+  const methods = {};
+  for (const m of d.moves)
+    for (const v of m.details) {
+      const key = v.move_learn_method.name;
+      (methods[key] ??= []).push({ move: m.move, level: v.level_learned_at });
+    }
+  const order = ["level-up", "machine", "egg", "tutor"];
+  const keys = Object.keys(methods).sort((a, b) => {
+    const ai = order.indexOf(a),
+      bi = order.indexOf(b);
+    return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi) || a.localeCompare(b);
+  });
+  return (
+    <>
+      <div className="summary">
+        <img
+          className="artwork"
+          src={
+            p.sprites.other["official-artwork"].front_default ||
+            p.sprites.front_default
+          }
+          alt={d.title}
+        />
+        <div>
+          <span className="dex">{dex(s.id)}</span>
+          <h1>{d.title}</h1>
+          <p className="muted genus">
+            {s.genera.find((g) => g.language.name === "en")?.genus}
+          </p>
+          <div className="badges">
+            {p.types
+              .sort((a, b) => a.slot - b.slot)
+              .map((t) => (
+                <Badge key={t.type.name} name={t.type.name} />
+              ))}
+          </div>
+          <dl className="facts">
+            <div>
+              <dt>Height</dt>
+              <dd>{(p.height / 10).toFixed(1)} m</dd>
+            </div>
+            <div>
+              <dt>Weight</dt>
+              <dd>{(p.weight / 10).toFixed(1)} kg</dd>
+            </div>
+          </dl>
+          <p>{flavor(s)}</p>
+        </div>
+      </div>
+      <Section title="Base stats">
+        <table className="stats">
+          <tbody>
+            {[
+              ...p.stats.map((t, i) => [stats[i], t.base_stat]),
+              ["Total", p.stats.reduce((a, b) => a + b.base_stat, 0)],
+            ].map(([name, n]) => (
+              <tr key={name}>
+                <th scope="row">{name}</th>
+                <td>{n}</td>
+                <td>
+                  <div className="track">
+                    <div
+                      style={{
+                        width:
+                          Math.min(
+                            100,
+                            (n / (name === "Total" ? 720 : 255)) * 100,
+                          ) + "%",
+                      }}
+                    />
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </Section>
+      <Section title="Abilities">
+        <ul>
+          {p.abilities
+            .sort((a, b) => a.slot - b.slot)
+            .map((a) => (
+              <li key={a.ability.name}>
+                <Link to={"/abilities/" + a.ability.name}>
+                  {human(a.ability.name)}
+                </Link>
+                {a.is_hidden ? " (hidden)" : ""}
+              </li>
+            ))}
+        </ul>
+      </Section>
+      <Section title="Evolution">
+        <Evolution node={d.chain} />
+      </Section>
+      <Section title="Moves" id="moves">
+        <label className="game">
+          Game{" "}
+          <select
+            aria-label="Game"
+            value={d.game || ""}
+            onChange={(e) => {
+              const n = new URLSearchParams(q);
+              n.set("game", e.target.value);
+              setQ(n, { preventScrollReset: true });
+            }}
+          >
+            {d.games.map((g) => (
+              <option key={g.name} value={g.name}>
+                {human(g.name)}
+              </option>
+            ))}
+          </select>
+        </label>
+        {keys.map((method) => (
+          <MoveTable
+            key={d.game + method}
+            method={method}
+            rows={methods[method]}
+          />
+        ))}
+      </Section>
+    </>
+  );
+}

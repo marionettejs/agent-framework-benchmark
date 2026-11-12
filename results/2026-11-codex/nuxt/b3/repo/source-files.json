@@ -1,0 +1,51 @@
+{
+  "files": {
+    "app/assets/style.css": {
+      "sha256": "5fe5db89d816b43eb69bc8dec34895a572e0ccb38bfe1198575e37a0fcb07911",
+      "bytes": 5451,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/EvolutionTree.vue": {
+      "sha256": "e2b12e533ed475982cf0832adf2dc8ce2e1a9b8aa2badda2681227d12f09ff36",
+      "bytes": 352,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/MoveTable.vue": {
+      "sha256": "36e823c7326726acc748abad525b5ad559296d7029dd892423cf3ac1f5321e2b",
+      "bytes": 1580,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/components/PokeCards.vue": {
+      "sha256": "32258d5b073c28b45d92c4c35481f44c9a08dd8fd4df580b774001a32e94e773",
+      "bytes": 598,
+      "byteIdenticalGeneratedSource": true
+    },
+    "app/pages/[...slug].vue": {
+      "sha256": "6ce1b199033a3928c251b4f258f541bacff5a928ba59176061f0a1d463d38315",
+      "bytes": 7883,
+      "byteIdenticalGeneratedSource": true
+    },
+    "nuxt.config.ts": {
+      "sha256": "92a4dcc1acf6d0e4d5ac1a5a5244974787cae6750136a32a039b4cf85a55d6bc",
+      "bytes": 238,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package-lock.json": {
+      "sha256": "3cd9bf640f60a75097bb499bcf3e8069c9ac65bff9302095c6994d9eed5b5c9e",
+      "bytes": 290082,
+      "byteIdenticalGeneratedSource": true
+    },
+    "package.json": {
+      "sha256": "95d9d06c8616ed69d2f26bc5f524f6fd35c792596b602582d487256fecc96669",
+      "bytes": 160,
+      "byteIdenticalGeneratedSource": true
+    },
+    "server/api/page.get.ts": {
+      "sha256": "254d2a76b7ca5eb75fa13423dba2eb88f4a032d42dd5fa72607a7eebca7b13be",
+      "bytes": 2597,
+      "byteIdenticalGeneratedSource": true
+    }
+  },
+  "providedStylesheetRestoredByReference": true,
+  "dependencyImplementationsVendored": false
+}

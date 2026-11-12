@@ -1,0 +1,1 @@
+Implement the app described in SPEC.md using SvelteKit. Use the latest stable version. Work autonomously until `npm test` passes.
